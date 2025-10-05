@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__Gamepads__ConnectedGamepadsCount !== "undefined") {
 gdjs.evtsExt__Gamepads__ConnectedGamepadsCount = {};
 
 
-gdjs.evtsExt__Gamepads__ConnectedGamepadsCount.userFunc0xaa9340 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Gamepads__ConnectedGamepadsCount.userFunc0xeab570 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 
 const gamepads = navigator.getGamepads ? navigator.getGamepads() : [];
@@ -27,7 +27,7 @@ gdjs.evtsExt__Gamepads__ConnectedGamepadsCount.eventsList0 = function(runtimeSce
 {
 
 
-gdjs.evtsExt__Gamepads__ConnectedGamepadsCount.userFunc0xaa9340(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__Gamepads__ConnectedGamepadsCount.userFunc0xeab570(runtimeScene, eventsFunctionContext);
 
 }
 

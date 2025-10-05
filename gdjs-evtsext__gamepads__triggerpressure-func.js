@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__Gamepads__TriggerPressure !== "undefined") {
 gdjs.evtsExt__Gamepads__TriggerPressure = {};
 
 
-gdjs.evtsExt__Gamepads__TriggerPressure.userFunc0x106b4b0 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Gamepads__TriggerPressure.userFunc0xe70e30 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 
 const playerId = eventsFunctionContext.getArgument("PlayerId") - 1;
@@ -45,7 +45,7 @@ gdjs.evtsExt__Gamepads__TriggerPressure.eventsList0 = function(runtimeScene, eve
 {
 
 
-gdjs.evtsExt__Gamepads__TriggerPressure.userFunc0x106b4b0(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__Gamepads__TriggerPressure.userFunc0xe70e30(runtimeScene, eventsFunctionContext);
 
 }
 

@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__Gamepads__LastButtonString !== "undefined") {
 gdjs.evtsExt__Gamepads__LastButtonString = {};
 
 
-gdjs.evtsExt__Gamepads__LastButtonString.userFunc0x928000 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Gamepads__LastButtonString.userFunc0xe9d618 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 
 const playerId = eventsFunctionContext.getArgument("PlayerId") - 1;
@@ -28,7 +28,7 @@ gdjs.evtsExt__Gamepads__LastButtonString.eventsList0 = function(runtimeScene, ev
 {
 
 
-gdjs.evtsExt__Gamepads__LastButtonString.userFunc0x928000(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__Gamepads__LastButtonString.userFunc0xe9d618(runtimeScene, eventsFunctionContext);
 
 }
 

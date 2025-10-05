@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__Gamepads__C_Any_Button_pressed !== "undefined") {
 gdjs.evtsExt__Gamepads__C_Any_Button_pressed = {};
 
 
-gdjs.evtsExt__Gamepads__C_Any_Button_pressed.userFunc0x994540 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Gamepads__C_Any_Button_pressed.userFunc0xea3370 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 
 const playerId = eventsFunctionContext.getArgument("PlayerId") - 1;
@@ -21,7 +21,7 @@ gdjs.evtsExt__Gamepads__C_Any_Button_pressed.eventsList0 = function(runtimeScene
 {
 
 
-gdjs.evtsExt__Gamepads__C_Any_Button_pressed.userFunc0x994540(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__Gamepads__C_Any_Button_pressed.userFunc0xea3370(runtimeScene, eventsFunctionContext);
 
 }
 
