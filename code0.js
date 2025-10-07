@@ -8,6 +8,8 @@ gdjs.TitleCode.GDdescriptionObjects1= [];
 gdjs.TitleCode.GDdescriptionObjects2= [];
 gdjs.TitleCode.GDNewSpriteObjects1= [];
 gdjs.TitleCode.GDNewSpriteObjects2= [];
+gdjs.TitleCode.GDCustomLobbiesObjects1= [];
+gdjs.TitleCode.GDCustomLobbiesObjects2= [];
 
 
 gdjs.TitleCode.eventsList0 = function(runtimeScene) {
@@ -47,6 +49,8 @@ gdjs.TitleCode.GDdescriptionObjects1.length = 0;
 gdjs.TitleCode.GDdescriptionObjects2.length = 0;
 gdjs.TitleCode.GDNewSpriteObjects1.length = 0;
 gdjs.TitleCode.GDNewSpriteObjects2.length = 0;
+gdjs.TitleCode.GDCustomLobbiesObjects1.length = 0;
+gdjs.TitleCode.GDCustomLobbiesObjects2.length = 0;
 
 gdjs.TitleCode.eventsList0(runtimeScene);
 gdjs.TitleCode.GDBlueButtonObjects1.length = 0;
@@ -57,6 +61,8 @@ gdjs.TitleCode.GDdescriptionObjects1.length = 0;
 gdjs.TitleCode.GDdescriptionObjects2.length = 0;
 gdjs.TitleCode.GDNewSpriteObjects1.length = 0;
 gdjs.TitleCode.GDNewSpriteObjects2.length = 0;
+gdjs.TitleCode.GDCustomLobbiesObjects1.length = 0;
+gdjs.TitleCode.GDCustomLobbiesObjects2.length = 0;
 
 
 return;

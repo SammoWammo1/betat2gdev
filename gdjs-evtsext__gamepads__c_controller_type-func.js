@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__Gamepads__C_Controller_type !== "undefined") {
 gdjs.evtsExt__Gamepads__C_Controller_type = {};
 
 
-gdjs.evtsExt__Gamepads__C_Controller_type.userFunc0xeac728 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Gamepads__C_Controller_type.userFunc0xf133e8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 const playerId = eventsFunctionContext.getArgument("PlayerId") - 1;
 const controllerType = eventsFunctionContext.getArgument("controller_type").toUpperCase();
@@ -29,7 +29,7 @@ gdjs.evtsExt__Gamepads__C_Controller_type.eventsList0 = function(runtimeScene, e
 {
 
 
-gdjs.evtsExt__Gamepads__C_Controller_type.userFunc0xeac728(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__Gamepads__C_Controller_type.userFunc0xf133e8(runtimeScene, eventsFunctionContext);
 
 }
 

@@ -1,7 +1,7 @@
 {
-  "name": "Tennis 2.0",
-  "short_name": "Tennis 2.0",
-  "id": "com.example.gamename",
+  "name": "Tennis 2.0: POWERSHOT",
+  "short_name": "Tennis 2.0: POWERSHOT",
+  "id": "com.tennis2team.tennis2powershot",
   "description": "",
   "orientation": "landscape",
   "start_url": "./index.html",

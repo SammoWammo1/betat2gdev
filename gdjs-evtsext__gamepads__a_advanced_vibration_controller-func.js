@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__Gamepads__A_Advanced_Vibration_Controller !== "undefine
 gdjs.evtsExt__Gamepads__A_Advanced_Vibration_Controller = {};
 
 
-gdjs.evtsExt__Gamepads__A_Advanced_Vibration_Controller.userFunc0xeb15a0 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Gamepads__A_Advanced_Vibration_Controller.userFunc0xf1a790 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 const { clamp } = gdjs.evtTools.common;
 const playerId = eventsFunctionContext.getArgument("PlayerId") - 1;
@@ -41,7 +41,7 @@ gdjs.evtsExt__Gamepads__A_Advanced_Vibration_Controller.eventsList0 = function(r
 {
 
 
-gdjs.evtsExt__Gamepads__A_Advanced_Vibration_Controller.userFunc0xeb15a0(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__Gamepads__A_Advanced_Vibration_Controller.userFunc0xf1a790(runtimeScene, eventsFunctionContext);
 
 }
 

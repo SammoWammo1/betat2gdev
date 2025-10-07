@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__Gamepads__onScenePostEvents !== "undefined") {
 gdjs.evtsExt__Gamepads__onScenePostEvents = {};
 
 
-gdjs.evtsExt__Gamepads__onScenePostEvents.userFunc0xe6a4b8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Gamepads__onScenePostEvents.userFunc0xf7c470 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 gdjs._extensionController.onScenePostEvents();
 
@@ -18,7 +18,7 @@ gdjs.evtsExt__Gamepads__onScenePostEvents.eventsList0 = function(runtimeScene, e
 {
 
 
-gdjs.evtsExt__Gamepads__onScenePostEvents.userFunc0xe6a4b8(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__Gamepads__onScenePostEvents.userFunc0xf7c470(runtimeScene, eventsFunctionContext);
 
 }
 
