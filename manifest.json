@@ -1,0 +1,15 @@
+{
+  "name": "Tennis 2.0 GDevelop Test",
+  "short_name": "Tennis 2.0 Test",
+  "id": "com.tennis2team.tennis2powershot",
+  "orientation": "landscape",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#00a1f7",
+  "categories": [
+    "games",
+    "entertainment"
+  ],
+  "theme_color": "#016edc",
+  "description": "Thanks for installing our small Tennis 2.0 Prototype! This will be updated progressively when new updates come out!"
+}
