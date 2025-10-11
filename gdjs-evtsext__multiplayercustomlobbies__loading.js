@@ -29,17 +29,17 @@ gdjs.evtsExt__MultiplayerCustomLobbies__Loading.Loading = class Loading extends 
   }
 
   // Network sync:
-  getNetworkSyncData() {
+  getNetworkSyncData(syncOptions) {
     return {
-      ...super.getNetworkSyncData(),
+      ...super.getNetworkSyncData(syncOptions),
       props: {
         
     time: this._behaviorData.time,
       }
     };
   }
-  updateFromNetworkSyncData(networkSyncData) {
-    super.updateFromNetworkSyncData(networkSyncData);
+  updateFromNetworkSyncData(networkSyncData, options) {
+    super.updateFromNetworkSyncData(networkSyncData, options);
     
     if (networkSyncData.props.time !== undefined)
       this._behaviorData.time = networkSyncData.props.time;
@@ -81,6 +81,7 @@ gdjs.evtsExt__MultiplayerCustomLobbies__Loading.Loading.getSharedData = function
 
 // Methods:
 gdjs.evtsExt__MultiplayerCustomLobbies__Loading.Loading.prototype.doStepPostEventsContext = {};
+gdjs.evtsExt__MultiplayerCustomLobbies__Loading.Loading.prototype.doStepPostEventsContext.idToCallbackMap = new Map();
 gdjs.evtsExt__MultiplayerCustomLobbies__Loading.Loading.prototype.doStepPostEventsContext.GDObjectObjects1= [];
 gdjs.evtsExt__MultiplayerCustomLobbies__Loading.Loading.prototype.doStepPostEventsContext.GDObjectObjects2= [];
 

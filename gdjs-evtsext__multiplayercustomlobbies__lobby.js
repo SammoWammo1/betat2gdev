@@ -57,6 +57,7 @@ gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby = class Lobby extends gdjs.C
 
 // Methods:
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.onCreatedContext = {};
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.onCreatedContext.idToCallbackMap = new Map();
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.onCreatedContext.GDObjectObjects1= [];
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.onCreatedContext.GDObjectObjects2= [];
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.onCreatedContext.GDPlayersCountObjects1= [];
@@ -214,6 +215,7 @@ gdjs.CustomRuntimeObject.prototype.onCreated.call(this);
 return;
 }
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.doStepPostEventsContext = {};
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.doStepPostEventsContext.idToCallbackMap = new Map();
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.doStepPostEventsContext.GDObjectObjects1= [];
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.doStepPostEventsContext.GDObjectObjects2= [];
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.doStepPostEventsContext.GDPlayersCountObjects1= [];
@@ -382,6 +384,7 @@ gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.doStepPostEventsCo
 return;
 }
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyNameContext = {};
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyNameContext.idToCallbackMap = new Map();
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyNameContext.GDObjectObjects1= [];
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyNameContext.GDObjectObjects2= [];
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyNameContext.GDPlayersCountObjects1= [];
@@ -543,6 +546,7 @@ gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyNameContex
 return;
 }
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetPlayersCountContext = {};
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetPlayersCountContext.idToCallbackMap = new Map();
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetPlayersCountContext.GDObjectObjects1= [];
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetPlayersCountContext.GDObjectObjects2= [];
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetPlayersCountContext.GDPlayersCountObjects1= [];
@@ -733,6 +737,7 @@ gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetPlayersCountCon
 return;
 }
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyIDContext = {};
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyIDContext.idToCallbackMap = new Map();
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyIDContext.GDObjectObjects1= [];
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyIDContext.GDObjectObjects2= [];
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyIDContext.GDPlayersCountObjects1= [];
@@ -890,6 +895,7 @@ gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyIDContext.
 return;
 }
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.IsFullContext = {};
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.IsFullContext.idToCallbackMap = new Map();
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.IsFullContext.GDObjectObjects1= [];
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.IsFullContext.GDObjectObjects2= [];
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.IsFullContext.GDPlayersCountObjects1= [];
@@ -1059,6 +1065,7 @@ gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.IsFullContext.GDBa
 return !!eventsFunctionContext.returnValue;
 }
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.ActivateInteractionsContext = {};
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.ActivateInteractionsContext.idToCallbackMap = new Map();
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.ActivateInteractionsContext.GDObjectObjects1= [];
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.ActivateInteractionsContext.GDObjectObjects2= [];
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.ActivateInteractionsContext.GDPlayersCountObjects1= [];

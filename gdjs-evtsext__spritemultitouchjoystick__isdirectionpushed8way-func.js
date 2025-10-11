@@ -6,6 +6,7 @@ if (typeof gdjs.evtsExt__SpriteMultitouchJoystick__IsDirectionPushed8Way !== "un
 }
 
 gdjs.evtsExt__SpriteMultitouchJoystick__IsDirectionPushed8Way = {};
+gdjs.evtsExt__SpriteMultitouchJoystick__IsDirectionPushed8Way.idToCallbackMap = new Map();
 
 
 gdjs.evtsExt__SpriteMultitouchJoystick__IsDirectionPushed8Way.eventsList0 = function(runtimeScene, eventsFunctionContext) {

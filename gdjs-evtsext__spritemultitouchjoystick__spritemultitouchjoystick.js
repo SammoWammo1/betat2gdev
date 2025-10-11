@@ -114,6 +114,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 
 // Methods:
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.onCreatedContext = {};
+gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.onCreatedContext.idToCallbackMap = new Map();
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.onCreatedContext.GDObjectObjects1= [];
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.onCreatedContext.GDObjectObjects2= [];
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.onCreatedContext.GDThumbObjects1= [];
@@ -261,6 +262,7 @@ gdjs.CustomRuntimeObject.prototype.onCreated.call(this);
 return;
 }
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.doStepPostEventsContext = {};
+gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.doStepPostEventsContext.idToCallbackMap = new Map();
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.doStepPostEventsContext.GDObjectObjects1= [];
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.doStepPostEventsContext.GDObjectObjects2= [];
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.doStepPostEventsContext.GDObjectObjects3= [];
@@ -440,6 +442,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 return;
 }
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.onHotReloadingContext = {};
+gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.onHotReloadingContext.idToCallbackMap = new Map();
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.onHotReloadingContext.GDObjectObjects1= [];
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.onHotReloadingContext.GDObjectObjects2= [];
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.onHotReloadingContext.GDThumbObjects1= [];
@@ -556,6 +559,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 return;
 }
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.UpdateConfigurationContext = {};
+gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.UpdateConfigurationContext.idToCallbackMap = new Map();
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.UpdateConfigurationContext.GDObjectObjects1= [];
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.UpdateConfigurationContext.GDObjectObjects2= [];
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.UpdateConfigurationContext.GDThumbObjects1= [];
@@ -680,6 +684,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 return;
 }
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.TeleportAndPressContext = {};
+gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.TeleportAndPressContext.idToCallbackMap = new Map();
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.TeleportAndPressContext.GDObjectObjects1= [];
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.TeleportAndPressContext.GDObjectObjects2= [];
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.TeleportAndPressContext.GDThumbObjects1= [];
@@ -813,6 +818,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 return;
 }
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ParentTouchXContext = {};
+gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ParentTouchXContext.idToCallbackMap = new Map();
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ParentTouchXContext.GDObjectObjects1= [];
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ParentTouchXContext.GDObjectObjects2= [];
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ParentTouchXContext.GDThumbObjects1= [];
@@ -821,7 +827,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ParentTouchXContext.GDBorderObjects2= [];
 
 
-gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ParentTouchXContext.userFunc0xf574d8 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ParentTouchXContext.userFunc0xf868d8 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const object = objects[0];
 const touchId = eventsFunctionContext.getArgument("TouchId");
@@ -844,7 +850,7 @@ let isConditionTrue_0 = false;
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ParentTouchXContext.GDObjectObjects1);
 
 const objects = gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ParentTouchXContext.GDObjectObjects1;
-gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ParentTouchXContext.userFunc0xf574d8(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ParentTouchXContext.userFunc0xf868d8(runtimeScene, objects, eventsFunctionContext);
 
 }
 
@@ -941,6 +947,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 return Number(eventsFunctionContext.returnValue) || 0;
 }
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ParentTouchYContext = {};
+gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ParentTouchYContext.idToCallbackMap = new Map();
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ParentTouchYContext.GDObjectObjects1= [];
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ParentTouchYContext.GDObjectObjects2= [];
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ParentTouchYContext.GDThumbObjects1= [];
@@ -949,7 +956,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ParentTouchYContext.GDBorderObjects2= [];
 
 
-gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ParentTouchYContext.userFunc0xf574d8 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ParentTouchYContext.userFunc0xf868d8 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const object = objects[0];
 const touchId = eventsFunctionContext.getArgument("TouchId");
@@ -972,7 +979,7 @@ let isConditionTrue_0 = false;
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ParentTouchYContext.GDObjectObjects1);
 
 const objects = gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ParentTouchYContext.GDObjectObjects1;
-gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ParentTouchYContext.userFunc0xf574d8(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ParentTouchYContext.userFunc0xf868d8(runtimeScene, objects, eventsFunctionContext);
 
 }
 
@@ -1069,6 +1076,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 return Number(eventsFunctionContext.returnValue) || 0;
 }
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ActivateControlContext = {};
+gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ActivateControlContext.idToCallbackMap = new Map();
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ActivateControlContext.GDObjectObjects1= [];
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ActivateControlContext.GDObjectObjects2= [];
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ActivateControlContext.GDThumbObjects1= [];
@@ -1207,6 +1215,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 return;
 }
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.IsPressedContext = {};
+gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.IsPressedContext.idToCallbackMap = new Map();
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.IsPressedContext.GDObjectObjects1= [];
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.IsPressedContext.GDObjectObjects2= [];
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.IsPressedContext.GDThumbObjects1= [];
@@ -1329,6 +1338,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 return !!eventsFunctionContext.returnValue;
 }
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.JoystickForceContext = {};
+gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.JoystickForceContext.idToCallbackMap = new Map();
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.JoystickForceContext.GDObjectObjects1= [];
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.JoystickForceContext.GDObjectObjects2= [];
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.JoystickForceContext.GDThumbObjects1= [];
@@ -1442,6 +1452,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 return Number(eventsFunctionContext.returnValue) || 0;
 }
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.StickForceContext = {};
+gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.StickForceContext.idToCallbackMap = new Map();
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.StickForceContext.GDObjectObjects1= [];
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.StickForceContext.GDObjectObjects2= [];
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.StickForceContext.GDThumbObjects1= [];
@@ -1555,6 +1566,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 return Number(eventsFunctionContext.returnValue) || 0;
 }
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.StickForceXContext = {};
+gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.StickForceXContext.idToCallbackMap = new Map();
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.StickForceXContext.GDObjectObjects1= [];
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.StickForceXContext.GDObjectObjects2= [];
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.StickForceXContext.GDThumbObjects1= [];
@@ -1668,6 +1680,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 return Number(eventsFunctionContext.returnValue) || 0;
 }
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.StickForceYContext = {};
+gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.StickForceYContext.idToCallbackMap = new Map();
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.StickForceYContext.GDObjectObjects1= [];
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.StickForceYContext.GDObjectObjects2= [];
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.StickForceYContext.GDThumbObjects1= [];
@@ -1781,6 +1794,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 return Number(eventsFunctionContext.returnValue) || 0;
 }
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.JoystickAngleContext = {};
+gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.JoystickAngleContext.idToCallbackMap = new Map();
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.JoystickAngleContext.GDObjectObjects1= [];
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.JoystickAngleContext.GDObjectObjects2= [];
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.JoystickAngleContext.GDThumbObjects1= [];
@@ -1894,6 +1908,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 return Number(eventsFunctionContext.returnValue) || 0;
 }
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.StickAngleContext = {};
+gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.StickAngleContext.idToCallbackMap = new Map();
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.StickAngleContext.GDObjectObjects1= [];
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.StickAngleContext.GDObjectObjects2= [];
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.StickAngleContext.GDThumbObjects1= [];
@@ -2007,6 +2022,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 return Number(eventsFunctionContext.returnValue) || 0;
 }
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.IsDirectionPushed4WayContext = {};
+gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.IsDirectionPushed4WayContext.idToCallbackMap = new Map();
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.IsDirectionPushed4WayContext.GDObjectObjects1= [];
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.IsDirectionPushed4WayContext.GDObjectObjects2= [];
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.IsDirectionPushed4WayContext.GDThumbObjects1= [];
@@ -2130,6 +2146,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 return !!eventsFunctionContext.returnValue;
 }
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.IsDirectionPushed8WayContext = {};
+gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.IsDirectionPushed8WayContext.idToCallbackMap = new Map();
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.IsDirectionPushed8WayContext.GDObjectObjects1= [];
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.IsDirectionPushed8WayContext.GDObjectObjects2= [];
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.IsDirectionPushed8WayContext.GDThumbObjects1= [];
@@ -2253,6 +2270,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 return !!eventsFunctionContext.returnValue;
 }
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ControllerIdentifierContext = {};
+gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ControllerIdentifierContext.idToCallbackMap = new Map();
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ControllerIdentifierContext.GDObjectObjects1= [];
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ControllerIdentifierContext.GDObjectObjects2= [];
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ControllerIdentifierContext.GDThumbObjects1= [];
@@ -2366,6 +2384,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 return Number(eventsFunctionContext.returnValue) || 0;
 }
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.SetControllerIdentifierContext = {};
+gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.SetControllerIdentifierContext.idToCallbackMap = new Map();
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.SetControllerIdentifierContext.GDObjectObjects1= [];
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.SetControllerIdentifierContext.GDObjectObjects2= [];
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.SetControllerIdentifierContext.GDThumbObjects1= [];
@@ -2483,6 +2502,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 return;
 }
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.JoystickIdentifierContext = {};
+gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.JoystickIdentifierContext.idToCallbackMap = new Map();
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.JoystickIdentifierContext.GDObjectObjects1= [];
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.JoystickIdentifierContext.GDObjectObjects2= [];
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.JoystickIdentifierContext.GDThumbObjects1= [];
@@ -2596,6 +2616,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 return "" + eventsFunctionContext.returnValue;
 }
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.SetJoystickIdentifierContext = {};
+gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.SetJoystickIdentifierContext.idToCallbackMap = new Map();
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.SetJoystickIdentifierContext.GDObjectObjects1= [];
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.SetJoystickIdentifierContext.GDObjectObjects2= [];
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.SetJoystickIdentifierContext.GDThumbObjects1= [];
@@ -2713,6 +2734,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 return;
 }
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.DeadZoneRadiusContext = {};
+gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.DeadZoneRadiusContext.idToCallbackMap = new Map();
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.DeadZoneRadiusContext.GDObjectObjects1= [];
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.DeadZoneRadiusContext.GDObjectObjects2= [];
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.DeadZoneRadiusContext.GDThumbObjects1= [];
@@ -2826,6 +2848,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 return Number(eventsFunctionContext.returnValue) || 0;
 }
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.SetDeadZoneRadiusContext = {};
+gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.SetDeadZoneRadiusContext.idToCallbackMap = new Map();
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.SetDeadZoneRadiusContext.GDObjectObjects1= [];
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.SetDeadZoneRadiusContext.GDObjectObjects2= [];
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.SetDeadZoneRadiusContext.GDThumbObjects1= [];

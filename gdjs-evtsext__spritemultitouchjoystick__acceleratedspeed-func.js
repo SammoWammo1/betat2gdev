@@ -6,6 +6,7 @@ if (typeof gdjs.evtsExt__SpriteMultitouchJoystick__AcceleratedSpeed !== "undefin
 }
 
 gdjs.evtsExt__SpriteMultitouchJoystick__AcceleratedSpeed = {};
+gdjs.evtsExt__SpriteMultitouchJoystick__AcceleratedSpeed.idToCallbackMap = new Map();
 
 
 gdjs.evtsExt__SpriteMultitouchJoystick__AcceleratedSpeed.eventsList0 = function(runtimeScene, eventsFunctionContext) {

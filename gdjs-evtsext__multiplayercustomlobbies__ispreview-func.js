@@ -6,9 +6,10 @@ if (typeof gdjs.evtsExt__MultiplayerCustomLobbies__IsPreview !== "undefined") {
 }
 
 gdjs.evtsExt__MultiplayerCustomLobbies__IsPreview = {};
+gdjs.evtsExt__MultiplayerCustomLobbies__IsPreview.idToCallbackMap = new Map();
 
 
-gdjs.evtsExt__MultiplayerCustomLobbies__IsPreview.userFunc0xc41b48 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__MultiplayerCustomLobbies__IsPreview.userFunc0xc98bc8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 eventsFunctionContext.returnValue = runtimeScene.getGame().isPreview();
 };
@@ -17,7 +18,7 @@ gdjs.evtsExt__MultiplayerCustomLobbies__IsPreview.eventsList0 = function(runtime
 {
 
 
-gdjs.evtsExt__MultiplayerCustomLobbies__IsPreview.userFunc0xc41b48(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__MultiplayerCustomLobbies__IsPreview.userFunc0xc98bc8(runtimeScene, eventsFunctionContext);
 
 }
 

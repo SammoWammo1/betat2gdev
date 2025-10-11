@@ -6,6 +6,7 @@ if (typeof gdjs.evtsExt__MultiplayerCustomLobbies__onFirstSceneLoaded !== "undef
 }
 
 gdjs.evtsExt__MultiplayerCustomLobbies__onFirstSceneLoaded = {};
+gdjs.evtsExt__MultiplayerCustomLobbies__onFirstSceneLoaded.idToCallbackMap = new Map();
 
 
 gdjs.evtsExt__MultiplayerCustomLobbies__onFirstSceneLoaded.eventsList0 = function(runtimeScene, eventsFunctionContext) {

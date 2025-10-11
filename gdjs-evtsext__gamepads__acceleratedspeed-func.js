@@ -6,6 +6,7 @@ if (typeof gdjs.evtsExt__Gamepads__AcceleratedSpeed !== "undefined") {
 }
 
 gdjs.evtsExt__Gamepads__AcceleratedSpeed = {};
+gdjs.evtsExt__Gamepads__AcceleratedSpeed.idToCallbackMap = new Map();
 
 
 gdjs.evtsExt__Gamepads__AcceleratedSpeed.eventsList0 = function(runtimeScene, eventsFunctionContext) {

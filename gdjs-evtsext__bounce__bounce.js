@@ -29,17 +29,17 @@ gdjs.evtsExt__Bounce__Bounce.Bounce = class Bounce extends gdjs.RuntimeBehavior 
   }
 
   // Network sync:
-  getNetworkSyncData() {
+  getNetworkSyncData(syncOptions) {
     return {
-      ...super.getNetworkSyncData(),
+      ...super.getNetworkSyncData(syncOptions),
       props: {
         
     BounceCount: this._behaviorData.BounceCount,
       }
     };
   }
-  updateFromNetworkSyncData(networkSyncData) {
-    super.updateFromNetworkSyncData(networkSyncData);
+  updateFromNetworkSyncData(networkSyncData, options) {
+    super.updateFromNetworkSyncData(networkSyncData, options);
     
     if (networkSyncData.props.BounceCount !== undefined)
       this._behaviorData.BounceCount = networkSyncData.props.BounceCount;
@@ -81,6 +81,7 @@ gdjs.evtsExt__Bounce__Bounce.Bounce.getSharedData = function(instanceContainer, 
 
 // Methods:
 gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext = {};
+gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObjectObjects1_1final = [];
 
 gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObjectObjects1= [];
@@ -316,6 +317,7 @@ gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffContext.GDObstacleObjects
 return;
 }
 gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext = {};
+gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.GDObjectObjects1_1final = [];
 
 gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.GDObjectObjects1= [];
@@ -545,6 +547,7 @@ gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffSpecificAngleContext.GDOb
 return;
 }
 gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffVerticallyContext = {};
+gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffVerticallyContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffVerticallyContext.GDObjectObjects1= [];
 gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffVerticallyContext.GDObjectObjects2= [];
 gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffVerticallyContext.GDObstacleObjects1= [];
@@ -653,6 +656,7 @@ gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffVerticallyContext.GDObsta
 return;
 }
 gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffHorizontallyContext = {};
+gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffHorizontallyContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffHorizontallyContext.GDObjectObjects1= [];
 gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffHorizontallyContext.GDObjectObjects2= [];
 gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffHorizontallyContext.GDObstacleObjects1= [];
@@ -761,6 +765,7 @@ gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceOffHorizontallyContext.GDObs
 return;
 }
 gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceCountContext = {};
+gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceCountContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceCountContext.GDObjectObjects1= [];
 gdjs.evtsExt__Bounce__Bounce.Bounce.prototype.BounceCountContext.GDObjectObjects2= [];
 

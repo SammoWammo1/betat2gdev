@@ -75,6 +75,7 @@ gdjs.evtsExt__Scrollbar__Scrollbar.Scrollbar = class Scrollbar extends gdjs.Cust
 
 // Methods:
 gdjs.evtsExt__Scrollbar__Scrollbar.Scrollbar.prototype.doStepPostEventsContext = {};
+gdjs.evtsExt__Scrollbar__Scrollbar.Scrollbar.prototype.doStepPostEventsContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Scrollbar__Scrollbar.Scrollbar.prototype.doStepPostEventsContext.GDObjectObjects1= [];
 gdjs.evtsExt__Scrollbar__Scrollbar.Scrollbar.prototype.doStepPostEventsContext.GDObjectObjects2= [];
 gdjs.evtsExt__Scrollbar__Scrollbar.Scrollbar.prototype.doStepPostEventsContext.GDObjectObjects3= [];
@@ -255,7 +256,7 @@ let isConditionTrue_0 = false;
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(14592700);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(14983948);
 }
 if (isConditionTrue_0) {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Scrollbar__Scrollbar.Scrollbar.prototype.doStepPostEventsContext.GDObjectObjects1);
@@ -441,6 +442,7 @@ gdjs.evtsExt__Scrollbar__Scrollbar.Scrollbar.prototype.doStepPostEventsContext.G
 return;
 }
 gdjs.evtsExt__Scrollbar__Scrollbar.Scrollbar.prototype.UpdateThumbPositionContext = {};
+gdjs.evtsExt__Scrollbar__Scrollbar.Scrollbar.prototype.UpdateThumbPositionContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Scrollbar__Scrollbar.Scrollbar.prototype.UpdateThumbPositionContext.GDObjectObjects1= [];
 gdjs.evtsExt__Scrollbar__Scrollbar.Scrollbar.prototype.UpdateThumbPositionContext.GDObjectObjects2= [];
 gdjs.evtsExt__Scrollbar__Scrollbar.Scrollbar.prototype.UpdateThumbPositionContext.GDBackgroundObjects1= [];
@@ -566,6 +568,7 @@ gdjs.evtsExt__Scrollbar__Scrollbar.Scrollbar.prototype.UpdateThumbPositionContex
 return;
 }
 gdjs.evtsExt__Scrollbar__Scrollbar.Scrollbar.prototype.ScrollPositionContext = {};
+gdjs.evtsExt__Scrollbar__Scrollbar.Scrollbar.prototype.ScrollPositionContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Scrollbar__Scrollbar.Scrollbar.prototype.ScrollPositionContext.GDObjectObjects1= [];
 gdjs.evtsExt__Scrollbar__Scrollbar.Scrollbar.prototype.ScrollPositionContext.GDObjectObjects2= [];
 gdjs.evtsExt__Scrollbar__Scrollbar.Scrollbar.prototype.ScrollPositionContext.GDBackgroundObjects1= [];
@@ -678,6 +681,7 @@ gdjs.evtsExt__Scrollbar__Scrollbar.Scrollbar.prototype.ScrollPositionContext.GDT
 return Number(eventsFunctionContext.returnValue) || 0;
 }
 gdjs.evtsExt__Scrollbar__Scrollbar.Scrollbar.prototype.SetScrollPositionContext = {};
+gdjs.evtsExt__Scrollbar__Scrollbar.Scrollbar.prototype.SetScrollPositionContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Scrollbar__Scrollbar.Scrollbar.prototype.SetScrollPositionContext.GDObjectObjects1= [];
 gdjs.evtsExt__Scrollbar__Scrollbar.Scrollbar.prototype.SetScrollPositionContext.GDObjectObjects2= [];
 gdjs.evtsExt__Scrollbar__Scrollbar.Scrollbar.prototype.SetScrollPositionContext.GDBackgroundObjects1= [];
@@ -793,6 +797,7 @@ gdjs.evtsExt__Scrollbar__Scrollbar.Scrollbar.prototype.SetScrollPositionContext.
 return;
 }
 gdjs.evtsExt__Scrollbar__Scrollbar.Scrollbar.prototype.ContentLengthContext = {};
+gdjs.evtsExt__Scrollbar__Scrollbar.Scrollbar.prototype.ContentLengthContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Scrollbar__Scrollbar.Scrollbar.prototype.ContentLengthContext.GDObjectObjects1= [];
 gdjs.evtsExt__Scrollbar__Scrollbar.Scrollbar.prototype.ContentLengthContext.GDObjectObjects2= [];
 gdjs.evtsExt__Scrollbar__Scrollbar.Scrollbar.prototype.ContentLengthContext.GDBackgroundObjects1= [];
@@ -905,6 +910,7 @@ gdjs.evtsExt__Scrollbar__Scrollbar.Scrollbar.prototype.ContentLengthContext.GDTh
 return Number(eventsFunctionContext.returnValue) || 0;
 }
 gdjs.evtsExt__Scrollbar__Scrollbar.Scrollbar.prototype.SetContentLengthContext = {};
+gdjs.evtsExt__Scrollbar__Scrollbar.Scrollbar.prototype.SetContentLengthContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Scrollbar__Scrollbar.Scrollbar.prototype.SetContentLengthContext.GDObjectObjects1= [];
 gdjs.evtsExt__Scrollbar__Scrollbar.Scrollbar.prototype.SetContentLengthContext.GDObjectObjects2= [];
 gdjs.evtsExt__Scrollbar__Scrollbar.Scrollbar.prototype.SetContentLengthContext.GDBackgroundObjects1= [];
@@ -1019,6 +1025,7 @@ gdjs.evtsExt__Scrollbar__Scrollbar.Scrollbar.prototype.SetContentLengthContext.G
 return;
 }
 gdjs.evtsExt__Scrollbar__Scrollbar.Scrollbar.prototype.IsThumbDraggedContext = {};
+gdjs.evtsExt__Scrollbar__Scrollbar.Scrollbar.prototype.IsThumbDraggedContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Scrollbar__Scrollbar.Scrollbar.prototype.IsThumbDraggedContext.GDThumbObjects1_1final = [];
 
 gdjs.evtsExt__Scrollbar__Scrollbar.Scrollbar.prototype.IsThumbDraggedContext.GDObjectObjects1= [];
@@ -1179,6 +1186,7 @@ gdjs.evtsExt__Scrollbar__Scrollbar.Scrollbar.prototype.IsThumbDraggedContext.GDT
 return !!eventsFunctionContext.returnValue;
 }
 gdjs.evtsExt__Scrollbar__Scrollbar.Scrollbar.prototype.IsScrollingRequiredContext = {};
+gdjs.evtsExt__Scrollbar__Scrollbar.Scrollbar.prototype.IsScrollingRequiredContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Scrollbar__Scrollbar.Scrollbar.prototype.IsScrollingRequiredContext.GDObjectObjects1= [];
 gdjs.evtsExt__Scrollbar__Scrollbar.Scrollbar.prototype.IsScrollingRequiredContext.GDObjectObjects2= [];
 gdjs.evtsExt__Scrollbar__Scrollbar.Scrollbar.prototype.IsScrollingRequiredContext.GDBackgroundObjects1= [];

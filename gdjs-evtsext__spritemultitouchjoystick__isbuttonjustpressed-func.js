@@ -6,6 +6,7 @@ if (typeof gdjs.evtsExt__SpriteMultitouchJoystick__IsButtonJustPressed !== "unde
 }
 
 gdjs.evtsExt__SpriteMultitouchJoystick__IsButtonJustPressed = {};
+gdjs.evtsExt__SpriteMultitouchJoystick__IsButtonJustPressed.idToCallbackMap = new Map();
 
 
 gdjs.evtsExt__SpriteMultitouchJoystick__IsButtonJustPressed.eventsList0 = function(runtimeScene, eventsFunctionContext) {

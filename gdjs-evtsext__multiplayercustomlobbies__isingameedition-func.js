@@ -6,9 +6,10 @@ if (typeof gdjs.evtsExt__MultiplayerCustomLobbies__IsInGameEdition !== "undefine
 }
 
 gdjs.evtsExt__MultiplayerCustomLobbies__IsInGameEdition = {};
+gdjs.evtsExt__MultiplayerCustomLobbies__IsInGameEdition.idToCallbackMap = new Map();
 
 
-gdjs.evtsExt__MultiplayerCustomLobbies__IsInGameEdition.userFunc0xcb20a8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__MultiplayerCustomLobbies__IsInGameEdition.userFunc0xd354d0 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 const game = runtimeScene.getGame();
 eventsFunctionContext.returnValue = game.isInGameEdition && game.isInGameEdition();
@@ -18,7 +19,7 @@ gdjs.evtsExt__MultiplayerCustomLobbies__IsInGameEdition.eventsList0 = function(r
 {
 
 
-gdjs.evtsExt__MultiplayerCustomLobbies__IsInGameEdition.userFunc0xcb20a8(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__MultiplayerCustomLobbies__IsInGameEdition.userFunc0xd354d0(runtimeScene, eventsFunctionContext);
 
 }
 

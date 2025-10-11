@@ -6,11 +6,12 @@ if (typeof gdjs.evtsExt__MultiplayerCustomLobbies__MaskWithShapePainter !== "und
 }
 
 gdjs.evtsExt__MultiplayerCustomLobbies__MaskWithShapePainter = {};
+gdjs.evtsExt__MultiplayerCustomLobbies__MaskWithShapePainter.idToCallbackMap = new Map();
 gdjs.evtsExt__MultiplayerCustomLobbies__MaskWithShapePainter.GDMaskedObjects1= [];
 gdjs.evtsExt__MultiplayerCustomLobbies__MaskWithShapePainter.GDMaskObjects1= [];
 
 
-gdjs.evtsExt__MultiplayerCustomLobbies__MaskWithShapePainter.userFunc0xc66590 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__MultiplayerCustomLobbies__MaskWithShapePainter.userFunc0xd165e0 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const maskObject = eventsFunctionContext.getObjects("Mask")[0];
 if (!maskObject) return;
@@ -29,7 +30,7 @@ gdjs.evtsExt__MultiplayerCustomLobbies__MaskWithShapePainter.eventsList0 = funct
 
 
 const objects = [];
-gdjs.evtsExt__MultiplayerCustomLobbies__MaskWithShapePainter.userFunc0xc66590(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__MultiplayerCustomLobbies__MaskWithShapePainter.userFunc0xd165e0(runtimeScene, objects, eventsFunctionContext);
 
 }
 

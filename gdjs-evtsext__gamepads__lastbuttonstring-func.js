@@ -6,9 +6,10 @@ if (typeof gdjs.evtsExt__Gamepads__LastButtonString !== "undefined") {
 }
 
 gdjs.evtsExt__Gamepads__LastButtonString = {};
+gdjs.evtsExt__Gamepads__LastButtonString.idToCallbackMap = new Map();
 
 
-gdjs.evtsExt__Gamepads__LastButtonString.userFunc0xf76600 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Gamepads__LastButtonString.userFunc0xfac4a8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 
 const playerId = eventsFunctionContext.getArgument("PlayerId") - 1;
@@ -28,7 +29,7 @@ gdjs.evtsExt__Gamepads__LastButtonString.eventsList0 = function(runtimeScene, ev
 {
 
 
-gdjs.evtsExt__Gamepads__LastButtonString.userFunc0xf76600(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__Gamepads__LastButtonString.userFunc0xfac4a8(runtimeScene, eventsFunctionContext);
 
 }
 

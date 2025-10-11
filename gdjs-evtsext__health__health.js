@@ -98,9 +98,9 @@ gdjs.evtsExt__Health__Health.Health = class Health extends gdjs.RuntimeBehavior 
   }
 
   // Network sync:
-  getNetworkSyncData() {
+  getNetworkSyncData(syncOptions) {
     return {
-      ...super.getNetworkSyncData(),
+      ...super.getNetworkSyncData(syncOptions),
       props: {
         
     Health: this._behaviorData.Health,
@@ -130,8 +130,8 @@ gdjs.evtsExt__Health__Health.Health = class Health extends gdjs.RuntimeBehavior 
       }
     };
   }
-  updateFromNetworkSyncData(networkSyncData) {
-    super.updateFromNetworkSyncData(networkSyncData);
+  updateFromNetworkSyncData(networkSyncData, options) {
+    super.updateFromNetworkSyncData(networkSyncData, options);
     
     if (networkSyncData.props.Health !== undefined)
       this._behaviorData.Health = networkSyncData.props.Health;
@@ -378,6 +378,7 @@ gdjs.evtsExt__Health__Health.Health.getSharedData = function(instanceContainer, 
 
 // Methods:
 gdjs.evtsExt__Health__Health.Health.prototype.onCreatedContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.onCreatedContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.onCreatedContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.onCreatedContext.GDObjectObjects2= [];
 
@@ -480,6 +481,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.onCreatedContext.GDObjectObjects2.
 return;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2= [];
 gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects3= [];
@@ -704,7 +706,7 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.doStepP
 gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(14245052);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(14636300);
 }
 }
 if (isConditionTrue_0) {
@@ -849,6 +851,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObj
 return;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.HitContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.HitContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2= [];
 gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects3= [];
@@ -1303,6 +1306,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects4.length
 return;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.HealthContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.HealthContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.HealthContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.HealthContext.GDObjectObjects2= [];
 
@@ -1397,6 +1401,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.HealthContext.GDObjectObjects2.len
 return Number(eventsFunctionContext.returnValue) || 0;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.SetHealthContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.SetHealthContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.SetHealthContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.SetHealthContext.GDObjectObjects2= [];
 
@@ -1515,6 +1520,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.SetHealthContext.GDObjectObjects2.
 return;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.SetCurrentHealthContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.SetCurrentHealthContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.SetCurrentHealthContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.SetCurrentHealthContext.GDObjectObjects2= [];
 
@@ -1614,6 +1620,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.SetCurrentHealthContext.GDObjectOb
 return;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.HealContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.HealContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.HealContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.HealContext.GDObjectObjects2= [];
 gdjs.evtsExt__Health__Health.Health.prototype.HealContext.GDObjectObjects3= [];
@@ -1797,6 +1804,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.HealContext.GDObjectObjects3.lengt
 return;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.MaxHealthContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.MaxHealthContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.MaxHealthContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.MaxHealthContext.GDObjectObjects2= [];
 
@@ -1891,6 +1899,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.MaxHealthContext.GDObjectObjects2.
 return Number(eventsFunctionContext.returnValue) || 0;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.SetMaxHealthOpContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.SetMaxHealthOpContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.SetMaxHealthOpContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.SetMaxHealthOpContext.GDObjectObjects2= [];
 
@@ -2011,6 +2020,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.SetMaxHealthOpContext.GDObjectObje
 return;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.SetMaxHealthContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.SetMaxHealthContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.SetMaxHealthContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.SetMaxHealthContext.GDObjectObjects2= [];
 
@@ -2110,6 +2120,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.SetMaxHealthContext.GDObjectObject
 return;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.HealthRegenRateContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.HealthRegenRateContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.HealthRegenRateContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.HealthRegenRateContext.GDObjectObjects2= [];
 
@@ -2204,6 +2215,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.HealthRegenRateContext.GDObjectObj
 return Number(eventsFunctionContext.returnValue) || 0;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.SetHealthRegenRateOpContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.SetHealthRegenRateOpContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.SetHealthRegenRateOpContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.SetHealthRegenRateOpContext.GDObjectObjects2= [];
 
@@ -2300,6 +2312,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.SetHealthRegenRateOpContext.GDObje
 return;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.SetHealthRegenRateContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.SetHealthRegenRateContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.SetHealthRegenRateContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.SetHealthRegenRateContext.GDObjectObjects2= [];
 
@@ -2399,6 +2412,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.SetHealthRegenRateContext.GDObject
 return;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.DamageCooldownDurationContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.DamageCooldownDurationContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.DamageCooldownDurationContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.DamageCooldownDurationContext.GDObjectObjects2= [];
 
@@ -2493,6 +2507,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.DamageCooldownDurationContext.GDOb
 return Number(eventsFunctionContext.returnValue) || 0;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.SetCooldownDurationOpContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.SetCooldownDurationOpContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.SetCooldownDurationOpContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.SetCooldownDurationOpContext.GDObjectObjects2= [];
 
@@ -2589,6 +2604,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.SetCooldownDurationOpContext.GDObj
 return;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.SetCooldownDurationContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.SetCooldownDurationContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.SetCooldownDurationContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.SetCooldownDurationContext.GDObjectObjects2= [];
 
@@ -2688,6 +2704,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.SetCooldownDurationContext.GDObjec
 return;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.HealthRegenDelayContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.HealthRegenDelayContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.HealthRegenDelayContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.HealthRegenDelayContext.GDObjectObjects2= [];
 
@@ -2782,6 +2799,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.HealthRegenDelayContext.GDObjectOb
 return Number(eventsFunctionContext.returnValue) || 0;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.SetHealthRegenDelayOpContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.SetHealthRegenDelayOpContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.SetHealthRegenDelayOpContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.SetHealthRegenDelayOpContext.GDObjectObjects2= [];
 
@@ -2878,6 +2896,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.SetHealthRegenDelayOpContext.GDObj
 return;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.SetHealthRegenDelayContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.SetHealthRegenDelayContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.SetHealthRegenDelayContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.SetHealthRegenDelayContext.GDObjectObjects2= [];
 
@@ -2977,6 +2996,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.SetHealthRegenDelayContext.GDObjec
 return;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.ChanceToDodgeContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.ChanceToDodgeContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.ChanceToDodgeContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.ChanceToDodgeContext.GDObjectObjects2= [];
 
@@ -3071,6 +3091,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.ChanceToDodgeContext.GDObjectObjec
 return Number(eventsFunctionContext.returnValue) || 0;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.SetChanceToDodgeOpContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.SetChanceToDodgeOpContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.SetChanceToDodgeOpContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.SetChanceToDodgeOpContext.GDObjectObjects2= [];
 
@@ -3167,6 +3188,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.SetChanceToDodgeOpContext.GDObject
 return;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.SetChanceToDodgeContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.SetChanceToDodgeContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.SetChanceToDodgeContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.SetChanceToDodgeContext.GDObjectObjects2= [];
 
@@ -3266,6 +3288,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.SetChanceToDodgeContext.GDObjectOb
 return;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.FlatDamageReductionContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.FlatDamageReductionContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.FlatDamageReductionContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.FlatDamageReductionContext.GDObjectObjects2= [];
 
@@ -3360,6 +3383,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.FlatDamageReductionContext.GDObjec
 return Number(eventsFunctionContext.returnValue) || 0;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.SetFlatDamageReductionOpContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.SetFlatDamageReductionOpContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.SetFlatDamageReductionOpContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.SetFlatDamageReductionOpContext.GDObjectObjects2= [];
 
@@ -3456,6 +3480,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.SetFlatDamageReductionOpContext.GD
 return;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.SetFlatDamageReductionContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.SetFlatDamageReductionContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.SetFlatDamageReductionContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.SetFlatDamageReductionContext.GDObjectObjects2= [];
 
@@ -3555,6 +3580,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.SetFlatDamageReductionContext.GDOb
 return;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.PercentDamageReductionContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.PercentDamageReductionContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.PercentDamageReductionContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.PercentDamageReductionContext.GDObjectObjects2= [];
 
@@ -3649,6 +3675,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.PercentDamageReductionContext.GDOb
 return Number(eventsFunctionContext.returnValue) || 0;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.SetPercentDamageReductionOpContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.SetPercentDamageReductionOpContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.SetPercentDamageReductionOpContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.SetPercentDamageReductionOpContext.GDObjectObjects2= [];
 
@@ -3745,6 +3772,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.SetPercentDamageReductionOpContext
 return;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.SetPercentDamageReductionContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.SetPercentDamageReductionContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.SetPercentDamageReductionContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.SetPercentDamageReductionContext.GDObjectObjects2= [];
 
@@ -3844,6 +3872,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.SetPercentDamageReductionContext.G
 return;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.AllowOverHealingContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.AllowOverHealingContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.AllowOverHealingContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.AllowOverHealingContext.GDObjectObjects2= [];
 
@@ -3955,6 +3984,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.AllowOverHealingContext.GDObjectOb
 return;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.SetHitAtLeastOnceContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.SetHitAtLeastOnceContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.SetHitAtLeastOnceContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.SetHitAtLeastOnceContext.GDObjectObjects2= [];
 
@@ -4066,6 +4096,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.SetHitAtLeastOnceContext.GDObjectO
 return;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.SetJustDamagedContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.SetJustDamagedContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.SetJustDamagedContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.SetJustDamagedContext.GDObjectObjects2= [];
 
@@ -4177,6 +4208,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.SetJustDamagedContext.GDObjectObje
 return;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.TriggerDamageCooldownContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.TriggerDamageCooldownContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.TriggerDamageCooldownContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.TriggerDamageCooldownContext.GDObjectObjects2= [];
 
@@ -4307,6 +4339,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.TriggerDamageCooldownContext.GDObj
 return;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.HitAtLeastOnceContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.HitAtLeastOnceContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.HitAtLeastOnceContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.HitAtLeastOnceContext.GDObjectObjects2= [];
 
@@ -4422,6 +4455,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.HitAtLeastOnceContext.GDObjectObje
 return !!eventsFunctionContext.returnValue;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.IsJustDamagedContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.IsJustDamagedContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.IsJustDamagedContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.IsJustDamagedContext.GDObjectObjects2= [];
 
@@ -4530,6 +4564,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.IsJustDamagedContext.GDObjectObjec
 return !!eventsFunctionContext.returnValue;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.IsJustHealedContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.IsJustHealedContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.IsJustHealedContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.IsJustHealedContext.GDObjectObjects2= [];
 
@@ -4638,6 +4673,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.IsJustHealedContext.GDObjectObject
 return !!eventsFunctionContext.returnValue;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.IsDamageCooldownActiveContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.IsDamageCooldownActiveContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.IsDamageCooldownActiveContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.IsDamageCooldownActiveContext.GDObjectObjects2= [];
 
@@ -4763,6 +4799,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.IsDamageCooldownActiveContext.GDOb
 return !!eventsFunctionContext.returnValue;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.DamageCooldownRemainingContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.DamageCooldownRemainingContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.DamageCooldownRemainingContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.DamageCooldownRemainingContext.GDObjectObjects2= [];
 
@@ -4879,6 +4916,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.DamageCooldownRemainingContext.GDO
 return Number(eventsFunctionContext.returnValue) || 0;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.IsDeadContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.IsDeadContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.IsDeadContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.IsDeadContext.GDObjectObjects2= [];
 
@@ -4987,6 +5025,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.IsDeadContext.GDObjectObjects2.len
 return !!eventsFunctionContext.returnValue;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.TimeSinceLastHitContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.TimeSinceLastHitContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.TimeSinceLastHitContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.TimeSinceLastHitContext.GDObjectObjects2= [];
 
@@ -5082,6 +5121,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.TimeSinceLastHitContext.GDObjectOb
 return Number(eventsFunctionContext.returnValue) || 0;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.PreviousDamageTakenContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.PreviousDamageTakenContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.PreviousDamageTakenContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.PreviousDamageTakenContext.GDObjectObjects2= [];
 
@@ -5176,6 +5216,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.PreviousDamageTakenContext.GDObjec
 return Number(eventsFunctionContext.returnValue) || 0;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.MaxShieldContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.MaxShieldContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.MaxShieldContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.MaxShieldContext.GDObjectObjects2= [];
 
@@ -5270,6 +5311,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.MaxShieldContext.GDObjectObjects2.
 return Number(eventsFunctionContext.returnValue) || 0;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.SetMaxShieldOpContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.SetMaxShieldOpContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.SetMaxShieldOpContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.SetMaxShieldOpContext.GDObjectObjects2= [];
 
@@ -5366,6 +5408,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.SetMaxShieldOpContext.GDObjectObje
 return;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.SetMaxShieldContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.SetMaxShieldContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.SetMaxShieldContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.SetMaxShieldContext.GDObjectObjects2= [];
 
@@ -5465,6 +5508,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.SetMaxShieldContext.GDObjectObject
 return;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.SetMaxShieldPointsContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.SetMaxShieldPointsContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.SetMaxShieldPointsContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.SetMaxShieldPointsContext.GDObjectObjects2= [];
 
@@ -5564,6 +5608,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.SetMaxShieldPointsContext.GDObject
 return;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.ShieldPointsContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.ShieldPointsContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.ShieldPointsContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.ShieldPointsContext.GDObjectObjects2= [];
 
@@ -5658,6 +5703,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.ShieldPointsContext.GDObjectObject
 return Number(eventsFunctionContext.returnValue) || 0;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.SetShieldPointsOpContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.SetShieldPointsOpContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.SetShieldPointsOpContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.SetShieldPointsOpContext.GDObjectObjects2= [];
 
@@ -5754,6 +5800,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.SetShieldPointsOpContext.GDObjectO
 return;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.SetShieldPointsContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.SetShieldPointsContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.SetShieldPointsContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.SetShieldPointsContext.GDObjectObjects2= [];
 
@@ -5853,6 +5900,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.SetShieldPointsContext.GDObjectObj
 return;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.ShieldRegenRateContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.ShieldRegenRateContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.ShieldRegenRateContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.ShieldRegenRateContext.GDObjectObjects2= [];
 
@@ -5947,6 +5995,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.ShieldRegenRateContext.GDObjectObj
 return Number(eventsFunctionContext.returnValue) || 0;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.SetShieldRegenRateOpContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.SetShieldRegenRateOpContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.SetShieldRegenRateOpContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.SetShieldRegenRateOpContext.GDObjectObjects2= [];
 
@@ -6043,6 +6092,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.SetShieldRegenRateOpContext.GDObje
 return;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.SetShieldRegenRateContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.SetShieldRegenRateContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.SetShieldRegenRateContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.SetShieldRegenRateContext.GDObjectObjects2= [];
 
@@ -6142,6 +6192,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.SetShieldRegenRateContext.GDObject
 return;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.ShieldRegenDelayContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.ShieldRegenDelayContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.ShieldRegenDelayContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.ShieldRegenDelayContext.GDObjectObjects2= [];
 
@@ -6236,6 +6287,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.ShieldRegenDelayContext.GDObjectOb
 return Number(eventsFunctionContext.returnValue) || 0;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.SetShieldRegenDelayOpContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.SetShieldRegenDelayOpContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.SetShieldRegenDelayOpContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.SetShieldRegenDelayOpContext.GDObjectObjects2= [];
 
@@ -6332,6 +6384,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.SetShieldRegenDelayOpContext.GDObj
 return;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.SetShieldRegenDelayContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.SetShieldRegenDelayContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.SetShieldRegenDelayContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.SetShieldRegenDelayContext.GDObjectObjects2= [];
 
@@ -6431,6 +6484,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.SetShieldRegenDelayContext.GDObjec
 return;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.ShieldDurationContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.ShieldDurationContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.ShieldDurationContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.ShieldDurationContext.GDObjectObjects2= [];
 
@@ -6525,6 +6579,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.ShieldDurationContext.GDObjectObje
 return Number(eventsFunctionContext.returnValue) || 0;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.SetShieldDurationOpContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.SetShieldDurationOpContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.SetShieldDurationOpContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.SetShieldDurationOpContext.GDObjectObjects2= [];
 
@@ -6621,6 +6676,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.SetShieldDurationOpContext.GDObjec
 return;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.SetShieldDurationContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.SetShieldDurationContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.SetShieldDurationContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.SetShieldDurationContext.GDObjectObjects2= [];
 
@@ -6720,6 +6776,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.SetShieldDurationContext.GDObjectO
 return;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.RenewShieldDurationContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.RenewShieldDurationContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.RenewShieldDurationContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.RenewShieldDurationContext.GDObjectObjects2= [];
 
@@ -6818,6 +6875,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.RenewShieldDurationContext.GDObjec
 return;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.ActivateShieldContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.ActivateShieldContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.ActivateShieldContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.ActivateShieldContext.GDObjectObjects2= [];
 
@@ -6949,6 +7007,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.ActivateShieldContext.GDObjectObje
 return;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.SetShieldBlockExcessDamageContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.SetShieldBlockExcessDamageContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.SetShieldBlockExcessDamageContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.SetShieldBlockExcessDamageContext.GDObjectObjects2= [];
 
@@ -7060,6 +7119,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.SetShieldBlockExcessDamageContext.
 return;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.IsShieldJustDamagedContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.IsShieldJustDamagedContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.IsShieldJustDamagedContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.IsShieldJustDamagedContext.GDObjectObjects2= [];
 
@@ -7168,6 +7228,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.IsShieldJustDamagedContext.GDObjec
 return !!eventsFunctionContext.returnValue;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.IsJustDodgedContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.IsJustDodgedContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.IsJustDodgedContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.IsJustDodgedContext.GDObjectObjects2= [];
 
@@ -7276,6 +7337,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.IsJustDodgedContext.GDObjectObject
 return !!eventsFunctionContext.returnValue;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.GDObjectObjects2= [];
 gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.GDObjectObjects3= [];
@@ -7445,6 +7507,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.GDObjectObje
 return !!eventsFunctionContext.returnValue;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.ShieldTimeRemainingContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.ShieldTimeRemainingContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.ShieldTimeRemainingContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.ShieldTimeRemainingContext.GDObjectObjects2= [];
 
@@ -7554,6 +7617,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.ShieldTimeRemainingContext.GDObjec
 return Number(eventsFunctionContext.returnValue) || 0;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.PreviousDamageToShieldContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.PreviousDamageToShieldContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.PreviousDamageToShieldContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.PreviousDamageToShieldContext.GDObjectObjects2= [];
 
@@ -7648,6 +7712,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.PreviousDamageToShieldContext.GDOb
 return Number(eventsFunctionContext.returnValue) || 0;
 }
 gdjs.evtsExt__Health__Health.Health.prototype.PreviousHealAmountContext = {};
+gdjs.evtsExt__Health__Health.Health.prototype.PreviousHealAmountContext.idToCallbackMap = new Map();
 gdjs.evtsExt__Health__Health.Health.prototype.PreviousHealAmountContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.PreviousHealAmountContext.GDObjectObjects2= [];
 

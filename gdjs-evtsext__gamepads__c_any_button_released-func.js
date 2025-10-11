@@ -6,9 +6,10 @@ if (typeof gdjs.evtsExt__Gamepads__C_any_button_released !== "undefined") {
 }
 
 gdjs.evtsExt__Gamepads__C_any_button_released = {};
+gdjs.evtsExt__Gamepads__C_any_button_released.idToCallbackMap = new Map();
 
 
-gdjs.evtsExt__Gamepads__C_any_button_released.userFunc0xf20a30 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Gamepads__C_any_button_released.userFunc0xf74738 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 
 const playerId = eventsFunctionContext.getArgument("PlayerId") - 1;
@@ -30,7 +31,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.evtsExt__Gamepads__C_any_button_released.userFunc0xf20a30(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__Gamepads__C_any_button_released.userFunc0xf74738(runtimeScene, eventsFunctionContext);
 
 }
 

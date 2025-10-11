@@ -1,5 +1,6 @@
 gdjs.TitleCode = {};
 gdjs.TitleCode.localVariables = [];
+gdjs.TitleCode.idToCallbackMap = new Map();
 gdjs.TitleCode.GDBlueButtonObjects1= [];
 gdjs.TitleCode.GDBlueButtonObjects2= [];
 gdjs.TitleCode.GDNewTextObjects1= [];
@@ -8,6 +9,10 @@ gdjs.TitleCode.GDdescriptionObjects1= [];
 gdjs.TitleCode.GDdescriptionObjects2= [];
 gdjs.TitleCode.GDNewSpriteObjects1= [];
 gdjs.TitleCode.GDNewSpriteObjects2= [];
+gdjs.TitleCode.GDBlueButton2Objects1= [];
+gdjs.TitleCode.GDBlueButton2Objects2= [];
+gdjs.TitleCode.GDBlueButton3Objects1= [];
+gdjs.TitleCode.GDBlueButton3Objects2= [];
 gdjs.TitleCode.GDCustomLobbiesObjects1= [];
 gdjs.TitleCode.GDCustomLobbiesObjects2= [];
 
@@ -36,6 +41,82 @@ if (isConditionTrue_0) {
 }
 
 
+{
+
+gdjs.copyArray(runtimeScene.getObjects("BlueButton3"), gdjs.TitleCode.GDBlueButton3Objects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.TitleCode.GDBlueButton3Objects1.length;i<l;++i) {
+    if ( gdjs.TitleCode.GDBlueButton3Objects1[i].IsClicked(null) ) {
+        isConditionTrue_0 = true;
+        gdjs.TitleCode.GDBlueButton3Objects1[k] = gdjs.TitleCode.GDBlueButton3Objects1[i];
+        ++k;
+    }
+}
+gdjs.TitleCode.GDBlueButton3Objects1.length = k;
+if (isConditionTrue_0) {
+{gdjs.fileSystem.deleteFile("save.json", runtimeScene.getScene().getVariables().getFromIndex(0));
+}
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("BlueButton2"), gdjs.TitleCode.GDBlueButton2Objects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.TitleCode.GDBlueButton2Objects1.length;i<l;++i) {
+    if ( gdjs.TitleCode.GDBlueButton2Objects1[i].IsClicked(null) ) {
+        isConditionTrue_0 = true;
+        gdjs.TitleCode.GDBlueButton2Objects1[k] = gdjs.TitleCode.GDBlueButton2Objects1[i];
+        ++k;
+    }
+}
+gdjs.TitleCode.GDBlueButton2Objects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.fileSystem.pathExists("save.json");
+}
+if (isConditionTrue_0) {
+{gdjs.saveState.loadGameFromStorageSnapshot("save.json");
+}
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("BlueButton2"), gdjs.TitleCode.GDBlueButton2Objects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.TitleCode.GDBlueButton2Objects1.length;i<l;++i) {
+    if ( gdjs.TitleCode.GDBlueButton2Objects1[i].IsClicked(null) ) {
+        isConditionTrue_0 = true;
+        gdjs.TitleCode.GDBlueButton2Objects1[k] = gdjs.TitleCode.GDBlueButton2Objects1[i];
+        ++k;
+    }
+}
+gdjs.TitleCode.GDBlueButton2Objects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = !(gdjs.fileSystem.pathExists("save.json"));
+}
+if (isConditionTrue_0) {
+{gdjs.saveState.saveStorageGameSnapshot(runtimeScene, "save.json");
+}
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Campaign", false);
+}
+}
+
+}
+
+
 };
 
 gdjs.TitleCode.func = function(runtimeScene) {
@@ -49,6 +130,10 @@ gdjs.TitleCode.GDdescriptionObjects1.length = 0;
 gdjs.TitleCode.GDdescriptionObjects2.length = 0;
 gdjs.TitleCode.GDNewSpriteObjects1.length = 0;
 gdjs.TitleCode.GDNewSpriteObjects2.length = 0;
+gdjs.TitleCode.GDBlueButton2Objects1.length = 0;
+gdjs.TitleCode.GDBlueButton2Objects2.length = 0;
+gdjs.TitleCode.GDBlueButton3Objects1.length = 0;
+gdjs.TitleCode.GDBlueButton3Objects2.length = 0;
 gdjs.TitleCode.GDCustomLobbiesObjects1.length = 0;
 gdjs.TitleCode.GDCustomLobbiesObjects2.length = 0;
 
@@ -61,6 +146,10 @@ gdjs.TitleCode.GDdescriptionObjects1.length = 0;
 gdjs.TitleCode.GDdescriptionObjects2.length = 0;
 gdjs.TitleCode.GDNewSpriteObjects1.length = 0;
 gdjs.TitleCode.GDNewSpriteObjects2.length = 0;
+gdjs.TitleCode.GDBlueButton2Objects1.length = 0;
+gdjs.TitleCode.GDBlueButton2Objects2.length = 0;
+gdjs.TitleCode.GDBlueButton3Objects1.length = 0;
+gdjs.TitleCode.GDBlueButton3Objects2.length = 0;
 gdjs.TitleCode.GDCustomLobbiesObjects1.length = 0;
 gdjs.TitleCode.GDCustomLobbiesObjects2.length = 0;
 

@@ -81,6 +81,7 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton = class Pan
 
 // Methods:
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.onCreatedContext = {};
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.onCreatedContext.idToCallbackMap = new Map();
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.onCreatedContext.GDObjectObjects1= [];
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.onCreatedContext.GDObjectObjects2= [];
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.onCreatedContext.GDLabelObjects1= [];
@@ -274,6 +275,7 @@ gdjs.CustomRuntimeObject.prototype.onCreated.call(this);
 return;
 }
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.onHotReloadingContext = {};
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.onHotReloadingContext.idToCallbackMap = new Map();
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.onHotReloadingContext.GDObjectObjects1= [];
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.onHotReloadingContext.GDObjectObjects2= [];
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.onHotReloadingContext.GDLabelObjects1= [];
@@ -449,6 +451,7 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.o
 return;
 }
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext = {};
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.idToCallbackMap = new Map();
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDObjectObjects1= [];
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDObjectObjects2= [];
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDObjectObjects3= [];
@@ -550,7 +553,7 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.Pa
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(13817308);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(14185172);
 }
 }
 if (isConditionTrue_0) {
@@ -622,7 +625,7 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.Pa
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(13822772);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(14190636);
 }
 }
 if (isConditionTrue_0) {
@@ -675,7 +678,7 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.Pa
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(13825132);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(14192996);
 }
 }
 if (isConditionTrue_0) {
@@ -720,7 +723,7 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.Pa
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDObjectObjects1.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(13826892);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(14194756);
 }
 }
 if (isConditionTrue_0) {
@@ -897,6 +900,7 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.d
 return;
 }
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsIdleContext = {};
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsIdleContext.idToCallbackMap = new Map();
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsIdleContext.GDObjectObjects1= [];
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsIdleContext.GDObjectObjects2= [];
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsIdleContext.GDLabelObjects1= [];
@@ -1049,6 +1053,7 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.I
 return !!eventsFunctionContext.returnValue;
 }
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsClickedContext = {};
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsClickedContext.idToCallbackMap = new Map();
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsClickedContext.GDObjectObjects1= [];
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsClickedContext.GDObjectObjects2= [];
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsClickedContext.GDLabelObjects1= [];
@@ -1201,6 +1206,7 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.I
 return !!eventsFunctionContext.returnValue;
 }
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsHoveredContext = {};
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsHoveredContext.idToCallbackMap = new Map();
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsHoveredContext.GDObjectObjects1= [];
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsHoveredContext.GDObjectObjects2= [];
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsHoveredContext.GDLabelObjects1= [];
@@ -1353,6 +1359,7 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.I
 return !!eventsFunctionContext.returnValue;
 }
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsFocusedContext = {};
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsFocusedContext.idToCallbackMap = new Map();
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsFocusedContext.GDObjectObjects1= [];
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsFocusedContext.GDObjectObjects2= [];
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsFocusedContext.GDLabelObjects1= [];
@@ -1505,6 +1512,7 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.I
 return !!eventsFunctionContext.returnValue;
 }
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsPressedContext = {};
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsPressedContext.idToCallbackMap = new Map();
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsPressedContext.GDObjectObjects1= [];
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsPressedContext.GDObjectObjects2= [];
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsPressedContext.GDLabelObjects1= [];
@@ -1657,6 +1665,7 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.I
 return !!eventsFunctionContext.returnValue;
 }
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelTextContext = {};
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelTextContext.idToCallbackMap = new Map();
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelTextContext.GDObjectObjects1= [];
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelTextContext.GDObjectObjects2= [];
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelTextContext.GDLabelObjects1= [];
@@ -1808,6 +1817,7 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.S
 return;
 }
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelTextOpContext = {};
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelTextOpContext.idToCallbackMap = new Map();
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelTextOpContext.GDObjectObjects1= [];
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelTextOpContext.GDObjectObjects2= [];
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelTextOpContext.GDLabelObjects1= [];
@@ -1959,6 +1969,7 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.S
 return;
 }
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.LabelTextContext = {};
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.LabelTextContext.idToCallbackMap = new Map();
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.LabelTextContext.GDObjectObjects1= [];
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.LabelTextContext.GDObjectObjects2= [];
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.LabelTextContext.GDLabelObjects1= [];
@@ -2103,6 +2114,7 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.L
 return "" + eventsFunctionContext.returnValue;
 }
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.ActivateContext = {};
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.ActivateContext.idToCallbackMap = new Map();
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.ActivateContext.GDObjectObjects1= [];
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.ActivateContext.GDObjectObjects2= [];
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.ActivateContext.GDLabelObjects1= [];
@@ -2271,6 +2283,7 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.A
 return;
 }
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsActivatedContext = {};
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsActivatedContext.idToCallbackMap = new Map();
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsActivatedContext.GDObjectObjects1= [];
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsActivatedContext.GDObjectObjects2= [];
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsActivatedContext.GDLabelObjects1= [];
@@ -2423,6 +2436,7 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.I
 return !!eventsFunctionContext.returnValue;
 }
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.LabelOffsetContext = {};
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.LabelOffsetContext.idToCallbackMap = new Map();
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.LabelOffsetContext.GDObjectObjects1= [];
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.LabelOffsetContext.GDObjectObjects2= [];
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.LabelOffsetContext.GDLabelObjects1= [];
@@ -2565,6 +2579,7 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.L
 return Number(eventsFunctionContext.returnValue) || 0;
 }
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelOffsetContext = {};
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelOffsetContext.idToCallbackMap = new Map();
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelOffsetContext.GDObjectObjects1= [];
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelOffsetContext.GDObjectObjects2= [];
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelOffsetContext.GDLabelObjects1= [];

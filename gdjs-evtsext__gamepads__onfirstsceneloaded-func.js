@@ -6,9 +6,10 @@ if (typeof gdjs.evtsExt__Gamepads__onFirstSceneLoaded !== "undefined") {
 }
 
 gdjs.evtsExt__Gamepads__onFirstSceneLoaded = {};
+gdjs.evtsExt__Gamepads__onFirstSceneLoaded.idToCallbackMap = new Map();
 
 
-gdjs.evtsExt__Gamepads__onFirstSceneLoaded.userFunc0xa7e428 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Gamepads__onFirstSceneLoaded.userFunc0xf9b648 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 if (gdjs._extensionController) {
     return;
@@ -384,7 +385,7 @@ gdjs.evtsExt__Gamepads__onFirstSceneLoaded.eventsList0 = function(runtimeScene, 
 {
 
 
-gdjs.evtsExt__Gamepads__onFirstSceneLoaded.userFunc0xa7e428(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__Gamepads__onFirstSceneLoaded.userFunc0xf9b648(runtimeScene, eventsFunctionContext);
 
 }
 

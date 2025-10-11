@@ -6,9 +6,10 @@ if (typeof gdjs.evtsExt__Gamepads__C_Controller_X_is_connected !== "undefined") 
 }
 
 gdjs.evtsExt__Gamepads__C_Controller_X_is_connected = {};
+gdjs.evtsExt__Gamepads__C_Controller_X_is_connected.idToCallbackMap = new Map();
 
 
-gdjs.evtsExt__Gamepads__C_Controller_X_is_connected.userFunc0xf161a8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Gamepads__C_Controller_X_is_connected.userFunc0xf431b8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 const playerId = eventsFunctionContext.getArgument("PlayerId") - 1;
 /** @type {Gamepad[]} */
@@ -22,7 +23,7 @@ gdjs.evtsExt__Gamepads__C_Controller_X_is_connected.eventsList0 = function(runti
 {
 
 
-gdjs.evtsExt__Gamepads__C_Controller_X_is_connected.userFunc0xf161a8(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__Gamepads__C_Controller_X_is_connected.userFunc0xf431b8(runtimeScene, eventsFunctionContext);
 
 }
 
