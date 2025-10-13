@@ -9,7 +9,11 @@ gdjs.evtsExt__Gamepads__C_Controller_type = {};
 gdjs.evtsExt__Gamepads__C_Controller_type.idToCallbackMap = new Map();
 
 
+<<<<<<< Updated upstream
 gdjs.evtsExt__Gamepads__C_Controller_type.userFunc0xf428e0 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+=======
+gdjs.evtsExt__Gamepads__C_Controller_type.userFunc0xf9f2c8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+>>>>>>> Stashed changes
 "use strict";
 const playerId = eventsFunctionContext.getArgument("PlayerId") - 1;
 const controllerType = eventsFunctionContext.getArgument("controller_type").toUpperCase();
@@ -30,7 +34,11 @@ gdjs.evtsExt__Gamepads__C_Controller_type.eventsList0 = function(runtimeScene, e
 {
 
 
+<<<<<<< Updated upstream
 gdjs.evtsExt__Gamepads__C_Controller_type.userFunc0xf428e0(runtimeScene, eventsFunctionContext);
+=======
+gdjs.evtsExt__Gamepads__C_Controller_type.userFunc0xf9f2c8(runtimeScene, eventsFunctionContext);
+>>>>>>> Stashed changes
 
 }
 

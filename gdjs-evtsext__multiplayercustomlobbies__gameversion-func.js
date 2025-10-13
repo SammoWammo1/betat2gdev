@@ -9,7 +9,11 @@ gdjs.evtsExt__MultiplayerCustomLobbies__GameVersion = {};
 gdjs.evtsExt__MultiplayerCustomLobbies__GameVersion.idToCallbackMap = new Map();
 
 
+<<<<<<< Updated upstream
 gdjs.evtsExt__MultiplayerCustomLobbies__GameVersion.userFunc0x938160 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+=======
+gdjs.evtsExt__MultiplayerCustomLobbies__GameVersion.userFunc0x8d5900 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+>>>>>>> Stashed changes
 "use strict";
 eventsFunctionContext.returnValue = runtimeScene.getGame().getGameData().properties.version;
 };
@@ -18,7 +22,11 @@ gdjs.evtsExt__MultiplayerCustomLobbies__GameVersion.eventsList0 = function(runti
 {
 
 
+<<<<<<< Updated upstream
 gdjs.evtsExt__MultiplayerCustomLobbies__GameVersion.userFunc0x938160(runtimeScene, eventsFunctionContext);
+=======
+gdjs.evtsExt__MultiplayerCustomLobbies__GameVersion.userFunc0x8d5900(runtimeScene, eventsFunctionContext);
+>>>>>>> Stashed changes
 
 }
 

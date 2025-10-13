@@ -9,7 +9,11 @@ gdjs.evtsExt__Gamepads__onSceneLoaded = {};
 gdjs.evtsExt__Gamepads__onSceneLoaded.idToCallbackMap = new Map();
 
 
+<<<<<<< Updated upstream
 gdjs.evtsExt__Gamepads__onSceneLoaded.userFunc0xf9c3e0 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+=======
+gdjs.evtsExt__Gamepads__onSceneLoaded.userFunc0xf606d0 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+>>>>>>> Stashed changes
 "use strict";
 // Async tasks are run before everything.
 // This is a hack to make sure that button states are updated
@@ -21,7 +25,11 @@ gdjs.evtsExt__Gamepads__onSceneLoaded.eventsList0 = function(runtimeScene, event
 {
 
 
+<<<<<<< Updated upstream
 gdjs.evtsExt__Gamepads__onSceneLoaded.userFunc0xf9c3e0(runtimeScene, eventsFunctionContext);
+=======
+gdjs.evtsExt__Gamepads__onSceneLoaded.userFunc0xf606d0(runtimeScene, eventsFunctionContext);
+>>>>>>> Stashed changes
 
 }
 

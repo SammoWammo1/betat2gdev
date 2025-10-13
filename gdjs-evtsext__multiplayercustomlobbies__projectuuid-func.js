@@ -9,7 +9,11 @@ gdjs.evtsExt__MultiplayerCustomLobbies__ProjectUUID = {};
 gdjs.evtsExt__MultiplayerCustomLobbies__ProjectUUID.idToCallbackMap = new Map();
 
 
+<<<<<<< Updated upstream
 gdjs.evtsExt__MultiplayerCustomLobbies__ProjectUUID.userFunc0xc98bc8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+=======
+gdjs.evtsExt__MultiplayerCustomLobbies__ProjectUUID.userFunc0xdbdc10 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+>>>>>>> Stashed changes
 "use strict";
 eventsFunctionContext.returnValue = runtimeScene.getGame().getGameData().properties.projectUuid;
 };
@@ -18,7 +22,11 @@ gdjs.evtsExt__MultiplayerCustomLobbies__ProjectUUID.eventsList0 = function(runti
 {
 
 
+<<<<<<< Updated upstream
 gdjs.evtsExt__MultiplayerCustomLobbies__ProjectUUID.userFunc0xc98bc8(runtimeScene, eventsFunctionContext);
+=======
+gdjs.evtsExt__MultiplayerCustomLobbies__ProjectUUID.userFunc0xdbdc10(runtimeScene, eventsFunctionContext);
+>>>>>>> Stashed changes
 
 }
 

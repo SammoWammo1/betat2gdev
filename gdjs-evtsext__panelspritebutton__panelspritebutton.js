@@ -553,7 +553,11 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.Pa
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
+<<<<<<< Updated upstream
 {isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(14185172);
+=======
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(14675780);
+>>>>>>> Stashed changes
 }
 }
 if (isConditionTrue_0) {
@@ -625,7 +629,11 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.Pa
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
+<<<<<<< Updated upstream
 {isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(14190636);
+=======
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(14681244);
+>>>>>>> Stashed changes
 }
 }
 if (isConditionTrue_0) {
@@ -678,7 +686,11 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.Pa
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
+<<<<<<< Updated upstream
 {isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(14192996);
+=======
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(14683604);
+>>>>>>> Stashed changes
 }
 }
 if (isConditionTrue_0) {
@@ -723,7 +735,11 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.Pa
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDObjectObjects1.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
+<<<<<<< Updated upstream
 {isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(14194756);
+=======
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(14685364);
+>>>>>>> Stashed changes
 }
 }
 if (isConditionTrue_0) {

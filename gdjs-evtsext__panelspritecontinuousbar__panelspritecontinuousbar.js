@@ -717,7 +717,11 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteContinuousBar__PanelSpriteCo
 gdjs.evtsExt__PanelSpriteContinuousBar__PanelSpriteContinuousBar.PanelSpriteContinuousBar.prototype.doStepPostEventsContext.GDObjectObjects1.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
+<<<<<<< Updated upstream
 {isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(14357364);
+=======
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(14847972);
+>>>>>>> Stashed changes
 }
 }
 if (isConditionTrue_0) {

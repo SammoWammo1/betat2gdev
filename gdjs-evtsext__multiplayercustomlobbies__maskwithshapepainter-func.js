@@ -11,7 +11,11 @@ gdjs.evtsExt__MultiplayerCustomLobbies__MaskWithShapePainter.GDMaskedObjects1= [
 gdjs.evtsExt__MultiplayerCustomLobbies__MaskWithShapePainter.GDMaskObjects1= [];
 
 
+<<<<<<< Updated upstream
 gdjs.evtsExt__MultiplayerCustomLobbies__MaskWithShapePainter.userFunc0xd165e0 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+=======
+gdjs.evtsExt__MultiplayerCustomLobbies__MaskWithShapePainter.userFunc0xd10248 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+>>>>>>> Stashed changes
 "use strict";
 const maskObject = eventsFunctionContext.getObjects("Mask")[0];
 if (!maskObject) return;
@@ -30,7 +34,11 @@ gdjs.evtsExt__MultiplayerCustomLobbies__MaskWithShapePainter.eventsList0 = funct
 
 
 const objects = [];
+<<<<<<< Updated upstream
 gdjs.evtsExt__MultiplayerCustomLobbies__MaskWithShapePainter.userFunc0xd165e0(runtimeScene, objects, eventsFunctionContext);
+=======
+gdjs.evtsExt__MultiplayerCustomLobbies__MaskWithShapePainter.userFunc0xd10248(runtimeScene, objects, eventsFunctionContext);
+>>>>>>> Stashed changes
 
 }
 

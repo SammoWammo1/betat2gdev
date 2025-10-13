@@ -13,11 +13,34 @@ gdjs.TitleCode.GDBlueButton2Objects1= [];
 gdjs.TitleCode.GDBlueButton2Objects2= [];
 gdjs.TitleCode.GDBlueButton3Objects1= [];
 gdjs.TitleCode.GDBlueButton3Objects2= [];
+<<<<<<< Updated upstream
+=======
+gdjs.TitleCode.GDBlueButton4Objects1= [];
+gdjs.TitleCode.GDBlueButton4Objects2= [];
+>>>>>>> Stashed changes
 gdjs.TitleCode.GDCustomLobbiesObjects1= [];
 gdjs.TitleCode.GDCustomLobbiesObjects2= [];
 
 
 gdjs.TitleCode.eventsList0 = function(runtimeScene) {
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
+if (isConditionTrue_0) {
+{gdjs.evtTools.sound.preloadSound(runtimeScene, "ballbounce.mp3");
+}
+{gdjs.evtTools.sound.preloadSound(runtimeScene, "pointscored.mp3");
+}
+{runtimeScene.getGame().getVariables().getFromIndex(0).setNumber(0);
+}
+}
+
+}
+
 
 {
 
@@ -34,6 +57,10 @@ for (var i = 0, k = 0, l = gdjs.TitleCode.GDBlueButtonObjects1.length;i<l;++i) {
 }
 gdjs.TitleCode.GDBlueButtonObjects1.length = k;
 if (isConditionTrue_0) {
+{gdjs.evtTools.sound.preloadSound(runtimeScene, "ballbounce.mp3");
+}
+{gdjs.evtTools.sound.preloadSound(runtimeScene, "pointscored.mp3");
+}
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Game", false);
 }
 }
@@ -78,6 +105,7 @@ for (var i = 0, k = 0, l = gdjs.TitleCode.GDBlueButton2Objects1.length;i<l;++i) 
 }
 gdjs.TitleCode.GDBlueButton2Objects1.length = k;
 if (isConditionTrue_0) {
+<<<<<<< Updated upstream
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.fileSystem.pathExists("save.json");
 }
@@ -109,6 +137,9 @@ isConditionTrue_0 = !(gdjs.fileSystem.pathExists("save.json"));
 }
 if (isConditionTrue_0) {
 {gdjs.saveState.saveStorageGameSnapshot(runtimeScene, "save.json");
+=======
+{runtimeScene.getGame().getVariables().getFromIndex(0).setNumber(0);
+>>>>>>> Stashed changes
 }
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Campaign", false);
 }
@@ -117,6 +148,43 @@ if (isConditionTrue_0) {
 }
 
 
+<<<<<<< Updated upstream
+=======
+{
+
+gdjs.copyArray(runtimeScene.getObjects("BlueButton4"), gdjs.TitleCode.GDBlueButton4Objects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.TitleCode.GDBlueButton4Objects1.length;i<l;++i) {
+    if ( gdjs.TitleCode.GDBlueButton4Objects1[i].IsClicked(null) ) {
+        isConditionTrue_0 = true;
+        gdjs.TitleCode.GDBlueButton4Objects1[k] = gdjs.TitleCode.GDBlueButton4Objects1[i];
+        ++k;
+    }
+}
+gdjs.TitleCode.GDBlueButton4Objects1.length = k;
+if (isConditionTrue_0) {
+{runtimeScene.getGame().getVariables().getFromIndex(0).setNumber(1);
+}
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Campaign", false);
+}
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+}
+
+}
+
+
+>>>>>>> Stashed changes
 };
 
 gdjs.TitleCode.func = function(runtimeScene) {
@@ -134,6 +202,11 @@ gdjs.TitleCode.GDBlueButton2Objects1.length = 0;
 gdjs.TitleCode.GDBlueButton2Objects2.length = 0;
 gdjs.TitleCode.GDBlueButton3Objects1.length = 0;
 gdjs.TitleCode.GDBlueButton3Objects2.length = 0;
+<<<<<<< Updated upstream
+=======
+gdjs.TitleCode.GDBlueButton4Objects1.length = 0;
+gdjs.TitleCode.GDBlueButton4Objects2.length = 0;
+>>>>>>> Stashed changes
 gdjs.TitleCode.GDCustomLobbiesObjects1.length = 0;
 gdjs.TitleCode.GDCustomLobbiesObjects2.length = 0;
 
@@ -150,6 +223,11 @@ gdjs.TitleCode.GDBlueButton2Objects1.length = 0;
 gdjs.TitleCode.GDBlueButton2Objects2.length = 0;
 gdjs.TitleCode.GDBlueButton3Objects1.length = 0;
 gdjs.TitleCode.GDBlueButton3Objects2.length = 0;
+<<<<<<< Updated upstream
+=======
+gdjs.TitleCode.GDBlueButton4Objects1.length = 0;
+gdjs.TitleCode.GDBlueButton4Objects2.length = 0;
+>>>>>>> Stashed changes
 gdjs.TitleCode.GDCustomLobbiesObjects1.length = 0;
 gdjs.TitleCode.GDCustomLobbiesObjects2.length = 0;
 

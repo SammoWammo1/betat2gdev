@@ -9,7 +9,11 @@ gdjs.evtsExt__PanelSpriteButton__IsInGameEdition = {};
 gdjs.evtsExt__PanelSpriteButton__IsInGameEdition.idToCallbackMap = new Map();
 
 
+<<<<<<< Updated upstream
 gdjs.evtsExt__PanelSpriteButton__IsInGameEdition.userFunc0x9a3cb0 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+=======
+gdjs.evtsExt__PanelSpriteButton__IsInGameEdition.userFunc0xcf9218 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+>>>>>>> Stashed changes
 "use strict";
 const game = runtimeScene.getGame();
 eventsFunctionContext.returnValue = game.isInGameEdition && game.isInGameEdition();
@@ -19,7 +23,11 @@ gdjs.evtsExt__PanelSpriteButton__IsInGameEdition.eventsList0 = function(runtimeS
 {
 
 
+<<<<<<< Updated upstream
 gdjs.evtsExt__PanelSpriteButton__IsInGameEdition.userFunc0x9a3cb0(runtimeScene, eventsFunctionContext);
+=======
+gdjs.evtsExt__PanelSpriteButton__IsInGameEdition.userFunc0xcf9218(runtimeScene, eventsFunctionContext);
+>>>>>>> Stashed changes
 
 }
 
