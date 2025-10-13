@@ -1,12 +1,6 @@
 gdjs.CampaignCode = {};
 gdjs.CampaignCode.localVariables = [];
 gdjs.CampaignCode.idToCallbackMap = new Map();
-<<<<<<< Updated upstream
-
-
-gdjs.CampaignCode.eventsList0 = function(runtimeScene) {
-
-=======
 gdjs.CampaignCode.GDPlayerObjects1= [];
 gdjs.CampaignCode.GDPlayerObjects2= [];
 gdjs.CampaignCode.GDWallObjects1= [];
@@ -196,16 +190,11 @@ gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.CampaignCode.GDPlayerObje
 }
 
 
->>>>>>> Stashed changes
 };
 
 gdjs.CampaignCode.func = function(runtimeScene) {
 runtimeScene.getOnceTriggers().startNewFrame();
 
-<<<<<<< Updated upstream
-
-gdjs.CampaignCode.eventsList0(runtimeScene);
-=======
 gdjs.CampaignCode.GDPlayerObjects1.length = 0;
 gdjs.CampaignCode.GDPlayerObjects2.length = 0;
 gdjs.CampaignCode.GDWallObjects1.length = 0;
@@ -228,7 +217,6 @@ gdjs.CampaignCode.GDNewSpriteObjects1.length = 0;
 gdjs.CampaignCode.GDNewSpriteObjects2.length = 0;
 gdjs.CampaignCode.GDCustomLobbiesObjects1.length = 0;
 gdjs.CampaignCode.GDCustomLobbiesObjects2.length = 0;
->>>>>>> Stashed changes
 
 
 return;

@@ -9,11 +9,7 @@ gdjs.evtsExt__Gamepads__onScenePostEvents = {};
 gdjs.evtsExt__Gamepads__onScenePostEvents.idToCallbackMap = new Map();
 
 
-<<<<<<< Updated upstream
-gdjs.evtsExt__Gamepads__onScenePostEvents.userFunc0xf9d418 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
-=======
 gdjs.evtsExt__Gamepads__onScenePostEvents.userFunc0xf617e0 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
->>>>>>> Stashed changes
 "use strict";
 gdjs._extensionController.onScenePostEvents();
 
@@ -23,11 +19,7 @@ gdjs.evtsExt__Gamepads__onScenePostEvents.eventsList0 = function(runtimeScene, e
 {
 
 
-<<<<<<< Updated upstream
-gdjs.evtsExt__Gamepads__onScenePostEvents.userFunc0xf9d418(runtimeScene, eventsFunctionContext);
-=======
 gdjs.evtsExt__Gamepads__onScenePostEvents.userFunc0xf617e0(runtimeScene, eventsFunctionContext);
->>>>>>> Stashed changes
 
 }
 

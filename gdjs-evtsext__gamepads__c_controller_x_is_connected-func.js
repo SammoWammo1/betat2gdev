@@ -9,11 +9,7 @@ gdjs.evtsExt__Gamepads__C_Controller_X_is_connected = {};
 gdjs.evtsExt__Gamepads__C_Controller_X_is_connected.idToCallbackMap = new Map();
 
 
-<<<<<<< Updated upstream
-gdjs.evtsExt__Gamepads__C_Controller_X_is_connected.userFunc0xf431b8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
-=======
 gdjs.evtsExt__Gamepads__C_Controller_X_is_connected.userFunc0xfa20f8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
->>>>>>> Stashed changes
 "use strict";
 const playerId = eventsFunctionContext.getArgument("PlayerId") - 1;
 /** @type {Gamepad[]} */
@@ -27,11 +23,7 @@ gdjs.evtsExt__Gamepads__C_Controller_X_is_connected.eventsList0 = function(runti
 {
 
 
-<<<<<<< Updated upstream
-gdjs.evtsExt__Gamepads__C_Controller_X_is_connected.userFunc0xf431b8(runtimeScene, eventsFunctionContext);
-=======
 gdjs.evtsExt__Gamepads__C_Controller_X_is_connected.userFunc0xfa20f8(runtimeScene, eventsFunctionContext);
->>>>>>> Stashed changes
 
 }
 

@@ -9,11 +9,7 @@ gdjs.evtsExt__Gamepads__LastButtonID = {};
 gdjs.evtsExt__Gamepads__LastButtonID.idToCallbackMap = new Map();
 
 
-<<<<<<< Updated upstream
-gdjs.evtsExt__Gamepads__LastButtonID.userFunc0xfb1f98 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
-=======
 gdjs.evtsExt__Gamepads__LastButtonID.userFunc0xf5c900 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
->>>>>>> Stashed changes
 "use strict";
 
 const playerId = eventsFunctionContext.getArgument("PlayerId") - 1;
@@ -24,11 +20,7 @@ gdjs.evtsExt__Gamepads__LastButtonID.eventsList0 = function(runtimeScene, events
 {
 
 
-<<<<<<< Updated upstream
-gdjs.evtsExt__Gamepads__LastButtonID.userFunc0xfb1f98(runtimeScene, eventsFunctionContext);
-=======
 gdjs.evtsExt__Gamepads__LastButtonID.userFunc0xf5c900(runtimeScene, eventsFunctionContext);
->>>>>>> Stashed changes
 
 }
 

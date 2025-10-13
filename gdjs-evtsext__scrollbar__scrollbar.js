@@ -256,11 +256,7 @@ let isConditionTrue_0 = false;
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-<<<<<<< Updated upstream
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(14983948);
-=======
 {isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(15474556);
->>>>>>> Stashed changes
 }
 if (isConditionTrue_0) {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Scrollbar__Scrollbar.Scrollbar.prototype.doStepPostEventsContext.GDObjectObjects1);

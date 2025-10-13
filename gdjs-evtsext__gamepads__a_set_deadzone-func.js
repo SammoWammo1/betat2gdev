@@ -9,11 +9,7 @@ gdjs.evtsExt__Gamepads__A_Set_deadzone = {};
 gdjs.evtsExt__Gamepads__A_Set_deadzone.idToCallbackMap = new Map();
 
 
-<<<<<<< Updated upstream
-gdjs.evtsExt__Gamepads__A_Set_deadzone.userFunc0xf41540 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
-=======
 gdjs.evtsExt__Gamepads__A_Set_deadzone.userFunc0xf94610 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
->>>>>>> Stashed changes
 "use strict";
 
 const playerId = eventsFunctionContext.getArgument("PlayerId") - 1;
@@ -28,11 +24,7 @@ gdjs.evtsExt__Gamepads__A_Set_deadzone.eventsList0 = function(runtimeScene, even
 {
 
 
-<<<<<<< Updated upstream
-gdjs.evtsExt__Gamepads__A_Set_deadzone.userFunc0xf41540(runtimeScene, eventsFunctionContext);
-=======
 gdjs.evtsExt__Gamepads__A_Set_deadzone.userFunc0xf94610(runtimeScene, eventsFunctionContext);
->>>>>>> Stashed changes
 
 }
 

@@ -706,11 +706,7 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.doStepP
 gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-<<<<<<< Updated upstream
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(14636300);
-=======
 {isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(15126908);
->>>>>>> Stashed changes
 }
 }
 if (isConditionTrue_0) {

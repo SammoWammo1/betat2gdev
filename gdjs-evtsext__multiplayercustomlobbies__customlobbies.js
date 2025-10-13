@@ -562,11 +562,7 @@ gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.do
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-<<<<<<< Updated upstream
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(15114468);
-=======
 {isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(15605076);
->>>>>>> Stashed changes
 }
 if (isConditionTrue_0) {
 {eventsFunctionContext.getObjects("Object")[0]._setOldCursorY(gdjs.evtTools.input.getCursorY(runtimeScene, "", 0))
@@ -1279,11 +1275,7 @@ let isConditionTrue_0 = false;
 }
 
 
-<<<<<<< Updated upstream
-};gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.UpdateLobbiesContext.asyncCallback15120468 = function (runtimeScene, eventsFunctionContext, asyncObjectsList) {
-=======
 };gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.UpdateLobbiesContext.asyncCallback15611076 = function (runtimeScene, eventsFunctionContext, asyncObjectsList) {
->>>>>>> Stashed changes
 asyncObjectsList.restoreLocalVariablesContainers(eventsFunctionContext.localVariables);
 gdjs.copyArray(eventsFunctionContext.getObjects("Loading"), gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.UpdateLobbiesContext.GDLoadingObjects2);
 gdjs.copyArray(eventsFunctionContext.getObjects("Lobby"), gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.UpdateLobbiesContext.GDLobbyObjects2);
@@ -1314,11 +1306,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("ViewportMask"), gdjs.evtsExt__M
 gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.UpdateLobbiesContext.eventsList1(runtimeScene, eventsFunctionContext, asyncObjectsList);} //End of subevents
 eventsFunctionContext.localVariables.length = 0;
 }
-<<<<<<< Updated upstream
-gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.UpdateLobbiesContext.idToCallbackMap.set(15120468, gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.UpdateLobbiesContext.asyncCallback15120468);
-=======
 gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.UpdateLobbiesContext.idToCallbackMap.set(15611076, gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.UpdateLobbiesContext.asyncCallback15611076);
->>>>>>> Stashed changes
 gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.UpdateLobbiesContext.eventsList2 = function(runtimeScene, eventsFunctionContext) {
 
 {
@@ -1328,11 +1316,7 @@ gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.Up
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(eventsFunctionContext.localVariables);
-<<<<<<< Updated upstream
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.network.sendAwaitableAsyncRequest("https://api.gdevelop.io/play/game/" + gdjs.evtsExt__MultiplayerCustomLobbies__ProjectUUID.func(runtimeScene, eventsFunctionContext) + "/public-lobby?isPreview=" + gdjs.evtsExt__MultiplayerCustomLobbies__IsPreview.func(runtimeScene, eventsFunctionContext) + "&gameVersion=" + gdjs.evtsExt__MultiplayerCustomLobbies__GameVersion.func(runtimeScene, eventsFunctionContext), "", "GET", "", eventsFunctionContext.sceneVariablesForExtension.getFromIndex(0), eventsFunctionContext.sceneVariablesForExtension.getFromIndex(1)), (runtimeScene) => (gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.UpdateLobbiesContext.asyncCallback15120468(runtimeScene, eventsFunctionContext, asyncObjectsList)), 15120468, asyncObjectsList);
-=======
 runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.network.sendAwaitableAsyncRequest("https://api.gdevelop.io/play/game/" + gdjs.evtsExt__MultiplayerCustomLobbies__ProjectUUID.func(runtimeScene, eventsFunctionContext) + "/public-lobby?isPreview=" + gdjs.evtsExt__MultiplayerCustomLobbies__IsPreview.func(runtimeScene, eventsFunctionContext) + "&gameVersion=" + gdjs.evtsExt__MultiplayerCustomLobbies__GameVersion.func(runtimeScene, eventsFunctionContext), "", "GET", "", eventsFunctionContext.sceneVariablesForExtension.getFromIndex(0), eventsFunctionContext.sceneVariablesForExtension.getFromIndex(1)), (runtimeScene) => (gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.UpdateLobbiesContext.asyncCallback15611076(runtimeScene, eventsFunctionContext, asyncObjectsList)), 15611076, asyncObjectsList);
->>>>>>> Stashed changes
 }
 }
 

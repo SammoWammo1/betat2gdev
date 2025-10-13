@@ -9,11 +9,7 @@ gdjs.evtsExt__Gamepads__TriggerPressure = {};
 gdjs.evtsExt__Gamepads__TriggerPressure.idToCallbackMap = new Map();
 
 
-<<<<<<< Updated upstream
-gdjs.evtsExt__Gamepads__TriggerPressure.userFunc0xfa5338 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
-=======
 gdjs.evtsExt__Gamepads__TriggerPressure.userFunc0x99a4a0 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
->>>>>>> Stashed changes
 "use strict";
 
 const playerId = eventsFunctionContext.getArgument("PlayerId") - 1;
@@ -50,11 +46,7 @@ gdjs.evtsExt__Gamepads__TriggerPressure.eventsList0 = function(runtimeScene, eve
 {
 
 
-<<<<<<< Updated upstream
-gdjs.evtsExt__Gamepads__TriggerPressure.userFunc0xfa5338(runtimeScene, eventsFunctionContext);
-=======
 gdjs.evtsExt__Gamepads__TriggerPressure.userFunc0x99a4a0(runtimeScene, eventsFunctionContext);
->>>>>>> Stashed changes
 
 }
 

@@ -9,11 +9,7 @@ gdjs.evtsExt__Gamepads__A_Advanced_Vibration_Controller = {};
 gdjs.evtsExt__Gamepads__A_Advanced_Vibration_Controller.idToCallbackMap = new Map();
 
 
-<<<<<<< Updated upstream
-gdjs.evtsExt__Gamepads__A_Advanced_Vibration_Controller.userFunc0xf6cc58 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
-=======
 gdjs.evtsExt__Gamepads__A_Advanced_Vibration_Controller.userFunc0xfa4a80 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
->>>>>>> Stashed changes
 "use strict";
 const { clamp } = gdjs.evtTools.common;
 const playerId = eventsFunctionContext.getArgument("PlayerId") - 1;
@@ -46,11 +42,7 @@ gdjs.evtsExt__Gamepads__A_Advanced_Vibration_Controller.eventsList0 = function(r
 {
 
 
-<<<<<<< Updated upstream
-gdjs.evtsExt__Gamepads__A_Advanced_Vibration_Controller.userFunc0xf6cc58(runtimeScene, eventsFunctionContext);
-=======
 gdjs.evtsExt__Gamepads__A_Advanced_Vibration_Controller.userFunc0xfa4a80(runtimeScene, eventsFunctionContext);
->>>>>>> Stashed changes
 
 }
 
