@@ -292,7 +292,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = !(gdjs.evtsExt__Gamepads__C_Controller_X_is_connected.func(runtimeScene, 1, null));
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14277500);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(17661596);
 }
 }
 if (isConditionTrue_0) {
@@ -314,7 +314,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtsExt__Gamepads__C_Controller_X_is_connected.func(runtimeScene, 1, null);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14221468);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(17662068);
 }
 }
 if (isConditionTrue_0) {
