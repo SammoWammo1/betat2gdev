@@ -602,7 +602,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("JoinButton"), gdjs.evtsExt__Mul
 }
 }
 {for(var i = 0, len = gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetPlayersCountContext.GDJoinButtonObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetPlayersCountContext.GDJoinButtonObjects1[i].SetLabelTextOp("Full", eventsFunctionContext);
+    gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetPlayersCountContext.GDJoinButtonObjects1[i].SetLabelTextOp("Full!", eventsFunctionContext);
 }
 }
 {eventsFunctionContext.getObjects("Object")[0]._setFull(true)
