@@ -1,33 +1,31 @@
 
-if (typeof gdjs.evtsExt__CameraShake__Delete !== "undefined") {
-  gdjs.evtsExt__CameraShake__Delete.registeredGdjsCallbacks.forEach(callback =>
+if (typeof gdjs.evtsExt__CameraZoom__ZoomWithSpeed !== "undefined") {
+  gdjs.evtsExt__CameraZoom__ZoomWithSpeed.registeredGdjsCallbacks.forEach(callback =>
     gdjs._unregisterCallback(callback)
   );
 }
 
-gdjs.evtsExt__CameraShake__Delete = {};
-gdjs.evtsExt__CameraShake__Delete.idToCallbackMap = new Map();
+gdjs.evtsExt__CameraZoom__ZoomWithSpeed = {};
+gdjs.evtsExt__CameraZoom__ZoomWithSpeed.idToCallbackMap = new Map();
 
 
-gdjs.evtsExt__CameraShake__Delete.userFunc0x123fc28 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
-"use strict";
-const name = eventsFunctionContext.getArgument("Name");
-
-gdjs._cameraShakeExtension.noiseManager.deleteGenerator(name);
-};
-gdjs.evtsExt__CameraShake__Delete.eventsList0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__CameraZoom__ZoomWithSpeed.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
-gdjs.evtsExt__CameraShake__Delete.userFunc0x123fc28(runtimeScene, eventsFunctionContext);
+let isConditionTrue_0 = false;
+{
+{gdjs.evtTools.camera.setCameraZoom(runtimeScene, gdjs.evtTools.camera.getCameraZoom(runtimeScene, eventsFunctionContext.getArgument("Layer"), eventsFunctionContext.getArgument("Camera")) * Math.pow(eventsFunctionContext.getArgument("ZoomSpeed"), gdjs.evtTools.runtimeScene.getElapsedTimeInSeconds(runtimeScene)), eventsFunctionContext.getArgument("Layer"), eventsFunctionContext.getArgument("Camera"));
+}
+}
 
 }
 
 
 };
 
-gdjs.evtsExt__CameraShake__Delete.func = function(runtimeScene, Name, parentEventsFunctionContext) {
+gdjs.evtsExt__CameraZoom__ZoomWithSpeed.func = function(runtimeScene, ZoomSpeed, Layer, Camera, parentEventsFunctionContext) {
 let scopeInstanceContainer = null;
 var eventsFunctionContext = {
   _objectsMap: {
@@ -36,8 +34,8 @@ var eventsFunctionContext = {
 },
   _behaviorNamesMap: {
 },
-  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("CameraShake"),
-  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("CameraShake"),
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("CameraZoom"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("CameraZoom"),
   localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
@@ -77,17 +75,19 @@ parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
     return runtimeScene.getLayer(layerName);
   },
   getArgument: function(argName) {
-if (argName === "Name") return Name;
+if (argName === "ZoomSpeed") return ZoomSpeed;
+if (argName === "Layer") return Layer;
+if (argName === "Camera") return Camera;
     return "";
   },
   getOnceTriggers: function() { return runtimeScene.getOnceTriggers(); }
 };
 
 
-gdjs.evtsExt__CameraShake__Delete.eventsList0(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__CameraZoom__ZoomWithSpeed.eventsList0(runtimeScene, eventsFunctionContext);
 
 
 return;
 }
 
-gdjs.evtsExt__CameraShake__Delete.registeredGdjsCallbacks = [];
+gdjs.evtsExt__CameraZoom__ZoomWithSpeed.registeredGdjsCallbacks = [];

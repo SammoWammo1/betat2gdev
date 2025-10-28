@@ -52,6 +52,10 @@ gdjs.copyArray(runtimeScene.getObjects("ver"), gdjs.TitleCode.GDverObjects1);
 }
 {gdjs.evtTools.sound.preloadSound(runtimeScene, "pointscored.mp3");
 }
+{gdjs.evtTools.sound.preloadSound(runtimeScene, "dmg");
+}
+{gdjs.evtTools.sound.preloadSound(runtimeScene, "dmg2");
+}
 {runtimeScene.getGame().getVariables().getFromIndex(0).setNumber(0);
 }
 {for(var i = 0, len = gdjs.TitleCode.GDverObjects1.length ;i < len;++i) {
@@ -294,7 +298,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = !(gdjs.evtsExt__Gamepads__C_Controller_X_is_connected.func(runtimeScene, 1, null));
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(22276364);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(22881900);
 }
 }
 if (isConditionTrue_0) {
@@ -316,7 +320,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtsExt__Gamepads__C_Controller_X_is_connected.func(runtimeScene, 1, null);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(22276836);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(22882372);
 }
 }
 if (isConditionTrue_0) {
@@ -353,7 +357,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.wasKeyJustPressed(runtimeScene, "F4");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(22278028);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(22883564);
 }
 }
 if (isConditionTrue_0) {
