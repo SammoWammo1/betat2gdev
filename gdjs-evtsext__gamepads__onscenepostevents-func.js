@@ -9,7 +9,7 @@ gdjs.evtsExt__Gamepads__onScenePostEvents = {};
 gdjs.evtsExt__Gamepads__onScenePostEvents.idToCallbackMap = new Map();
 
 
-gdjs.evtsExt__Gamepads__onScenePostEvents.userFunc0xbb3068 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Gamepads__onScenePostEvents.userFunc0xf0ffe0 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 gdjs._extensionController.onScenePostEvents();
 
@@ -19,7 +19,7 @@ gdjs.evtsExt__Gamepads__onScenePostEvents.eventsList0 = function(runtimeScene, e
 {
 
 
-gdjs.evtsExt__Gamepads__onScenePostEvents.userFunc0xbb3068(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__Gamepads__onScenePostEvents.userFunc0xf0ffe0(runtimeScene, eventsFunctionContext);
 
 }
 
