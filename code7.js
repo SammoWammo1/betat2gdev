@@ -730,7 +730,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtsExt__Gamepads__C_Controller_X_is_connected.func(runtimeScene, 1, null);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(25406380);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(25467716);
 }
 }
 if (isConditionTrue_0) {
@@ -928,7 +928,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "p" + gdjs.evtTools.common.toString(((gdjs.MultiplayerTitleCode.GDPlayerChangeObjects1.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.MultiplayerTitleCode.GDPlayerChangeObjects1[0].getVariables()).getFromIndex(0).getAsNumber()) + "changewait") > 0.1;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(25414316);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(25475652);
 }
 }
 }
@@ -1024,7 +1024,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(25429764);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(25491100);
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
