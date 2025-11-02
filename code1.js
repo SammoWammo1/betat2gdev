@@ -21,6 +21,10 @@ gdjs.TitleCode.GDLobbyMenuObjects1= [];
 gdjs.TitleCode.GDLobbyMenuObjects2= [];
 gdjs.TitleCode.GDvernameObjects1= [];
 gdjs.TitleCode.GDvernameObjects2= [];
+gdjs.TitleCode.GDdiscordObjects1= [];
+gdjs.TitleCode.GDdiscordObjects2= [];
+gdjs.TitleCode.GDdiscordtextObjects1= [];
+gdjs.TitleCode.GDdiscordtextObjects2= [];
 gdjs.TitleCode.GDCustomLobbiesObjects1= [];
 gdjs.TitleCode.GDCustomLobbiesObjects2= [];
 gdjs.TitleCode.GDOnlineCheckObjects1= [];
@@ -298,7 +302,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = !(gdjs.evtsExt__Gamepads__C_Controller_X_is_connected.func(runtimeScene, 1, null));
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(24208444);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(55255868);
 }
 }
 if (isConditionTrue_0) {
@@ -320,7 +324,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtsExt__Gamepads__C_Controller_X_is_connected.func(runtimeScene, 1, null);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(24208916);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(54833292);
 }
 }
 if (isConditionTrue_0) {
@@ -357,11 +361,33 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.wasKeyJustPressed(runtimeScene, "F4");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(24210108);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(55560052);
 }
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.window.setFullScreen(runtimeScene, true, true);
+}
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("discord"), gdjs.TitleCode.GDdiscordObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.TitleCode.GDdiscordObjects1.length;i<l;++i) {
+    if ( gdjs.TitleCode.GDdiscordObjects1[i].getBehavior("ButtonFSM").IsClicked(null) ) {
+        isConditionTrue_0 = true;
+        gdjs.TitleCode.GDdiscordObjects1[k] = gdjs.TitleCode.GDdiscordObjects1[i];
+        ++k;
+    }
+}
+gdjs.TitleCode.GDdiscordObjects1.length = k;
+if (isConditionTrue_0) {
+{gdjs.evtTools.window.openURL("https://discord.gg/9WNkGzcuRp", runtimeScene);
 }
 }
 
@@ -393,6 +419,10 @@ gdjs.TitleCode.GDLobbyMenuObjects1.length = 0;
 gdjs.TitleCode.GDLobbyMenuObjects2.length = 0;
 gdjs.TitleCode.GDvernameObjects1.length = 0;
 gdjs.TitleCode.GDvernameObjects2.length = 0;
+gdjs.TitleCode.GDdiscordObjects1.length = 0;
+gdjs.TitleCode.GDdiscordObjects2.length = 0;
+gdjs.TitleCode.GDdiscordtextObjects1.length = 0;
+gdjs.TitleCode.GDdiscordtextObjects2.length = 0;
 gdjs.TitleCode.GDCustomLobbiesObjects1.length = 0;
 gdjs.TitleCode.GDCustomLobbiesObjects2.length = 0;
 gdjs.TitleCode.GDOnlineCheckObjects1.length = 0;
@@ -421,6 +451,10 @@ gdjs.TitleCode.GDLobbyMenuObjects1.length = 0;
 gdjs.TitleCode.GDLobbyMenuObjects2.length = 0;
 gdjs.TitleCode.GDvernameObjects1.length = 0;
 gdjs.TitleCode.GDvernameObjects2.length = 0;
+gdjs.TitleCode.GDdiscordObjects1.length = 0;
+gdjs.TitleCode.GDdiscordObjects2.length = 0;
+gdjs.TitleCode.GDdiscordtextObjects1.length = 0;
+gdjs.TitleCode.GDdiscordtextObjects2.length = 0;
 gdjs.TitleCode.GDCustomLobbiesObjects1.length = 0;
 gdjs.TitleCode.GDCustomLobbiesObjects2.length = 0;
 gdjs.TitleCode.GDOnlineCheckObjects1.length = 0;
