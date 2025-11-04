@@ -94,7 +94,15 @@ gdjs.TitleCode.GDMultiplayerObjects1.length = k;
 if (isConditionTrue_0) {
 {gdjs.evtTools.sound.preloadSound(runtimeScene, "ballbounce.mp3");
 }
+{gdjs.evtTools.sound.preloadSound(runtimeScene, "hitball.mp3");
+}
 {gdjs.evtTools.sound.preloadSound(runtimeScene, "pointscored.mp3");
+}
+{gdjs.evtTools.sound.preloadSound(runtimeScene, "dmg");
+}
+{gdjs.evtTools.sound.preloadSound(runtimeScene, "lowhp");
+}
+{gdjs.evtTools.sound.preloadMusic(runtimeScene, "TennisBattleTheme1.mp3");
 }
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "MultiplayerTitle", false);
 }
@@ -302,7 +310,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = !(gdjs.evtsExt__Gamepads__C_Controller_X_is_connected.func(runtimeScene, 1, null));
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(55255868);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(26569476);
 }
 }
 if (isConditionTrue_0) {
@@ -324,7 +332,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtsExt__Gamepads__C_Controller_X_is_connected.func(runtimeScene, 1, null);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(54833292);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(26569908);
 }
 }
 if (isConditionTrue_0) {
@@ -361,7 +369,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.wasKeyJustPressed(runtimeScene, "F4");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(55560052);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(26571100);
 }
 }
 if (isConditionTrue_0) {
