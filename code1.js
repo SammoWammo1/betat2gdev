@@ -702,7 +702,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = !(gdjs.evtsExt__Gamepads__C_Controller_X_is_connected.func(runtimeScene, 1, null));
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(28641060);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(29205988);
 }
 }
 if (isConditionTrue_0) {
@@ -724,7 +724,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtsExt__Gamepads__C_Controller_X_is_connected.func(runtimeScene, 1, null);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(28655332);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(29220260);
 }
 }
 if (isConditionTrue_0) {
@@ -745,7 +745,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.wasKeyJustPressed(runtimeScene, "F4");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(28655132);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(29220060);
 }
 }
 if (isConditionTrue_0) {
