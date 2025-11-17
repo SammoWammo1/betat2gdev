@@ -35,6 +35,8 @@ gdjs.TitleCode.GDBGObjects1= [];
 gdjs.TitleCode.GDBGObjects2= [];
 gdjs.TitleCode.GDScoreDisplayObjects1= [];
 gdjs.TitleCode.GDScoreDisplayObjects2= [];
+gdjs.TitleCode.GDcopyrightObjects1= [];
+gdjs.TitleCode.GDcopyrightObjects2= [];
 gdjs.TitleCode.GDCustomLobbiesObjects1= [];
 gdjs.TitleCode.GDCustomLobbiesObjects2= [];
 gdjs.TitleCode.GDOnlineCheckObjects1= [];
@@ -702,7 +704,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = !(gdjs.evtsExt__Gamepads__C_Controller_X_is_connected.func(runtimeScene, 1, null));
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(29205988);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(32181084);
 }
 }
 if (isConditionTrue_0) {
@@ -724,7 +726,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtsExt__Gamepads__C_Controller_X_is_connected.func(runtimeScene, 1, null);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(29220260);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(32195356);
 }
 }
 if (isConditionTrue_0) {
@@ -745,7 +747,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.wasKeyJustPressed(runtimeScene, "F4");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(29220060);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(32195156);
 }
 }
 if (isConditionTrue_0) {
@@ -817,6 +819,8 @@ gdjs.TitleCode.GDBGObjects1.length = 0;
 gdjs.TitleCode.GDBGObjects2.length = 0;
 gdjs.TitleCode.GDScoreDisplayObjects1.length = 0;
 gdjs.TitleCode.GDScoreDisplayObjects2.length = 0;
+gdjs.TitleCode.GDcopyrightObjects1.length = 0;
+gdjs.TitleCode.GDcopyrightObjects2.length = 0;
 gdjs.TitleCode.GDCustomLobbiesObjects1.length = 0;
 gdjs.TitleCode.GDCustomLobbiesObjects2.length = 0;
 gdjs.TitleCode.GDOnlineCheckObjects1.length = 0;
@@ -859,6 +863,8 @@ gdjs.TitleCode.GDBGObjects1.length = 0;
 gdjs.TitleCode.GDBGObjects2.length = 0;
 gdjs.TitleCode.GDScoreDisplayObjects1.length = 0;
 gdjs.TitleCode.GDScoreDisplayObjects2.length = 0;
+gdjs.TitleCode.GDcopyrightObjects1.length = 0;
+gdjs.TitleCode.GDcopyrightObjects2.length = 0;
 gdjs.TitleCode.GDCustomLobbiesObjects1.length = 0;
 gdjs.TitleCode.GDCustomLobbiesObjects2.length = 0;
 gdjs.TitleCode.GDOnlineCheckObjects1.length = 0;

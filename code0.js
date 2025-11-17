@@ -19,7 +19,7 @@ gdjs.SplashCode.GDCursorObjects1= [];
 gdjs.SplashCode.GDCursorObjects2= [];
 
 
-gdjs.SplashCode.asyncCallback29174164 = function (runtimeScene, asyncObjectsList) {
+gdjs.SplashCode.asyncCallback32149268 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.SplashCode.localVariables);
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Title", false);
 }
@@ -27,7 +27,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.SplashCode.localVariables)
 }
 gdjs.SplashCode.localVariables.length = 0;
 }
-gdjs.SplashCode.idToCallbackMap.set(29174164, gdjs.SplashCode.asyncCallback29174164);
+gdjs.SplashCode.idToCallbackMap.set(32149268, gdjs.SplashCode.asyncCallback32149268);
 gdjs.SplashCode.eventsList0 = function(runtimeScene) {
 
 {
@@ -37,7 +37,7 @@ gdjs.SplashCode.eventsList0 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.SplashCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(3), (runtimeScene) => (gdjs.SplashCode.asyncCallback29174164(runtimeScene, asyncObjectsList)), 29174164, asyncObjectsList);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(3), (runtimeScene) => (gdjs.SplashCode.asyncCallback32149268(runtimeScene, asyncObjectsList)), 32149268, asyncObjectsList);
 }
 }
 
