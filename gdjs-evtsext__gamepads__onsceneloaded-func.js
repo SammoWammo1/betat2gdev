@@ -9,19 +9,16 @@ gdjs.evtsExt__Gamepads__onSceneLoaded = {};
 gdjs.evtsExt__Gamepads__onSceneLoaded.idToCallbackMap = new Map();
 
 
-gdjs.evtsExt__Gamepads__onSceneLoaded.userFunc0x139c4a8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Gamepads__onSceneLoaded.userFunc0x2116a88 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
-// Async tasks are run before everything.
-// This is a hack to make sure that button states are updated
-// before mapping behavior events.
-runtimeScene.getAsyncTasksManager().addTask(gdjs._extensionController.frameBeginningTask);
+gdjs._extensionController.addFrameBeginningTaskIfNeeded(runtimeScene);
 };
 gdjs.evtsExt__Gamepads__onSceneLoaded.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
-gdjs.evtsExt__Gamepads__onSceneLoaded.userFunc0x139c4a8(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__Gamepads__onSceneLoaded.userFunc0x2116a88(runtimeScene, eventsFunctionContext);
 
 }
 

@@ -9,7 +9,7 @@ gdjs.evtsExt__GetPropertiesData__ReturnSizeOnStart = {};
 gdjs.evtsExt__GetPropertiesData__ReturnSizeOnStart.idToCallbackMap = new Map();
 
 
-gdjs.evtsExt__GetPropertiesData__ReturnSizeOnStart.userFunc0xb4dbb0 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__GetPropertiesData__ReturnSizeOnStart.userFunc0x993390 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 eventsFunctionContext.returnValue = runtimeScene.getGame().getGameData().properties.sizeOnStartupMode;
 };
@@ -18,7 +18,7 @@ gdjs.evtsExt__GetPropertiesData__ReturnSizeOnStart.eventsList0 = function(runtim
 {
 
 
-gdjs.evtsExt__GetPropertiesData__ReturnSizeOnStart.userFunc0xb4dbb0(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__GetPropertiesData__ReturnSizeOnStart.userFunc0x993390(runtimeScene, eventsFunctionContext);
 
 }
 
