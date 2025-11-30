@@ -23,11 +23,11 @@ gdjs.GamejoltCode.GDBGObjects1= [];
 gdjs.GamejoltCode.GDBGObjects2= [];
 
 
-gdjs.GamejoltCode.asyncCallback34065740 = function (runtimeScene, asyncObjectsList) {
+gdjs.GamejoltCode.asyncCallback34115724 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.GamejoltCode.localVariables);
 gdjs.GamejoltCode.localVariables.length = 0;
 }
-gdjs.GamejoltCode.idToCallbackMap.set(34065740, gdjs.GamejoltCode.asyncCallback34065740);
+gdjs.GamejoltCode.idToCallbackMap.set(34115724, gdjs.GamejoltCode.asyncCallback34115724);
 gdjs.GamejoltCode.eventsList0 = function(runtimeScene) {
 
 {
@@ -39,7 +39,7 @@ gdjs.copyArray(runtimeScene.getObjects("Username"), gdjs.GamejoltCode.GDUsername
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.GamejoltCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__GamejoltAPI__AuthenticateUser.func(runtimeScene, (( gdjs.GamejoltCode.GDUsernameObjects1.length === 0 ) ? "" :gdjs.GamejoltCode.GDUsernameObjects1[0].getBehavior("Text").getText()), (( gdjs.GamejoltCode.GDPasswordObjects1.length === 0 ) ? "" :gdjs.GamejoltCode.GDPasswordObjects1[0].getBehavior("Text").getText()), null), (runtimeScene) => (gdjs.GamejoltCode.asyncCallback34065740(runtimeScene, asyncObjectsList)), 34065740, asyncObjectsList);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__GamejoltAPI__AuthenticateUser.func(runtimeScene, (( gdjs.GamejoltCode.GDUsernameObjects1.length === 0 ) ? "" :gdjs.GamejoltCode.GDUsernameObjects1[0].getBehavior("Text").getText()), (( gdjs.GamejoltCode.GDPasswordObjects1.length === 0 ) ? "" :gdjs.GamejoltCode.GDPasswordObjects1[0].getBehavior("Text").getText()), null), (runtimeScene) => (gdjs.GamejoltCode.asyncCallback34115724(runtimeScene, asyncObjectsList)), 34115724, asyncObjectsList);
 }
 }
 
