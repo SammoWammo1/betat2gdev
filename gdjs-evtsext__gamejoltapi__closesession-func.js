@@ -39,14 +39,14 @@ let isConditionTrue_0 = false;
 }
 
 
-};gdjs.evtsExt__GamejoltAPI__CloseSession.asyncCallback35859052 = function (runtimeScene, eventsFunctionContext, asyncObjectsList) {
+};gdjs.evtsExt__GamejoltAPI__CloseSession.asyncCallback31221052 = function (runtimeScene, eventsFunctionContext, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(eventsFunctionContext.localVariables);
 
 { //Subevents
 gdjs.evtsExt__GamejoltAPI__CloseSession.eventsList0(runtimeScene, eventsFunctionContext, asyncObjectsList);} //End of subevents
 eventsFunctionContext.localVariables.length = 0;
 }
-gdjs.evtsExt__GamejoltAPI__CloseSession.idToCallbackMap.set(35859052, gdjs.evtsExt__GamejoltAPI__CloseSession.asyncCallback35859052);
+gdjs.evtsExt__GamejoltAPI__CloseSession.idToCallbackMap.set(31221052, gdjs.evtsExt__GamejoltAPI__CloseSession.asyncCallback31221052);
 gdjs.evtsExt__GamejoltAPI__CloseSession.eventsList1 = function(runtimeScene, eventsFunctionContext) {
 
 {
@@ -56,7 +56,7 @@ gdjs.evtsExt__GamejoltAPI__CloseSession.eventsList1 = function(runtimeScene, eve
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(eventsFunctionContext.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__GamejoltAPI__CallGamejolt.func(runtimeScene, "sessions/close", "", eventsFunctionContext), (runtimeScene) => (gdjs.evtsExt__GamejoltAPI__CloseSession.asyncCallback35859052(runtimeScene, eventsFunctionContext, asyncObjectsList)), 35859052, asyncObjectsList);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__GamejoltAPI__CallGamejolt.func(runtimeScene, "sessions/close", "", eventsFunctionContext), (runtimeScene) => (gdjs.evtsExt__GamejoltAPI__CloseSession.asyncCallback31221052(runtimeScene, eventsFunctionContext, asyncObjectsList)), 31221052, asyncObjectsList);
 }
 }
 
