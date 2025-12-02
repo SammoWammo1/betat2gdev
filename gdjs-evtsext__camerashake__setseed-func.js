@@ -9,7 +9,7 @@ gdjs.evtsExt__CameraShake__SetSeed = {};
 gdjs.evtsExt__CameraShake__SetSeed.idToCallbackMap = new Map();
 
 
-gdjs.evtsExt__CameraShake__SetSeed.userFunc0x163cc68 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__CameraShake__SetSeed.userFunc0x168ce40 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 gdjs._cameraShakeExtension.noiseManager.setSeed(eventsFunctionContext.getArgument("Seed"));
 };
@@ -18,7 +18,7 @@ gdjs.evtsExt__CameraShake__SetSeed.eventsList0 = function(runtimeScene, eventsFu
 {
 
 
-gdjs.evtsExt__CameraShake__SetSeed.userFunc0x163cc68(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__CameraShake__SetSeed.userFunc0x168ce40(runtimeScene, eventsFunctionContext);
 
 }
 
