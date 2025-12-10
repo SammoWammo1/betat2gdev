@@ -7738,6 +7738,7 @@ gdjs.copyArray(runtimeScene.getObjects("ScoreDisplay"), gdjs.GameCode.GDScoreDis
 gdjs.copyArray(runtimeScene.getObjects("ScoreTextIconL"), gdjs.GameCode.GDScoreTextIconLObjects1);
 gdjs.copyArray(runtimeScene.getObjects("ScoreTextIconS"), gdjs.GameCode.GDScoreTextIconSObjects1);
 gdjs.copyArray(runtimeScene.getObjects("Wall"), gdjs.GameCode.GDWallObjects1);
+gdjs.copyArray(runtimeScene.getObjects("powerupspawner"), gdjs.GameCode.GDpowerupspawnerObjects1);
 gdjs.copyArray(runtimeScene.getObjects("score_"), gdjs.GameCode.GDscore_9595Objects1);
 {gdjs.evtTools.sound.preloadSound(runtimeScene, "ballbounce.mp3");
 }
@@ -7789,6 +7790,10 @@ gdjs.copyArray(runtimeScene.getObjects("score_"), gdjs.GameCode.GDscore_9595Obje
 }
 {for(var i = 0, len = gdjs.GameCode.GDPBagObjects1.length ;i < len;++i) {
     gdjs.GameCode.GDPBagObjects1[i].hide();
+}
+}
+{for(var i = 0, len = gdjs.GameCode.GDpowerupspawnerObjects1.length ;i < len;++i) {
+    gdjs.GameCode.GDpowerupspawnerObjects1[i].hide();
 }
 }
 {runtimeScene.getScene().getVariables().getFromIndex(4).setNumber(0);
