@@ -9,7 +9,7 @@ gdjs.evtsExt__GamejoltAPI__SHA1 = {};
 gdjs.evtsExt__GamejoltAPI__SHA1.idToCallbackMap = new Map();
 
 
-gdjs.evtsExt__GamejoltAPI__SHA1.userFunc0x179eb00 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__GamejoltAPI__SHA1.userFunc0x17acdb0 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 eventsFunctionContext.returnValue = sha1(eventsFunctionContext.getArgument("Text").toString());
 
@@ -155,7 +155,7 @@ gdjs.evtsExt__GamejoltAPI__SHA1.eventsList0 = function(runtimeScene, eventsFunct
 {
 
 
-gdjs.evtsExt__GamejoltAPI__SHA1.userFunc0x179eb00(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__GamejoltAPI__SHA1.userFunc0x17acdb0(runtimeScene, eventsFunctionContext);
 
 }
 

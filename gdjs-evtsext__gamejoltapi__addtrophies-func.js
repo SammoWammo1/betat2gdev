@@ -9,13 +9,13 @@ gdjs.evtsExt__GamejoltAPI__AddTrophies = {};
 gdjs.evtsExt__GamejoltAPI__AddTrophies.idToCallbackMap = new Map();
 
 
-gdjs.evtsExt__GamejoltAPI__AddTrophies.asyncCallback31894588 = function (runtimeScene, eventsFunctionContext, asyncObjectsList) {
+gdjs.evtsExt__GamejoltAPI__AddTrophies.asyncCallback35975380 = function (runtimeScene, eventsFunctionContext, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(eventsFunctionContext.localVariables);
 {gdjs.evtTools.common.resolveAsyncEventsFunction(eventsFunctionContext);
 }
 eventsFunctionContext.localVariables.length = 0;
 }
-gdjs.evtsExt__GamejoltAPI__AddTrophies.idToCallbackMap.set(31894588, gdjs.evtsExt__GamejoltAPI__AddTrophies.asyncCallback31894588);
+gdjs.evtsExt__GamejoltAPI__AddTrophies.idToCallbackMap.set(35975380, gdjs.evtsExt__GamejoltAPI__AddTrophies.asyncCallback35975380);
 gdjs.evtsExt__GamejoltAPI__AddTrophies.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
@@ -25,7 +25,7 @@ gdjs.evtsExt__GamejoltAPI__AddTrophies.eventsList0 = function(runtimeScene, even
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(eventsFunctionContext.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__GamejoltAPI__CallGamejolt.func(runtimeScene, "trophies/add-achieved", "", eventsFunctionContext), (runtimeScene) => (gdjs.evtsExt__GamejoltAPI__AddTrophies.asyncCallback31894588(runtimeScene, eventsFunctionContext, asyncObjectsList)), 31894588, asyncObjectsList);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__GamejoltAPI__CallGamejolt.func(runtimeScene, "trophies/add-achieved", "", eventsFunctionContext), (runtimeScene) => (gdjs.evtsExt__GamejoltAPI__AddTrophies.asyncCallback35975380(runtimeScene, eventsFunctionContext, asyncObjectsList)), 35975380, asyncObjectsList);
 }
 }
 

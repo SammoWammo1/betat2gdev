@@ -584,7 +584,7 @@ gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.do
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(32806364);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(36887156);
 }
 if (isConditionTrue_0) {
 {eventsFunctionContext.getObjects("Object")[0]._setOldCursorY(gdjs.evtTools.input.getCursorY(runtimeScene, "", 0))
@@ -1334,7 +1334,7 @@ let isConditionTrue_0 = false;
 }
 
 
-};gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.UpdateLobbiesContext.asyncCallback32811900 = function (runtimeScene, eventsFunctionContext, asyncObjectsList) {
+};gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.UpdateLobbiesContext.asyncCallback36892692 = function (runtimeScene, eventsFunctionContext, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(eventsFunctionContext.localVariables);
 gdjs.copyArray(eventsFunctionContext.getObjects("Loading"), gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.UpdateLobbiesContext.GDLoadingObjects2);
 gdjs.copyArray(eventsFunctionContext.getObjects("Lobby"), gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.UpdateLobbiesContext.GDLobbyObjects2);
@@ -1365,7 +1365,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("ViewportMask"), gdjs.evtsExt__M
 gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.UpdateLobbiesContext.eventsList1(runtimeScene, eventsFunctionContext, asyncObjectsList);} //End of subevents
 eventsFunctionContext.localVariables.length = 0;
 }
-gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.UpdateLobbiesContext.idToCallbackMap.set(32811900, gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.UpdateLobbiesContext.asyncCallback32811900);
+gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.UpdateLobbiesContext.idToCallbackMap.set(36892692, gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.UpdateLobbiesContext.asyncCallback36892692);
 gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.UpdateLobbiesContext.eventsList2 = function(runtimeScene, eventsFunctionContext) {
 
 {
@@ -1375,7 +1375,7 @@ gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.Up
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(eventsFunctionContext.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.network.sendAwaitableAsyncRequest("https://api.gdevelop.io/play/game/" + gdjs.evtsExt__MultiplayerCustomLobbies__ProjectUUID.func(runtimeScene, eventsFunctionContext) + "/public-lobby?isPreview=" + gdjs.evtsExt__MultiplayerCustomLobbies__IsPreview.func(runtimeScene, eventsFunctionContext) + "&gameVersion=" + gdjs.evtsExt__MultiplayerCustomLobbies__GameVersion.func(runtimeScene, eventsFunctionContext), "", "GET", "", eventsFunctionContext.sceneVariablesForExtension.getFromIndex(0), eventsFunctionContext.sceneVariablesForExtension.getFromIndex(1)), (runtimeScene) => (gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.UpdateLobbiesContext.asyncCallback32811900(runtimeScene, eventsFunctionContext, asyncObjectsList)), 32811900, asyncObjectsList);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.network.sendAwaitableAsyncRequest("https://api.gdevelop.io/play/game/" + gdjs.evtsExt__MultiplayerCustomLobbies__ProjectUUID.func(runtimeScene, eventsFunctionContext) + "/public-lobby?isPreview=" + gdjs.evtsExt__MultiplayerCustomLobbies__IsPreview.func(runtimeScene, eventsFunctionContext) + "&gameVersion=" + gdjs.evtsExt__MultiplayerCustomLobbies__GameVersion.func(runtimeScene, eventsFunctionContext), "", "GET", "", eventsFunctionContext.sceneVariablesForExtension.getFromIndex(0), eventsFunctionContext.sceneVariablesForExtension.getFromIndex(1)), (runtimeScene) => (gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.UpdateLobbiesContext.asyncCallback36892692(runtimeScene, eventsFunctionContext, asyncObjectsList)), 36892692, asyncObjectsList);
 }
 }
 
