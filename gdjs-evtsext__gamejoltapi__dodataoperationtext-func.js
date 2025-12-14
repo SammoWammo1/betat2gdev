@@ -9,13 +9,13 @@ gdjs.evtsExt__GamejoltAPI__DoDataOperationText = {};
 gdjs.evtsExt__GamejoltAPI__DoDataOperationText.idToCallbackMap = new Map();
 
 
-gdjs.evtsExt__GamejoltAPI__DoDataOperationText.asyncCallback36001380 = function (runtimeScene, eventsFunctionContext, asyncObjectsList) {
+gdjs.evtsExt__GamejoltAPI__DoDataOperationText.asyncCallback14156316 = function (runtimeScene, eventsFunctionContext, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(eventsFunctionContext.localVariables);
 {gdjs.evtTools.common.resolveAsyncEventsFunction(eventsFunctionContext);
 }
 eventsFunctionContext.localVariables.length = 0;
 }
-gdjs.evtsExt__GamejoltAPI__DoDataOperationText.idToCallbackMap.set(36001380, gdjs.evtsExt__GamejoltAPI__DoDataOperationText.asyncCallback36001380);
+gdjs.evtsExt__GamejoltAPI__DoDataOperationText.idToCallbackMap.set(14156316, gdjs.evtsExt__GamejoltAPI__DoDataOperationText.asyncCallback14156316);
 gdjs.evtsExt__GamejoltAPI__DoDataOperationText.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
@@ -25,7 +25,7 @@ gdjs.evtsExt__GamejoltAPI__DoDataOperationText.eventsList0 = function(runtimeSce
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(eventsFunctionContext.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__GamejoltAPI__CallGamejolt.func(runtimeScene, "data-store/update", "", eventsFunctionContext), (runtimeScene) => (gdjs.evtsExt__GamejoltAPI__DoDataOperationText.asyncCallback36001380(runtimeScene, eventsFunctionContext, asyncObjectsList)), 36001380, asyncObjectsList);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__GamejoltAPI__CallGamejolt.func(runtimeScene, "data-store/update", "", eventsFunctionContext), (runtimeScene) => (gdjs.evtsExt__GamejoltAPI__DoDataOperationText.asyncCallback14156316(runtimeScene, eventsFunctionContext, asyncObjectsList)), 14156316, asyncObjectsList);
 }
 }
 
@@ -69,13 +69,13 @@ gdjs.evtsExt__GamejoltAPI__DoDataOperationText.eventsList0(runtimeScene, eventsF
 }
 
 
-};gdjs.evtsExt__GamejoltAPI__DoDataOperationText.asyncCallback36002268 = function (runtimeScene, eventsFunctionContext, asyncObjectsList) {
+};gdjs.evtsExt__GamejoltAPI__DoDataOperationText.asyncCallback14157604 = function (runtimeScene, eventsFunctionContext, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(eventsFunctionContext.localVariables);
 {gdjs.evtTools.common.resolveAsyncEventsFunction(eventsFunctionContext);
 }
 eventsFunctionContext.localVariables.length = 0;
 }
-gdjs.evtsExt__GamejoltAPI__DoDataOperationText.idToCallbackMap.set(36002268, gdjs.evtsExt__GamejoltAPI__DoDataOperationText.asyncCallback36002268);
+gdjs.evtsExt__GamejoltAPI__DoDataOperationText.idToCallbackMap.set(14157604, gdjs.evtsExt__GamejoltAPI__DoDataOperationText.asyncCallback14157604);
 gdjs.evtsExt__GamejoltAPI__DoDataOperationText.eventsList2 = function(runtimeScene, eventsFunctionContext) {
 
 {
@@ -85,7 +85,7 @@ gdjs.evtsExt__GamejoltAPI__DoDataOperationText.eventsList2 = function(runtimeSce
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(eventsFunctionContext.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__GamejoltAPI__CallGamejolt.func(runtimeScene, "data-store/update", "", eventsFunctionContext), (runtimeScene) => (gdjs.evtsExt__GamejoltAPI__DoDataOperationText.asyncCallback36002268(runtimeScene, eventsFunctionContext, asyncObjectsList)), 36002268, asyncObjectsList);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__GamejoltAPI__CallGamejolt.func(runtimeScene, "data-store/update", "", eventsFunctionContext), (runtimeScene) => (gdjs.evtsExt__GamejoltAPI__DoDataOperationText.asyncCallback14157604(runtimeScene, eventsFunctionContext, asyncObjectsList)), 14157604, asyncObjectsList);
 }
 }
 

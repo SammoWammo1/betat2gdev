@@ -706,7 +706,7 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.doStepP
 gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(34859804);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(23535020);
 }
 }
 if (isConditionTrue_0) {
