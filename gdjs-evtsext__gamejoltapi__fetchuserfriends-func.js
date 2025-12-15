@@ -9,13 +9,13 @@ gdjs.evtsExt__GamejoltAPI__FetchUserFriends = {};
 gdjs.evtsExt__GamejoltAPI__FetchUserFriends.idToCallbackMap = new Map();
 
 
-gdjs.evtsExt__GamejoltAPI__FetchUserFriends.asyncCallback36276564 = function (runtimeScene, eventsFunctionContext, asyncObjectsList) {
+gdjs.evtsExt__GamejoltAPI__FetchUserFriends.asyncCallback36313388 = function (runtimeScene, eventsFunctionContext, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(eventsFunctionContext.localVariables);
 {gdjs.evtTools.common.resolveAsyncEventsFunction(eventsFunctionContext);
 }
 eventsFunctionContext.localVariables.length = 0;
 }
-gdjs.evtsExt__GamejoltAPI__FetchUserFriends.idToCallbackMap.set(36276564, gdjs.evtsExt__GamejoltAPI__FetchUserFriends.asyncCallback36276564);
+gdjs.evtsExt__GamejoltAPI__FetchUserFriends.idToCallbackMap.set(36313388, gdjs.evtsExt__GamejoltAPI__FetchUserFriends.asyncCallback36313388);
 gdjs.evtsExt__GamejoltAPI__FetchUserFriends.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
@@ -25,7 +25,7 @@ gdjs.evtsExt__GamejoltAPI__FetchUserFriends.eventsList0 = function(runtimeScene,
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(eventsFunctionContext.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__GamejoltAPI__CallGamejolt.func(runtimeScene, "friends", eventsFunctionContext.getArgument("RequestName"), eventsFunctionContext), (runtimeScene) => (gdjs.evtsExt__GamejoltAPI__FetchUserFriends.asyncCallback36276564(runtimeScene, eventsFunctionContext, asyncObjectsList)), 36276564, asyncObjectsList);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__GamejoltAPI__CallGamejolt.func(runtimeScene, "friends", eventsFunctionContext.getArgument("RequestName"), eventsFunctionContext), (runtimeScene) => (gdjs.evtsExt__GamejoltAPI__FetchUserFriends.asyncCallback36313388(runtimeScene, eventsFunctionContext, asyncObjectsList)), 36313388, asyncObjectsList);
 }
 }
 
