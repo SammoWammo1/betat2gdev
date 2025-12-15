@@ -9,13 +9,13 @@ gdjs.evtsExt__GamejoltAPI__FetchTrophiesByIdentifier = {};
 gdjs.evtsExt__GamejoltAPI__FetchTrophiesByIdentifier.idToCallbackMap = new Map();
 
 
-gdjs.evtsExt__GamejoltAPI__FetchTrophiesByIdentifier.asyncCallback14119412 = function (runtimeScene, eventsFunctionContext, asyncObjectsList) {
+gdjs.evtsExt__GamejoltAPI__FetchTrophiesByIdentifier.asyncCallback36352844 = function (runtimeScene, eventsFunctionContext, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(eventsFunctionContext.localVariables);
 {gdjs.evtTools.common.resolveAsyncEventsFunction(eventsFunctionContext);
 }
 eventsFunctionContext.localVariables.length = 0;
 }
-gdjs.evtsExt__GamejoltAPI__FetchTrophiesByIdentifier.idToCallbackMap.set(14119412, gdjs.evtsExt__GamejoltAPI__FetchTrophiesByIdentifier.asyncCallback14119412);
+gdjs.evtsExt__GamejoltAPI__FetchTrophiesByIdentifier.idToCallbackMap.set(36352844, gdjs.evtsExt__GamejoltAPI__FetchTrophiesByIdentifier.asyncCallback36352844);
 gdjs.evtsExt__GamejoltAPI__FetchTrophiesByIdentifier.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
@@ -25,7 +25,7 @@ gdjs.evtsExt__GamejoltAPI__FetchTrophiesByIdentifier.eventsList0 = function(runt
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(eventsFunctionContext.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__GamejoltAPI__CallGamejolt.func(runtimeScene, "trophies", eventsFunctionContext.getArgument("RequestName"), eventsFunctionContext), (runtimeScene) => (gdjs.evtsExt__GamejoltAPI__FetchTrophiesByIdentifier.asyncCallback14119412(runtimeScene, eventsFunctionContext, asyncObjectsList)), 14119412, asyncObjectsList);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__GamejoltAPI__CallGamejolt.func(runtimeScene, "trophies", eventsFunctionContext.getArgument("RequestName"), eventsFunctionContext), (runtimeScene) => (gdjs.evtsExt__GamejoltAPI__FetchTrophiesByIdentifier.asyncCallback36352844(runtimeScene, eventsFunctionContext, asyncObjectsList)), 36352844, asyncObjectsList);
 }
 }
 
