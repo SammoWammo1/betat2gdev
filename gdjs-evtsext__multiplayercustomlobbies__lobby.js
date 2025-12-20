@@ -13,6 +13,7 @@ gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby = class Lobby extends gdjs.C
     this._objectData = {};
     
     this._objectData.Full = false;
+    this._objectData.LobbyIDGP = objectData.content.LobbyIDGP !== undefined ? objectData.content.LobbyIDGP : "\"Lobby\"";
     
 
     // It calls the onCreated super implementation at the end.
@@ -24,6 +25,8 @@ gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby = class Lobby extends gdjs.C
     super.updateFromObjectData(oldObjectData, newObjectData);
     if (oldObjectData.content.Full !== newObjectData.content.Full)
       this._objectData.Full = newObjectData.content.Full;
+    if (oldObjectData.content.LobbyIDGP !== newObjectData.content.LobbyIDGP)
+      this._objectData.LobbyIDGP = newObjectData.content.LobbyIDGP;
 
     this.onHotReloading(this._parentInstanceContainer);
     return true;
@@ -39,6 +42,12 @@ gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby = class Lobby extends gdjs.C
   }
   _toggleFull() {
     this._setFull(!this._getFull());
+  }
+  _getLobbyIDGP() {
+    return this._objectData.LobbyIDGP !== undefined ? this._objectData.LobbyIDGP : "\"Lobby\"";
+  }
+  _setLobbyIDGP(newValue) {
+    this._objectData.LobbyIDGP = newValue;
   }
 
   
@@ -72,6 +81,10 @@ gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.onCreatedContext.G
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.onCreatedContext.GDBitmapPlayersCountObjects2= [];
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.onCreatedContext.GDBackgroundObjects1= [];
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.onCreatedContext.GDBackgroundObjects2= [];
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.onCreatedContext.GDNewSpriteObjects1= [];
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.onCreatedContext.GDNewSpriteObjects2= [];
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.onCreatedContext.GDNewPanelSpriteObjects1= [];
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.onCreatedContext.GDNewPanelSpriteObjects2= [];
 
 
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.onCreatedContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
@@ -112,6 +125,10 @@ var thisGDBitmapPlayersCountObjectsList = [...runtimeScene.getObjects("BitmapPla
 var GDBitmapPlayersCountObjects = Hashtable.newFrom({"BitmapPlayersCount": thisGDBitmapPlayersCountObjectsList});
 var thisGDBackgroundObjectsList = [...runtimeScene.getObjects("Background")];
 var GDBackgroundObjects = Hashtable.newFrom({"Background": thisGDBackgroundObjectsList});
+var thisGDNewSpriteObjectsList = [...runtimeScene.getObjects("NewSprite")];
+var GDNewSpriteObjects = Hashtable.newFrom({"NewSprite": thisGDNewSpriteObjectsList});
+var thisGDNewPanelSpriteObjectsList = [...runtimeScene.getObjects("NewPanelSprite")];
+var GDNewPanelSpriteObjects = Hashtable.newFrom({"NewPanelSprite": thisGDNewPanelSpriteObjectsList});
 var eventsFunctionContext = {
   _objectsMap: {
 "Object": Object
@@ -121,6 +138,8 @@ var eventsFunctionContext = {
 , "BitmapLobbyName": GDBitmapLobbyNameObjects
 , "BitmapPlayersCount": GDBitmapPlayersCountObjects
 , "Background": GDBackgroundObjects
+, "NewSprite": GDNewSpriteObjects
+, "NewPanelSprite": GDNewPanelSpriteObjects
 },
   _objectArraysMap: {
 "Object": thisObjectList
@@ -130,6 +149,8 @@ var eventsFunctionContext = {
 , "BitmapLobbyName": thisGDBitmapLobbyNameObjectsList
 , "BitmapPlayersCount": thisGDBitmapPlayersCountObjectsList
 , "Background": thisGDBackgroundObjectsList
+, "NewSprite": thisGDNewSpriteObjectsList
+, "NewPanelSprite": thisGDNewPanelSpriteObjectsList
 },
   _behaviorNamesMap: {
 },
@@ -193,6 +214,10 @@ gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.onCreatedContext.G
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.onCreatedContext.GDBitmapPlayersCountObjects2.length = 0;
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.onCreatedContext.GDBackgroundObjects1.length = 0;
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.onCreatedContext.GDBackgroundObjects2.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.onCreatedContext.GDNewSpriteObjects1.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.onCreatedContext.GDNewSpriteObjects2.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.onCreatedContext.GDNewPanelSpriteObjects1.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.onCreatedContext.GDNewPanelSpriteObjects2.length = 0;
 
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.onCreatedContext.eventsList0(runtimeScene, eventsFunctionContext);
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.onCreatedContext.GDObjectObjects1.length = 0;
@@ -209,6 +234,10 @@ gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.onCreatedContext.G
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.onCreatedContext.GDBitmapPlayersCountObjects2.length = 0;
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.onCreatedContext.GDBackgroundObjects1.length = 0;
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.onCreatedContext.GDBackgroundObjects2.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.onCreatedContext.GDNewSpriteObjects1.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.onCreatedContext.GDNewSpriteObjects2.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.onCreatedContext.GDNewPanelSpriteObjects1.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.onCreatedContext.GDNewPanelSpriteObjects2.length = 0;
 
 gdjs.CustomRuntimeObject.prototype.onCreated.call(this);
 
@@ -230,6 +259,10 @@ gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.doStepPostEventsCo
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.doStepPostEventsContext.GDBitmapPlayersCountObjects2= [];
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.doStepPostEventsContext.GDBackgroundObjects1= [];
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.doStepPostEventsContext.GDBackgroundObjects2= [];
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.doStepPostEventsContext.GDNewSpriteObjects1= [];
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.doStepPostEventsContext.GDNewSpriteObjects2= [];
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.doStepPostEventsContext.GDNewPanelSpriteObjects1= [];
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.doStepPostEventsContext.GDNewPanelSpriteObjects2= [];
 
 
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.doStepPostEventsContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
@@ -261,6 +294,16 @@ if (isConditionTrue_0) {
 }
 
 
+{
+
+
+let isConditionTrue_0 = false;
+{
+}
+
+}
+
+
 };
 
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.doStepPostEvents = function(parentEventsFunctionContext) {
@@ -282,6 +325,10 @@ var thisGDBitmapPlayersCountObjectsList = [...runtimeScene.getObjects("BitmapPla
 var GDBitmapPlayersCountObjects = Hashtable.newFrom({"BitmapPlayersCount": thisGDBitmapPlayersCountObjectsList});
 var thisGDBackgroundObjectsList = [...runtimeScene.getObjects("Background")];
 var GDBackgroundObjects = Hashtable.newFrom({"Background": thisGDBackgroundObjectsList});
+var thisGDNewSpriteObjectsList = [...runtimeScene.getObjects("NewSprite")];
+var GDNewSpriteObjects = Hashtable.newFrom({"NewSprite": thisGDNewSpriteObjectsList});
+var thisGDNewPanelSpriteObjectsList = [...runtimeScene.getObjects("NewPanelSprite")];
+var GDNewPanelSpriteObjects = Hashtable.newFrom({"NewPanelSprite": thisGDNewPanelSpriteObjectsList});
 var eventsFunctionContext = {
   _objectsMap: {
 "Object": Object
@@ -291,6 +338,8 @@ var eventsFunctionContext = {
 , "BitmapLobbyName": GDBitmapLobbyNameObjects
 , "BitmapPlayersCount": GDBitmapPlayersCountObjects
 , "Background": GDBackgroundObjects
+, "NewSprite": GDNewSpriteObjects
+, "NewPanelSprite": GDNewPanelSpriteObjects
 },
   _objectArraysMap: {
 "Object": thisObjectList
@@ -300,6 +349,8 @@ var eventsFunctionContext = {
 , "BitmapLobbyName": thisGDBitmapLobbyNameObjectsList
 , "BitmapPlayersCount": thisGDBitmapPlayersCountObjectsList
 , "Background": thisGDBackgroundObjectsList
+, "NewSprite": thisGDNewSpriteObjectsList
+, "NewPanelSprite": thisGDNewPanelSpriteObjectsList
 },
   _behaviorNamesMap: {
 },
@@ -363,6 +414,10 @@ gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.doStepPostEventsCo
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.doStepPostEventsContext.GDBitmapPlayersCountObjects2.length = 0;
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.doStepPostEventsContext.GDBackgroundObjects1.length = 0;
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.doStepPostEventsContext.GDBackgroundObjects2.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.doStepPostEventsContext.GDNewSpriteObjects1.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.doStepPostEventsContext.GDNewSpriteObjects2.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.doStepPostEventsContext.GDNewPanelSpriteObjects1.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.doStepPostEventsContext.GDNewPanelSpriteObjects2.length = 0;
 
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.doStepPostEventsContext.eventsList0(runtimeScene, eventsFunctionContext);
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.doStepPostEventsContext.GDObjectObjects1.length = 0;
@@ -379,6 +434,10 @@ gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.doStepPostEventsCo
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.doStepPostEventsContext.GDBitmapPlayersCountObjects2.length = 0;
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.doStepPostEventsContext.GDBackgroundObjects1.length = 0;
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.doStepPostEventsContext.GDBackgroundObjects2.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.doStepPostEventsContext.GDNewSpriteObjects1.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.doStepPostEventsContext.GDNewSpriteObjects2.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.doStepPostEventsContext.GDNewPanelSpriteObjects1.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.doStepPostEventsContext.GDNewPanelSpriteObjects2.length = 0;
 
 
 return;
@@ -399,6 +458,10 @@ gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyNameContex
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyNameContext.GDBitmapPlayersCountObjects2= [];
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyNameContext.GDBackgroundObjects1= [];
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyNameContext.GDBackgroundObjects2= [];
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyNameContext.GDNewSpriteObjects1= [];
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyNameContext.GDNewSpriteObjects2= [];
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyNameContext.GDNewPanelSpriteObjects1= [];
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyNameContext.GDNewPanelSpriteObjects2= [];
 
 
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyNameContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
@@ -443,6 +506,10 @@ var thisGDBitmapPlayersCountObjectsList = [...runtimeScene.getObjects("BitmapPla
 var GDBitmapPlayersCountObjects = Hashtable.newFrom({"BitmapPlayersCount": thisGDBitmapPlayersCountObjectsList});
 var thisGDBackgroundObjectsList = [...runtimeScene.getObjects("Background")];
 var GDBackgroundObjects = Hashtable.newFrom({"Background": thisGDBackgroundObjectsList});
+var thisGDNewSpriteObjectsList = [...runtimeScene.getObjects("NewSprite")];
+var GDNewSpriteObjects = Hashtable.newFrom({"NewSprite": thisGDNewSpriteObjectsList});
+var thisGDNewPanelSpriteObjectsList = [...runtimeScene.getObjects("NewPanelSprite")];
+var GDNewPanelSpriteObjects = Hashtable.newFrom({"NewPanelSprite": thisGDNewPanelSpriteObjectsList});
 var eventsFunctionContext = {
   _objectsMap: {
 "Object": Object
@@ -452,6 +519,8 @@ var eventsFunctionContext = {
 , "BitmapLobbyName": GDBitmapLobbyNameObjects
 , "BitmapPlayersCount": GDBitmapPlayersCountObjects
 , "Background": GDBackgroundObjects
+, "NewSprite": GDNewSpriteObjects
+, "NewPanelSprite": GDNewPanelSpriteObjects
 },
   _objectArraysMap: {
 "Object": thisObjectList
@@ -461,6 +530,8 @@ var eventsFunctionContext = {
 , "BitmapLobbyName": thisGDBitmapLobbyNameObjectsList
 , "BitmapPlayersCount": thisGDBitmapPlayersCountObjectsList
 , "Background": thisGDBackgroundObjectsList
+, "NewSprite": thisGDNewSpriteObjectsList
+, "NewPanelSprite": thisGDNewPanelSpriteObjectsList
 },
   _behaviorNamesMap: {
 },
@@ -525,6 +596,10 @@ gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyNameContex
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyNameContext.GDBitmapPlayersCountObjects2.length = 0;
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyNameContext.GDBackgroundObjects1.length = 0;
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyNameContext.GDBackgroundObjects2.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyNameContext.GDNewSpriteObjects1.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyNameContext.GDNewSpriteObjects2.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyNameContext.GDNewPanelSpriteObjects1.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyNameContext.GDNewPanelSpriteObjects2.length = 0;
 
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyNameContext.eventsList0(runtimeScene, eventsFunctionContext);
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyNameContext.GDObjectObjects1.length = 0;
@@ -541,6 +616,10 @@ gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyNameContex
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyNameContext.GDBitmapPlayersCountObjects2.length = 0;
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyNameContext.GDBackgroundObjects1.length = 0;
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyNameContext.GDBackgroundObjects2.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyNameContext.GDNewSpriteObjects1.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyNameContext.GDNewSpriteObjects2.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyNameContext.GDNewPanelSpriteObjects1.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyNameContext.GDNewPanelSpriteObjects2.length = 0;
 
 
 return;
@@ -561,6 +640,10 @@ gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetPlayersCountCon
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetPlayersCountContext.GDBitmapPlayersCountObjects2= [];
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetPlayersCountContext.GDBackgroundObjects1= [];
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetPlayersCountContext.GDBackgroundObjects2= [];
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetPlayersCountContext.GDNewSpriteObjects1= [];
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetPlayersCountContext.GDNewSpriteObjects2= [];
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetPlayersCountContext.GDNewPanelSpriteObjects1= [];
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetPlayersCountContext.GDNewPanelSpriteObjects2= [];
 
 
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetPlayersCountContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
@@ -602,7 +685,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("JoinButton"), gdjs.evtsExt__Mul
 }
 }
 {for(var i = 0, len = gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetPlayersCountContext.GDJoinButtonObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetPlayersCountContext.GDJoinButtonObjects1[i].SetLabelTextOp("Full", eventsFunctionContext);
+    gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetPlayersCountContext.GDJoinButtonObjects1[i].SetLabelTextOp("Full!", eventsFunctionContext);
 }
 }
 {eventsFunctionContext.getObjects("Object")[0]._setFull(true)
@@ -633,6 +716,10 @@ var thisGDBitmapPlayersCountObjectsList = [...runtimeScene.getObjects("BitmapPla
 var GDBitmapPlayersCountObjects = Hashtable.newFrom({"BitmapPlayersCount": thisGDBitmapPlayersCountObjectsList});
 var thisGDBackgroundObjectsList = [...runtimeScene.getObjects("Background")];
 var GDBackgroundObjects = Hashtable.newFrom({"Background": thisGDBackgroundObjectsList});
+var thisGDNewSpriteObjectsList = [...runtimeScene.getObjects("NewSprite")];
+var GDNewSpriteObjects = Hashtable.newFrom({"NewSprite": thisGDNewSpriteObjectsList});
+var thisGDNewPanelSpriteObjectsList = [...runtimeScene.getObjects("NewPanelSprite")];
+var GDNewPanelSpriteObjects = Hashtable.newFrom({"NewPanelSprite": thisGDNewPanelSpriteObjectsList});
 var eventsFunctionContext = {
   _objectsMap: {
 "Object": Object
@@ -642,6 +729,8 @@ var eventsFunctionContext = {
 , "BitmapLobbyName": GDBitmapLobbyNameObjects
 , "BitmapPlayersCount": GDBitmapPlayersCountObjects
 , "Background": GDBackgroundObjects
+, "NewSprite": GDNewSpriteObjects
+, "NewPanelSprite": GDNewPanelSpriteObjects
 },
   _objectArraysMap: {
 "Object": thisObjectList
@@ -651,6 +740,8 @@ var eventsFunctionContext = {
 , "BitmapLobbyName": thisGDBitmapLobbyNameObjectsList
 , "BitmapPlayersCount": thisGDBitmapPlayersCountObjectsList
 , "Background": thisGDBackgroundObjectsList
+, "NewSprite": thisGDNewSpriteObjectsList
+, "NewPanelSprite": thisGDNewPanelSpriteObjectsList
 },
   _behaviorNamesMap: {
 },
@@ -716,6 +807,10 @@ gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetPlayersCountCon
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetPlayersCountContext.GDBitmapPlayersCountObjects2.length = 0;
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetPlayersCountContext.GDBackgroundObjects1.length = 0;
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetPlayersCountContext.GDBackgroundObjects2.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetPlayersCountContext.GDNewSpriteObjects1.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetPlayersCountContext.GDNewSpriteObjects2.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetPlayersCountContext.GDNewPanelSpriteObjects1.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetPlayersCountContext.GDNewPanelSpriteObjects2.length = 0;
 
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetPlayersCountContext.eventsList0(runtimeScene, eventsFunctionContext);
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetPlayersCountContext.GDObjectObjects1.length = 0;
@@ -732,6 +827,10 @@ gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetPlayersCountCon
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetPlayersCountContext.GDBitmapPlayersCountObjects2.length = 0;
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetPlayersCountContext.GDBackgroundObjects1.length = 0;
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetPlayersCountContext.GDBackgroundObjects2.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetPlayersCountContext.GDNewSpriteObjects1.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetPlayersCountContext.GDNewSpriteObjects2.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetPlayersCountContext.GDNewPanelSpriteObjects1.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetPlayersCountContext.GDNewPanelSpriteObjects2.length = 0;
 
 
 return;
@@ -752,6 +851,10 @@ gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyIDContext.
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyIDContext.GDBitmapPlayersCountObjects2= [];
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyIDContext.GDBackgroundObjects1= [];
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyIDContext.GDBackgroundObjects2= [];
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyIDContext.GDNewSpriteObjects1= [];
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyIDContext.GDNewSpriteObjects2= [];
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyIDContext.GDNewPanelSpriteObjects1= [];
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyIDContext.GDNewPanelSpriteObjects2= [];
 
 
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyIDContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
@@ -765,6 +868,8 @@ gdjs.copyArray(eventsFunctionContext.getObjects("JoinButton"), gdjs.evtsExt__Mul
 {for(var i = 0, len = gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyIDContext.GDJoinButtonObjects1.length ;i < len;++i) {
     gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyIDContext.GDJoinButtonObjects1[i].returnVariable(gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyIDContext.GDJoinButtonObjects1[i].getVariables().get("LobbyID")).setString(eventsFunctionContext.getArgument("LobbyID"));
 }
+}
+{eventsFunctionContext.getObjects("Object")[0]._setLobbyIDGP(eventsFunctionContext.getArgument("LobbyID"))
 }
 }
 
@@ -792,6 +897,10 @@ var thisGDBitmapPlayersCountObjectsList = [...runtimeScene.getObjects("BitmapPla
 var GDBitmapPlayersCountObjects = Hashtable.newFrom({"BitmapPlayersCount": thisGDBitmapPlayersCountObjectsList});
 var thisGDBackgroundObjectsList = [...runtimeScene.getObjects("Background")];
 var GDBackgroundObjects = Hashtable.newFrom({"Background": thisGDBackgroundObjectsList});
+var thisGDNewSpriteObjectsList = [...runtimeScene.getObjects("NewSprite")];
+var GDNewSpriteObjects = Hashtable.newFrom({"NewSprite": thisGDNewSpriteObjectsList});
+var thisGDNewPanelSpriteObjectsList = [...runtimeScene.getObjects("NewPanelSprite")];
+var GDNewPanelSpriteObjects = Hashtable.newFrom({"NewPanelSprite": thisGDNewPanelSpriteObjectsList});
 var eventsFunctionContext = {
   _objectsMap: {
 "Object": Object
@@ -801,6 +910,8 @@ var eventsFunctionContext = {
 , "BitmapLobbyName": GDBitmapLobbyNameObjects
 , "BitmapPlayersCount": GDBitmapPlayersCountObjects
 , "Background": GDBackgroundObjects
+, "NewSprite": GDNewSpriteObjects
+, "NewPanelSprite": GDNewPanelSpriteObjects
 },
   _objectArraysMap: {
 "Object": thisObjectList
@@ -810,6 +921,8 @@ var eventsFunctionContext = {
 , "BitmapLobbyName": thisGDBitmapLobbyNameObjectsList
 , "BitmapPlayersCount": thisGDBitmapPlayersCountObjectsList
 , "Background": thisGDBackgroundObjectsList
+, "NewSprite": thisGDNewSpriteObjectsList
+, "NewPanelSprite": thisGDNewPanelSpriteObjectsList
 },
   _behaviorNamesMap: {
 },
@@ -874,6 +987,10 @@ gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyIDContext.
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyIDContext.GDBitmapPlayersCountObjects2.length = 0;
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyIDContext.GDBackgroundObjects1.length = 0;
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyIDContext.GDBackgroundObjects2.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyIDContext.GDNewSpriteObjects1.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyIDContext.GDNewSpriteObjects2.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyIDContext.GDNewPanelSpriteObjects1.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyIDContext.GDNewPanelSpriteObjects2.length = 0;
 
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyIDContext.eventsList0(runtimeScene, eventsFunctionContext);
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyIDContext.GDObjectObjects1.length = 0;
@@ -890,6 +1007,10 @@ gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyIDContext.
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyIDContext.GDBitmapPlayersCountObjects2.length = 0;
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyIDContext.GDBackgroundObjects1.length = 0;
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyIDContext.GDBackgroundObjects2.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyIDContext.GDNewSpriteObjects1.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyIDContext.GDNewSpriteObjects2.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyIDContext.GDNewPanelSpriteObjects1.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.SetLobbyIDContext.GDNewPanelSpriteObjects2.length = 0;
 
 
 return;
@@ -910,6 +1031,10 @@ gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.IsFullContext.GDBi
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.IsFullContext.GDBitmapPlayersCountObjects2= [];
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.IsFullContext.GDBackgroundObjects1= [];
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.IsFullContext.GDBackgroundObjects2= [];
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.IsFullContext.GDNewSpriteObjects1= [];
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.IsFullContext.GDNewSpriteObjects2= [];
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.IsFullContext.GDNewPanelSpriteObjects1= [];
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.IsFullContext.GDNewPanelSpriteObjects2= [];
 
 
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.IsFullContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
@@ -963,6 +1088,10 @@ var thisGDBitmapPlayersCountObjectsList = [...runtimeScene.getObjects("BitmapPla
 var GDBitmapPlayersCountObjects = Hashtable.newFrom({"BitmapPlayersCount": thisGDBitmapPlayersCountObjectsList});
 var thisGDBackgroundObjectsList = [...runtimeScene.getObjects("Background")];
 var GDBackgroundObjects = Hashtable.newFrom({"Background": thisGDBackgroundObjectsList});
+var thisGDNewSpriteObjectsList = [...runtimeScene.getObjects("NewSprite")];
+var GDNewSpriteObjects = Hashtable.newFrom({"NewSprite": thisGDNewSpriteObjectsList});
+var thisGDNewPanelSpriteObjectsList = [...runtimeScene.getObjects("NewPanelSprite")];
+var GDNewPanelSpriteObjects = Hashtable.newFrom({"NewPanelSprite": thisGDNewPanelSpriteObjectsList});
 var eventsFunctionContext = {
   _objectsMap: {
 "Object": Object
@@ -972,6 +1101,8 @@ var eventsFunctionContext = {
 , "BitmapLobbyName": GDBitmapLobbyNameObjects
 , "BitmapPlayersCount": GDBitmapPlayersCountObjects
 , "Background": GDBackgroundObjects
+, "NewSprite": GDNewSpriteObjects
+, "NewPanelSprite": GDNewPanelSpriteObjects
 },
   _objectArraysMap: {
 "Object": thisObjectList
@@ -981,6 +1112,8 @@ var eventsFunctionContext = {
 , "BitmapLobbyName": thisGDBitmapLobbyNameObjectsList
 , "BitmapPlayersCount": thisGDBitmapPlayersCountObjectsList
 , "Background": thisGDBackgroundObjectsList
+, "NewSprite": thisGDNewSpriteObjectsList
+, "NewPanelSprite": thisGDNewPanelSpriteObjectsList
 },
   _behaviorNamesMap: {
 },
@@ -1044,6 +1177,10 @@ gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.IsFullContext.GDBi
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.IsFullContext.GDBitmapPlayersCountObjects2.length = 0;
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.IsFullContext.GDBackgroundObjects1.length = 0;
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.IsFullContext.GDBackgroundObjects2.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.IsFullContext.GDNewSpriteObjects1.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.IsFullContext.GDNewSpriteObjects2.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.IsFullContext.GDNewPanelSpriteObjects1.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.IsFullContext.GDNewPanelSpriteObjects2.length = 0;
 
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.IsFullContext.eventsList0(runtimeScene, eventsFunctionContext);
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.IsFullContext.GDObjectObjects1.length = 0;
@@ -1060,6 +1197,10 @@ gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.IsFullContext.GDBi
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.IsFullContext.GDBitmapPlayersCountObjects2.length = 0;
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.IsFullContext.GDBackgroundObjects1.length = 0;
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.IsFullContext.GDBackgroundObjects2.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.IsFullContext.GDNewSpriteObjects1.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.IsFullContext.GDNewSpriteObjects2.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.IsFullContext.GDNewPanelSpriteObjects1.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.IsFullContext.GDNewPanelSpriteObjects2.length = 0;
 
 
 return !!eventsFunctionContext.returnValue;
@@ -1080,6 +1221,10 @@ gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.ActivateInteractio
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.ActivateInteractionsContext.GDBitmapPlayersCountObjects2= [];
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.ActivateInteractionsContext.GDBackgroundObjects1= [];
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.ActivateInteractionsContext.GDBackgroundObjects2= [];
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.ActivateInteractionsContext.GDNewSpriteObjects1= [];
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.ActivateInteractionsContext.GDNewSpriteObjects2= [];
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.ActivateInteractionsContext.GDNewPanelSpriteObjects1= [];
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.ActivateInteractionsContext.GDNewPanelSpriteObjects2= [];
 
 
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.ActivateInteractionsContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
@@ -1141,6 +1286,10 @@ var thisGDBitmapPlayersCountObjectsList = [...runtimeScene.getObjects("BitmapPla
 var GDBitmapPlayersCountObjects = Hashtable.newFrom({"BitmapPlayersCount": thisGDBitmapPlayersCountObjectsList});
 var thisGDBackgroundObjectsList = [...runtimeScene.getObjects("Background")];
 var GDBackgroundObjects = Hashtable.newFrom({"Background": thisGDBackgroundObjectsList});
+var thisGDNewSpriteObjectsList = [...runtimeScene.getObjects("NewSprite")];
+var GDNewSpriteObjects = Hashtable.newFrom({"NewSprite": thisGDNewSpriteObjectsList});
+var thisGDNewPanelSpriteObjectsList = [...runtimeScene.getObjects("NewPanelSprite")];
+var GDNewPanelSpriteObjects = Hashtable.newFrom({"NewPanelSprite": thisGDNewPanelSpriteObjectsList});
 var eventsFunctionContext = {
   _objectsMap: {
 "Object": Object
@@ -1150,6 +1299,8 @@ var eventsFunctionContext = {
 , "BitmapLobbyName": GDBitmapLobbyNameObjects
 , "BitmapPlayersCount": GDBitmapPlayersCountObjects
 , "Background": GDBackgroundObjects
+, "NewSprite": GDNewSpriteObjects
+, "NewPanelSprite": GDNewPanelSpriteObjects
 },
   _objectArraysMap: {
 "Object": thisObjectList
@@ -1159,6 +1310,8 @@ var eventsFunctionContext = {
 , "BitmapLobbyName": thisGDBitmapLobbyNameObjectsList
 , "BitmapPlayersCount": thisGDBitmapPlayersCountObjectsList
 , "Background": thisGDBackgroundObjectsList
+, "NewSprite": thisGDNewSpriteObjectsList
+, "NewPanelSprite": thisGDNewPanelSpriteObjectsList
 },
   _behaviorNamesMap: {
 },
@@ -1223,6 +1376,10 @@ gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.ActivateInteractio
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.ActivateInteractionsContext.GDBitmapPlayersCountObjects2.length = 0;
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.ActivateInteractionsContext.GDBackgroundObjects1.length = 0;
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.ActivateInteractionsContext.GDBackgroundObjects2.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.ActivateInteractionsContext.GDNewSpriteObjects1.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.ActivateInteractionsContext.GDNewSpriteObjects2.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.ActivateInteractionsContext.GDNewPanelSpriteObjects1.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.ActivateInteractionsContext.GDNewPanelSpriteObjects2.length = 0;
 
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.ActivateInteractionsContext.eventsList0(runtimeScene, eventsFunctionContext);
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.ActivateInteractionsContext.GDObjectObjects1.length = 0;
@@ -1239,6 +1396,10 @@ gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.ActivateInteractio
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.ActivateInteractionsContext.GDBitmapPlayersCountObjects2.length = 0;
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.ActivateInteractionsContext.GDBackgroundObjects1.length = 0;
 gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.ActivateInteractionsContext.GDBackgroundObjects2.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.ActivateInteractionsContext.GDNewSpriteObjects1.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.ActivateInteractionsContext.GDNewSpriteObjects2.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.ActivateInteractionsContext.GDNewPanelSpriteObjects1.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__Lobby.Lobby.prototype.ActivateInteractionsContext.GDNewPanelSpriteObjects2.length = 0;
 
 
 return;

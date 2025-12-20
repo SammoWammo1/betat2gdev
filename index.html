@@ -73,6 +73,15 @@
 	<script src="events-tools/windowtools.js" crossorigin="anonymous"></script>
 	<script src="events-tools/networktools.js" crossorigin="anonymous"></script>
 	<script src="splash/gd-logo-light.js" crossorigin="anonymous"></script>
+	<script src="pixi-renderers/three.js" crossorigin="anonymous"></script>
+	<script src="pixi-renderers/ThreeAddons.js" crossorigin="anonymous"></script>
+	<script src="pixi-renderers/draco/gltf/draco_decoder.wasm" crossorigin="anonymous"></script>
+	<script src="pixi-renderers/draco/gltf/draco_wasm_wrapper.js" crossorigin="anonymous"></script>
+	<script src="Extensions/3D/Scene3DTools.js" crossorigin="anonymous"></script>
+	<script src="Extensions/3D/A_RuntimeObject3D.js" crossorigin="anonymous"></script>
+	<script src="Extensions/3D/A_RuntimeObject3DRenderer.js" crossorigin="anonymous"></script>
+	<script src="Extensions/3D/CustomRuntimeObject3D.js" crossorigin="anonymous"></script>
+	<script src="Extensions/3D/CustomRuntimeObject3DRenderer.js" crossorigin="anonymous"></script>
 	<script src="pixi-renderers/pixi.js" crossorigin="anonymous"></script>
 	<script src="pixi-renderers/pixi-filters-tools.js" crossorigin="anonymous"></script>
 	<script src="pixi-renderers/runtimegame-pixi-renderer.js" crossorigin="anonymous"></script>
@@ -89,12 +98,24 @@
 	<script src="howler-sound-manager/howler-sound-manager.js" crossorigin="anonymous"></script>
 	<script src="fontfaceobserver-font-manager/fontfaceobserver.js" crossorigin="anonymous"></script>
 	<script src="fontfaceobserver-font-manager/fontfaceobserver-font-manager.js" crossorigin="anonymous"></script>
-	<script src="Extensions/3D/Scene3DTools.js" crossorigin="anonymous"></script>
+	<script src="Extensions/3D/Base3DBehavior.js" crossorigin="anonymous"></script>
+	<script src="Extensions/3D/Cube3DRuntimeObject.js" crossorigin="anonymous"></script>
+	<script src="Extensions/3D/Cube3DRuntimeObjectPixiRenderer.js" crossorigin="anonymous"></script>
+	<script src="Extensions/3D/Model3DRuntimeObject.js" crossorigin="anonymous"></script>
+	<script src="Extensions/3D/Model3DRuntimeObject3DRenderer.js" crossorigin="anonymous"></script>
+	<script src="Extensions/AdvancedWindow/electron-advancedwindowtools.js" crossorigin="anonymous"></script>
 	<script src="Extensions/AnchorBehavior/anchorruntimebehavior.js" crossorigin="anonymous"></script>
+	<script src="Extensions/BBText/bbtextruntimeobject-pixi-renderer.js" crossorigin="anonymous"></script>
+	<script src="Extensions/BBText/bbtextruntimeobject.js" crossorigin="anonymous"></script>
+	<script src="Extensions/BBText/pixi-multistyle-text/dist/pixi-multistyle-text.umd.js" crossorigin="anonymous"></script>
 	<script src="Extensions/BitmapText/bitmaptextruntimeobject-pixi-renderer.js" crossorigin="anonymous"></script>
 	<script src="Extensions/BitmapText/bitmaptextruntimeobject.js" crossorigin="anonymous"></script>
+	<script src="Extensions/DebuggerTools/debuggertools.js" crossorigin="anonymous"></script>
+	<script src="Extensions/DialogueTree/bondage.js/dist/bondage.min.js" crossorigin="anonymous"></script>
+	<script src="Extensions/DialogueTree/dialoguetools.js" crossorigin="anonymous"></script>
 	<script src="Extensions/DraggableBehavior/draggableruntimebehavior.js" crossorigin="anonymous"></script>
 	<script src="Extensions/FileSystem/filesystemtools.js" crossorigin="anonymous"></script>
+	<script src="Extensions/LinkedObjects/linkedobjects.js" crossorigin="anonymous"></script>
 	<script src="Extensions/Multiplayer/messageManager.js" crossorigin="anonymous"></script>
 	<script src="Extensions/Multiplayer/multiplayerVariablesManager.js" crossorigin="anonymous"></script>
 	<script src="Extensions/Multiplayer/multiplayercomponents.js" crossorigin="anonymous"></script>
@@ -104,6 +125,12 @@
 	<script src="Extensions/Multiplayer/peerJsHelper.js" crossorigin="anonymous"></script>
 	<script src="Extensions/PanelSpriteObject/panelspriteruntimeobject-pixi-renderer.js" crossorigin="anonymous"></script>
 	<script src="Extensions/PanelSpriteObject/panelspriteruntimeobject.js" crossorigin="anonymous"></script>
+	<script src="Extensions/ParticleSystem/particleemitterobject-pixi-renderer.js" crossorigin="anonymous"></script>
+	<script src="Extensions/ParticleSystem/particleemitterobject.js" crossorigin="anonymous"></script>
+	<script src="Extensions/ParticleSystem/pixi-particles-pixi-renderer.min.js" crossorigin="anonymous"></script>
+	<script src="Extensions/PathfindingBehavior/PathTools.js" crossorigin="anonymous"></script>
+	<script src="Extensions/PathfindingBehavior/pathfindingobstacleruntimebehavior.js" crossorigin="anonymous"></script>
+	<script src="Extensions/PathfindingBehavior/pathfindingruntimebehavior.js" crossorigin="anonymous"></script>
 	<script src="Extensions/Physics2Behavior/Box2D_v2.3.1_min.wasm.js" crossorigin="anonymous"></script>
 	<script src="Extensions/Physics2Behavior/physics2runtimebehavior.js" crossorigin="anonymous"></script>
 	<script src="Extensions/PlatformBehavior/platformerobjectruntimebehavior.js" crossorigin="anonymous"></script>
@@ -117,12 +144,28 @@
 	<script src="Extensions/SaveState/SaveConfigurationRuntimeBehavior.js" crossorigin="anonymous"></script>
 	<script src="Extensions/SaveState/SaveStateTools.js" crossorigin="anonymous"></script>
 	<script src="Extensions/SystemInfo/systeminfotools.js" crossorigin="anonymous"></script>
+	<script src="Extensions/TextInput/textinputruntimeobject-pixi-renderer.js" crossorigin="anonymous"></script>
+	<script src="Extensions/TextInput/textinputruntimeobject.js" crossorigin="anonymous"></script>
 	<script src="Extensions/TextObject/textruntimeobject-pixi-renderer.js" crossorigin="anonymous"></script>
 	<script src="Extensions/TextObject/textruntimeobject.js" crossorigin="anonymous"></script>
+	<script src="Extensions/TileMap/TileMapRuntimeManager.js" crossorigin="anonymous"></script>
+	<script src="Extensions/TileMap/collision/TransformedTileMap.js" crossorigin="anonymous"></script>
+	<script src="Extensions/TileMap/helper/TileMapHelper.js" crossorigin="anonymous"></script>
+	<script src="Extensions/TileMap/pako/dist/pako.min.js" crossorigin="anonymous"></script>
+	<script src="Extensions/TileMap/pixi-tilemap/dist/pixi-tilemap.umd.js" crossorigin="anonymous"></script>
+	<script src="Extensions/TileMap/simpletilemapruntimeobject.js" crossorigin="anonymous"></script>
+	<script src="Extensions/TileMap/tilemapruntimeobject-pixi-renderer.js" crossorigin="anonymous"></script>
+	<script src="Extensions/TiledSpriteObject/tiledspriteruntimeobject-pixi-renderer.js" crossorigin="anonymous"></script>
+	<script src="Extensions/TiledSpriteObject/tiledspriteruntimeobject.js" crossorigin="anonymous"></script>
 	<script src="Extensions/TopDownMovementBehavior/topdownmovementruntimebehavior.js" crossorigin="anonymous"></script>
 	<script src="Extensions/TweenBehavior/TweenManager.js" crossorigin="anonymous"></script>
 	<script src="Extensions/TweenBehavior/tweenruntimebehavior.js" crossorigin="anonymous"></script>
+	<script src="Extensions/Video/videoruntimeobject-pixi-renderer.js" crossorigin="anonymous"></script>
+	<script src="Extensions/Video/videoruntimeobject.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__autotyping__autotyping.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__behaviorremapper__remapfortopdown.js" crossorigin="anonymous"></script>
 	<script src="gdjs-evtsext__bounce__bounce.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__buttonstates__buttonfsm.js" crossorigin="anonymous"></script>
 	<script src="gdjs-evtsext__camerashake__camerashake-func.js" crossorigin="anonymous"></script>
 	<script src="gdjs-evtsext__camerashake__create-func.js" crossorigin="anonymous"></script>
 	<script src="gdjs-evtsext__camerashake__delete-func.js" crossorigin="anonymous"></script>
@@ -159,6 +202,72 @@
 	<script src="gdjs-evtsext__camerashake__shakecamera-func.js" crossorigin="anonymous"></script>
 	<script src="gdjs-evtsext__camerashake__startshaking-func.js" crossorigin="anonymous"></script>
 	<script src="gdjs-evtsext__camerashake__stopshaking-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__camerazoom__zoomwithanchor-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__camerazoom__zoomwithspeed-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__camerazoom__zoomwithspeedandanchor-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__firebullet__firebullet.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__flash__colortint-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__flash__flashcolor.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__flash__istinted-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__flash__togglecolortint-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__flash__togglevisibility-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__flashtransitionpainter__flashtransitionpainter.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__gamejoltapi__addconnecteduser-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__gamejoltapi__addscore-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__gamejoltapi__addscorewithlabel-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__gamejoltapi__addtrophies-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__gamejoltapi__addurlparameter-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__gamejoltapi__authenticated-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__gamejoltapi__authenticateuser-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__gamejoltapi__callgamejolt-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__gamejoltapi__checksession-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__gamejoltapi__closesession-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__gamejoltapi__dodataoperation-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__gamejoltapi__dodataoperationtext-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__gamejoltapi__fetchdata-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__gamejoltapi__fetchdatakeys-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__gamejoltapi__fetchscore-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__gamejoltapi__fetchscorefromuser-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__gamejoltapi__fetchscorerank-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__gamejoltapi__fetchscoretables-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__gamejoltapi__fetchservertime-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__gamejoltapi__fetchtrophies-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__gamejoltapi__fetchtrophiesbyidentifier-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__gamejoltapi__fetchuser-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__gamejoltapi__fetchuserfriends-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__gamejoltapi__finished-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__gamejoltapi__gameidentifier-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__gamejoltapi__gamekey-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__gamejoltapi__lasterrormessage-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__gamejoltapi__lastresponse-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__gamejoltapi__lastsuccess-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__gamejoltapi__onsceneloaded-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__gamejoltapi__onscenepostevents-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__gamejoltapi__opensession-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__gamejoltapi__prepareurl-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__gamejoltapi__registergame-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__gamejoltapi__removedata-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__gamejoltapi__removetrophies-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__gamejoltapi__requesterrormessage-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__gamejoltapi__requestresponse-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__gamejoltapi__requestsuccess-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__gamejoltapi__session-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__gamejoltapi__setauthenticated-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__gamejoltapi__seterrormessage-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__gamejoltapi__setsession-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__gamejoltapi__setsuccess-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__gamejoltapi__settestmode-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__gamejoltapi__settestuser-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__gamejoltapi__seturl-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__gamejoltapi__setusername-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__gamejoltapi__setusertoken-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__gamejoltapi__sha1-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__gamejoltapi__storedata-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__gamejoltapi__testmode-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__gamejoltapi__updatesession-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__gamejoltapi__url-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__gamejoltapi__username-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__gamejoltapi__usertoken-func.js" crossorigin="anonymous"></script>
 	<script src="gdjs-evtsext__gamepads__a_advanced_vibration_controller-func.js" crossorigin="anonymous"></script>
 	<script src="gdjs-evtsext__gamepads__a_change_vibration_magnitude-func.js" crossorigin="anonymous"></script>
 	<script src="gdjs-evtsext__gamepads__a_set_deadzone-func.js" crossorigin="anonymous"></script>
@@ -188,6 +297,7 @@
 	<script src="gdjs-evtsext__gamepads__stickforcey-func.js" crossorigin="anonymous"></script>
 	<script src="gdjs-evtsext__gamepads__stickrotationvalue-func.js" crossorigin="anonymous"></script>
 	<script src="gdjs-evtsext__gamepads__strongvibrationmagnitude-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__gamepads__topdowngamepadmapper.js" crossorigin="anonymous"></script>
 	<script src="gdjs-evtsext__gamepads__triggerpressure-func.js" crossorigin="anonymous"></script>
 	<script src="gdjs-evtsext__gamepads__weakvibrationmagnitude-func.js" crossorigin="anonymous"></script>
 	<script src="gdjs-evtsext__getpropertiesdata__returngametitle-func.js" crossorigin="anonymous"></script>
@@ -204,6 +314,21 @@
 	<script src="gdjs-evtsext__getpropertiesdata__returnwindowheight-func.js" crossorigin="anonymous"></script>
 	<script src="gdjs-evtsext__getpropertiesdata__returnwindowwidth-func.js" crossorigin="anonymous"></script>
 	<script src="gdjs-evtsext__health__health.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__internetconnectivity__isdeviceonline-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__inventories__additem-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__inventories__copyinventorytovariable-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__inventories__copytovariabletoinventory-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__inventories__hasitem-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__inventories__isitemcapacityreached-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__inventories__isitemequipped-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__inventories__islimiteditemcapacity-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__inventories__itemcapacity-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__inventories__itemcount-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__inventories__removeitem-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__inventories__setisitemequipped-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__inventories__setislimiteditemcapacity-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__inventories__setitemcapacity-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__inventories__setitemcount-func.js" crossorigin="anonymous"></script>
 	<script src="gdjs-evtsext__multiplayercustomlobbies__customlobbies.js" crossorigin="anonymous"></script>
 	<script src="gdjs-evtsext__multiplayercustomlobbies__gameversion-func.js" crossorigin="anonymous"></script>
 	<script src="gdjs-evtsext__multiplayercustomlobbies__isingameedition-func.js" crossorigin="anonymous"></script>
@@ -218,8 +343,19 @@
 	<script src="gdjs-evtsext__panelspritebutton__panelspritebutton.js" crossorigin="anonymous"></script>
 	<script src="gdjs-evtsext__panelspritecontinuousbar__panelspritecontinuousbar.js" crossorigin="anonymous"></script>
 	<script src="gdjs-evtsext__panelspritecontinuousbar__resourcebar.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__panelspriteslider__buttonfsm.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__panelspriteslider__isingameedition-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__panelspriteslider__panelspriteslider.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__panelspriteslider__slider.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__rectanglemovement__distancetoclosestedge-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__rectanglemovement__movealongborderofobject-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__rectanglemovement__movetonearestcorner-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__rectanglemovement__rectanglemovement.js" crossorigin="anonymous"></script>
 	<script src="gdjs-evtsext__scrollbar__scrollbar.js" crossorigin="anonymous"></script>
 	<script src="gdjs-evtsext__shakeobject__shakeobject_positionangle.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__shockwaveeffect__ellipseshockwave.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__shockwaveeffect__rgbmean-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__smoothcamera__smoothcamera.js" crossorigin="anonymous"></script>
 	<script src="gdjs-evtsext__spritemultitouchjoystick__acceleratedspeed-func.js" crossorigin="anonymous"></script>
 	<script src="gdjs-evtsext__spritemultitouchjoystick__angleto4way-func.js" crossorigin="anonymous"></script>
 	<script src="gdjs-evtsext__spritemultitouchjoystick__angleto8way-func.js" crossorigin="anonymous"></script>
@@ -246,6 +382,11 @@
 	<script src="gdjs-evtsext__spritemultitouchjoystick__stickforce-func.js" crossorigin="anonymous"></script>
 	<script src="gdjs-evtsext__spritemultitouchjoystick__stickforcex-func.js" crossorigin="anonymous"></script>
 	<script src="gdjs-evtsext__spritemultitouchjoystick__stickforcey-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__spritemultitouchjoystick__topdownmultitouchmapper.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__spritetoggleswitch__buttonfsm.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__spritetoggleswitch__isingameedition-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__spritetoggleswitch__spritetoggleswitch.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__spritetoggleswitch__switchfsm.js" crossorigin="anonymous"></script>
 	<script src="gdjs-evtsext__twochoicesdialogboxes__isingameedition-func.js" crossorigin="anonymous"></script>
 	<script src="gdjs-evtsext__twochoicesdialogboxes__twochoicesdialogbox.js" crossorigin="anonymous"></script>
 	<script src="object-capabilities/AnimatableBehavior.js" crossorigin="anonymous"></script>
@@ -257,10 +398,15 @@
 	<script src="object-capabilities/TextContainerBehavior.js" crossorigin="anonymous"></script>
 	<script src="Extensions/3D/DirectionalLight.js" crossorigin="anonymous"></script>
 	<script src="Extensions/3D/HemisphereLight.js" crossorigin="anonymous"></script>
+	<script src="Extensions/Effects/adjustment-pixi-filter.js" crossorigin="anonymous"></script>
 	<script src="Extensions/Effects/black-and-white-pixi-filter.js" crossorigin="anonymous"></script>
+	<script src="Extensions/Effects/brightness-pixi-filter.js" crossorigin="anonymous"></script>
 	<script src="Extensions/Effects/color-replace-pixi-filter.js" crossorigin="anonymous"></script>
+	<script src="Extensions/Effects/hsl-adjustment-pixi-filter.js" crossorigin="anonymous"></script>
 	<script src="Extensions/Effects/outline-pixi-filter.js" crossorigin="anonymous"></script>
+	<script src="Extensions/Effects/pixi-filters/filter-adjustment.js" crossorigin="anonymous"></script>
 	<script src="Extensions/Effects/pixi-filters/filter-color-replace.js" crossorigin="anonymous"></script>
+	<script src="Extensions/Effects/pixi-filters/filter-hsl-adjustment.js" crossorigin="anonymous"></script>
 	<script src="Extensions/Effects/pixi-filters/filter-outline.js" crossorigin="anonymous"></script>
 	<script src="code0.js" crossorigin="anonymous"></script>
 	<script src="code1.js" crossorigin="anonymous"></script>
@@ -268,6 +414,15 @@
 	<script src="code3.js" crossorigin="anonymous"></script>
 	<script src="code4.js" crossorigin="anonymous"></script>
 	<script src="code5.js" crossorigin="anonymous"></script>
+	<script src="code6.js" crossorigin="anonymous"></script>
+	<script src="code7.js" crossorigin="anonymous"></script>
+	<script src="code8.js" crossorigin="anonymous"></script>
+	<script src="code9.js" crossorigin="anonymous"></script>
+	<script src="code10.js" crossorigin="anonymous"></script>
+	<script src="code11.js" crossorigin="anonymous"></script>
+	<script src="code12.js" crossorigin="anonymous"></script>
+	<script src="code13.js" crossorigin="anonymous"></script>
+	<script src="code14.js" crossorigin="anonymous"></script>
 	<script src="data.js" crossorigin="anonymous"></script>
 
 

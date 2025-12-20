@@ -9,7 +9,7 @@ gdjs.evtsExt__Gamepads__onFirstSceneLoaded = {};
 gdjs.evtsExt__Gamepads__onFirstSceneLoaded.idToCallbackMap = new Map();
 
 
-gdjs.evtsExt__Gamepads__onFirstSceneLoaded.userFunc0xc6afc8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Gamepads__onFirstSceneLoaded.userFunc0x2c6d160 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 if (gdjs._extensionController) {
     return;
@@ -197,7 +197,27 @@ const frameBeginningTask = new class extends gdjs.AsyncTask {
     }
 }();
 
-function onScenePostEvents() {
+/**
+ * @param {gdjs.RuntimeScene} runtimeScene
+ */
+function addFrameBeginningTaskIfNeeded(runtimeScene) {
+    const taskManager = runtimeScene.getAsyncTasksManager();
+    for (const taskWithCallback of taskManager.tasksWithCallback) {
+        if (taskWithCallback.asyncTask === frameBeginningTask) {
+            return;
+        }
+    }
+    // Async tasks are run before everything.
+    // This is a hack to make sure that button states are updated
+    // before mapping behavior events.
+    taskManager.addTask(frameBeginningTask);
+}
+
+/**
+ * @param {gdjs.RuntimeScene} runtimeScene
+ */
+function onScenePostEvents(runtimeScene) {
+    addFrameBeginningTaskIfNeeded(runtimeScene);
     /** @type {Gamepad[]} */
     const gamepads = navigator.getGamepads ? navigator.getGamepads() : [];
     for (let playerId = 0; playerId < gamepads.length; playerId++) {
@@ -378,6 +398,7 @@ gdjs._extensionController = {
     getGamepad,
     onScenePostEvents,
     frameBeginningTask,
+    addFrameBeginningTaskIfNeeded,
 }
 };
 gdjs.evtsExt__Gamepads__onFirstSceneLoaded.eventsList0 = function(runtimeScene, eventsFunctionContext) {
@@ -385,7 +406,7 @@ gdjs.evtsExt__Gamepads__onFirstSceneLoaded.eventsList0 = function(runtimeScene, 
 {
 
 
-gdjs.evtsExt__Gamepads__onFirstSceneLoaded.userFunc0xc6afc8(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__Gamepads__onFirstSceneLoaded.userFunc0x2c6d160(runtimeScene, eventsFunctionContext);
 
 }
 

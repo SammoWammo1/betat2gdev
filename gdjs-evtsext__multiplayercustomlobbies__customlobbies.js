@@ -133,6 +133,10 @@ gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.on
 gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.onCreatedContext.GDBitmapPlayersTitleObjects2= [];
 gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.onCreatedContext.GDBitmapPlayersTitleObjects3= [];
 gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.onCreatedContext.GDBitmapPlayersTitleObjects4= [];
+gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.onCreatedContext.GDCursorObjects1= [];
+gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.onCreatedContext.GDCursorObjects2= [];
+gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.onCreatedContext.GDCursorObjects3= [];
+gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.onCreatedContext.GDCursorObjects4= [];
 
 
 gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.onCreatedContext.mapOfEmptyGDLobbyObjects = Hashtable.newFrom({"Lobby": []});
@@ -343,6 +347,8 @@ var thisGDBitmapLobbyTitleObjectsList = [...runtimeScene.getObjects("BitmapLobby
 var GDBitmapLobbyTitleObjects = Hashtable.newFrom({"BitmapLobbyTitle": thisGDBitmapLobbyTitleObjectsList});
 var thisGDBitmapPlayersTitleObjectsList = [...runtimeScene.getObjects("BitmapPlayersTitle")];
 var GDBitmapPlayersTitleObjects = Hashtable.newFrom({"BitmapPlayersTitle": thisGDBitmapPlayersTitleObjectsList});
+var thisGDCursorObjectsList = [...runtimeScene.getObjects("Cursor")];
+var GDCursorObjects = Hashtable.newFrom({"Cursor": thisGDCursorObjectsList});
 var eventsFunctionContext = {
   _objectsMap: {
 "Object": Object
@@ -355,6 +361,7 @@ var eventsFunctionContext = {
 , "ViewportMask": GDViewportMaskObjects
 , "BitmapLobbyTitle": GDBitmapLobbyTitleObjects
 , "BitmapPlayersTitle": GDBitmapPlayersTitleObjects
+, "Cursor": GDCursorObjects
 },
   _objectArraysMap: {
 "Object": thisObjectList
@@ -367,6 +374,7 @@ var eventsFunctionContext = {
 , "ViewportMask": thisGDViewportMaskObjectsList
 , "BitmapLobbyTitle": thisGDBitmapLobbyTitleObjectsList
 , "BitmapPlayersTitle": thisGDBitmapPlayersTitleObjectsList
+, "Cursor": thisGDCursorObjectsList
 },
   _behaviorNamesMap: {
 },
@@ -456,6 +464,10 @@ gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.on
 gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.onCreatedContext.GDBitmapPlayersTitleObjects2.length = 0;
 gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.onCreatedContext.GDBitmapPlayersTitleObjects3.length = 0;
 gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.onCreatedContext.GDBitmapPlayersTitleObjects4.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.onCreatedContext.GDCursorObjects1.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.onCreatedContext.GDCursorObjects2.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.onCreatedContext.GDCursorObjects3.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.onCreatedContext.GDCursorObjects4.length = 0;
 
 gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.onCreatedContext.eventsList3(runtimeScene, eventsFunctionContext);
 gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.onCreatedContext.GDObjectObjects1.length = 0;
@@ -498,6 +510,10 @@ gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.on
 gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.onCreatedContext.GDBitmapPlayersTitleObjects2.length = 0;
 gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.onCreatedContext.GDBitmapPlayersTitleObjects3.length = 0;
 gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.onCreatedContext.GDBitmapPlayersTitleObjects4.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.onCreatedContext.GDCursorObjects1.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.onCreatedContext.GDCursorObjects2.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.onCreatedContext.GDCursorObjects3.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.onCreatedContext.GDCursorObjects4.length = 0;
 
 gdjs.CustomRuntimeObject.prototype.onCreated.call(this);
 
@@ -551,8 +567,14 @@ gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.do
 gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.doStepPostEventsContext.GDBitmapPlayersTitleObjects2= [];
 gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.doStepPostEventsContext.GDBitmapPlayersTitleObjects3= [];
 gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.doStepPostEventsContext.GDBitmapPlayersTitleObjects4= [];
+gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.doStepPostEventsContext.GDCursorObjects1= [];
+gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.doStepPostEventsContext.GDCursorObjects2= [];
+gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.doStepPostEventsContext.GDCursorObjects3= [];
+gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.doStepPostEventsContext.GDCursorObjects4= [];
 
 
+gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.doStepPostEventsContext.mapOfGDgdjs_9546evtsExt_9595_9595MultiplayerCustomLobbies_9595_9595CustomLobbies_9546CustomLobbies_9546prototype_9546doStepPostEventsContext_9546GDCursorObjects2Objects = Hashtable.newFrom({"Cursor": gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.doStepPostEventsContext.GDCursorObjects2});
+gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.doStepPostEventsContext.mapOfGDgdjs_9546evtsExt_9595_9595MultiplayerCustomLobbies_9595_9595CustomLobbies_9546CustomLobbies_9546prototype_9546doStepPostEventsContext_9546GDLobbyObjects2Objects = Hashtable.newFrom({"Lobby": gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.doStepPostEventsContext.GDLobbyObjects2});
 gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.doStepPostEventsContext.mapOfGDgdjs_9546evtsExt_9595_9595MultiplayerCustomLobbies_9595_9595CustomLobbies_9546CustomLobbies_9546prototype_9546doStepPostEventsContext_9546GDObjectObjects2Objects = Hashtable.newFrom({"Object": gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.doStepPostEventsContext.GDObjectObjects2});
 gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.doStepPostEventsContext.mapOfGDgdjs_9546evtsExt_9595_9595MultiplayerCustomLobbies_9595_9595CustomLobbies_9546CustomLobbies_9546prototype_9546doStepPostEventsContext_9546GDBackgroundObjects2Objects = Hashtable.newFrom({"Background": gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.doStepPostEventsContext.GDBackgroundObjects2});
 gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.doStepPostEventsContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
@@ -562,7 +584,7 @@ gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.do
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(18526932);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(42463836);
 }
 if (isConditionTrue_0) {
 {eventsFunctionContext.getObjects("Object")[0]._setOldCursorY(gdjs.evtTools.input.getCursorY(runtimeScene, "", 0))
@@ -872,6 +894,27 @@ gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.do
 
 {
 
+gdjs.copyArray(eventsFunctionContext.getObjects("Cursor"), gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.doStepPostEventsContext.GDCursorObjects2);
+gdjs.copyArray(eventsFunctionContext.getObjects("Lobby"), gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.doStepPostEventsContext.GDLobbyObjects2);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.doStepPostEventsContext.mapOfGDgdjs_9546evtsExt_9595_9595MultiplayerCustomLobbies_9595_9595CustomLobbies_9546CustomLobbies_9546prototype_9546doStepPostEventsContext_9546GDCursorObjects2Objects, gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.doStepPostEventsContext.mapOfGDgdjs_9546evtsExt_9595_9595MultiplayerCustomLobbies_9595_9595CustomLobbies_9546CustomLobbies_9546prototype_9546doStepPostEventsContext_9546GDLobbyObjects2Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtsExt__Gamepads__IsButtonJustPressed.func(runtimeScene, 1, "A", eventsFunctionContext);
+}
+if (isConditionTrue_0) {
+/* Reuse gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.doStepPostEventsContext.GDLobbyObjects2 */
+{gdjs.multiplayer.authenticateAndQuickJoinWithLobbyID(runtimeScene, ((gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.doStepPostEventsContext.GDLobbyObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.doStepPostEventsContext.GDLobbyObjects2[0].getVariables()).get("LobbyIDGP").getAsString(), true, false);
+}
+}
+
+}
+
+
+{
+
 gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.doStepPostEventsContext.GDObjectObjects2.length = 0;
 
 
@@ -987,6 +1030,8 @@ var thisGDBitmapLobbyTitleObjectsList = [...runtimeScene.getObjects("BitmapLobby
 var GDBitmapLobbyTitleObjects = Hashtable.newFrom({"BitmapLobbyTitle": thisGDBitmapLobbyTitleObjectsList});
 var thisGDBitmapPlayersTitleObjectsList = [...runtimeScene.getObjects("BitmapPlayersTitle")];
 var GDBitmapPlayersTitleObjects = Hashtable.newFrom({"BitmapPlayersTitle": thisGDBitmapPlayersTitleObjectsList});
+var thisGDCursorObjectsList = [...runtimeScene.getObjects("Cursor")];
+var GDCursorObjects = Hashtable.newFrom({"Cursor": thisGDCursorObjectsList});
 var eventsFunctionContext = {
   _objectsMap: {
 "Object": Object
@@ -999,6 +1044,7 @@ var eventsFunctionContext = {
 , "ViewportMask": GDViewportMaskObjects
 , "BitmapLobbyTitle": GDBitmapLobbyTitleObjects
 , "BitmapPlayersTitle": GDBitmapPlayersTitleObjects
+, "Cursor": GDCursorObjects
 },
   _objectArraysMap: {
 "Object": thisObjectList
@@ -1011,6 +1057,7 @@ var eventsFunctionContext = {
 , "ViewportMask": thisGDViewportMaskObjectsList
 , "BitmapLobbyTitle": thisGDBitmapLobbyTitleObjectsList
 , "BitmapPlayersTitle": thisGDBitmapPlayersTitleObjectsList
+, "Cursor": thisGDCursorObjectsList
 },
   _behaviorNamesMap: {
 },
@@ -1100,6 +1147,10 @@ gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.do
 gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.doStepPostEventsContext.GDBitmapPlayersTitleObjects2.length = 0;
 gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.doStepPostEventsContext.GDBitmapPlayersTitleObjects3.length = 0;
 gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.doStepPostEventsContext.GDBitmapPlayersTitleObjects4.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.doStepPostEventsContext.GDCursorObjects1.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.doStepPostEventsContext.GDCursorObjects2.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.doStepPostEventsContext.GDCursorObjects3.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.doStepPostEventsContext.GDCursorObjects4.length = 0;
 
 gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.doStepPostEventsContext.eventsList6(runtimeScene, eventsFunctionContext);
 gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.doStepPostEventsContext.GDObjectObjects1.length = 0;
@@ -1142,6 +1193,10 @@ gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.do
 gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.doStepPostEventsContext.GDBitmapPlayersTitleObjects2.length = 0;
 gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.doStepPostEventsContext.GDBitmapPlayersTitleObjects3.length = 0;
 gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.doStepPostEventsContext.GDBitmapPlayersTitleObjects4.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.doStepPostEventsContext.GDCursorObjects1.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.doStepPostEventsContext.GDCursorObjects2.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.doStepPostEventsContext.GDCursorObjects3.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.doStepPostEventsContext.GDCursorObjects4.length = 0;
 
 
 return;
@@ -1188,6 +1243,10 @@ gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.Up
 gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.UpdateLobbiesContext.GDBitmapPlayersTitleObjects2= [];
 gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.UpdateLobbiesContext.GDBitmapPlayersTitleObjects3= [];
 gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.UpdateLobbiesContext.GDBitmapPlayersTitleObjects4= [];
+gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.UpdateLobbiesContext.GDCursorObjects1= [];
+gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.UpdateLobbiesContext.GDCursorObjects2= [];
+gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.UpdateLobbiesContext.GDCursorObjects3= [];
+gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.UpdateLobbiesContext.GDCursorObjects4= [];
 
 
 gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.UpdateLobbiesContext.mapOfGDgdjs_9546evtsExt_9595_9595MultiplayerCustomLobbies_9595_9595CustomLobbies_9546CustomLobbies_9546prototype_9546UpdateLobbiesContext_9546GDLobbyObjects4Objects = Hashtable.newFrom({"Lobby": gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.UpdateLobbiesContext.GDLobbyObjects4});
@@ -1275,7 +1334,7 @@ let isConditionTrue_0 = false;
 }
 
 
-};gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.UpdateLobbiesContext.asyncCallback18532932 = function (runtimeScene, eventsFunctionContext, asyncObjectsList) {
+};gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.UpdateLobbiesContext.asyncCallback42470844 = function (runtimeScene, eventsFunctionContext, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(eventsFunctionContext.localVariables);
 gdjs.copyArray(eventsFunctionContext.getObjects("Loading"), gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.UpdateLobbiesContext.GDLoadingObjects2);
 gdjs.copyArray(eventsFunctionContext.getObjects("Lobby"), gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.UpdateLobbiesContext.GDLobbyObjects2);
@@ -1306,7 +1365,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("ViewportMask"), gdjs.evtsExt__M
 gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.UpdateLobbiesContext.eventsList1(runtimeScene, eventsFunctionContext, asyncObjectsList);} //End of subevents
 eventsFunctionContext.localVariables.length = 0;
 }
-gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.UpdateLobbiesContext.idToCallbackMap.set(18532932, gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.UpdateLobbiesContext.asyncCallback18532932);
+gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.UpdateLobbiesContext.idToCallbackMap.set(42470844, gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.UpdateLobbiesContext.asyncCallback42470844);
 gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.UpdateLobbiesContext.eventsList2 = function(runtimeScene, eventsFunctionContext) {
 
 {
@@ -1316,7 +1375,7 @@ gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.Up
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(eventsFunctionContext.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.network.sendAwaitableAsyncRequest("https://api.gdevelop.io/play/game/" + gdjs.evtsExt__MultiplayerCustomLobbies__ProjectUUID.func(runtimeScene, eventsFunctionContext) + "/public-lobby?isPreview=" + gdjs.evtsExt__MultiplayerCustomLobbies__IsPreview.func(runtimeScene, eventsFunctionContext) + "&gameVersion=" + gdjs.evtsExt__MultiplayerCustomLobbies__GameVersion.func(runtimeScene, eventsFunctionContext), "", "GET", "", eventsFunctionContext.sceneVariablesForExtension.getFromIndex(0), eventsFunctionContext.sceneVariablesForExtension.getFromIndex(1)), (runtimeScene) => (gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.UpdateLobbiesContext.asyncCallback18532932(runtimeScene, eventsFunctionContext, asyncObjectsList)), 18532932, asyncObjectsList);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.network.sendAwaitableAsyncRequest("https://api.gdevelop.io/play/game/" + gdjs.evtsExt__MultiplayerCustomLobbies__ProjectUUID.func(runtimeScene, eventsFunctionContext) + "/public-lobby?isPreview=" + gdjs.evtsExt__MultiplayerCustomLobbies__IsPreview.func(runtimeScene, eventsFunctionContext) + "&gameVersion=" + gdjs.evtsExt__MultiplayerCustomLobbies__GameVersion.func(runtimeScene, eventsFunctionContext), "", "GET", "", eventsFunctionContext.sceneVariablesForExtension.getFromIndex(0), eventsFunctionContext.sceneVariablesForExtension.getFromIndex(1)), (runtimeScene) => (gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.UpdateLobbiesContext.asyncCallback42470844(runtimeScene, eventsFunctionContext, asyncObjectsList)), 42470844, asyncObjectsList);
 }
 }
 
@@ -1402,6 +1461,8 @@ var thisGDBitmapLobbyTitleObjectsList = [...runtimeScene.getObjects("BitmapLobby
 var GDBitmapLobbyTitleObjects = Hashtable.newFrom({"BitmapLobbyTitle": thisGDBitmapLobbyTitleObjectsList});
 var thisGDBitmapPlayersTitleObjectsList = [...runtimeScene.getObjects("BitmapPlayersTitle")];
 var GDBitmapPlayersTitleObjects = Hashtable.newFrom({"BitmapPlayersTitle": thisGDBitmapPlayersTitleObjectsList});
+var thisGDCursorObjectsList = [...runtimeScene.getObjects("Cursor")];
+var GDCursorObjects = Hashtable.newFrom({"Cursor": thisGDCursorObjectsList});
 var eventsFunctionContext = {
   _objectsMap: {
 "Object": Object
@@ -1414,6 +1475,7 @@ var eventsFunctionContext = {
 , "ViewportMask": GDViewportMaskObjects
 , "BitmapLobbyTitle": GDBitmapLobbyTitleObjects
 , "BitmapPlayersTitle": GDBitmapPlayersTitleObjects
+, "Cursor": GDCursorObjects
 },
   _objectArraysMap: {
 "Object": thisObjectList
@@ -1426,6 +1488,7 @@ var eventsFunctionContext = {
 , "ViewportMask": thisGDViewportMaskObjectsList
 , "BitmapLobbyTitle": thisGDBitmapLobbyTitleObjectsList
 , "BitmapPlayersTitle": thisGDBitmapPlayersTitleObjectsList
+, "Cursor": thisGDCursorObjectsList
 },
   _behaviorNamesMap: {
 },
@@ -1515,6 +1578,10 @@ gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.Up
 gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.UpdateLobbiesContext.GDBitmapPlayersTitleObjects2.length = 0;
 gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.UpdateLobbiesContext.GDBitmapPlayersTitleObjects3.length = 0;
 gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.UpdateLobbiesContext.GDBitmapPlayersTitleObjects4.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.UpdateLobbiesContext.GDCursorObjects1.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.UpdateLobbiesContext.GDCursorObjects2.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.UpdateLobbiesContext.GDCursorObjects3.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.UpdateLobbiesContext.GDCursorObjects4.length = 0;
 
 gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.UpdateLobbiesContext.eventsList3(runtimeScene, eventsFunctionContext);
 gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.UpdateLobbiesContext.GDObjectObjects1.length = 0;
@@ -1557,6 +1624,10 @@ gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.Up
 gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.UpdateLobbiesContext.GDBitmapPlayersTitleObjects2.length = 0;
 gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.UpdateLobbiesContext.GDBitmapPlayersTitleObjects3.length = 0;
 gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.UpdateLobbiesContext.GDBitmapPlayersTitleObjects4.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.UpdateLobbiesContext.GDCursorObjects1.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.UpdateLobbiesContext.GDCursorObjects2.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.UpdateLobbiesContext.GDCursorObjects3.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.UpdateLobbiesContext.GDCursorObjects4.length = 0;
 
 
 return;
@@ -1583,6 +1654,8 @@ gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.La
 gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.LastErrorContext.GDBitmapLobbyTitleObjects2= [];
 gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.LastErrorContext.GDBitmapPlayersTitleObjects1= [];
 gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.LastErrorContext.GDBitmapPlayersTitleObjects2= [];
+gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.LastErrorContext.GDCursorObjects1= [];
+gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.LastErrorContext.GDCursorObjects2= [];
 
 
 gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.LastErrorContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
@@ -1625,6 +1698,8 @@ var thisGDBitmapLobbyTitleObjectsList = [...runtimeScene.getObjects("BitmapLobby
 var GDBitmapLobbyTitleObjects = Hashtable.newFrom({"BitmapLobbyTitle": thisGDBitmapLobbyTitleObjectsList});
 var thisGDBitmapPlayersTitleObjectsList = [...runtimeScene.getObjects("BitmapPlayersTitle")];
 var GDBitmapPlayersTitleObjects = Hashtable.newFrom({"BitmapPlayersTitle": thisGDBitmapPlayersTitleObjectsList});
+var thisGDCursorObjectsList = [...runtimeScene.getObjects("Cursor")];
+var GDCursorObjects = Hashtable.newFrom({"Cursor": thisGDCursorObjectsList});
 var eventsFunctionContext = {
   _objectsMap: {
 "Object": Object
@@ -1637,6 +1712,7 @@ var eventsFunctionContext = {
 , "ViewportMask": GDViewportMaskObjects
 , "BitmapLobbyTitle": GDBitmapLobbyTitleObjects
 , "BitmapPlayersTitle": GDBitmapPlayersTitleObjects
+, "Cursor": GDCursorObjects
 },
   _objectArraysMap: {
 "Object": thisObjectList
@@ -1649,6 +1725,7 @@ var eventsFunctionContext = {
 , "ViewportMask": thisGDViewportMaskObjectsList
 , "BitmapLobbyTitle": thisGDBitmapLobbyTitleObjectsList
 , "BitmapPlayersTitle": thisGDBitmapPlayersTitleObjectsList
+, "Cursor": thisGDCursorObjectsList
 },
   _behaviorNamesMap: {
 },
@@ -1718,6 +1795,8 @@ gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.La
 gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.LastErrorContext.GDBitmapLobbyTitleObjects2.length = 0;
 gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.LastErrorContext.GDBitmapPlayersTitleObjects1.length = 0;
 gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.LastErrorContext.GDBitmapPlayersTitleObjects2.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.LastErrorContext.GDCursorObjects1.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.LastErrorContext.GDCursorObjects2.length = 0;
 
 gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.LastErrorContext.eventsList0(runtimeScene, eventsFunctionContext);
 gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.LastErrorContext.GDObjectObjects1.length = 0;
@@ -1740,6 +1819,8 @@ gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.La
 gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.LastErrorContext.GDBitmapLobbyTitleObjects2.length = 0;
 gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.LastErrorContext.GDBitmapPlayersTitleObjects1.length = 0;
 gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.LastErrorContext.GDBitmapPlayersTitleObjects2.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.LastErrorContext.GDCursorObjects1.length = 0;
+gdjs.evtsExt__MultiplayerCustomLobbies__CustomLobbies.CustomLobbies.prototype.LastErrorContext.GDCursorObjects2.length = 0;
 
 
 return "" + eventsFunctionContext.returnValue;
