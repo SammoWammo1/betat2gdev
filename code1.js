@@ -79,6 +79,8 @@ isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("Cursor"), gdjs.TitleCode.GDCursorObjects1);
 gdjs.copyArray(runtimeScene.getObjects("ver"), gdjs.TitleCode.GDverObjects1);
+{gdjs.evtTools.sound.playMusicOnChannel(runtimeScene, "Title.mp3", 0, true, 100, 1);
+}
 {gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "buttonduration");
 }
 {gdjs.evtTools.sound.preloadSound(runtimeScene, "ballbounce.mp3");
@@ -100,8 +102,6 @@ gdjs.copyArray(runtimeScene.getObjects("ver"), gdjs.TitleCode.GDverObjects1);
 }
 }
 {gdjs.evtTools.network.enableMetrics(runtimeScene, true);
-}
-{gdjs.evtTools.sound.playMusicOnChannel(runtimeScene, "Title.mp3", 0, true, 100, 1);
 }
 }
 
@@ -161,7 +161,7 @@ for (var i = 0, k = 0, l = gdjs.TitleCode.GDSettingsObjects1.length;i<l;++i) {
 }
 gdjs.TitleCode.GDSettingsObjects1.length = k;
 if (isConditionTrue_0) {
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Settings", false);
+{gdjs.evtTools.runtimeScene.pushScene(runtimeScene, "Settings");
 }
 }
 
@@ -355,7 +355,7 @@ gdjs.TitleCode.GDCampaignObjects1.length = k;
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(0).setNumber(0);
 }
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Intro", false);
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "difficultyselector", false);
 }
 }
 
@@ -395,7 +395,7 @@ gdjs.TitleCode.GDExitObjects1.length = k;
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(0).setNumber(1);
 }
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Campaign", false);
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "LoadingCampaign", false);
 }
 }
 
@@ -738,7 +738,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = !(gdjs.evtsExt__Gamepads__C_Controller_X_is_connected.func(runtimeScene, 1, null));
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(37601940);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(39768268);
 }
 }
 if (isConditionTrue_0) {
@@ -760,7 +760,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtsExt__Gamepads__C_Controller_X_is_connected.func(runtimeScene, 1, null);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(37602412);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(39768740);
 }
 }
 if (isConditionTrue_0) {
@@ -781,7 +781,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.wasKeyJustPressed(runtimeScene, "F4");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(37602212);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(39768540);
 }
 }
 if (isConditionTrue_0) {
@@ -900,6 +900,16 @@ isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN
 if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.removeTimer(runtimeScene, "wait");
 }
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
 }
 
 }

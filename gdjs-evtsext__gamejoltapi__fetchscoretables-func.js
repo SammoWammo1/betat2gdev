@@ -9,13 +9,13 @@ gdjs.evtsExt__GamejoltAPI__FetchScoreTables = {};
 gdjs.evtsExt__GamejoltAPI__FetchScoreTables.idToCallbackMap = new Map();
 
 
-gdjs.evtsExt__GamejoltAPI__FetchScoreTables.asyncCallback36380420 = function (runtimeScene, eventsFunctionContext, asyncObjectsList) {
+gdjs.evtsExt__GamejoltAPI__FetchScoreTables.asyncCallback38396988 = function (runtimeScene, eventsFunctionContext, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(eventsFunctionContext.localVariables);
 {gdjs.evtTools.common.resolveAsyncEventsFunction(eventsFunctionContext);
 }
 eventsFunctionContext.localVariables.length = 0;
 }
-gdjs.evtsExt__GamejoltAPI__FetchScoreTables.idToCallbackMap.set(36380420, gdjs.evtsExt__GamejoltAPI__FetchScoreTables.asyncCallback36380420);
+gdjs.evtsExt__GamejoltAPI__FetchScoreTables.idToCallbackMap.set(38396988, gdjs.evtsExt__GamejoltAPI__FetchScoreTables.asyncCallback38396988);
 gdjs.evtsExt__GamejoltAPI__FetchScoreTables.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
@@ -25,7 +25,7 @@ gdjs.evtsExt__GamejoltAPI__FetchScoreTables.eventsList0 = function(runtimeScene,
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(eventsFunctionContext.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__GamejoltAPI__CallGamejolt.func(runtimeScene, "scores/tables", eventsFunctionContext.getArgument("RequestName"), eventsFunctionContext), (runtimeScene) => (gdjs.evtsExt__GamejoltAPI__FetchScoreTables.asyncCallback36380420(runtimeScene, eventsFunctionContext, asyncObjectsList)), 36380420, asyncObjectsList);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__GamejoltAPI__CallGamejolt.func(runtimeScene, "scores/tables", eventsFunctionContext.getArgument("RequestName"), eventsFunctionContext), (runtimeScene) => (gdjs.evtsExt__GamejoltAPI__FetchScoreTables.asyncCallback38396988(runtimeScene, eventsFunctionContext, asyncObjectsList)), 38396988, asyncObjectsList);
 }
 }
 
