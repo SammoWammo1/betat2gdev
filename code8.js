@@ -11,6 +11,8 @@ gdjs.SettingsCode.GDCreditsObjects1_1final = [];
 
 gdjs.SettingsCode.GDCursorObjects1_1final = [];
 
+gdjs.SettingsCode.GDSoundObjects1_1final = [];
+
 gdjs.SettingsCode.GDBackObjects1= [];
 gdjs.SettingsCode.GDBackObjects2= [];
 gdjs.SettingsCode.GDBGObjects1= [];
@@ -19,10 +21,10 @@ gdjs.SettingsCode.GDSoundObjects1= [];
 gdjs.SettingsCode.GDSoundObjects2= [];
 gdjs.SettingsCode.GDBackSelectObjects1= [];
 gdjs.SettingsCode.GDBackSelectObjects2= [];
-gdjs.SettingsCode.GDMusicObjects1= [];
-gdjs.SettingsCode.GDMusicObjects2= [];
-gdjs.SettingsCode.GDMusicTextObjects1= [];
-gdjs.SettingsCode.GDMusicTextObjects2= [];
+gdjs.SettingsCode.GDAllAudioObjects1= [];
+gdjs.SettingsCode.GDAllAudioObjects2= [];
+gdjs.SettingsCode.GDMasterTextObjects1= [];
+gdjs.SettingsCode.GDMasterTextObjects2= [];
 gdjs.SettingsCode.GDVisualObjects1= [];
 gdjs.SettingsCode.GDVisualObjects2= [];
 gdjs.SettingsCode.GDControlsObjects1= [];
@@ -53,6 +55,10 @@ gdjs.SettingsCode.GDSFXObjects1= [];
 gdjs.SettingsCode.GDSFXObjects2= [];
 gdjs.SettingsCode.GDSFXTextObjects1= [];
 gdjs.SettingsCode.GDSFXTextObjects2= [];
+gdjs.SettingsCode.GDMusicObjects1= [];
+gdjs.SettingsCode.GDMusicObjects2= [];
+gdjs.SettingsCode.GDMusicTextObjects1= [];
+gdjs.SettingsCode.GDMusicTextObjects2= [];
 gdjs.SettingsCode.GDCustomLobbiesObjects1= [];
 gdjs.SettingsCode.GDCustomLobbiesObjects2= [];
 gdjs.SettingsCode.GDOnlineCheckObjects1= [];
@@ -69,8 +75,22 @@ gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDBackSelectObjects2Objects =
 gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDCursorObjects2Objects = Hashtable.newFrom({"Cursor": gdjs.SettingsCode.GDCursorObjects2});
 gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDCreditsObjects2Objects = Hashtable.newFrom({"Credits": gdjs.SettingsCode.GDCreditsObjects2});
 gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDCursorObjects2Objects = Hashtable.newFrom({"Cursor": gdjs.SettingsCode.GDCursorObjects2});
+gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDSoundObjects2Objects = Hashtable.newFrom({"Sound": gdjs.SettingsCode.GDSoundObjects2});
+gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDCursorObjects2Objects = Hashtable.newFrom({"Cursor": gdjs.SettingsCode.GDCursorObjects2});
 gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDControlsObjects2Objects = Hashtable.newFrom({"Controls": gdjs.SettingsCode.GDControlsObjects2});
 gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDCursorObjects2Objects = Hashtable.newFrom({"Cursor": gdjs.SettingsCode.GDCursorObjects2});
+gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDAllAudioObjects1Objects = Hashtable.newFrom({"AllAudio": gdjs.SettingsCode.GDAllAudioObjects1});
+gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDCursorObjects1Objects = Hashtable.newFrom({"Cursor": gdjs.SettingsCode.GDCursorObjects1});
+gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDAllAudioObjects1Objects = Hashtable.newFrom({"AllAudio": gdjs.SettingsCode.GDAllAudioObjects1});
+gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDCursorObjects1Objects = Hashtable.newFrom({"Cursor": gdjs.SettingsCode.GDCursorObjects1});
+gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDMusicObjects1Objects = Hashtable.newFrom({"Music": gdjs.SettingsCode.GDMusicObjects1});
+gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDCursorObjects1Objects = Hashtable.newFrom({"Cursor": gdjs.SettingsCode.GDCursorObjects1});
+gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDMusicObjects1Objects = Hashtable.newFrom({"Music": gdjs.SettingsCode.GDMusicObjects1});
+gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDCursorObjects1Objects = Hashtable.newFrom({"Cursor": gdjs.SettingsCode.GDCursorObjects1});
+gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDSFXObjects1Objects = Hashtable.newFrom({"SFX": gdjs.SettingsCode.GDSFXObjects1});
+gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDCursorObjects1Objects = Hashtable.newFrom({"Cursor": gdjs.SettingsCode.GDCursorObjects1});
+gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDSFXObjects1Objects = Hashtable.newFrom({"SFX": gdjs.SettingsCode.GDSFXObjects1});
+gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDCursorObjects1Objects = Hashtable.newFrom({"Cursor": gdjs.SettingsCode.GDCursorObjects1});
 gdjs.SettingsCode.eventsList0 = function(runtimeScene) {
 
 {
@@ -134,6 +154,10 @@ gdjs.copyArray(gdjs.SettingsCode.GDCursorObjects1_1final, gdjs.SettingsCode.GDCu
 }
 }
 if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.camera.layerIsVisible(runtimeScene, "");
+}
+if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.popScene(runtimeScene);
 }
 }
@@ -146,8 +170,8 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 {
-gdjs.copyArray(runtimeScene.getObjects("Music"), gdjs.SettingsCode.GDMusicObjects1);
-{runtimeScene.getGame().getVariables().getFromIndex(3).setNumber((( gdjs.SettingsCode.GDMusicObjects1.length === 0 ) ? 0 :gdjs.SettingsCode.GDMusicObjects1[0].Value(null)));
+gdjs.copyArray(runtimeScene.getObjects("AllAudio"), gdjs.SettingsCode.GDAllAudioObjects1);
+{runtimeScene.getGame().getVariables().getFromIndex(3).setNumber((( gdjs.SettingsCode.GDAllAudioObjects1.length === 0 ) ? 0 :gdjs.SettingsCode.GDAllAudioObjects1[0].Value(null)));
 }
 }
 
@@ -313,9 +337,87 @@ gdjs.copyArray(gdjs.SettingsCode.GDCursorObjects1_1final, gdjs.SettingsCode.GDCu
 }
 }
 if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.camera.layerIsVisible(runtimeScene, "");
+}
+if (isConditionTrue_0) {
 {gdjs.evtTools.camera.hideLayer(runtimeScene, "");
 }
 {gdjs.evtTools.camera.showLayer(runtimeScene, "Credits");
+}
+}
+
+}
+
+
+{
+
+gdjs.SettingsCode.GDCursorObjects1.length = 0;
+
+gdjs.SettingsCode.GDSoundObjects1.length = 0;
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{gdjs.SettingsCode.GDCursorObjects1_1final.length = 0;
+gdjs.SettingsCode.GDSoundObjects1_1final.length = 0;
+let isConditionTrue_1 = false;
+isConditionTrue_0 = false;
+{
+gdjs.copyArray(runtimeScene.getObjects("Sound"), gdjs.SettingsCode.GDSoundObjects2);
+for (var i = 0, k = 0, l = gdjs.SettingsCode.GDSoundObjects2.length;i<l;++i) {
+    if ( gdjs.SettingsCode.GDSoundObjects2[i].IsClicked(null) ) {
+        isConditionTrue_1 = true;
+        gdjs.SettingsCode.GDSoundObjects2[k] = gdjs.SettingsCode.GDSoundObjects2[i];
+        ++k;
+    }
+}
+gdjs.SettingsCode.GDSoundObjects2.length = k;
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+    for (let j = 0, jLen = gdjs.SettingsCode.GDSoundObjects2.length; j < jLen ; ++j) {
+        if ( gdjs.SettingsCode.GDSoundObjects1_1final.indexOf(gdjs.SettingsCode.GDSoundObjects2[j]) === -1 )
+            gdjs.SettingsCode.GDSoundObjects1_1final.push(gdjs.SettingsCode.GDSoundObjects2[j]);
+    }
+}
+}
+{
+gdjs.copyArray(runtimeScene.getObjects("Cursor"), gdjs.SettingsCode.GDCursorObjects2);
+gdjs.copyArray(runtimeScene.getObjects("Sound"), gdjs.SettingsCode.GDSoundObjects2);
+{let isConditionTrue_2 = false;
+isConditionTrue_2 = false;
+isConditionTrue_2 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDSoundObjects2Objects, gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDCursorObjects2Objects, false, runtimeScene, false);
+if (isConditionTrue_2) {
+isConditionTrue_2 = false;
+isConditionTrue_2 = gdjs.evtsExt__Gamepads__IsButtonJustPressed.func(runtimeScene, 1, "A", null);
+}
+isConditionTrue_1 = isConditionTrue_2;
+}
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+    for (let j = 0, jLen = gdjs.SettingsCode.GDCursorObjects2.length; j < jLen ; ++j) {
+        if ( gdjs.SettingsCode.GDCursorObjects1_1final.indexOf(gdjs.SettingsCode.GDCursorObjects2[j]) === -1 )
+            gdjs.SettingsCode.GDCursorObjects1_1final.push(gdjs.SettingsCode.GDCursorObjects2[j]);
+    }
+    for (let j = 0, jLen = gdjs.SettingsCode.GDSoundObjects2.length; j < jLen ; ++j) {
+        if ( gdjs.SettingsCode.GDSoundObjects1_1final.indexOf(gdjs.SettingsCode.GDSoundObjects2[j]) === -1 )
+            gdjs.SettingsCode.GDSoundObjects1_1final.push(gdjs.SettingsCode.GDSoundObjects2[j]);
+    }
+}
+}
+{
+gdjs.copyArray(gdjs.SettingsCode.GDCursorObjects1_1final, gdjs.SettingsCode.GDCursorObjects1);
+gdjs.copyArray(gdjs.SettingsCode.GDSoundObjects1_1final, gdjs.SettingsCode.GDSoundObjects1);
+}
+}
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.camera.layerIsVisible(runtimeScene, "");
+}
+if (isConditionTrue_0) {
+{gdjs.evtTools.camera.hideLayer(runtimeScene, "");
+}
+{gdjs.evtTools.camera.showLayer(runtimeScene, "sound");
 }
 }
 
@@ -383,6 +485,10 @@ gdjs.copyArray(gdjs.SettingsCode.GDCursorObjects1_1final, gdjs.SettingsCode.GDCu
 }
 }
 if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.camera.layerIsVisible(runtimeScene, "");
+}
+if (isConditionTrue_0) {
 {gdjs.evtTools.camera.hideLayer(runtimeScene, "");
 }
 {gdjs.evtTools.camera.showLayer(runtimeScene, "Gameplay");
@@ -414,6 +520,275 @@ if (isConditionTrue_0) {
 }
 
 
+{
+
+gdjs.copyArray(runtimeScene.getObjects("AllAudio"), gdjs.SettingsCode.GDAllAudioObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Cursor"), gdjs.SettingsCode.GDCursorObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.SettingsCode.GDCursorObjects1.length;i<l;++i) {
+    if ( gdjs.SettingsCode.GDCursorObjects1[i].getX() >= (( gdjs.SettingsCode.GDAllAudioObjects1.length === 0 ) ? 0 :gdjs.SettingsCode.GDAllAudioObjects1[0].getCenterXInScene()) ) {
+        isConditionTrue_0 = true;
+        gdjs.SettingsCode.GDCursorObjects1[k] = gdjs.SettingsCode.GDCursorObjects1[i];
+        ++k;
+    }
+}
+gdjs.SettingsCode.GDCursorObjects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDAllAudioObjects1Objects, gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDCursorObjects1Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtsExt__Gamepads__IsButtonJustPressed.func(runtimeScene, 1, "A", null);
+}
+}
+if (isConditionTrue_0) {
+/* Reuse gdjs.SettingsCode.GDAllAudioObjects1 */
+{for(var i = 0, len = gdjs.SettingsCode.GDAllAudioObjects1.length ;i < len;++i) {
+    gdjs.SettingsCode.GDAllAudioObjects1[i].SetLabelShown(true, null);
+}
+}
+{for(var i = 0, len = gdjs.SettingsCode.GDAllAudioObjects1.length ;i < len;++i) {
+    gdjs.SettingsCode.GDAllAudioObjects1[i].SetValue(gdjs.SettingsCode.GDAllAudioObjects1[i].Value(null) + (10), null);
+}
+}
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("AllAudio"), gdjs.SettingsCode.GDAllAudioObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Cursor"), gdjs.SettingsCode.GDCursorObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.SettingsCode.GDCursorObjects1.length;i<l;++i) {
+    if ( gdjs.SettingsCode.GDCursorObjects1[i].getX() < (( gdjs.SettingsCode.GDAllAudioObjects1.length === 0 ) ? 0 :gdjs.SettingsCode.GDAllAudioObjects1[0].getCenterXInScene()) ) {
+        isConditionTrue_0 = true;
+        gdjs.SettingsCode.GDCursorObjects1[k] = gdjs.SettingsCode.GDCursorObjects1[i];
+        ++k;
+    }
+}
+gdjs.SettingsCode.GDCursorObjects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDAllAudioObjects1Objects, gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDCursorObjects1Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtsExt__Gamepads__IsButtonJustPressed.func(runtimeScene, 1, "A", null);
+}
+}
+if (isConditionTrue_0) {
+/* Reuse gdjs.SettingsCode.GDAllAudioObjects1 */
+{for(var i = 0, len = gdjs.SettingsCode.GDAllAudioObjects1.length ;i < len;++i) {
+    gdjs.SettingsCode.GDAllAudioObjects1[i].SetLabelShown(true, null);
+}
+}
+{for(var i = 0, len = gdjs.SettingsCode.GDAllAudioObjects1.length ;i < len;++i) {
+    gdjs.SettingsCode.GDAllAudioObjects1[i].SetValue(gdjs.SettingsCode.GDAllAudioObjects1[i].Value(null) - (10), null);
+}
+}
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("Cursor"), gdjs.SettingsCode.GDCursorObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Music"), gdjs.SettingsCode.GDMusicObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.SettingsCode.GDCursorObjects1.length;i<l;++i) {
+    if ( gdjs.SettingsCode.GDCursorObjects1[i].getX() < (( gdjs.SettingsCode.GDMusicObjects1.length === 0 ) ? 0 :gdjs.SettingsCode.GDMusicObjects1[0].getCenterXInScene()) ) {
+        isConditionTrue_0 = true;
+        gdjs.SettingsCode.GDCursorObjects1[k] = gdjs.SettingsCode.GDCursorObjects1[i];
+        ++k;
+    }
+}
+gdjs.SettingsCode.GDCursorObjects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDMusicObjects1Objects, gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDCursorObjects1Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtsExt__Gamepads__IsButtonJustPressed.func(runtimeScene, 1, "A", null);
+}
+}
+if (isConditionTrue_0) {
+/* Reuse gdjs.SettingsCode.GDMusicObjects1 */
+{for(var i = 0, len = gdjs.SettingsCode.GDMusicObjects1.length ;i < len;++i) {
+    gdjs.SettingsCode.GDMusicObjects1[i].SetLabelShown(true, null);
+}
+}
+{for(var i = 0, len = gdjs.SettingsCode.GDMusicObjects1.length ;i < len;++i) {
+    gdjs.SettingsCode.GDMusicObjects1[i].SetValue(gdjs.SettingsCode.GDMusicObjects1[i].Value(null) - (10), null);
+}
+}
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("Cursor"), gdjs.SettingsCode.GDCursorObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Music"), gdjs.SettingsCode.GDMusicObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.SettingsCode.GDCursorObjects1.length;i<l;++i) {
+    if ( gdjs.SettingsCode.GDCursorObjects1[i].getX() >= (( gdjs.SettingsCode.GDMusicObjects1.length === 0 ) ? 0 :gdjs.SettingsCode.GDMusicObjects1[0].getCenterXInScene()) ) {
+        isConditionTrue_0 = true;
+        gdjs.SettingsCode.GDCursorObjects1[k] = gdjs.SettingsCode.GDCursorObjects1[i];
+        ++k;
+    }
+}
+gdjs.SettingsCode.GDCursorObjects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDMusicObjects1Objects, gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDCursorObjects1Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtsExt__Gamepads__IsButtonJustPressed.func(runtimeScene, 1, "A", null);
+}
+}
+if (isConditionTrue_0) {
+/* Reuse gdjs.SettingsCode.GDMusicObjects1 */
+{for(var i = 0, len = gdjs.SettingsCode.GDMusicObjects1.length ;i < len;++i) {
+    gdjs.SettingsCode.GDMusicObjects1[i].SetLabelShown(true, null);
+}
+}
+{for(var i = 0, len = gdjs.SettingsCode.GDMusicObjects1.length ;i < len;++i) {
+    gdjs.SettingsCode.GDMusicObjects1[i].SetValue(gdjs.SettingsCode.GDMusicObjects1[i].Value(null) + (10), null);
+}
+}
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("Cursor"), gdjs.SettingsCode.GDCursorObjects1);
+gdjs.copyArray(runtimeScene.getObjects("SFX"), gdjs.SettingsCode.GDSFXObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.SettingsCode.GDCursorObjects1.length;i<l;++i) {
+    if ( gdjs.SettingsCode.GDCursorObjects1[i].getX() < (( gdjs.SettingsCode.GDSFXObjects1.length === 0 ) ? 0 :gdjs.SettingsCode.GDSFXObjects1[0].getCenterXInScene()) ) {
+        isConditionTrue_0 = true;
+        gdjs.SettingsCode.GDCursorObjects1[k] = gdjs.SettingsCode.GDCursorObjects1[i];
+        ++k;
+    }
+}
+gdjs.SettingsCode.GDCursorObjects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDSFXObjects1Objects, gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDCursorObjects1Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtsExt__Gamepads__IsButtonJustPressed.func(runtimeScene, 1, "A", null);
+}
+}
+if (isConditionTrue_0) {
+/* Reuse gdjs.SettingsCode.GDSFXObjects1 */
+{for(var i = 0, len = gdjs.SettingsCode.GDSFXObjects1.length ;i < len;++i) {
+    gdjs.SettingsCode.GDSFXObjects1[i].SetLabelShown(true, null);
+}
+}
+{for(var i = 0, len = gdjs.SettingsCode.GDSFXObjects1.length ;i < len;++i) {
+    gdjs.SettingsCode.GDSFXObjects1[i].SetValue(gdjs.SettingsCode.GDSFXObjects1[i].Value(null) - (10), null);
+}
+}
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("Cursor"), gdjs.SettingsCode.GDCursorObjects1);
+gdjs.copyArray(runtimeScene.getObjects("SFX"), gdjs.SettingsCode.GDSFXObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.SettingsCode.GDCursorObjects1.length;i<l;++i) {
+    if ( gdjs.SettingsCode.GDCursorObjects1[i].getX() >= (( gdjs.SettingsCode.GDSFXObjects1.length === 0 ) ? 0 :gdjs.SettingsCode.GDSFXObjects1[0].getCenterXInScene()) ) {
+        isConditionTrue_0 = true;
+        gdjs.SettingsCode.GDCursorObjects1[k] = gdjs.SettingsCode.GDCursorObjects1[i];
+        ++k;
+    }
+}
+gdjs.SettingsCode.GDCursorObjects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDSFXObjects1Objects, gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDCursorObjects1Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtsExt__Gamepads__IsButtonJustPressed.func(runtimeScene, 1, "A", null);
+}
+}
+if (isConditionTrue_0) {
+/* Reuse gdjs.SettingsCode.GDSFXObjects1 */
+{for(var i = 0, len = gdjs.SettingsCode.GDSFXObjects1.length ;i < len;++i) {
+    gdjs.SettingsCode.GDSFXObjects1[i].SetLabelShown(true, null);
+}
+}
+{for(var i = 0, len = gdjs.SettingsCode.GDSFXObjects1.length ;i < len;++i) {
+    gdjs.SettingsCode.GDSFXObjects1[i].SetValue(gdjs.SettingsCode.GDSFXObjects1[i].Value(null) + (10), null);
+}
+}
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+gdjs.copyArray(runtimeScene.getObjects("AllAudio"), gdjs.SettingsCode.GDAllAudioObjects1);
+{gdjs.evtTools.sound.setGlobalVolume(runtimeScene, (( gdjs.SettingsCode.GDAllAudioObjects1.length === 0 ) ? 0 :gdjs.SettingsCode.GDAllAudioObjects1[0].Value(null)));
+}
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+gdjs.copyArray(runtimeScene.getObjects("Music"), gdjs.SettingsCode.GDMusicObjects1);
+{gdjs.evtTools.sound.setMusicOnChannelVolume(runtimeScene, 0, (( gdjs.SettingsCode.GDMusicObjects1.length === 0 ) ? 0 :gdjs.SettingsCode.GDMusicObjects1[0].Value(null)));
+}
+{runtimeScene.getGame().getVariables().getFromIndex(3).setNumber((( gdjs.SettingsCode.GDMusicObjects1.length === 0 ) ? 0 :gdjs.SettingsCode.GDMusicObjects1[0].Value(null)));
+}
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+gdjs.copyArray(runtimeScene.getObjects("SFX"), gdjs.SettingsCode.GDSFXObjects1);
+{runtimeScene.getGame().getVariables().getFromIndex(4).setNumber((( gdjs.SettingsCode.GDSFXObjects1.length === 0 ) ? 0 :gdjs.SettingsCode.GDSFXObjects1[0].Value(null)));
+}
+}
+
+}
+
+
 };
 
 gdjs.SettingsCode.func = function(runtimeScene) {
@@ -427,10 +802,10 @@ gdjs.SettingsCode.GDSoundObjects1.length = 0;
 gdjs.SettingsCode.GDSoundObjects2.length = 0;
 gdjs.SettingsCode.GDBackSelectObjects1.length = 0;
 gdjs.SettingsCode.GDBackSelectObjects2.length = 0;
-gdjs.SettingsCode.GDMusicObjects1.length = 0;
-gdjs.SettingsCode.GDMusicObjects2.length = 0;
-gdjs.SettingsCode.GDMusicTextObjects1.length = 0;
-gdjs.SettingsCode.GDMusicTextObjects2.length = 0;
+gdjs.SettingsCode.GDAllAudioObjects1.length = 0;
+gdjs.SettingsCode.GDAllAudioObjects2.length = 0;
+gdjs.SettingsCode.GDMasterTextObjects1.length = 0;
+gdjs.SettingsCode.GDMasterTextObjects2.length = 0;
 gdjs.SettingsCode.GDVisualObjects1.length = 0;
 gdjs.SettingsCode.GDVisualObjects2.length = 0;
 gdjs.SettingsCode.GDControlsObjects1.length = 0;
@@ -461,6 +836,10 @@ gdjs.SettingsCode.GDSFXObjects1.length = 0;
 gdjs.SettingsCode.GDSFXObjects2.length = 0;
 gdjs.SettingsCode.GDSFXTextObjects1.length = 0;
 gdjs.SettingsCode.GDSFXTextObjects2.length = 0;
+gdjs.SettingsCode.GDMusicObjects1.length = 0;
+gdjs.SettingsCode.GDMusicObjects2.length = 0;
+gdjs.SettingsCode.GDMusicTextObjects1.length = 0;
+gdjs.SettingsCode.GDMusicTextObjects2.length = 0;
 gdjs.SettingsCode.GDCustomLobbiesObjects1.length = 0;
 gdjs.SettingsCode.GDCustomLobbiesObjects2.length = 0;
 gdjs.SettingsCode.GDOnlineCheckObjects1.length = 0;
@@ -479,10 +858,10 @@ gdjs.SettingsCode.GDSoundObjects1.length = 0;
 gdjs.SettingsCode.GDSoundObjects2.length = 0;
 gdjs.SettingsCode.GDBackSelectObjects1.length = 0;
 gdjs.SettingsCode.GDBackSelectObjects2.length = 0;
-gdjs.SettingsCode.GDMusicObjects1.length = 0;
-gdjs.SettingsCode.GDMusicObjects2.length = 0;
-gdjs.SettingsCode.GDMusicTextObjects1.length = 0;
-gdjs.SettingsCode.GDMusicTextObjects2.length = 0;
+gdjs.SettingsCode.GDAllAudioObjects1.length = 0;
+gdjs.SettingsCode.GDAllAudioObjects2.length = 0;
+gdjs.SettingsCode.GDMasterTextObjects1.length = 0;
+gdjs.SettingsCode.GDMasterTextObjects2.length = 0;
 gdjs.SettingsCode.GDVisualObjects1.length = 0;
 gdjs.SettingsCode.GDVisualObjects2.length = 0;
 gdjs.SettingsCode.GDControlsObjects1.length = 0;
@@ -513,6 +892,10 @@ gdjs.SettingsCode.GDSFXObjects1.length = 0;
 gdjs.SettingsCode.GDSFXObjects2.length = 0;
 gdjs.SettingsCode.GDSFXTextObjects1.length = 0;
 gdjs.SettingsCode.GDSFXTextObjects2.length = 0;
+gdjs.SettingsCode.GDMusicObjects1.length = 0;
+gdjs.SettingsCode.GDMusicObjects2.length = 0;
+gdjs.SettingsCode.GDMusicTextObjects1.length = 0;
+gdjs.SettingsCode.GDMusicTextObjects2.length = 0;
 gdjs.SettingsCode.GDCustomLobbiesObjects1.length = 0;
 gdjs.SettingsCode.GDCustomLobbiesObjects2.length = 0;
 gdjs.SettingsCode.GDOnlineCheckObjects1.length = 0;

@@ -9,7 +9,7 @@ gdjs.evtsExt__MultiplayerCustomLobbies__ProjectUUID = {};
 gdjs.evtsExt__MultiplayerCustomLobbies__ProjectUUID.idToCallbackMap = new Map();
 
 
-gdjs.evtsExt__MultiplayerCustomLobbies__ProjectUUID.userFunc0x21b7b40 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__MultiplayerCustomLobbies__ProjectUUID.userFunc0x146a238 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 eventsFunctionContext.returnValue = runtimeScene.getGame().getGameData().properties.projectUuid;
 };
@@ -18,7 +18,7 @@ gdjs.evtsExt__MultiplayerCustomLobbies__ProjectUUID.eventsList0 = function(runti
 {
 
 
-gdjs.evtsExt__MultiplayerCustomLobbies__ProjectUUID.userFunc0x21b7b40(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__MultiplayerCustomLobbies__ProjectUUID.userFunc0x146a238(runtimeScene, eventsFunctionContext);
 
 }
 

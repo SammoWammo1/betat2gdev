@@ -122,7 +122,7 @@ gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDPlayerObjects1Objects = Hashtab
 gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDZipshotObjects1Objects = Hashtable.newFrom({"Zipshot": gdjs.ClimbsCode.GDZipshotObjects1});
 gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDBallAttackObjects1Objects = Hashtable.newFrom({"BallAttack": gdjs.ClimbsCode.GDBallAttackObjects1});
 gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDPlayerObjects1Objects = Hashtable.newFrom({"Player": gdjs.ClimbsCode.GDPlayerObjects1});
-gdjs.ClimbsCode.asyncCallback42457492 = function (runtimeScene, asyncObjectsList) {
+gdjs.ClimbsCode.asyncCallback42869220 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.ClimbsCode.localVariables);
 gdjs.copyArray(asyncObjectsList.getObjects("Zipshot"), gdjs.ClimbsCode.GDZipshotObjects2);
 
@@ -138,7 +138,7 @@ gdjs.copyArray(asyncObjectsList.getObjects("Zipshot2"), gdjs.ClimbsCode.GDZipsho
 }
 gdjs.ClimbsCode.localVariables.length = 0;
 }
-gdjs.ClimbsCode.idToCallbackMap.set(42457492, gdjs.ClimbsCode.asyncCallback42457492);
+gdjs.ClimbsCode.idToCallbackMap.set(42869220, gdjs.ClimbsCode.asyncCallback42869220);
 gdjs.ClimbsCode.eventsList0 = function(runtimeScene) {
 
 {
@@ -150,7 +150,7 @@ const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.ClimbsCode.localVariables);
 for (const obj of gdjs.ClimbsCode.GDZipshotObjects1) asyncObjectsList.addObject("Zipshot", obj);
 for (const obj of gdjs.ClimbsCode.GDZipshot2Objects1) asyncObjectsList.addObject("Zipshot2", obj);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.8), (runtimeScene) => (gdjs.ClimbsCode.asyncCallback42457492(runtimeScene, asyncObjectsList)), 42457492, asyncObjectsList);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.8), (runtimeScene) => (gdjs.ClimbsCode.asyncCallback42869220(runtimeScene, asyncObjectsList)), 42869220, asyncObjectsList);
 }
 }
 
@@ -164,12 +164,12 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.8)
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getGame().getVariables().getFromIndex(13).getAsNumber() == 0);
+{isConditionTrue_0 = (runtimeScene.getGame().getVariables().getFromIndex(14).getAsNumber() == 0);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.sound.playMusicOnChannel(runtimeScene, "Juniper.mp3", 0, true, 100, 1);
 }
-{runtimeScene.getGame().getVariables().getFromIndex(22).setBoolean(false);
+{runtimeScene.getGame().getVariables().getFromIndex(23).setBoolean(false);
 }
 }
 
@@ -181,7 +181,7 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getGame().getVariables().getFromIndex(13).getAsNumber() == 1);
+{isConditionTrue_0 = (runtimeScene.getGame().getVariables().getFromIndex(14).getAsNumber() == 1);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.sound.playMusicOnChannel(runtimeScene, "Burn The World Waltz .mp3", 0, true, 100, 1);
@@ -191,7 +191,7 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.ClimbsCode.asyncCallback42464004 = function (runtimeScene, asyncObjectsList) {
+};gdjs.ClimbsCode.asyncCallback42875732 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.ClimbsCode.localVariables);
 gdjs.copyArray(asyncObjectsList.getObjects("Player"), gdjs.ClimbsCode.GDPlayerObjects2);
 
@@ -201,7 +201,7 @@ gdjs.copyArray(asyncObjectsList.getObjects("Player"), gdjs.ClimbsCode.GDPlayerOb
 }
 gdjs.ClimbsCode.localVariables.length = 0;
 }
-gdjs.ClimbsCode.idToCallbackMap.set(42464004, gdjs.ClimbsCode.asyncCallback42464004);
+gdjs.ClimbsCode.idToCallbackMap.set(42875732, gdjs.ClimbsCode.asyncCallback42875732);
 gdjs.ClimbsCode.eventsList2 = function(runtimeScene) {
 
 {
@@ -212,7 +212,7 @@ gdjs.ClimbsCode.eventsList2 = function(runtimeScene) {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.ClimbsCode.localVariables);
 for (const obj of gdjs.ClimbsCode.GDPlayerObjects1) asyncObjectsList.addObject("Player", obj);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.5), (runtimeScene) => (gdjs.ClimbsCode.asyncCallback42464004(runtimeScene, asyncObjectsList)), 42464004, asyncObjectsList);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.5), (runtimeScene) => (gdjs.ClimbsCode.asyncCallback42875732(runtimeScene, asyncObjectsList)), 42875732, asyncObjectsList);
 }
 }
 
@@ -264,13 +264,13 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.ClimbsCode.asyncCallback42474500 = function (runtimeScene, asyncObjectsList) {
+};gdjs.ClimbsCode.asyncCallback42886228 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.ClimbsCode.localVariables);
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Climbs", false);
 }
 gdjs.ClimbsCode.localVariables.length = 0;
 }
-gdjs.ClimbsCode.idToCallbackMap.set(42474500, gdjs.ClimbsCode.asyncCallback42474500);
+gdjs.ClimbsCode.idToCallbackMap.set(42886228, gdjs.ClimbsCode.asyncCallback42886228);
 gdjs.ClimbsCode.eventsList4 = function(runtimeScene, asyncObjectsList) {
 
 {
@@ -281,28 +281,28 @@ const parentAsyncObjectsList = asyncObjectsList;
 {
 const asyncObjectsList = gdjs.LongLivedObjectsList.from(parentAsyncObjectsList);
 asyncObjectsList.backupLocalVariablesContainers(gdjs.ClimbsCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(5), (runtimeScene) => (gdjs.ClimbsCode.asyncCallback42474500(runtimeScene, asyncObjectsList)), 42474500, asyncObjectsList);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(5), (runtimeScene) => (gdjs.ClimbsCode.asyncCallback42886228(runtimeScene, asyncObjectsList)), 42886228, asyncObjectsList);
 }
 }
 
 }
 
 
-};gdjs.ClimbsCode.asyncCallback42474596 = function (runtimeScene, asyncObjectsList) {
+};gdjs.ClimbsCode.asyncCallback42886324 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.ClimbsCode.localVariables);
 gdjs.copyArray(runtimeScene.getObjects("fade"), gdjs.ClimbsCode.GDfadeObjects3);
 {for(var i = 0, len = gdjs.ClimbsCode.GDfadeObjects3.length ;i < len;++i) {
     gdjs.ClimbsCode.GDfadeObjects3[i].getBehavior("FlashTransitionPainter").PaintEffect("0;0;0", 0, "Circular", "Forward", 0, null);
 }
 }
-{gdjs.evtTools.sound.playSound(runtimeScene, "DEATH.wav", false, 25, 1);
+{gdjs.evtTools.sound.playSound(runtimeScene, "DEATH.wav", false, runtimeScene.getGame().getVariables().getFromIndex(4).getAsNumber(), 1);
 }
 
 { //Subevents
 gdjs.ClimbsCode.eventsList4(runtimeScene, asyncObjectsList);} //End of subevents
 gdjs.ClimbsCode.localVariables.length = 0;
 }
-gdjs.ClimbsCode.idToCallbackMap.set(42474596, gdjs.ClimbsCode.asyncCallback42474596);
+gdjs.ClimbsCode.idToCallbackMap.set(42886324, gdjs.ClimbsCode.asyncCallback42886324);
 gdjs.ClimbsCode.eventsList5 = function(runtimeScene, asyncObjectsList) {
 
 {
@@ -313,14 +313,14 @@ const parentAsyncObjectsList = asyncObjectsList;
 {
 const asyncObjectsList = gdjs.LongLivedObjectsList.from(parentAsyncObjectsList);
 asyncObjectsList.backupLocalVariablesContainers(gdjs.ClimbsCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.5), (runtimeScene) => (gdjs.ClimbsCode.asyncCallback42474596(runtimeScene, asyncObjectsList)), 42474596, asyncObjectsList);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.5), (runtimeScene) => (gdjs.ClimbsCode.asyncCallback42886324(runtimeScene, asyncObjectsList)), 42886324, asyncObjectsList);
 }
 }
 
 }
 
 
-};gdjs.ClimbsCode.asyncCallback42474044 = function (runtimeScene, asyncObjectsList) {
+};gdjs.ClimbsCode.asyncCallback42885772 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.ClimbsCode.localVariables);
 gdjs.copyArray(asyncObjectsList.getObjects("Player"), gdjs.ClimbsCode.GDPlayerObjects2);
 
@@ -333,7 +333,7 @@ gdjs.copyArray(asyncObjectsList.getObjects("Player"), gdjs.ClimbsCode.GDPlayerOb
 gdjs.ClimbsCode.eventsList5(runtimeScene, asyncObjectsList);} //End of subevents
 gdjs.ClimbsCode.localVariables.length = 0;
 }
-gdjs.ClimbsCode.idToCallbackMap.set(42474044, gdjs.ClimbsCode.asyncCallback42474044);
+gdjs.ClimbsCode.idToCallbackMap.set(42885772, gdjs.ClimbsCode.asyncCallback42885772);
 gdjs.ClimbsCode.eventsList6 = function(runtimeScene) {
 
 {
@@ -344,7 +344,7 @@ gdjs.ClimbsCode.eventsList6 = function(runtimeScene) {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.ClimbsCode.localVariables);
 for (const obj of gdjs.ClimbsCode.GDPlayerObjects1) asyncObjectsList.addObject("Player", obj);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.ClimbsCode.asyncCallback42474044(runtimeScene, asyncObjectsList)), 42474044, asyncObjectsList);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.ClimbsCode.asyncCallback42885772(runtimeScene, asyncObjectsList)), 42885772, asyncObjectsList);
 }
 }
 
@@ -353,7 +353,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), 
 
 };gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDPlayerObjects1Objects = Hashtable.newFrom({"Player": gdjs.ClimbsCode.GDPlayerObjects1});
 gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDWinObjects1Objects = Hashtable.newFrom({"Win": gdjs.ClimbsCode.GDWinObjects1});
-gdjs.ClimbsCode.asyncCallback42480100 = function (runtimeScene, asyncObjectsList) {
+gdjs.ClimbsCode.asyncCallback42891828 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.ClimbsCode.localVariables);
 {gdjs.evtTools.sound.playMusicOnChannel(runtimeScene, "Overworld.mp3", 0, false, 100, 1);
 }
@@ -361,7 +361,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.ClimbsCode.localVariables)
 }
 gdjs.ClimbsCode.localVariables.length = 0;
 }
-gdjs.ClimbsCode.idToCallbackMap.set(42480100, gdjs.ClimbsCode.asyncCallback42480100);
+gdjs.ClimbsCode.idToCallbackMap.set(42891828, gdjs.ClimbsCode.asyncCallback42891828);
 gdjs.ClimbsCode.eventsList7 = function(runtimeScene) {
 
 {
@@ -371,7 +371,7 @@ gdjs.ClimbsCode.eventsList7 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.ClimbsCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(5), (runtimeScene) => (gdjs.ClimbsCode.asyncCallback42480100(runtimeScene, asyncObjectsList)), 42480100, asyncObjectsList);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(5), (runtimeScene) => (gdjs.ClimbsCode.asyncCallback42891828(runtimeScene, asyncObjectsList)), 42891828, asyncObjectsList);
 }
 }
 
@@ -507,7 +507,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "shoottime") >= 3;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(42455924);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(42867652);
 }
 }
 }
@@ -713,7 +713,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDBallAttackObjects1Objects, gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDPlayerObjects1Objects, false, runtimeScene, false);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(42465684);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(42877412);
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
@@ -749,7 +749,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDSpikeObjects1Objects, gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDPlayerObjects1Objects, false, runtimeScene, false);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(42466836);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(42878564);
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
@@ -920,7 +920,7 @@ for (var i = 0, k = 0, l = gdjs.ClimbsCode.GDHealthObjects1.length;i<l;++i) {
 gdjs.ClimbsCode.GDHealthObjects1.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(42471580);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(42883308);
 }
 }
 }
@@ -932,7 +932,7 @@ gdjs.ClimbsCode.GDshockwaveObjects1.length = 0;
 
 {gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDshockwaveObjects1Objects, (( gdjs.ClimbsCode.GDZipshotObjects1.length === 0 ) ? 0 :gdjs.ClimbsCode.GDZipshotObjects1[0].getPointX("")), (( gdjs.ClimbsCode.GDZipshotObjects1.length === 0 ) ? 0 :gdjs.ClimbsCode.GDZipshotObjects1[0].getPointY("")), "");
 }
-{gdjs.evtTools.sound.playSound(runtimeScene, "dmg", false, 100, 1);
+{gdjs.evtTools.sound.playSound(runtimeScene, "dmg", false, runtimeScene.getGame().getVariables().getFromIndex(4).getAsNumber(), 1);
 }
 {for(var i = 0, len = gdjs.ClimbsCode.GDZipshot2Objects1.length ;i < len;++i) {
     gdjs.ClimbsCode.GDZipshot2Objects1[i].returnVariable(gdjs.ClimbsCode.GDZipshot2Objects1[i].getVariables().getFromIndex(0)).sub(1);
@@ -962,7 +962,7 @@ for (var i = 0, k = 0, l = gdjs.ClimbsCode.GDHealthObjects1.length;i<l;++i) {
 gdjs.ClimbsCode.GDHealthObjects1.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(42473316);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(42885044);
 }
 }
 if (isConditionTrue_0) {
@@ -1096,7 +1096,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDPlayerObjects1Objects, gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDWinObjects1Objects, false, runtimeScene, false);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(42479524);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(42891252);
 }
 }
 if (isConditionTrue_0) {
@@ -1237,7 +1237,7 @@ gdjs.ClimbsCode.GDspawnplObjects2.push(gdjs.ClimbsCode.forEachTemporary2);
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 for (var i = 0, k = 0, l = gdjs.ClimbsCode.GDspawnplObjects2.length;i<l;++i) {
-    if ( gdjs.ClimbsCode.GDspawnplObjects2[i].getVariableNumber(gdjs.ClimbsCode.GDspawnplObjects2[i].getVariables().getFromIndex(0)) == runtimeScene.getGame().getVariables().getFromIndex(13).getAsNumber() ) {
+    if ( gdjs.ClimbsCode.GDspawnplObjects2[i].getVariableNumber(gdjs.ClimbsCode.GDspawnplObjects2[i].getVariables().getFromIndex(0)) == runtimeScene.getGame().getVariables().getFromIndex(14).getAsNumber() ) {
         isConditionTrue_0 = true;
         gdjs.ClimbsCode.GDspawnplObjects2[k] = gdjs.ClimbsCode.GDspawnplObjects2[i];
         ++k;
@@ -1281,6 +1281,64 @@ gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.ClimbsCode.GDPlayerObject
 
 {
 
+gdjs.copyArray(runtimeScene.getObjects("Cursor"), gdjs.ClimbsCode.GDCursorObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.ClimbsCode.GDCursorObjects1.length;i<l;++i) {
+    if ( gdjs.ClimbsCode.GDCursorObjects1[i].getX() >= 0 ) {
+        isConditionTrue_0 = true;
+        gdjs.ClimbsCode.GDCursorObjects1[k] = gdjs.ClimbsCode.GDCursorObjects1[i];
+        ++k;
+    }
+}
+gdjs.ClimbsCode.GDCursorObjects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+/* Unknown object - skipped. */if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtsExt__Gamepads__IsButtonJustPressed.func(runtimeScene, 1, "A", null);
+}
+}
+if (isConditionTrue_0) {
+{/* Unknown object - skipped. */}
+{/* Unknown object - skipped. */}
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("Cursor"), gdjs.ClimbsCode.GDCursorObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.ClimbsCode.GDCursorObjects1.length;i<l;++i) {
+    if ( gdjs.ClimbsCode.GDCursorObjects1[i].getX() < 0 ) {
+        isConditionTrue_0 = true;
+        gdjs.ClimbsCode.GDCursorObjects1[k] = gdjs.ClimbsCode.GDCursorObjects1[i];
+        ++k;
+    }
+}
+gdjs.ClimbsCode.GDCursorObjects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+/* Unknown object - skipped. */if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtsExt__Gamepads__IsButtonJustPressed.func(runtimeScene, 1, "A", null);
+}
+}
+if (isConditionTrue_0) {
+{/* Unknown object - skipped. */}
+{/* Unknown object - skipped. */}
+}
+
+}
+
+
+{
+
 gdjs.copyArray(runtimeScene.getObjects("BreakableWall"), gdjs.ClimbsCode.GDBreakableWallObjects1);
 
 for (gdjs.ClimbsCode.forEachIndex2 = 0;gdjs.ClimbsCode.forEachIndex2 < gdjs.ClimbsCode.GDBreakableWallObjects1.length;++gdjs.ClimbsCode.forEachIndex2) {
@@ -1314,7 +1372,7 @@ if (isConditionTrue_0) {
     gdjs.ClimbsCode.GDLeverObjects2[i].getBehavior("Flippable").flipY(true);
 }
 }
-{gdjs.evtTools.sound.playSound(runtimeScene, "Blip_select 1.wav", false, 100, gdjs.randomFloatInRange(1, 1.5));
+{gdjs.evtTools.sound.playSound(runtimeScene, "Blip_select 1.wav", false, runtimeScene.getGame().getVariables().getFromIndex(4).getAsNumber(), gdjs.randomFloatInRange(1, 1.5));
 }
 }
 }

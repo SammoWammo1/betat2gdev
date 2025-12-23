@@ -9,7 +9,7 @@ gdjs.evtsExt__CameraShake__SetLoopPeriodX = {};
 gdjs.evtsExt__CameraShake__SetLoopPeriodX.idToCallbackMap = new Map();
 
 
-gdjs.evtsExt__CameraShake__SetLoopPeriodX.userFunc0x1583008 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__CameraShake__SetLoopPeriodX.userFunc0x155dd38 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 const name = eventsFunctionContext.getArgument("Name");
 
@@ -20,7 +20,7 @@ gdjs.evtsExt__CameraShake__SetLoopPeriodX.eventsList0 = function(runtimeScene, e
 {
 
 
-gdjs.evtsExt__CameraShake__SetLoopPeriodX.userFunc0x1583008(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__CameraShake__SetLoopPeriodX.userFunc0x155dd38(runtimeScene, eventsFunctionContext);
 
 }
 

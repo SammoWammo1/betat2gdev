@@ -45,6 +45,8 @@ gdjs.TitleCode.GDRacketObjects1= [];
 gdjs.TitleCode.GDRacketObjects2= [];
 gdjs.TitleCode.GDSettingsObjects1= [];
 gdjs.TitleCode.GDSettingsObjects2= [];
+gdjs.TitleCode.GDNewSprite3Objects1= [];
+gdjs.TitleCode.GDNewSprite3Objects2= [];
 gdjs.TitleCode.GDCustomLobbiesObjects1= [];
 gdjs.TitleCode.GDCustomLobbiesObjects2= [];
 gdjs.TitleCode.GDOnlineCheckObjects1= [];
@@ -738,7 +740,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = !(gdjs.evtsExt__Gamepads__C_Controller_X_is_connected.func(runtimeScene, 1, null));
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(39768268);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(40120932);
 }
 }
 if (isConditionTrue_0) {
@@ -760,7 +762,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtsExt__Gamepads__C_Controller_X_is_connected.func(runtimeScene, 1, null);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(39768740);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(40121404);
 }
 }
 if (isConditionTrue_0) {
@@ -781,7 +783,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.wasKeyJustPressed(runtimeScene, "F4");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(39768540);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(40121204);
 }
 }
 if (isConditionTrue_0) {
@@ -910,6 +912,8 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 {
+{gdjs.evtTools.sound.setMusicOnChannelVolume(runtimeScene, 0, runtimeScene.getGame().getVariables().getFromIndex(3).getAsNumber());
+}
 }
 
 }
@@ -964,6 +968,8 @@ gdjs.TitleCode.GDRacketObjects1.length = 0;
 gdjs.TitleCode.GDRacketObjects2.length = 0;
 gdjs.TitleCode.GDSettingsObjects1.length = 0;
 gdjs.TitleCode.GDSettingsObjects2.length = 0;
+gdjs.TitleCode.GDNewSprite3Objects1.length = 0;
+gdjs.TitleCode.GDNewSprite3Objects2.length = 0;
 gdjs.TitleCode.GDCustomLobbiesObjects1.length = 0;
 gdjs.TitleCode.GDCustomLobbiesObjects2.length = 0;
 gdjs.TitleCode.GDOnlineCheckObjects1.length = 0;
@@ -1018,6 +1024,8 @@ gdjs.TitleCode.GDRacketObjects1.length = 0;
 gdjs.TitleCode.GDRacketObjects2.length = 0;
 gdjs.TitleCode.GDSettingsObjects1.length = 0;
 gdjs.TitleCode.GDSettingsObjects2.length = 0;
+gdjs.TitleCode.GDNewSprite3Objects1.length = 0;
+gdjs.TitleCode.GDNewSprite3Objects2.length = 0;
 gdjs.TitleCode.GDCustomLobbiesObjects1.length = 0;
 gdjs.TitleCode.GDCustomLobbiesObjects2.length = 0;
 gdjs.TitleCode.GDOnlineCheckObjects1.length = 0;

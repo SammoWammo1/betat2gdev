@@ -27,7 +27,7 @@ gdjs.difficultyselectorCode.mapOfGDgdjs_9546difficultyselectorCode_9546GDSquareW
 gdjs.difficultyselectorCode.mapOfGDgdjs_9546difficultyselectorCode_9546GDCursorObjects1Objects = Hashtable.newFrom({"Cursor": gdjs.difficultyselectorCode.GDCursorObjects1});
 gdjs.difficultyselectorCode.mapOfGDgdjs_9546difficultyselectorCode_9546GDSquareWhiteSliderObjects1Objects = Hashtable.newFrom({"SquareWhiteSlider": gdjs.difficultyselectorCode.GDSquareWhiteSliderObjects1});
 gdjs.difficultyselectorCode.mapOfGDgdjs_9546difficultyselectorCode_9546GDCursorObjects1Objects = Hashtable.newFrom({"Cursor": gdjs.difficultyselectorCode.GDCursorObjects1});
-gdjs.difficultyselectorCode.asyncCallback42638364 = function (runtimeScene, asyncObjectsList) {
+gdjs.difficultyselectorCode.asyncCallback43017516 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.difficultyselectorCode.localVariables);
 gdjs.copyArray(asyncObjectsList.getObjects("NewButton"), gdjs.difficultyselectorCode.GDNewButtonObjects2);
 
@@ -46,7 +46,7 @@ gdjs.copyArray(runtimeScene.getObjects("NewText"), gdjs.difficultyselectorCode.G
 }
 gdjs.difficultyselectorCode.localVariables.length = 0;
 }
-gdjs.difficultyselectorCode.idToCallbackMap.set(42638364, gdjs.difficultyselectorCode.asyncCallback42638364);
+gdjs.difficultyselectorCode.idToCallbackMap.set(43017516, gdjs.difficultyselectorCode.asyncCallback43017516);
 gdjs.difficultyselectorCode.eventsList0 = function(runtimeScene) {
 
 {
@@ -57,7 +57,7 @@ gdjs.difficultyselectorCode.eventsList0 = function(runtimeScene) {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.difficultyselectorCode.localVariables);
 for (const obj of gdjs.difficultyselectorCode.GDNewButtonObjects1) asyncObjectsList.addObject("NewButton", obj);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(10), (runtimeScene) => (gdjs.difficultyselectorCode.asyncCallback42638364(runtimeScene, asyncObjectsList)), 42638364, asyncObjectsList);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(10), (runtimeScene) => (gdjs.difficultyselectorCode.asyncCallback43017516(runtimeScene, asyncObjectsList)), 43017516, asyncObjectsList);
 }
 }
 
@@ -175,7 +175,7 @@ gdjs.copyArray(runtimeScene.getObjects("SquareWhiteSlider"), gdjs.difficultysele
     gdjs.difficultyselectorCode.GDNewSpriteObjects1[i].getBehavior("Animation").setAnimationIndex((( gdjs.difficultyselectorCode.GDSquareWhiteSliderObjects1.length === 0 ) ? 0 :gdjs.difficultyselectorCode.GDSquareWhiteSliderObjects1[0].Value(null)) - 1);
 }
 }
-{runtimeScene.getGame().getVariables().getFromIndex(20).setNumber((( gdjs.difficultyselectorCode.GDSquareWhiteSliderObjects1.length === 0 ) ? 0 :gdjs.difficultyselectorCode.GDSquareWhiteSliderObjects1[0].Value(null)));
+{runtimeScene.getGame().getVariables().getFromIndex(21).setNumber((( gdjs.difficultyselectorCode.GDSquareWhiteSliderObjects1.length === 0 ) ? 0 :gdjs.difficultyselectorCode.GDSquareWhiteSliderObjects1[0].Value(null)));
 }
 }
 
