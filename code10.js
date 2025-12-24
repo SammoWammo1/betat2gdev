@@ -29,7 +29,7 @@ gdjs.GamejoltCode.GDBGObjects1= [];
 gdjs.GamejoltCode.GDBGObjects2= [];
 
 
-gdjs.GamejoltCode.asyncCallback43020228 = function (runtimeScene, asyncObjectsList) {
+gdjs.GamejoltCode.asyncCallback43112804 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.GamejoltCode.localVariables);
 gdjs.copyArray(runtimeScene.getObjects("Password"), gdjs.GamejoltCode.GDPasswordObjects2);
 gdjs.copyArray(runtimeScene.getObjects("Username"), gdjs.GamejoltCode.GDUsernameObjects2);
@@ -39,7 +39,7 @@ gdjs.copyArray(runtimeScene.getObjects("Username"), gdjs.GamejoltCode.GDUsername
 }
 gdjs.GamejoltCode.localVariables.length = 0;
 }
-gdjs.GamejoltCode.idToCallbackMap.set(43020228, gdjs.GamejoltCode.asyncCallback43020228);
+gdjs.GamejoltCode.idToCallbackMap.set(43112804, gdjs.GamejoltCode.asyncCallback43112804);
 gdjs.GamejoltCode.eventsList0 = function(runtimeScene) {
 
 {
@@ -51,18 +51,18 @@ gdjs.copyArray(runtimeScene.getObjects("Username"), gdjs.GamejoltCode.GDUsername
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.GamejoltCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__GamejoltAPI__AuthenticateUser.func(runtimeScene, (( gdjs.GamejoltCode.GDUsernameObjects1.length === 0 ) ? "" :gdjs.GamejoltCode.GDUsernameObjects1[0].getBehavior("Text").getText()), (( gdjs.GamejoltCode.GDPasswordObjects1.length === 0 ) ? "" :gdjs.GamejoltCode.GDPasswordObjects1[0].getBehavior("Text").getText()), null), (runtimeScene) => (gdjs.GamejoltCode.asyncCallback43020228(runtimeScene, asyncObjectsList)), 43020228, asyncObjectsList);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__GamejoltAPI__AuthenticateUser.func(runtimeScene, (( gdjs.GamejoltCode.GDUsernameObjects1.length === 0 ) ? "" :gdjs.GamejoltCode.GDUsernameObjects1[0].getBehavior("Text").getText()), (( gdjs.GamejoltCode.GDPasswordObjects1.length === 0 ) ? "" :gdjs.GamejoltCode.GDPasswordObjects1[0].getBehavior("Text").getText()), null), (runtimeScene) => (gdjs.GamejoltCode.asyncCallback43112804(runtimeScene, asyncObjectsList)), 43112804, asyncObjectsList);
 }
 }
 
 }
 
 
-};gdjs.GamejoltCode.asyncCallback43024388 = function (runtimeScene, asyncObjectsList) {
+};gdjs.GamejoltCode.asyncCallback43116964 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.GamejoltCode.localVariables);
 gdjs.GamejoltCode.localVariables.length = 0;
 }
-gdjs.GamejoltCode.idToCallbackMap.set(43024388, gdjs.GamejoltCode.asyncCallback43024388);
+gdjs.GamejoltCode.idToCallbackMap.set(43116964, gdjs.GamejoltCode.asyncCallback43116964);
 gdjs.GamejoltCode.eventsList1 = function(runtimeScene) {
 
 {
@@ -72,7 +72,7 @@ gdjs.GamejoltCode.eventsList1 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.GamejoltCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__GamejoltAPI__AuthenticateUser.func(runtimeScene, runtimeScene.getScene().getVariables().getFromIndex(0).getAsString(), runtimeScene.getScene().getVariables().getFromIndex(1).getAsString(), null), (runtimeScene) => (gdjs.GamejoltCode.asyncCallback43024388(runtimeScene, asyncObjectsList)), 43024388, asyncObjectsList);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__GamejoltAPI__AuthenticateUser.func(runtimeScene, runtimeScene.getScene().getVariables().getFromIndex(0).getAsString(), runtimeScene.getScene().getVariables().getFromIndex(1).getAsString(), null), (runtimeScene) => (gdjs.GamejoltCode.asyncCallback43116964(runtimeScene, asyncObjectsList)), 43116964, asyncObjectsList);
 }
 }
 
@@ -182,7 +182,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtsExt__GamejoltAPI__Session.func(runtimeScene, null);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(43024316);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(43116892);
 }
 }
 if (isConditionTrue_0) {

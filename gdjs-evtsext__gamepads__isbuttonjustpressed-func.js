@@ -9,7 +9,7 @@ gdjs.evtsExt__Gamepads__IsButtonJustPressed = {};
 gdjs.evtsExt__Gamepads__IsButtonJustPressed.idToCallbackMap = new Map();
 
 
-gdjs.evtsExt__Gamepads__IsButtonJustPressed.userFunc0x18ef810 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Gamepads__IsButtonJustPressed.userFunc0x1be8020 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 
 const playerId = eventsFunctionContext.getArgument("PlayerId") - 1;
@@ -27,7 +27,7 @@ gdjs.evtsExt__Gamepads__IsButtonJustPressed.eventsList0 = function(runtimeScene,
 {
 
 
-gdjs.evtsExt__Gamepads__IsButtonJustPressed.userFunc0x18ef810(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__Gamepads__IsButtonJustPressed.userFunc0x1be8020(runtimeScene, eventsFunctionContext);
 
 }
 

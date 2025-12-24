@@ -2130,7 +2130,7 @@ if (isConditionTrue_0) {
 }
 {runtimeScene.getGame().getVariables().getFromIndex(5).setString(runtimeScene.getScene().getVariables().getFromIndex(0).getAsString());
 }
-{runtimeScene.getGame().getVariables().getFromIndex(27).getChild("0").setNumber(0);
+{runtimeScene.getGame().getVariables().getFromIndex(28).getChild("0").setNumber(0);
 }
 }
 
@@ -2161,7 +2161,7 @@ if (isConditionTrue_0) {
 }
 {runtimeScene.getGame().getVariables().getFromIndex(5).setString(runtimeScene.getScene().getVariables().getFromIndex(0).getAsString());
 }
-{runtimeScene.getGame().getVariables().getFromIndex(27).getChild("1").setNumber(0);
+{runtimeScene.getGame().getVariables().getFromIndex(28).getChild("1").setNumber(0);
 }
 }
 
@@ -2192,7 +2192,7 @@ if (isConditionTrue_0) {
 }
 {runtimeScene.getGame().getVariables().getFromIndex(5).setString(runtimeScene.getScene().getVariables().getFromIndex(0).getAsString());
 }
-{runtimeScene.getGame().getVariables().getFromIndex(27).getChild("2").setNumber(0);
+{runtimeScene.getGame().getVariables().getFromIndex(28).getChild("2").setNumber(0);
 }
 }
 
@@ -2222,7 +2222,7 @@ if (isConditionTrue_0) {
 }
 {runtimeScene.getGame().getVariables().getFromIndex(5).setString(runtimeScene.getScene().getVariables().getFromIndex(0).getAsString());
 }
-{runtimeScene.getGame().getVariables().getFromIndex(27).getChild("3").setNumber(0);
+{runtimeScene.getGame().getVariables().getFromIndex(28).getChild("3").setNumber(0);
 }
 }
 
@@ -2264,7 +2264,7 @@ if (isConditionTrue_0) {
 }
 {runtimeScene.getGame().getVariables().getFromIndex(5).setString(runtimeScene.getScene().getVariables().getFromIndex(0).getAsString());
 }
-{runtimeScene.getGame().getVariables().getFromIndex(27).getChild("0").setNumber(0);
+{runtimeScene.getGame().getVariables().getFromIndex(28).getChild("0").setNumber(0);
 }
 }
 
@@ -2297,7 +2297,7 @@ if (isConditionTrue_0) {
 }
 {runtimeScene.getGame().getVariables().getFromIndex(5).setString(runtimeScene.getScene().getVariables().getFromIndex(0).getAsString());
 }
-{runtimeScene.getGame().getVariables().getFromIndex(27).getChild("1").setNumber(0);
+{runtimeScene.getGame().getVariables().getFromIndex(28).getChild("1").setNumber(0);
 }
 }
 
@@ -2330,7 +2330,7 @@ if (isConditionTrue_0) {
 }
 {runtimeScene.getGame().getVariables().getFromIndex(5).setString(runtimeScene.getScene().getVariables().getFromIndex(0).getAsString());
 }
-{runtimeScene.getGame().getVariables().getFromIndex(27).getChild("2").setNumber(0);
+{runtimeScene.getGame().getVariables().getFromIndex(28).getChild("2").setNumber(0);
 }
 }
 
@@ -2361,7 +2361,7 @@ if (isConditionTrue_0) {
 }
 {runtimeScene.getGame().getVariables().getFromIndex(5).setString(runtimeScene.getScene().getVariables().getFromIndex(0).getAsString());
 }
-{runtimeScene.getGame().getVariables().getFromIndex(27).getChild("3").setNumber(0);
+{runtimeScene.getGame().getVariables().getFromIndex(28).getChild("3").setNumber(0);
 }
 }
 
@@ -2400,7 +2400,7 @@ if (isConditionTrue_0) {
 }
 {runtimeScene.getGame().getVariables().getFromIndex(5).setString(runtimeScene.getScene().getVariables().getFromIndex(0).getAsString());
 }
-{runtimeScene.getGame().getVariables().getFromIndex(27).getChild("0").setNumber(1);
+{runtimeScene.getGame().getVariables().getFromIndex(28).getChild("0").setNumber(1);
 }
 }
 
@@ -2431,7 +2431,7 @@ if (isConditionTrue_0) {
 }
 {runtimeScene.getGame().getVariables().getFromIndex(5).setString(runtimeScene.getScene().getVariables().getFromIndex(0).getAsString());
 }
-{runtimeScene.getGame().getVariables().getFromIndex(27).getChild("1").setNumber(1);
+{runtimeScene.getGame().getVariables().getFromIndex(28).getChild("1").setNumber(1);
 }
 }
 
@@ -2462,7 +2462,7 @@ if (isConditionTrue_0) {
 }
 {runtimeScene.getGame().getVariables().getFromIndex(5).setString(runtimeScene.getScene().getVariables().getFromIndex(0).getAsString());
 }
-{runtimeScene.getGame().getVariables().getFromIndex(27).getChild("2").setNumber(1);
+{runtimeScene.getGame().getVariables().getFromIndex(28).getChild("2").setNumber(1);
 }
 }
 
@@ -2492,7 +2492,7 @@ if (isConditionTrue_0) {
 }
 {runtimeScene.getGame().getVariables().getFromIndex(5).setString(runtimeScene.getScene().getVariables().getFromIndex(0).getAsString());
 }
-{runtimeScene.getGame().getVariables().getFromIndex(27).getChild("3").setNumber(1);
+{runtimeScene.getGame().getVariables().getFromIndex(28).getChild("3").setNumber(1);
 }
 }
 
@@ -2534,7 +2534,7 @@ if (isConditionTrue_0) {
 }
 {runtimeScene.getGame().getVariables().getFromIndex(5).setString(runtimeScene.getScene().getVariables().getFromIndex(0).getAsString());
 }
-{runtimeScene.getGame().getVariables().getFromIndex(27).getChild("0").setNumber(1);
+{runtimeScene.getGame().getVariables().getFromIndex(28).getChild("0").setNumber(1);
 }
 }
 
@@ -2567,7 +2567,7 @@ if (isConditionTrue_0) {
 }
 {runtimeScene.getGame().getVariables().getFromIndex(5).setString(runtimeScene.getScene().getVariables().getFromIndex(0).getAsString());
 }
-{runtimeScene.getGame().getVariables().getFromIndex(27).getChild("1").setNumber(1);
+{runtimeScene.getGame().getVariables().getFromIndex(28).getChild("1").setNumber(1);
 }
 }
 
@@ -2600,7 +2600,7 @@ if (isConditionTrue_0) {
 }
 {runtimeScene.getGame().getVariables().getFromIndex(5).setString(runtimeScene.getScene().getVariables().getFromIndex(0).getAsString());
 }
-{runtimeScene.getGame().getVariables().getFromIndex(27).getChild("2").setNumber(1);
+{runtimeScene.getGame().getVariables().getFromIndex(28).getChild("2").setNumber(1);
 }
 }
 
@@ -2631,7 +2631,7 @@ if (isConditionTrue_0) {
 }
 {runtimeScene.getGame().getVariables().getFromIndex(5).setString(runtimeScene.getScene().getVariables().getFromIndex(0).getAsString());
 }
-{runtimeScene.getGame().getVariables().getFromIndex(27).getChild("3").setNumber(1);
+{runtimeScene.getGame().getVariables().getFromIndex(28).getChild("3").setNumber(1);
 }
 }
 
@@ -2809,7 +2809,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtsExt__Gamepads__C_Controller_X_is_connected.func(runtimeScene, 1, null);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(42633140);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(42713828);
 }
 }
 if (isConditionTrue_0) {
@@ -3164,7 +3164,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "p" + gdjs.evtTools.common.toString(((gdjs.MultiplayerTitleCode.GDPlayerChangeObjects1.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.MultiplayerTitleCode.GDPlayerChangeObjects1[0].getVariables()).getFromIndex(0).getAsNumber()) + "changewait") > 0.1;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(42697188);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(42777876);
 }
 }
 }
@@ -3260,7 +3260,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(42713452);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(42794140);
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
@@ -3367,13 +3367,13 @@ if (isConditionTrue_0) {
 }
 {runtimeScene.getGame().getVariables().getFromIndex(6).getChild("4").setNumber(0);
 }
-{runtimeScene.getGame().getVariables().getFromIndex(17).getChild("slice").setNumber(2);
+{runtimeScene.getGame().getVariables().getFromIndex(18).getChild("slice").setNumber(2);
 }
-{runtimeScene.getGame().getVariables().getFromIndex(17).getChild("lobs").setNumber(2);
+{runtimeScene.getGame().getVariables().getFromIndex(18).getChild("lobs").setNumber(2);
 }
-{runtimeScene.getGame().getVariables().getFromIndex(19).getChild("slice").setNumber(2);
+{runtimeScene.getGame().getVariables().getFromIndex(20).getChild("slice").setNumber(2);
 }
-{runtimeScene.getGame().getVariables().getFromIndex(19).getChild("lobs").setNumber(2);
+{runtimeScene.getGame().getVariables().getFromIndex(20).getChild("lobs").setNumber(2);
 }
 }
 
@@ -3431,13 +3431,13 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 {
-{runtimeScene.getGame().getVariables().getFromIndex(19).getChild("lobs").setNumber(2);
+{runtimeScene.getGame().getVariables().getFromIndex(20).getChild("lobs").setNumber(2);
 }
-{runtimeScene.getGame().getVariables().getFromIndex(19).getChild("slice").setNumber(2);
+{runtimeScene.getGame().getVariables().getFromIndex(20).getChild("slice").setNumber(2);
 }
-{runtimeScene.getGame().getVariables().getFromIndex(17).getChild("lobs").setNumber(2);
+{runtimeScene.getGame().getVariables().getFromIndex(18).getChild("lobs").setNumber(2);
 }
-{runtimeScene.getGame().getVariables().getFromIndex(17).getChild("slice").setNumber(2);
+{runtimeScene.getGame().getVariables().getFromIndex(18).getChild("slice").setNumber(2);
 }
 }
 
@@ -3459,9 +3459,9 @@ for (var i = 0, k = 0, l = gdjs.MultiplayerTitleCode.GDNewSliderObjects1.length;
 }
 gdjs.MultiplayerTitleCode.GDNewSliderObjects1.length = k;
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(25).setNumber(1);
+{runtimeScene.getGame().getVariables().getFromIndex(26).setNumber(1);
 }
-{runtimeScene.getGame().getVariables().getFromIndex(26).setNumber(100);
+{runtimeScene.getGame().getVariables().getFromIndex(27).setNumber(100);
 }
 }
 
@@ -3483,9 +3483,9 @@ for (var i = 0, k = 0, l = gdjs.MultiplayerTitleCode.GDNewSliderObjects1.length;
 }
 gdjs.MultiplayerTitleCode.GDNewSliderObjects1.length = k;
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(25).setNumber(0.5);
+{runtimeScene.getGame().getVariables().getFromIndex(26).setNumber(0.5);
 }
-{runtimeScene.getGame().getVariables().getFromIndex(26).setNumber(250);
+{runtimeScene.getGame().getVariables().getFromIndex(27).setNumber(250);
 }
 }
 
@@ -3507,9 +3507,9 @@ for (var i = 0, k = 0, l = gdjs.MultiplayerTitleCode.GDNewSliderObjects1.length;
 }
 gdjs.MultiplayerTitleCode.GDNewSliderObjects1.length = k;
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(25).setNumber(0.25);
+{runtimeScene.getGame().getVariables().getFromIndex(26).setNumber(0.25);
 }
-{runtimeScene.getGame().getVariables().getFromIndex(26).setNumber(500);
+{runtimeScene.getGame().getVariables().getFromIndex(27).setNumber(500);
 }
 }
 

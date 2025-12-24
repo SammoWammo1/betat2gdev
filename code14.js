@@ -13,13 +13,13 @@ gdjs.LoadingCampaignCode.GDBGObjects1= [];
 gdjs.LoadingCampaignCode.GDBGObjects2= [];
 
 
-gdjs.LoadingCampaignCode.asyncCallback43126412 = function (runtimeScene, asyncObjectsList) {
+gdjs.LoadingCampaignCode.asyncCallback43218988 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.LoadingCampaignCode.localVariables);
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Campaign", false);
 }
 gdjs.LoadingCampaignCode.localVariables.length = 0;
 }
-gdjs.LoadingCampaignCode.idToCallbackMap.set(43126412, gdjs.LoadingCampaignCode.asyncCallback43126412);
+gdjs.LoadingCampaignCode.idToCallbackMap.set(43218988, gdjs.LoadingCampaignCode.asyncCallback43218988);
 gdjs.LoadingCampaignCode.eventsList0 = function(runtimeScene) {
 
 {
@@ -29,7 +29,7 @@ gdjs.LoadingCampaignCode.eventsList0 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.LoadingCampaignCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(10), (runtimeScene) => (gdjs.LoadingCampaignCode.asyncCallback43126412(runtimeScene, asyncObjectsList)), 43126412, asyncObjectsList);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(10), (runtimeScene) => (gdjs.LoadingCampaignCode.asyncCallback43218988(runtimeScene, asyncObjectsList)), 43218988, asyncObjectsList);
 }
 }
 
