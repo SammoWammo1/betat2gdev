@@ -1,422 +1,171 @@
-gdjs.ClimbsCode = {};
-gdjs.ClimbsCode.localVariables = [];
-gdjs.ClimbsCode.idToCallbackMap = new Map();
-gdjs.ClimbsCode.GDBreakableWallObjects1_1final = [];
+gdjs.SettingsCode = {};
+gdjs.SettingsCode.localVariables = [];
+gdjs.SettingsCode.idToCallbackMap = new Map();
+gdjs.SettingsCode.GDBackObjects1_1final = [];
 
-gdjs.ClimbsCode.GDHitObjects1_1final = [];
+gdjs.SettingsCode.GDBackSelectObjects1_1final = [];
 
-gdjs.ClimbsCode.GDPlayerObjects1_1final = [];
+gdjs.SettingsCode.GDControlsObjects1_1final = [];
 
-gdjs.ClimbsCode.GDWallObjects1_1final = [];
+gdjs.SettingsCode.GDCreditsObjects1_1final = [];
 
-gdjs.ClimbsCode.forEachIndex2 = 0;
+gdjs.SettingsCode.GDCursorObjects1_1final = [];
 
-gdjs.ClimbsCode.forEachObjects2 = [];
+gdjs.SettingsCode.GDFeedbackObjects1_1final = [];
 
-gdjs.ClimbsCode.forEachTemporary2 = null;
+gdjs.SettingsCode.GDSoundObjects1_1final = [];
 
-gdjs.ClimbsCode.forEachTotalCount2 = 0;
-
-gdjs.ClimbsCode.GDClimbWallFenceObjects1= [];
-gdjs.ClimbsCode.GDClimbWallFenceObjects2= [];
-gdjs.ClimbsCode.GDClimbWallFenceObjects3= [];
-gdjs.ClimbsCode.GDClimbWallFenceObjects4= [];
-gdjs.ClimbsCode.GDPlayerObjects1= [];
-gdjs.ClimbsCode.GDPlayerObjects2= [];
-gdjs.ClimbsCode.GDPlayerObjects3= [];
-gdjs.ClimbsCode.GDPlayerObjects4= [];
-gdjs.ClimbsCode.GDHealthObjects1= [];
-gdjs.ClimbsCode.GDHealthObjects2= [];
-gdjs.ClimbsCode.GDHealthObjects3= [];
-gdjs.ClimbsCode.GDHealthObjects4= [];
-gdjs.ClimbsCode.GDZipshotObjects1= [];
-gdjs.ClimbsCode.GDZipshotObjects2= [];
-gdjs.ClimbsCode.GDZipshotObjects3= [];
-gdjs.ClimbsCode.GDZipshotObjects4= [];
-gdjs.ClimbsCode.GDBallAttackObjects1= [];
-gdjs.ClimbsCode.GDBallAttackObjects2= [];
-gdjs.ClimbsCode.GDBallAttackObjects3= [];
-gdjs.ClimbsCode.GDBallAttackObjects4= [];
-gdjs.ClimbsCode.GDNewSpriteObjects1= [];
-gdjs.ClimbsCode.GDNewSpriteObjects2= [];
-gdjs.ClimbsCode.GDNewSpriteObjects3= [];
-gdjs.ClimbsCode.GDNewSpriteObjects4= [];
-gdjs.ClimbsCode.GDNewTextObjects1= [];
-gdjs.ClimbsCode.GDNewTextObjects2= [];
-gdjs.ClimbsCode.GDNewTextObjects3= [];
-gdjs.ClimbsCode.GDNewTextObjects4= [];
-gdjs.ClimbsCode.GDshockwaveObjects1= [];
-gdjs.ClimbsCode.GDshockwaveObjects2= [];
-gdjs.ClimbsCode.GDshockwaveObjects3= [];
-gdjs.ClimbsCode.GDshockwaveObjects4= [];
-gdjs.ClimbsCode.GDNewPanelSpriteObjects1= [];
-gdjs.ClimbsCode.GDNewPanelSpriteObjects2= [];
-gdjs.ClimbsCode.GDNewPanelSpriteObjects3= [];
-gdjs.ClimbsCode.GDNewPanelSpriteObjects4= [];
-gdjs.ClimbsCode.GDSpikeObjects1= [];
-gdjs.ClimbsCode.GDSpikeObjects2= [];
-gdjs.ClimbsCode.GDSpikeObjects3= [];
-gdjs.ClimbsCode.GDSpikeObjects4= [];
-gdjs.ClimbsCode.GDWinObjects1= [];
-gdjs.ClimbsCode.GDWinObjects2= [];
-gdjs.ClimbsCode.GDWinObjects3= [];
-gdjs.ClimbsCode.GDWinObjects4= [];
-gdjs.ClimbsCode.GDfadeObjects1= [];
-gdjs.ClimbsCode.GDfadeObjects2= [];
-gdjs.ClimbsCode.GDfadeObjects3= [];
-gdjs.ClimbsCode.GDfadeObjects4= [];
-gdjs.ClimbsCode.GDShadedDarkJoystickObjects1= [];
-gdjs.ClimbsCode.GDShadedDarkJoystickObjects2= [];
-gdjs.ClimbsCode.GDShadedDarkJoystickObjects3= [];
-gdjs.ClimbsCode.GDShadedDarkJoystickObjects4= [];
-gdjs.ClimbsCode.GDHitObjects1= [];
-gdjs.ClimbsCode.GDHitObjects2= [];
-gdjs.ClimbsCode.GDHitObjects3= [];
-gdjs.ClimbsCode.GDHitObjects4= [];
-gdjs.ClimbsCode.GDWallObjects1= [];
-gdjs.ClimbsCode.GDWallObjects2= [];
-gdjs.ClimbsCode.GDWallObjects3= [];
-gdjs.ClimbsCode.GDWallObjects4= [];
-gdjs.ClimbsCode.GDZipshot2Objects1= [];
-gdjs.ClimbsCode.GDZipshot2Objects2= [];
-gdjs.ClimbsCode.GDZipshot2Objects3= [];
-gdjs.ClimbsCode.GDZipshot2Objects4= [];
-gdjs.ClimbsCode.GDClimbWallTowerObjects1= [];
-gdjs.ClimbsCode.GDClimbWallTowerObjects2= [];
-gdjs.ClimbsCode.GDClimbWallTowerObjects3= [];
-gdjs.ClimbsCode.GDClimbWallTowerObjects4= [];
-gdjs.ClimbsCode.GDspawnplObjects1= [];
-gdjs.ClimbsCode.GDspawnplObjects2= [];
-gdjs.ClimbsCode.GDspawnplObjects3= [];
-gdjs.ClimbsCode.GDspawnplObjects4= [];
-gdjs.ClimbsCode.GDLeverObjects1= [];
-gdjs.ClimbsCode.GDLeverObjects2= [];
-gdjs.ClimbsCode.GDLeverObjects3= [];
-gdjs.ClimbsCode.GDLeverObjects4= [];
-gdjs.ClimbsCode.GDBreakableWallObjects1= [];
-gdjs.ClimbsCode.GDBreakableWallObjects2= [];
-gdjs.ClimbsCode.GDBreakableWallObjects3= [];
-gdjs.ClimbsCode.GDBreakableWallObjects4= [];
-gdjs.ClimbsCode.GDCustomLobbiesObjects1= [];
-gdjs.ClimbsCode.GDCustomLobbiesObjects2= [];
-gdjs.ClimbsCode.GDCustomLobbiesObjects3= [];
-gdjs.ClimbsCode.GDCustomLobbiesObjects4= [];
-gdjs.ClimbsCode.GDOnlineCheckObjects1= [];
-gdjs.ClimbsCode.GDOnlineCheckObjects2= [];
-gdjs.ClimbsCode.GDOnlineCheckObjects3= [];
-gdjs.ClimbsCode.GDOnlineCheckObjects4= [];
-gdjs.ClimbsCode.GDCursorObjects1= [];
-gdjs.ClimbsCode.GDCursorObjects2= [];
-gdjs.ClimbsCode.GDCursorObjects3= [];
-gdjs.ClimbsCode.GDCursorObjects4= [];
-gdjs.ClimbsCode.GDBGObjects1= [];
-gdjs.ClimbsCode.GDBGObjects2= [];
-gdjs.ClimbsCode.GDBGObjects3= [];
-gdjs.ClimbsCode.GDBGObjects4= [];
+gdjs.SettingsCode.GDBackObjects1= [];
+gdjs.SettingsCode.GDBackObjects2= [];
+gdjs.SettingsCode.GDBGObjects1= [];
+gdjs.SettingsCode.GDBGObjects2= [];
+gdjs.SettingsCode.GDSoundObjects1= [];
+gdjs.SettingsCode.GDSoundObjects2= [];
+gdjs.SettingsCode.GDBackSelectObjects1= [];
+gdjs.SettingsCode.GDBackSelectObjects2= [];
+gdjs.SettingsCode.GDAllAudioObjects1= [];
+gdjs.SettingsCode.GDAllAudioObjects2= [];
+gdjs.SettingsCode.GDMasterTextObjects1= [];
+gdjs.SettingsCode.GDMasterTextObjects2= [];
+gdjs.SettingsCode.GDVisualObjects1= [];
+gdjs.SettingsCode.GDVisualObjects2= [];
+gdjs.SettingsCode.GDControlsObjects1= [];
+gdjs.SettingsCode.GDControlsObjects2= [];
+gdjs.SettingsCode.GDCreditsObjects1= [];
+gdjs.SettingsCode.GDCreditsObjects2= [];
+gdjs.SettingsCode.GDCreditsTextObjects1= [];
+gdjs.SettingsCode.GDCreditsTextObjects2= [];
+gdjs.SettingsCode.GDNewSprite2Objects1= [];
+gdjs.SettingsCode.GDNewSprite2Objects2= [];
+gdjs.SettingsCode.GDNewSpriteObjects1= [];
+gdjs.SettingsCode.GDNewSpriteObjects2= [];
+gdjs.SettingsCode.GDNewTextObjects1= [];
+gdjs.SettingsCode.GDNewTextObjects2= [];
+gdjs.SettingsCode.GDNewSprite3Objects1= [];
+gdjs.SettingsCode.GDNewSprite3Objects2= [];
+gdjs.SettingsCode.GDNewText2Objects1= [];
+gdjs.SettingsCode.GDNewText2Objects2= [];
+gdjs.SettingsCode.GDnoticeObjects1= [];
+gdjs.SettingsCode.GDnoticeObjects2= [];
+gdjs.SettingsCode.GDNewToggleSwitchObjects1= [];
+gdjs.SettingsCode.GDNewToggleSwitchObjects2= [];
+gdjs.SettingsCode.GDSquareWhiteToggleObjects1= [];
+gdjs.SettingsCode.GDSquareWhiteToggleObjects2= [];
+gdjs.SettingsCode.GDNewText3Objects1= [];
+gdjs.SettingsCode.GDNewText3Objects2= [];
+gdjs.SettingsCode.GDSFXObjects1= [];
+gdjs.SettingsCode.GDSFXObjects2= [];
+gdjs.SettingsCode.GDSFXTextObjects1= [];
+gdjs.SettingsCode.GDSFXTextObjects2= [];
+gdjs.SettingsCode.GDMusicObjects1= [];
+gdjs.SettingsCode.GDMusicObjects2= [];
+gdjs.SettingsCode.GDMusicTextObjects1= [];
+gdjs.SettingsCode.GDMusicTextObjects2= [];
+gdjs.SettingsCode.GDFeedbackObjects1= [];
+gdjs.SettingsCode.GDFeedbackObjects2= [];
+gdjs.SettingsCode.GDCustomLobbiesObjects1= [];
+gdjs.SettingsCode.GDCustomLobbiesObjects2= [];
+gdjs.SettingsCode.GDOnlineCheckObjects1= [];
+gdjs.SettingsCode.GDOnlineCheckObjects2= [];
+gdjs.SettingsCode.GDCursorObjects1= [];
+gdjs.SettingsCode.GDCursorObjects2= [];
+gdjs.SettingsCode.GDBGObjects1= [];
+gdjs.SettingsCode.GDBGObjects2= [];
 
 
-gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDZipshot2Objects1Objects = Hashtable.newFrom({"Zipshot2": gdjs.ClimbsCode.GDZipshot2Objects1});
-gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDPlayerObjects1Objects = Hashtable.newFrom({"Player": gdjs.ClimbsCode.GDPlayerObjects1});
-gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDZipshot2Objects1Objects = Hashtable.newFrom({"Zipshot2": gdjs.ClimbsCode.GDZipshot2Objects1});
-gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDPlayerObjects1Objects = Hashtable.newFrom({"Player": gdjs.ClimbsCode.GDPlayerObjects1});
-gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDZipshotObjects1Objects = Hashtable.newFrom({"Zipshot": gdjs.ClimbsCode.GDZipshotObjects1});
-gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDBallAttackObjects1Objects = Hashtable.newFrom({"BallAttack": gdjs.ClimbsCode.GDBallAttackObjects1});
-gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDPlayerObjects1Objects = Hashtable.newFrom({"Player": gdjs.ClimbsCode.GDPlayerObjects1});
-gdjs.ClimbsCode.asyncCallback42961796 = function (runtimeScene, asyncObjectsList) {
-asyncObjectsList.restoreLocalVariablesContainers(gdjs.ClimbsCode.localVariables);
-gdjs.copyArray(asyncObjectsList.getObjects("Zipshot"), gdjs.ClimbsCode.GDZipshotObjects2);
-
-gdjs.copyArray(asyncObjectsList.getObjects("Zipshot2"), gdjs.ClimbsCode.GDZipshot2Objects2);
-
-{for(var i = 0, len = gdjs.ClimbsCode.GDZipshotObjects2.length ;i < len;++i) {
-    gdjs.ClimbsCode.GDZipshotObjects2[i].deleteFromScene(runtimeScene);
-}
-}
-{for(var i = 0, len = gdjs.ClimbsCode.GDZipshot2Objects2.length ;i < len;++i) {
-    gdjs.ClimbsCode.GDZipshot2Objects2[i].hide(false);
-}
-}
-gdjs.ClimbsCode.localVariables.length = 0;
-}
-gdjs.ClimbsCode.idToCallbackMap.set(42961796, gdjs.ClimbsCode.asyncCallback42961796);
-gdjs.ClimbsCode.eventsList0 = function(runtimeScene) {
+gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDBackObjects2Objects = Hashtable.newFrom({"Back": gdjs.SettingsCode.GDBackObjects2});
+gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDCursorObjects2Objects = Hashtable.newFrom({"Cursor": gdjs.SettingsCode.GDCursorObjects2});
+gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDBackSelectObjects2Objects = Hashtable.newFrom({"BackSelect": gdjs.SettingsCode.GDBackSelectObjects2});
+gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDCursorObjects2Objects = Hashtable.newFrom({"Cursor": gdjs.SettingsCode.GDCursorObjects2});
+gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDCreditsObjects2Objects = Hashtable.newFrom({"Credits": gdjs.SettingsCode.GDCreditsObjects2});
+gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDCursorObjects2Objects = Hashtable.newFrom({"Cursor": gdjs.SettingsCode.GDCursorObjects2});
+gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDSoundObjects2Objects = Hashtable.newFrom({"Sound": gdjs.SettingsCode.GDSoundObjects2});
+gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDCursorObjects2Objects = Hashtable.newFrom({"Cursor": gdjs.SettingsCode.GDCursorObjects2});
+gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDFeedbackObjects2Objects = Hashtable.newFrom({"Feedback": gdjs.SettingsCode.GDFeedbackObjects2});
+gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDCursorObjects2Objects = Hashtable.newFrom({"Cursor": gdjs.SettingsCode.GDCursorObjects2});
+gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDControlsObjects2Objects = Hashtable.newFrom({"Controls": gdjs.SettingsCode.GDControlsObjects2});
+gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDCursorObjects2Objects = Hashtable.newFrom({"Cursor": gdjs.SettingsCode.GDCursorObjects2});
+gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDAllAudioObjects1Objects = Hashtable.newFrom({"AllAudio": gdjs.SettingsCode.GDAllAudioObjects1});
+gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDCursorObjects1Objects = Hashtable.newFrom({"Cursor": gdjs.SettingsCode.GDCursorObjects1});
+gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDAllAudioObjects1Objects = Hashtable.newFrom({"AllAudio": gdjs.SettingsCode.GDAllAudioObjects1});
+gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDCursorObjects1Objects = Hashtable.newFrom({"Cursor": gdjs.SettingsCode.GDCursorObjects1});
+gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDMusicObjects1Objects = Hashtable.newFrom({"Music": gdjs.SettingsCode.GDMusicObjects1});
+gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDCursorObjects1Objects = Hashtable.newFrom({"Cursor": gdjs.SettingsCode.GDCursorObjects1});
+gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDMusicObjects1Objects = Hashtable.newFrom({"Music": gdjs.SettingsCode.GDMusicObjects1});
+gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDCursorObjects1Objects = Hashtable.newFrom({"Cursor": gdjs.SettingsCode.GDCursorObjects1});
+gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDSFXObjects1Objects = Hashtable.newFrom({"SFX": gdjs.SettingsCode.GDSFXObjects1});
+gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDCursorObjects1Objects = Hashtable.newFrom({"Cursor": gdjs.SettingsCode.GDCursorObjects1});
+gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDSFXObjects1Objects = Hashtable.newFrom({"SFX": gdjs.SettingsCode.GDSFXObjects1});
+gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDCursorObjects1Objects = Hashtable.newFrom({"Cursor": gdjs.SettingsCode.GDCursorObjects1});
+gdjs.SettingsCode.eventsList0 = function(runtimeScene) {
 
 {
 
+gdjs.SettingsCode.GDBackObjects1.length = 0;
 
-{
-{
-const asyncObjectsList = new gdjs.LongLivedObjectsList();
-asyncObjectsList.backupLocalVariablesContainers(gdjs.ClimbsCode.localVariables);
-for (const obj of gdjs.ClimbsCode.GDZipshotObjects1) asyncObjectsList.addObject("Zipshot", obj);
-for (const obj of gdjs.ClimbsCode.GDZipshot2Objects1) asyncObjectsList.addObject("Zipshot2", obj);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.8), (runtimeScene) => (gdjs.ClimbsCode.asyncCallback42961796(runtimeScene, asyncObjectsList)), 42961796, asyncObjectsList);
-}
-}
-
-}
-
-
-};gdjs.ClimbsCode.eventsList1 = function(runtimeScene) {
-
-{
+gdjs.SettingsCode.GDCursorObjects1.length = 0;
 
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getGame().getVariables().getFromIndex(15).getAsNumber() == 0);
-}
-if (isConditionTrue_0) {
-{gdjs.evtTools.sound.playMusicOnChannel(runtimeScene, "Juniper.mp3", 0, true, 100, 1);
-}
-{runtimeScene.getGame().getVariables().getFromIndex(24).setBoolean(false);
-}
-}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
+{gdjs.SettingsCode.GDBackObjects1_1final.length = 0;
+gdjs.SettingsCode.GDCursorObjects1_1final.length = 0;
+let isConditionTrue_1 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getGame().getVariables().getFromIndex(15).getAsNumber() == 1);
-}
-if (isConditionTrue_0) {
-{gdjs.evtTools.sound.playMusicOnChannel(runtimeScene, "Burn The World Waltz .mp3", 0, true, 100, 1);
-}
-}
-
-}
-
-
-};gdjs.ClimbsCode.asyncCallback42968308 = function (runtimeScene, asyncObjectsList) {
-asyncObjectsList.restoreLocalVariablesContainers(gdjs.ClimbsCode.localVariables);
-gdjs.copyArray(asyncObjectsList.getObjects("Player"), gdjs.ClimbsCode.GDPlayerObjects2);
-
-{for(var i = 0, len = gdjs.ClimbsCode.GDPlayerObjects2.length ;i < len;++i) {
-    gdjs.ClimbsCode.GDPlayerObjects2[i].getBehavior("TopDownMovement").setMaxSpeed(200);
-}
-}
-gdjs.ClimbsCode.localVariables.length = 0;
-}
-gdjs.ClimbsCode.idToCallbackMap.set(42968308, gdjs.ClimbsCode.asyncCallback42968308);
-gdjs.ClimbsCode.eventsList2 = function(runtimeScene) {
-
 {
-
-
-{
-{
-const asyncObjectsList = new gdjs.LongLivedObjectsList();
-asyncObjectsList.backupLocalVariablesContainers(gdjs.ClimbsCode.localVariables);
-for (const obj of gdjs.ClimbsCode.GDPlayerObjects1) asyncObjectsList.addObject("Player", obj);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.5), (runtimeScene) => (gdjs.ClimbsCode.asyncCallback42968308(runtimeScene, asyncObjectsList)), 42968308, asyncObjectsList);
-}
-}
-
-}
-
-
-};gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDNewSpriteObjects1Objects = Hashtable.newFrom({"NewSprite": gdjs.ClimbsCode.GDNewSpriteObjects1});
-gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDPlayerObjects1Objects = Hashtable.newFrom({"Player": gdjs.ClimbsCode.GDPlayerObjects1});
-gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDBallAttackObjects1Objects = Hashtable.newFrom({"BallAttack": gdjs.ClimbsCode.GDBallAttackObjects1});
-gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDPlayerObjects1Objects = Hashtable.newFrom({"Player": gdjs.ClimbsCode.GDPlayerObjects1});
-gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDSpikeObjects1Objects = Hashtable.newFrom({"Spike": gdjs.ClimbsCode.GDSpikeObjects1});
-gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDPlayerObjects1Objects = Hashtable.newFrom({"Player": gdjs.ClimbsCode.GDPlayerObjects1});
-gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDSpikeObjects1Objects = Hashtable.newFrom({"Spike": gdjs.ClimbsCode.GDSpikeObjects1});
-gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDPlayerObjects1Objects = Hashtable.newFrom({"Player": gdjs.ClimbsCode.GDPlayerObjects1});
-gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDSpikeObjects1Objects = Hashtable.newFrom({"Spike": gdjs.ClimbsCode.GDSpikeObjects1});
-gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDWallObjects2Objects = Hashtable.newFrom({"Wall": gdjs.ClimbsCode.GDWallObjects2});
-gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDPlayerObjects2Objects = Hashtable.newFrom({"Player": gdjs.ClimbsCode.GDPlayerObjects2});
-gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDBreakableWallObjects2Objects = Hashtable.newFrom({"BreakableWall": gdjs.ClimbsCode.GDBreakableWallObjects2});
-gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDPlayerObjects2Objects = Hashtable.newFrom({"Player": gdjs.ClimbsCode.GDPlayerObjects2});
-gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDWallObjects1Objects = Hashtable.newFrom({"Wall": gdjs.ClimbsCode.GDWallObjects1});
-gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDBreakableWallObjects1Objects = Hashtable.newFrom({"BreakableWall": gdjs.ClimbsCode.GDBreakableWallObjects1});
-gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDZipshot2Objects1Objects = Hashtable.newFrom({"Zipshot2": gdjs.ClimbsCode.GDZipshot2Objects1});
-gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDPlayerObjects1Objects = Hashtable.newFrom({"Player": gdjs.ClimbsCode.GDPlayerObjects1});
-gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDshockwaveObjects1Objects = Hashtable.newFrom({"shockwave": gdjs.ClimbsCode.GDshockwaveObjects1});
-gdjs.ClimbsCode.eventsList3 = function(runtimeScene) {
-
-{
-
-/* Reuse gdjs.ClimbsCode.GDZipshot2Objects1 */
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.ClimbsCode.GDZipshot2Objects1.length;i<l;++i) {
-    if ( gdjs.ClimbsCode.GDZipshot2Objects1[i].getVariableNumber(gdjs.ClimbsCode.GDZipshot2Objects1[i].getVariables().getFromIndex(0)) == 0 ) {
-        isConditionTrue_0 = true;
-        gdjs.ClimbsCode.GDZipshot2Objects1[k] = gdjs.ClimbsCode.GDZipshot2Objects1[i];
+gdjs.copyArray(runtimeScene.getObjects("Back"), gdjs.SettingsCode.GDBackObjects2);
+for (var i = 0, k = 0, l = gdjs.SettingsCode.GDBackObjects2.length;i<l;++i) {
+    if ( gdjs.SettingsCode.GDBackObjects2[i].IsClicked(null) ) {
+        isConditionTrue_1 = true;
+        gdjs.SettingsCode.GDBackObjects2[k] = gdjs.SettingsCode.GDBackObjects2[i];
         ++k;
     }
 }
-gdjs.ClimbsCode.GDZipshot2Objects1.length = k;
+gdjs.SettingsCode.GDBackObjects2.length = k;
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+    for (let j = 0, jLen = gdjs.SettingsCode.GDBackObjects2.length; j < jLen ; ++j) {
+        if ( gdjs.SettingsCode.GDBackObjects1_1final.indexOf(gdjs.SettingsCode.GDBackObjects2[j]) === -1 )
+            gdjs.SettingsCode.GDBackObjects1_1final.push(gdjs.SettingsCode.GDBackObjects2[j]);
+    }
+}
+}
+{
+gdjs.copyArray(runtimeScene.getObjects("Back"), gdjs.SettingsCode.GDBackObjects2);
+gdjs.copyArray(runtimeScene.getObjects("Cursor"), gdjs.SettingsCode.GDCursorObjects2);
+{let isConditionTrue_2 = false;
+isConditionTrue_2 = false;
+isConditionTrue_2 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDBackObjects2Objects, gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDCursorObjects2Objects, false, runtimeScene, false);
+if (isConditionTrue_2) {
+isConditionTrue_2 = false;
+isConditionTrue_2 = gdjs.evtsExt__Gamepads__IsButtonJustPressed.func(runtimeScene, 1, "A", null);
+}
+isConditionTrue_1 = isConditionTrue_2;
+}
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+    for (let j = 0, jLen = gdjs.SettingsCode.GDBackObjects2.length; j < jLen ; ++j) {
+        if ( gdjs.SettingsCode.GDBackObjects1_1final.indexOf(gdjs.SettingsCode.GDBackObjects2[j]) === -1 )
+            gdjs.SettingsCode.GDBackObjects1_1final.push(gdjs.SettingsCode.GDBackObjects2[j]);
+    }
+    for (let j = 0, jLen = gdjs.SettingsCode.GDCursorObjects2.length; j < jLen ; ++j) {
+        if ( gdjs.SettingsCode.GDCursorObjects1_1final.indexOf(gdjs.SettingsCode.GDCursorObjects2[j]) === -1 )
+            gdjs.SettingsCode.GDCursorObjects1_1final.push(gdjs.SettingsCode.GDCursorObjects2[j]);
+    }
+}
+}
+{
+gdjs.copyArray(gdjs.SettingsCode.GDBackObjects1_1final, gdjs.SettingsCode.GDBackObjects1);
+gdjs.copyArray(gdjs.SettingsCode.GDCursorObjects1_1final, gdjs.SettingsCode.GDCursorObjects1);
+}
+}
 if (isConditionTrue_0) {
-/* Reuse gdjs.ClimbsCode.GDZipshot2Objects1 */
-{for(var i = 0, len = gdjs.ClimbsCode.GDZipshot2Objects1.length ;i < len;++i) {
-    gdjs.ClimbsCode.GDZipshot2Objects1[i].deleteFromScene(runtimeScene);
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.camera.layerIsVisible(runtimeScene, "");
 }
-}
-}
-
-}
-
-
-};gdjs.ClimbsCode.asyncCallback42978804 = function (runtimeScene, asyncObjectsList) {
-asyncObjectsList.restoreLocalVariablesContainers(gdjs.ClimbsCode.localVariables);
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Climbs", false);
-}
-gdjs.ClimbsCode.localVariables.length = 0;
-}
-gdjs.ClimbsCode.idToCallbackMap.set(42978804, gdjs.ClimbsCode.asyncCallback42978804);
-gdjs.ClimbsCode.eventsList4 = function(runtimeScene, asyncObjectsList) {
-
-{
-
-
-{
-const parentAsyncObjectsList = asyncObjectsList;
-{
-const asyncObjectsList = gdjs.LongLivedObjectsList.from(parentAsyncObjectsList);
-asyncObjectsList.backupLocalVariablesContainers(gdjs.ClimbsCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(5), (runtimeScene) => (gdjs.ClimbsCode.asyncCallback42978804(runtimeScene, asyncObjectsList)), 42978804, asyncObjectsList);
-}
-}
-
-}
-
-
-};gdjs.ClimbsCode.asyncCallback42978900 = function (runtimeScene, asyncObjectsList) {
-asyncObjectsList.restoreLocalVariablesContainers(gdjs.ClimbsCode.localVariables);
-gdjs.copyArray(runtimeScene.getObjects("fade"), gdjs.ClimbsCode.GDfadeObjects3);
-{for(var i = 0, len = gdjs.ClimbsCode.GDfadeObjects3.length ;i < len;++i) {
-    gdjs.ClimbsCode.GDfadeObjects3[i].getBehavior("FlashTransitionPainter").PaintEffect("0;0;0", 0, "Circular", "Forward", 0, null);
-}
-}
-{gdjs.evtTools.sound.playSound(runtimeScene, "DEATH.wav", false, runtimeScene.getGame().getVariables().getFromIndex(4).getAsNumber(), 1);
-}
-
-{ //Subevents
-gdjs.ClimbsCode.eventsList4(runtimeScene, asyncObjectsList);} //End of subevents
-gdjs.ClimbsCode.localVariables.length = 0;
-}
-gdjs.ClimbsCode.idToCallbackMap.set(42978900, gdjs.ClimbsCode.asyncCallback42978900);
-gdjs.ClimbsCode.eventsList5 = function(runtimeScene, asyncObjectsList) {
-
-{
-
-
-{
-const parentAsyncObjectsList = asyncObjectsList;
-{
-const asyncObjectsList = gdjs.LongLivedObjectsList.from(parentAsyncObjectsList);
-asyncObjectsList.backupLocalVariablesContainers(gdjs.ClimbsCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.5), (runtimeScene) => (gdjs.ClimbsCode.asyncCallback42978900(runtimeScene, asyncObjectsList)), 42978900, asyncObjectsList);
-}
-}
-
-}
-
-
-};gdjs.ClimbsCode.asyncCallback42978348 = function (runtimeScene, asyncObjectsList) {
-asyncObjectsList.restoreLocalVariablesContainers(gdjs.ClimbsCode.localVariables);
-gdjs.copyArray(asyncObjectsList.getObjects("Player"), gdjs.ClimbsCode.GDPlayerObjects2);
-
-{for(var i = 0, len = gdjs.ClimbsCode.GDPlayerObjects2.length ;i < len;++i) {
-    gdjs.ClimbsCode.GDPlayerObjects2[i].getBehavior("Tween").addObjectPositionYTween2("fall", 1374, "easeOutSine", 2, false);
-}
-}
-
-{ //Subevents
-gdjs.ClimbsCode.eventsList5(runtimeScene, asyncObjectsList);} //End of subevents
-gdjs.ClimbsCode.localVariables.length = 0;
-}
-gdjs.ClimbsCode.idToCallbackMap.set(42978348, gdjs.ClimbsCode.asyncCallback42978348);
-gdjs.ClimbsCode.eventsList6 = function(runtimeScene) {
-
-{
-
-
-{
-{
-const asyncObjectsList = new gdjs.LongLivedObjectsList();
-asyncObjectsList.backupLocalVariablesContainers(gdjs.ClimbsCode.localVariables);
-for (const obj of gdjs.ClimbsCode.GDPlayerObjects1) asyncObjectsList.addObject("Player", obj);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.ClimbsCode.asyncCallback42978348(runtimeScene, asyncObjectsList)), 42978348, asyncObjectsList);
-}
-}
-
-}
-
-
-};gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDPlayerObjects1Objects = Hashtable.newFrom({"Player": gdjs.ClimbsCode.GDPlayerObjects1});
-gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDWinObjects1Objects = Hashtable.newFrom({"Win": gdjs.ClimbsCode.GDWinObjects1});
-gdjs.ClimbsCode.asyncCallback42984404 = function (runtimeScene, asyncObjectsList) {
-asyncObjectsList.restoreLocalVariablesContainers(gdjs.ClimbsCode.localVariables);
-{gdjs.evtTools.sound.playMusicOnChannel(runtimeScene, "Overworld.mp3", 0, false, 100, 1);
-}
+if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.popScene(runtimeScene);
 }
-gdjs.ClimbsCode.localVariables.length = 0;
-}
-gdjs.ClimbsCode.idToCallbackMap.set(42984404, gdjs.ClimbsCode.asyncCallback42984404);
-gdjs.ClimbsCode.eventsList7 = function(runtimeScene) {
-
-{
-
-
-{
-{
-const asyncObjectsList = new gdjs.LongLivedObjectsList();
-asyncObjectsList.backupLocalVariablesContainers(gdjs.ClimbsCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(5), (runtimeScene) => (gdjs.ClimbsCode.asyncCallback42984404(runtimeScene, asyncObjectsList)), 42984404, asyncObjectsList);
-}
-}
-
-}
-
-
-};gdjs.ClimbsCode.eventsList8 = function(runtimeScene) {
-
-};gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDLeverObjects2Objects = Hashtable.newFrom({"Lever": gdjs.ClimbsCode.GDLeverObjects2});
-gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDPlayerObjects2Objects = Hashtable.newFrom({"Player": gdjs.ClimbsCode.GDPlayerObjects2});
-gdjs.ClimbsCode.eventsList9 = function(runtimeScene) {
-
-};gdjs.ClimbsCode.eventsList10 = function(runtimeScene) {
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.ClimbsCode.GDPlayerObjects1);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.ClimbsCode.GDPlayerObjects1.length;i<l;++i) {
-    if ( gdjs.ClimbsCode.GDPlayerObjects1[i].getBehavior("TopDownMovement").isMoving() ) {
-        isConditionTrue_0 = true;
-        gdjs.ClimbsCode.GDPlayerObjects1[k] = gdjs.ClimbsCode.GDPlayerObjects1[i];
-        ++k;
-    }
-}
-gdjs.ClimbsCode.GDPlayerObjects1.length = k;
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.ClimbsCode.GDPlayerObjects1.length;i<l;++i) {
-    if ( gdjs.ClimbsCode.GDPlayerObjects1[i].getBehavior("Animation").getAnimationName() != "tgjump" ) {
-        isConditionTrue_0 = true;
-        gdjs.ClimbsCode.GDPlayerObjects1[k] = gdjs.ClimbsCode.GDPlayerObjects1[i];
-        ++k;
-    }
-}
-gdjs.ClimbsCode.GDPlayerObjects1.length = k;
-}
-if (isConditionTrue_0) {
-/* Reuse gdjs.ClimbsCode.GDPlayerObjects1 */
-{for(var i = 0, len = gdjs.ClimbsCode.GDPlayerObjects1.length ;i < len;++i) {
-    gdjs.ClimbsCode.GDPlayerObjects1[i].getBehavior("Animation").setAnimationName("walk1tg");
-}
-}
 }
 
 }
@@ -427,11 +176,8 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 {
-gdjs.copyArray(runtimeScene.getObjects("Health"), gdjs.ClimbsCode.GDHealthObjects1);
-gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.ClimbsCode.GDPlayerObjects1);
-{for(var i = 0, len = gdjs.ClimbsCode.GDHealthObjects1.length ;i < len;++i) {
-    gdjs.ClimbsCode.GDHealthObjects1[i].setPosition((( gdjs.ClimbsCode.GDPlayerObjects1.length === 0 ) ? 0 :gdjs.ClimbsCode.GDPlayerObjects1[0].getPointX("")) - 2,(( gdjs.ClimbsCode.GDPlayerObjects1.length === 0 ) ? 0 :gdjs.ClimbsCode.GDPlayerObjects1[0].getPointY("")) - 110);
-}
+gdjs.copyArray(runtimeScene.getObjects("AllAudio"), gdjs.SettingsCode.GDAllAudioObjects1);
+{runtimeScene.getGame().getVariables().getFromIndex(3).setNumber((( gdjs.SettingsCode.GDAllAudioObjects1.length === 0 ) ? 0 :gdjs.SettingsCode.GDAllAudioObjects1[0].Value(null)));
 }
 }
 
@@ -440,262 +186,72 @@ gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.ClimbsCode.GDPlayerObject
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.ClimbsCode.GDPlayerObjects1);
+gdjs.SettingsCode.GDBackSelectObjects1.length = 0;
 
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.ClimbsCode.GDPlayerObjects1.length;i<l;++i) {
-    if ( !(gdjs.ClimbsCode.GDPlayerObjects1[i].getBehavior("TopDownMovement").isMoving()) ) {
-        isConditionTrue_0 = true;
-        gdjs.ClimbsCode.GDPlayerObjects1[k] = gdjs.ClimbsCode.GDPlayerObjects1[i];
-        ++k;
-    }
-}
-gdjs.ClimbsCode.GDPlayerObjects1.length = k;
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.ClimbsCode.GDPlayerObjects1.length;i<l;++i) {
-    if ( gdjs.ClimbsCode.GDPlayerObjects1[i].getBehavior("Animation").getAnimationName() != "tgjump" ) {
-        isConditionTrue_0 = true;
-        gdjs.ClimbsCode.GDPlayerObjects1[k] = gdjs.ClimbsCode.GDPlayerObjects1[i];
-        ++k;
-    }
-}
-gdjs.ClimbsCode.GDPlayerObjects1.length = k;
-}
-if (isConditionTrue_0) {
-/* Reuse gdjs.ClimbsCode.GDPlayerObjects1 */
-{for(var i = 0, len = gdjs.ClimbsCode.GDPlayerObjects1.length ;i < len;++i) {
-    gdjs.ClimbsCode.GDPlayerObjects1[i].getBehavior("Animation").setAnimationName("default");
-}
-}
-}
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.ClimbsCode.GDPlayerObjects1);
-gdjs.copyArray(runtimeScene.getObjects("Zipshot2"), gdjs.ClimbsCode.GDZipshot2Objects1);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.object.distanceTest(gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDZipshot2Objects1Objects, gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDPlayerObjects1Objects, 1000, false);
-if (isConditionTrue_0) {
-/* Reuse gdjs.ClimbsCode.GDPlayerObjects1 */
-/* Reuse gdjs.ClimbsCode.GDZipshot2Objects1 */
-{for(var i = 0, len = gdjs.ClimbsCode.GDZipshot2Objects1.length ;i < len;++i) {
-    gdjs.ClimbsCode.GDZipshot2Objects1[i].rotateTowardObject((gdjs.ClimbsCode.GDPlayerObjects1.length !== 0 ? gdjs.ClimbsCode.GDPlayerObjects1[0] : null), 0, runtimeScene);
-}
-}
-}
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.ClimbsCode.GDPlayerObjects1);
-gdjs.copyArray(runtimeScene.getObjects("Zipshot2"), gdjs.ClimbsCode.GDZipshot2Objects1);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.object.distanceTest(gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDZipshot2Objects1Objects, gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDPlayerObjects1Objects, 1000, false);
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "shoottime") >= 3;
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(42960228);
-}
-}
-}
-if (isConditionTrue_0) {
-/* Reuse gdjs.ClimbsCode.GDPlayerObjects1 */
-/* Reuse gdjs.ClimbsCode.GDZipshot2Objects1 */
-gdjs.ClimbsCode.GDBallAttackObjects1.length = 0;
-
-gdjs.ClimbsCode.GDZipshotObjects1.length = 0;
-
-{for(var i = 0, len = gdjs.ClimbsCode.GDZipshot2Objects1.length ;i < len;++i) {
-    gdjs.ClimbsCode.GDZipshot2Objects1[i].hide();
-}
-}
-{gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDZipshotObjects1Objects, (( gdjs.ClimbsCode.GDZipshot2Objects1.length === 0 ) ? 0 :gdjs.ClimbsCode.GDZipshot2Objects1[0].getPointX("")), (( gdjs.ClimbsCode.GDZipshot2Objects1.length === 0 ) ? 0 :gdjs.ClimbsCode.GDZipshot2Objects1[0].getPointY("")), "");
-}
-{for(var i = 0, len = gdjs.ClimbsCode.GDZipshotObjects1.length ;i < len;++i) {
-    gdjs.ClimbsCode.GDZipshotObjects1[i].rotateTowardObject((gdjs.ClimbsCode.GDPlayerObjects1.length !== 0 ? gdjs.ClimbsCode.GDPlayerObjects1[0] : null), 0, runtimeScene);
-}
-}
-{for(var i = 0, len = gdjs.ClimbsCode.GDZipshotObjects1.length ;i < len;++i) {
-    gdjs.ClimbsCode.GDZipshotObjects1[i].getBehavior("Scale").setScale((( gdjs.ClimbsCode.GDZipshot2Objects1.length === 0 ) ? 0 :gdjs.ClimbsCode.GDZipshot2Objects1[0].getBehavior("Scale").getScale()));
-}
-}
-{for(var i = 0, len = gdjs.ClimbsCode.GDZipshotObjects1.length ;i < len;++i) {
-    gdjs.ClimbsCode.GDZipshotObjects1[i].getBehavior("Animation").setAnimationName("pew");
-}
-}
-{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "shoottime");
-}
-{for(var i = 0, len = gdjs.ClimbsCode.GDZipshot2Objects1.length ;i < len;++i) {
-    gdjs.ClimbsCode.GDZipshot2Objects1[i].getBehavior("FireBullet").FireTowardObject((gdjs.ClimbsCode.GDZipshot2Objects1[i].getPointX("")), (gdjs.ClimbsCode.GDZipshot2Objects1[i].getPointY("")), gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDBallAttackObjects1Objects, gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDPlayerObjects1Objects, 500, null);
-}
-}
-{for(var i = 0, len = gdjs.ClimbsCode.GDZipshot2Objects1.length ;i < len;++i) {
-    gdjs.ClimbsCode.GDZipshot2Objects1[i].getBehavior("FireBullet").SetUnlimitedAmmo(true, null);
-}
-}
-{for(var i = 0, len = gdjs.ClimbsCode.GDBallAttackObjects1.length ;i < len;++i) {
-    gdjs.ClimbsCode.GDBallAttackObjects1[i].rotateTowardObject((gdjs.ClimbsCode.GDPlayerObjects1.length !== 0 ? gdjs.ClimbsCode.GDPlayerObjects1[0] : null), 0, runtimeScene);
-}
-}
-{for(var i = 0, len = gdjs.ClimbsCode.GDBallAttackObjects1.length ;i < len;++i) {
-    gdjs.ClimbsCode.GDBallAttackObjects1[i].getBehavior("Resizable").setSize(56, 56);
-}
-}
-
-{ //Subevents
-gdjs.ClimbsCode.eventsList0(runtimeScene);} //End of subevents
-}
-
-}
-
-
-{
+gdjs.SettingsCode.GDCursorObjects1.length = 0;
 
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("Zipshot2"), gdjs.ClimbsCode.GDZipshot2Objects1);
-{for(var i = 0, len = gdjs.ClimbsCode.GDZipshot2Objects1.length ;i < len;++i) {
-    gdjs.ClimbsCode.GDZipshot2Objects1[i].hide(false);
-}
-}
-{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "shoottime");
-}
-{gdjs.evtTools.sound.preloadMusic(runtimeScene, "Winclimb.mp3");
-}
-{gdjs.evtTools.sound.preloadMusic(runtimeScene, "Overworld.mp3");
-}
-
-{ //Subevents
-gdjs.ClimbsCode.eventsList1(runtimeScene);} //End of subevents
-}
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("Health"), gdjs.ClimbsCode.GDHealthObjects1);
-gdjs.ClimbsCode.GDHitObjects1.length = 0;
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{gdjs.ClimbsCode.GDHitObjects1_1final.length = 0;
+{gdjs.SettingsCode.GDBackSelectObjects1_1final.length = 0;
+gdjs.SettingsCode.GDCursorObjects1_1final.length = 0;
 let isConditionTrue_1 = false;
 isConditionTrue_0 = false;
 {
-isConditionTrue_1 = gdjs.evtTools.input.wasKeyJustPressed(runtimeScene, "Space");
-if(isConditionTrue_1) {
-    isConditionTrue_0 = true;
-}
-}
-{
-isConditionTrue_1 = gdjs.evtsExt__Gamepads__IsButtonJustPressed.func(runtimeScene, 1, "A", null);
-if(isConditionTrue_1) {
-    isConditionTrue_0 = true;
-}
-}
-{
-gdjs.copyArray(runtimeScene.getObjects("Hit"), gdjs.ClimbsCode.GDHitObjects2);
-for (var i = 0, k = 0, l = gdjs.ClimbsCode.GDHitObjects2.length;i<l;++i) {
-    if ( gdjs.ClimbsCode.GDHitObjects2[i].getBehavior("MultitouchButton").IsJustPressed(null) ) {
+gdjs.copyArray(runtimeScene.getObjects("BackSelect"), gdjs.SettingsCode.GDBackSelectObjects2);
+for (var i = 0, k = 0, l = gdjs.SettingsCode.GDBackSelectObjects2.length;i<l;++i) {
+    if ( gdjs.SettingsCode.GDBackSelectObjects2[i].IsClicked(null) ) {
         isConditionTrue_1 = true;
-        gdjs.ClimbsCode.GDHitObjects2[k] = gdjs.ClimbsCode.GDHitObjects2[i];
+        gdjs.SettingsCode.GDBackSelectObjects2[k] = gdjs.SettingsCode.GDBackSelectObjects2[i];
         ++k;
     }
 }
-gdjs.ClimbsCode.GDHitObjects2.length = k;
+gdjs.SettingsCode.GDBackSelectObjects2.length = k;
 if(isConditionTrue_1) {
     isConditionTrue_0 = true;
-    for (let j = 0, jLen = gdjs.ClimbsCode.GDHitObjects2.length; j < jLen ; ++j) {
-        if ( gdjs.ClimbsCode.GDHitObjects1_1final.indexOf(gdjs.ClimbsCode.GDHitObjects2[j]) === -1 )
-            gdjs.ClimbsCode.GDHitObjects1_1final.push(gdjs.ClimbsCode.GDHitObjects2[j]);
+    for (let j = 0, jLen = gdjs.SettingsCode.GDBackSelectObjects2.length; j < jLen ; ++j) {
+        if ( gdjs.SettingsCode.GDBackSelectObjects1_1final.indexOf(gdjs.SettingsCode.GDBackSelectObjects2[j]) === -1 )
+            gdjs.SettingsCode.GDBackSelectObjects1_1final.push(gdjs.SettingsCode.GDBackSelectObjects2[j]);
     }
 }
 }
 {
-gdjs.copyArray(gdjs.ClimbsCode.GDHitObjects1_1final, gdjs.ClimbsCode.GDHitObjects1);
+gdjs.copyArray(runtimeScene.getObjects("BackSelect"), gdjs.SettingsCode.GDBackSelectObjects2);
+gdjs.copyArray(runtimeScene.getObjects("Cursor"), gdjs.SettingsCode.GDCursorObjects2);
+{let isConditionTrue_2 = false;
+isConditionTrue_2 = false;
+isConditionTrue_2 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDBackSelectObjects2Objects, gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDCursorObjects2Objects, false, runtimeScene, false);
+if (isConditionTrue_2) {
+isConditionTrue_2 = false;
+isConditionTrue_2 = gdjs.evtsExt__Gamepads__IsButtonJustPressed.func(runtimeScene, 1, "A", null);
 }
+isConditionTrue_1 = isConditionTrue_2;
 }
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.ClimbsCode.GDHealthObjects1.length;i<l;++i) {
-    if ( !(gdjs.ClimbsCode.GDHealthObjects1[i].IsEmpty(null)) ) {
-        isConditionTrue_0 = true;
-        gdjs.ClimbsCode.GDHealthObjects1[k] = gdjs.ClimbsCode.GDHealthObjects1[i];
-        ++k;
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+    for (let j = 0, jLen = gdjs.SettingsCode.GDBackSelectObjects2.length; j < jLen ; ++j) {
+        if ( gdjs.SettingsCode.GDBackSelectObjects1_1final.indexOf(gdjs.SettingsCode.GDBackSelectObjects2[j]) === -1 )
+            gdjs.SettingsCode.GDBackSelectObjects1_1final.push(gdjs.SettingsCode.GDBackSelectObjects2[j]);
+    }
+    for (let j = 0, jLen = gdjs.SettingsCode.GDCursorObjects2.length; j < jLen ; ++j) {
+        if ( gdjs.SettingsCode.GDCursorObjects1_1final.indexOf(gdjs.SettingsCode.GDCursorObjects2[j]) === -1 )
+            gdjs.SettingsCode.GDCursorObjects1_1final.push(gdjs.SettingsCode.GDCursorObjects2[j]);
     }
 }
-gdjs.ClimbsCode.GDHealthObjects1.length = k;
 }
-if (isConditionTrue_0) {
-/* Reuse gdjs.ClimbsCode.GDHealthObjects1 */
-gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.ClimbsCode.GDPlayerObjects1);
-{for(var i = 0, len = gdjs.ClimbsCode.GDHealthObjects1.length ;i < len;++i) {
-    gdjs.ClimbsCode.GDHealthObjects1[i].SetValue(gdjs.ClimbsCode.GDHealthObjects1[i].Value(null) - (15), null);
-}
-}
-{for(var i = 0, len = gdjs.ClimbsCode.GDPlayerObjects1.length ;i < len;++i) {
-    gdjs.ClimbsCode.GDPlayerObjects1[i].getBehavior("Animation").setAnimationName("tgjump");
-}
-}
-{for(var i = 0, len = gdjs.ClimbsCode.GDPlayerObjects1.length ;i < len;++i) {
-    gdjs.ClimbsCode.GDPlayerObjects1[i].getBehavior("TopDownMovement").setMaxSpeed(600);
-}
-}
-{for(var i = 0, len = gdjs.ClimbsCode.GDPlayerObjects1.length ;i < len;++i) {
-    gdjs.ClimbsCode.GDPlayerObjects1[i].getBehavior("SmoothCamera").WaitAndCatchUp(0.4, 10000, 10000, 1, null);
-}
-}
-
-{ //Subevents
-gdjs.ClimbsCode.eventsList2(runtimeScene);} //End of subevents
-}
-
-}
-
-
 {
-
-gdjs.copyArray(runtimeScene.getObjects("Health"), gdjs.ClimbsCode.GDHealthObjects1);
-gdjs.copyArray(runtimeScene.getObjects("NewSprite"), gdjs.ClimbsCode.GDNewSpriteObjects1);
-gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.ClimbsCode.GDPlayerObjects1);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDNewSpriteObjects1Objects, gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDPlayerObjects1Objects, false, runtimeScene, false);
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.ClimbsCode.GDHealthObjects1.length;i<l;++i) {
-    if ( !(gdjs.ClimbsCode.GDHealthObjects1[i].IsEmpty(null)) ) {
-        isConditionTrue_0 = true;
-        gdjs.ClimbsCode.GDHealthObjects1[k] = gdjs.ClimbsCode.GDHealthObjects1[i];
-        ++k;
-    }
+gdjs.copyArray(gdjs.SettingsCode.GDBackSelectObjects1_1final, gdjs.SettingsCode.GDBackSelectObjects1);
+gdjs.copyArray(gdjs.SettingsCode.GDCursorObjects1_1final, gdjs.SettingsCode.GDCursorObjects1);
 }
-gdjs.ClimbsCode.GDHealthObjects1.length = k;
 }
 if (isConditionTrue_0) {
-/* Reuse gdjs.ClimbsCode.GDHealthObjects1 */
-{for(var i = 0, len = gdjs.ClimbsCode.GDHealthObjects1.length ;i < len;++i) {
-    gdjs.ClimbsCode.GDHealthObjects1[i].SetValue(gdjs.ClimbsCode.GDHealthObjects1[i].Value(null) + (0.3), null);
+{gdjs.evtTools.camera.showLayer(runtimeScene, "");
 }
+{gdjs.evtTools.camera.hideLayer(runtimeScene, "sound");
+}
+{gdjs.evtTools.camera.hideLayer(runtimeScene, "Gameplay");
+}
+{gdjs.evtTools.camera.hideLayer(runtimeScene, "Credits");
 }
 }
 
@@ -704,185 +260,72 @@ if (isConditionTrue_0) {
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("BallAttack"), gdjs.ClimbsCode.GDBallAttackObjects1);
-gdjs.copyArray(runtimeScene.getObjects("Health"), gdjs.ClimbsCode.GDHealthObjects1);
-gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.ClimbsCode.GDPlayerObjects1);
+gdjs.SettingsCode.GDCreditsObjects1.length = 0;
 
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDBallAttackObjects1Objects, gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDPlayerObjects1Objects, false, runtimeScene, false);
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(42969988);
-}
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.ClimbsCode.GDHealthObjects1.length;i<l;++i) {
-    if ( !(gdjs.ClimbsCode.GDHealthObjects1[i].IsEmpty(null)) ) {
-        isConditionTrue_0 = true;
-        gdjs.ClimbsCode.GDHealthObjects1[k] = gdjs.ClimbsCode.GDHealthObjects1[i];
-        ++k;
-    }
-}
-gdjs.ClimbsCode.GDHealthObjects1.length = k;
-}
-}
-if (isConditionTrue_0) {
-/* Reuse gdjs.ClimbsCode.GDHealthObjects1 */
-{for(var i = 0, len = gdjs.ClimbsCode.GDHealthObjects1.length ;i < len;++i) {
-    gdjs.ClimbsCode.GDHealthObjects1[i].SetValue(gdjs.ClimbsCode.GDHealthObjects1[i].Value(null) - (30), null);
-}
-}
-}
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("Health"), gdjs.ClimbsCode.GDHealthObjects1);
-gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.ClimbsCode.GDPlayerObjects1);
-gdjs.copyArray(runtimeScene.getObjects("Spike"), gdjs.ClimbsCode.GDSpikeObjects1);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDSpikeObjects1Objects, gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDPlayerObjects1Objects, false, runtimeScene, false);
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(42971140);
-}
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.ClimbsCode.GDHealthObjects1.length;i<l;++i) {
-    if ( !(gdjs.ClimbsCode.GDHealthObjects1[i].IsEmpty(null)) ) {
-        isConditionTrue_0 = true;
-        gdjs.ClimbsCode.GDHealthObjects1[k] = gdjs.ClimbsCode.GDHealthObjects1[i];
-        ++k;
-    }
-}
-gdjs.ClimbsCode.GDHealthObjects1.length = k;
-}
-}
-if (isConditionTrue_0) {
-/* Reuse gdjs.ClimbsCode.GDHealthObjects1 */
-{for(var i = 0, len = gdjs.ClimbsCode.GDHealthObjects1.length ;i < len;++i) {
-    gdjs.ClimbsCode.GDHealthObjects1[i].SetValue(gdjs.ClimbsCode.GDHealthObjects1[i].Value(null) - (40), null);
-}
-}
-}
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("Health"), gdjs.ClimbsCode.GDHealthObjects1);
-gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.ClimbsCode.GDPlayerObjects1);
-gdjs.copyArray(runtimeScene.getObjects("Spike"), gdjs.ClimbsCode.GDSpikeObjects1);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDSpikeObjects1Objects, gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDPlayerObjects1Objects, false, runtimeScene, false);
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.ClimbsCode.GDHealthObjects1.length;i<l;++i) {
-    if ( !(gdjs.ClimbsCode.GDHealthObjects1[i].IsEmpty(null)) ) {
-        isConditionTrue_0 = true;
-        gdjs.ClimbsCode.GDHealthObjects1[k] = gdjs.ClimbsCode.GDHealthObjects1[i];
-        ++k;
-    }
-}
-gdjs.ClimbsCode.GDHealthObjects1.length = k;
-}
-if (isConditionTrue_0) {
-/* Reuse gdjs.ClimbsCode.GDPlayerObjects1 */
-/* Reuse gdjs.ClimbsCode.GDSpikeObjects1 */
-{for(var i = 0, len = gdjs.ClimbsCode.GDPlayerObjects1.length ;i < len;++i) {
-    gdjs.ClimbsCode.GDPlayerObjects1[i].separateFromObjectsList(gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDSpikeObjects1Objects, false);
-}
-}
-}
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("Health"), gdjs.ClimbsCode.GDHealthObjects1);
-gdjs.ClimbsCode.GDBreakableWallObjects1.length = 0;
-
-gdjs.ClimbsCode.GDPlayerObjects1.length = 0;
-
-gdjs.ClimbsCode.GDWallObjects1.length = 0;
+gdjs.SettingsCode.GDCursorObjects1.length = 0;
 
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.ClimbsCode.GDHealthObjects1.length;i<l;++i) {
-    if ( !(gdjs.ClimbsCode.GDHealthObjects1[i].IsEmpty(null)) ) {
-        isConditionTrue_0 = true;
-        gdjs.ClimbsCode.GDHealthObjects1[k] = gdjs.ClimbsCode.GDHealthObjects1[i];
-        ++k;
-    }
-}
-gdjs.ClimbsCode.GDHealthObjects1.length = k;
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-{gdjs.ClimbsCode.GDBreakableWallObjects1_1final.length = 0;
-gdjs.ClimbsCode.GDPlayerObjects1_1final.length = 0;
-gdjs.ClimbsCode.GDWallObjects1_1final.length = 0;
+{gdjs.SettingsCode.GDCreditsObjects1_1final.length = 0;
+gdjs.SettingsCode.GDCursorObjects1_1final.length = 0;
 let isConditionTrue_1 = false;
 isConditionTrue_0 = false;
 {
-gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.ClimbsCode.GDPlayerObjects2);
-gdjs.copyArray(runtimeScene.getObjects("Wall"), gdjs.ClimbsCode.GDWallObjects2);
-isConditionTrue_1 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDWallObjects2Objects, gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDPlayerObjects2Objects, false, runtimeScene, false);
+gdjs.copyArray(runtimeScene.getObjects("Credits"), gdjs.SettingsCode.GDCreditsObjects2);
+for (var i = 0, k = 0, l = gdjs.SettingsCode.GDCreditsObjects2.length;i<l;++i) {
+    if ( gdjs.SettingsCode.GDCreditsObjects2[i].IsClicked(null) ) {
+        isConditionTrue_1 = true;
+        gdjs.SettingsCode.GDCreditsObjects2[k] = gdjs.SettingsCode.GDCreditsObjects2[i];
+        ++k;
+    }
+}
+gdjs.SettingsCode.GDCreditsObjects2.length = k;
 if(isConditionTrue_1) {
     isConditionTrue_0 = true;
-    for (let j = 0, jLen = gdjs.ClimbsCode.GDPlayerObjects2.length; j < jLen ; ++j) {
-        if ( gdjs.ClimbsCode.GDPlayerObjects1_1final.indexOf(gdjs.ClimbsCode.GDPlayerObjects2[j]) === -1 )
-            gdjs.ClimbsCode.GDPlayerObjects1_1final.push(gdjs.ClimbsCode.GDPlayerObjects2[j]);
-    }
-    for (let j = 0, jLen = gdjs.ClimbsCode.GDWallObjects2.length; j < jLen ; ++j) {
-        if ( gdjs.ClimbsCode.GDWallObjects1_1final.indexOf(gdjs.ClimbsCode.GDWallObjects2[j]) === -1 )
-            gdjs.ClimbsCode.GDWallObjects1_1final.push(gdjs.ClimbsCode.GDWallObjects2[j]);
+    for (let j = 0, jLen = gdjs.SettingsCode.GDCreditsObjects2.length; j < jLen ; ++j) {
+        if ( gdjs.SettingsCode.GDCreditsObjects1_1final.indexOf(gdjs.SettingsCode.GDCreditsObjects2[j]) === -1 )
+            gdjs.SettingsCode.GDCreditsObjects1_1final.push(gdjs.SettingsCode.GDCreditsObjects2[j]);
     }
 }
 }
 {
-gdjs.copyArray(runtimeScene.getObjects("BreakableWall"), gdjs.ClimbsCode.GDBreakableWallObjects2);
-gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.ClimbsCode.GDPlayerObjects2);
-isConditionTrue_1 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDBreakableWallObjects2Objects, gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDPlayerObjects2Objects, false, runtimeScene, false);
+gdjs.copyArray(runtimeScene.getObjects("Credits"), gdjs.SettingsCode.GDCreditsObjects2);
+gdjs.copyArray(runtimeScene.getObjects("Cursor"), gdjs.SettingsCode.GDCursorObjects2);
+{let isConditionTrue_2 = false;
+isConditionTrue_2 = false;
+isConditionTrue_2 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDCreditsObjects2Objects, gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDCursorObjects2Objects, false, runtimeScene, false);
+if (isConditionTrue_2) {
+isConditionTrue_2 = false;
+isConditionTrue_2 = gdjs.evtsExt__Gamepads__IsButtonJustPressed.func(runtimeScene, 1, "A", null);
+}
+isConditionTrue_1 = isConditionTrue_2;
+}
 if(isConditionTrue_1) {
     isConditionTrue_0 = true;
-    for (let j = 0, jLen = gdjs.ClimbsCode.GDBreakableWallObjects2.length; j < jLen ; ++j) {
-        if ( gdjs.ClimbsCode.GDBreakableWallObjects1_1final.indexOf(gdjs.ClimbsCode.GDBreakableWallObjects2[j]) === -1 )
-            gdjs.ClimbsCode.GDBreakableWallObjects1_1final.push(gdjs.ClimbsCode.GDBreakableWallObjects2[j]);
+    for (let j = 0, jLen = gdjs.SettingsCode.GDCreditsObjects2.length; j < jLen ; ++j) {
+        if ( gdjs.SettingsCode.GDCreditsObjects1_1final.indexOf(gdjs.SettingsCode.GDCreditsObjects2[j]) === -1 )
+            gdjs.SettingsCode.GDCreditsObjects1_1final.push(gdjs.SettingsCode.GDCreditsObjects2[j]);
     }
-    for (let j = 0, jLen = gdjs.ClimbsCode.GDPlayerObjects2.length; j < jLen ; ++j) {
-        if ( gdjs.ClimbsCode.GDPlayerObjects1_1final.indexOf(gdjs.ClimbsCode.GDPlayerObjects2[j]) === -1 )
-            gdjs.ClimbsCode.GDPlayerObjects1_1final.push(gdjs.ClimbsCode.GDPlayerObjects2[j]);
+    for (let j = 0, jLen = gdjs.SettingsCode.GDCursorObjects2.length; j < jLen ; ++j) {
+        if ( gdjs.SettingsCode.GDCursorObjects1_1final.indexOf(gdjs.SettingsCode.GDCursorObjects2[j]) === -1 )
+            gdjs.SettingsCode.GDCursorObjects1_1final.push(gdjs.SettingsCode.GDCursorObjects2[j]);
     }
 }
 }
 {
-gdjs.copyArray(gdjs.ClimbsCode.GDBreakableWallObjects1_1final, gdjs.ClimbsCode.GDBreakableWallObjects1);
-gdjs.copyArray(gdjs.ClimbsCode.GDPlayerObjects1_1final, gdjs.ClimbsCode.GDPlayerObjects1);
-gdjs.copyArray(gdjs.ClimbsCode.GDWallObjects1_1final, gdjs.ClimbsCode.GDWallObjects1);
-}
+gdjs.copyArray(gdjs.SettingsCode.GDCreditsObjects1_1final, gdjs.SettingsCode.GDCreditsObjects1);
+gdjs.copyArray(gdjs.SettingsCode.GDCursorObjects1_1final, gdjs.SettingsCode.GDCursorObjects1);
 }
 }
 if (isConditionTrue_0) {
-/* Reuse gdjs.ClimbsCode.GDBreakableWallObjects1 */
-/* Reuse gdjs.ClimbsCode.GDPlayerObjects1 */
-/* Reuse gdjs.ClimbsCode.GDWallObjects1 */
-{for(var i = 0, len = gdjs.ClimbsCode.GDPlayerObjects1.length ;i < len;++i) {
-    gdjs.ClimbsCode.GDPlayerObjects1[i].separateFromObjectsList(gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDWallObjects1Objects, false);
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.camera.layerIsVisible(runtimeScene, "");
 }
+if (isConditionTrue_0) {
+{gdjs.evtTools.camera.hideLayer(runtimeScene, "");
 }
-{for(var i = 0, len = gdjs.ClimbsCode.GDPlayerObjects1.length ;i < len;++i) {
-    gdjs.ClimbsCode.GDPlayerObjects1[i].separateFromObjectsList(gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDBreakableWallObjects1Objects, false);
-}
+{gdjs.evtTools.camera.showLayer(runtimeScene, "Credits");
 }
 }
 
@@ -891,56 +334,145 @@ if (isConditionTrue_0) {
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("Health"), gdjs.ClimbsCode.GDHealthObjects1);
-gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.ClimbsCode.GDPlayerObjects1);
-gdjs.copyArray(runtimeScene.getObjects("Zipshot2"), gdjs.ClimbsCode.GDZipshot2Objects1);
+gdjs.SettingsCode.GDCursorObjects1.length = 0;
+
+gdjs.SettingsCode.GDSoundObjects1.length = 0;
+
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.ClimbsCode.GDPlayerObjects1.length;i<l;++i) {
-    if ( gdjs.ClimbsCode.GDPlayerObjects1[i].getBehavior("TopDownMovement").getMaxSpeed() == 600 ) {
-        isConditionTrue_0 = true;
-        gdjs.ClimbsCode.GDPlayerObjects1[k] = gdjs.ClimbsCode.GDPlayerObjects1[i];
+{gdjs.SettingsCode.GDCursorObjects1_1final.length = 0;
+gdjs.SettingsCode.GDSoundObjects1_1final.length = 0;
+let isConditionTrue_1 = false;
+isConditionTrue_0 = false;
+{
+gdjs.copyArray(runtimeScene.getObjects("Sound"), gdjs.SettingsCode.GDSoundObjects2);
+for (var i = 0, k = 0, l = gdjs.SettingsCode.GDSoundObjects2.length;i<l;++i) {
+    if ( gdjs.SettingsCode.GDSoundObjects2[i].IsClicked(null) ) {
+        isConditionTrue_1 = true;
+        gdjs.SettingsCode.GDSoundObjects2[k] = gdjs.SettingsCode.GDSoundObjects2[i];
         ++k;
     }
 }
-gdjs.ClimbsCode.GDPlayerObjects1.length = k;
+gdjs.SettingsCode.GDSoundObjects2.length = k;
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+    for (let j = 0, jLen = gdjs.SettingsCode.GDSoundObjects2.length; j < jLen ; ++j) {
+        if ( gdjs.SettingsCode.GDSoundObjects1_1final.indexOf(gdjs.SettingsCode.GDSoundObjects2[j]) === -1 )
+            gdjs.SettingsCode.GDSoundObjects1_1final.push(gdjs.SettingsCode.GDSoundObjects2[j]);
+    }
+}
+}
+{
+gdjs.copyArray(runtimeScene.getObjects("Cursor"), gdjs.SettingsCode.GDCursorObjects2);
+gdjs.copyArray(runtimeScene.getObjects("Sound"), gdjs.SettingsCode.GDSoundObjects2);
+{let isConditionTrue_2 = false;
+isConditionTrue_2 = false;
+isConditionTrue_2 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDSoundObjects2Objects, gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDCursorObjects2Objects, false, runtimeScene, false);
+if (isConditionTrue_2) {
+isConditionTrue_2 = false;
+isConditionTrue_2 = gdjs.evtsExt__Gamepads__IsButtonJustPressed.func(runtimeScene, 1, "A", null);
+}
+isConditionTrue_1 = isConditionTrue_2;
+}
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+    for (let j = 0, jLen = gdjs.SettingsCode.GDCursorObjects2.length; j < jLen ; ++j) {
+        if ( gdjs.SettingsCode.GDCursorObjects1_1final.indexOf(gdjs.SettingsCode.GDCursorObjects2[j]) === -1 )
+            gdjs.SettingsCode.GDCursorObjects1_1final.push(gdjs.SettingsCode.GDCursorObjects2[j]);
+    }
+    for (let j = 0, jLen = gdjs.SettingsCode.GDSoundObjects2.length; j < jLen ; ++j) {
+        if ( gdjs.SettingsCode.GDSoundObjects1_1final.indexOf(gdjs.SettingsCode.GDSoundObjects2[j]) === -1 )
+            gdjs.SettingsCode.GDSoundObjects1_1final.push(gdjs.SettingsCode.GDSoundObjects2[j]);
+    }
+}
+}
+{
+gdjs.copyArray(gdjs.SettingsCode.GDCursorObjects1_1final, gdjs.SettingsCode.GDCursorObjects1);
+gdjs.copyArray(gdjs.SettingsCode.GDSoundObjects1_1final, gdjs.SettingsCode.GDSoundObjects1);
+}
+}
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDZipshot2Objects1Objects, gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDPlayerObjects1Objects, false, runtimeScene, false);
+isConditionTrue_0 = gdjs.evtTools.camera.layerIsVisible(runtimeScene, "");
+}
 if (isConditionTrue_0) {
+{gdjs.evtTools.camera.hideLayer(runtimeScene, "");
+}
+{gdjs.evtTools.camera.showLayer(runtimeScene, "sound");
+}
+}
+
+}
+
+
+{
+
+gdjs.SettingsCode.GDCursorObjects1.length = 0;
+
+gdjs.SettingsCode.GDFeedbackObjects1.length = 0;
+
+
+let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.ClimbsCode.GDHealthObjects1.length;i<l;++i) {
-    if ( !(gdjs.ClimbsCode.GDHealthObjects1[i].IsEmpty(null)) ) {
-        isConditionTrue_0 = true;
-        gdjs.ClimbsCode.GDHealthObjects1[k] = gdjs.ClimbsCode.GDHealthObjects1[i];
+{gdjs.SettingsCode.GDCursorObjects1_1final.length = 0;
+gdjs.SettingsCode.GDFeedbackObjects1_1final.length = 0;
+let isConditionTrue_1 = false;
+isConditionTrue_0 = false;
+{
+gdjs.copyArray(runtimeScene.getObjects("Feedback"), gdjs.SettingsCode.GDFeedbackObjects2);
+for (var i = 0, k = 0, l = gdjs.SettingsCode.GDFeedbackObjects2.length;i<l;++i) {
+    if ( gdjs.SettingsCode.GDFeedbackObjects2[i].IsClicked(null) ) {
+        isConditionTrue_1 = true;
+        gdjs.SettingsCode.GDFeedbackObjects2[k] = gdjs.SettingsCode.GDFeedbackObjects2[i];
         ++k;
     }
 }
-gdjs.ClimbsCode.GDHealthObjects1.length = k;
+gdjs.SettingsCode.GDFeedbackObjects2.length = k;
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+    for (let j = 0, jLen = gdjs.SettingsCode.GDFeedbackObjects2.length; j < jLen ; ++j) {
+        if ( gdjs.SettingsCode.GDFeedbackObjects1_1final.indexOf(gdjs.SettingsCode.GDFeedbackObjects2[j]) === -1 )
+            gdjs.SettingsCode.GDFeedbackObjects1_1final.push(gdjs.SettingsCode.GDFeedbackObjects2[j]);
+    }
+}
+}
+{
+gdjs.copyArray(runtimeScene.getObjects("Cursor"), gdjs.SettingsCode.GDCursorObjects2);
+gdjs.copyArray(runtimeScene.getObjects("Feedback"), gdjs.SettingsCode.GDFeedbackObjects2);
+{let isConditionTrue_2 = false;
+isConditionTrue_2 = false;
+isConditionTrue_2 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDFeedbackObjects2Objects, gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDCursorObjects2Objects, false, runtimeScene, false);
+if (isConditionTrue_2) {
+isConditionTrue_2 = false;
+isConditionTrue_2 = gdjs.evtsExt__Gamepads__IsButtonJustPressed.func(runtimeScene, 1, "A", null);
+}
+isConditionTrue_1 = isConditionTrue_2;
+}
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+    for (let j = 0, jLen = gdjs.SettingsCode.GDCursorObjects2.length; j < jLen ; ++j) {
+        if ( gdjs.SettingsCode.GDCursorObjects1_1final.indexOf(gdjs.SettingsCode.GDCursorObjects2[j]) === -1 )
+            gdjs.SettingsCode.GDCursorObjects1_1final.push(gdjs.SettingsCode.GDCursorObjects2[j]);
+    }
+    for (let j = 0, jLen = gdjs.SettingsCode.GDFeedbackObjects2.length; j < jLen ; ++j) {
+        if ( gdjs.SettingsCode.GDFeedbackObjects1_1final.indexOf(gdjs.SettingsCode.GDFeedbackObjects2[j]) === -1 )
+            gdjs.SettingsCode.GDFeedbackObjects1_1final.push(gdjs.SettingsCode.GDFeedbackObjects2[j]);
+    }
+}
+}
+{
+gdjs.copyArray(gdjs.SettingsCode.GDCursorObjects1_1final, gdjs.SettingsCode.GDCursorObjects1);
+gdjs.copyArray(gdjs.SettingsCode.GDFeedbackObjects1_1final, gdjs.SettingsCode.GDFeedbackObjects1);
+}
+}
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(42975884);
-}
-}
-}
+isConditionTrue_0 = gdjs.evtTools.camera.layerIsVisible(runtimeScene, "");
 }
 if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("Zipshot"), gdjs.ClimbsCode.GDZipshotObjects1);
-/* Reuse gdjs.ClimbsCode.GDZipshot2Objects1 */
-gdjs.ClimbsCode.GDshockwaveObjects1.length = 0;
-
-{gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDshockwaveObjects1Objects, (( gdjs.ClimbsCode.GDZipshotObjects1.length === 0 ) ? 0 :gdjs.ClimbsCode.GDZipshotObjects1[0].getPointX("")), (( gdjs.ClimbsCode.GDZipshotObjects1.length === 0 ) ? 0 :gdjs.ClimbsCode.GDZipshotObjects1[0].getPointY("")), "");
+{gdjs.evtTools.window.openURL("https://forms.gle/9eqS72ervjihJmGZ8", runtimeScene);
 }
-{gdjs.evtTools.sound.playSound(runtimeScene, "dmg", false, runtimeScene.getGame().getVariables().getFromIndex(4).getAsNumber(), 1);
-}
-{for(var i = 0, len = gdjs.ClimbsCode.GDZipshot2Objects1.length ;i < len;++i) {
-    gdjs.ClimbsCode.GDZipshot2Objects1[i].returnVariable(gdjs.ClimbsCode.GDZipshot2Objects1[i].getVariables().getFromIndex(0)).sub(1);
-}
-}
-
-{ //Subevents
-gdjs.ClimbsCode.eventsList3(runtimeScene);} //End of subevents
 }
 
 }
@@ -948,42 +480,73 @@ gdjs.ClimbsCode.eventsList3(runtimeScene);} //End of subevents
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("Health"), gdjs.ClimbsCode.GDHealthObjects1);
+gdjs.SettingsCode.GDControlsObjects1.length = 0;
+
+gdjs.SettingsCode.GDCursorObjects1.length = 0;
+
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.ClimbsCode.GDHealthObjects1.length;i<l;++i) {
-    if ( gdjs.ClimbsCode.GDHealthObjects1[i].IsEmpty(null) ) {
-        isConditionTrue_0 = true;
-        gdjs.ClimbsCode.GDHealthObjects1[k] = gdjs.ClimbsCode.GDHealthObjects1[i];
+{gdjs.SettingsCode.GDControlsObjects1_1final.length = 0;
+gdjs.SettingsCode.GDCursorObjects1_1final.length = 0;
+let isConditionTrue_1 = false;
+isConditionTrue_0 = false;
+{
+gdjs.copyArray(runtimeScene.getObjects("Controls"), gdjs.SettingsCode.GDControlsObjects2);
+for (var i = 0, k = 0, l = gdjs.SettingsCode.GDControlsObjects2.length;i<l;++i) {
+    if ( gdjs.SettingsCode.GDControlsObjects2[i].IsClicked(null) ) {
+        isConditionTrue_1 = true;
+        gdjs.SettingsCode.GDControlsObjects2[k] = gdjs.SettingsCode.GDControlsObjects2[i];
         ++k;
     }
 }
-gdjs.ClimbsCode.GDHealthObjects1.length = k;
+gdjs.SettingsCode.GDControlsObjects2.length = k;
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+    for (let j = 0, jLen = gdjs.SettingsCode.GDControlsObjects2.length; j < jLen ; ++j) {
+        if ( gdjs.SettingsCode.GDControlsObjects1_1final.indexOf(gdjs.SettingsCode.GDControlsObjects2[j]) === -1 )
+            gdjs.SettingsCode.GDControlsObjects1_1final.push(gdjs.SettingsCode.GDControlsObjects2[j]);
+    }
+}
+}
+{
+gdjs.copyArray(runtimeScene.getObjects("Controls"), gdjs.SettingsCode.GDControlsObjects2);
+gdjs.copyArray(runtimeScene.getObjects("Cursor"), gdjs.SettingsCode.GDCursorObjects2);
+{let isConditionTrue_2 = false;
+isConditionTrue_2 = false;
+isConditionTrue_2 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDControlsObjects2Objects, gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDCursorObjects2Objects, false, runtimeScene, false);
+if (isConditionTrue_2) {
+isConditionTrue_2 = false;
+isConditionTrue_2 = gdjs.evtsExt__Gamepads__IsButtonJustPressed.func(runtimeScene, 1, "A", null);
+}
+isConditionTrue_1 = isConditionTrue_2;
+}
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+    for (let j = 0, jLen = gdjs.SettingsCode.GDControlsObjects2.length; j < jLen ; ++j) {
+        if ( gdjs.SettingsCode.GDControlsObjects1_1final.indexOf(gdjs.SettingsCode.GDControlsObjects2[j]) === -1 )
+            gdjs.SettingsCode.GDControlsObjects1_1final.push(gdjs.SettingsCode.GDControlsObjects2[j]);
+    }
+    for (let j = 0, jLen = gdjs.SettingsCode.GDCursorObjects2.length; j < jLen ; ++j) {
+        if ( gdjs.SettingsCode.GDCursorObjects1_1final.indexOf(gdjs.SettingsCode.GDCursorObjects2[j]) === -1 )
+            gdjs.SettingsCode.GDCursorObjects1_1final.push(gdjs.SettingsCode.GDCursorObjects2[j]);
+    }
+}
+}
+{
+gdjs.copyArray(gdjs.SettingsCode.GDControlsObjects1_1final, gdjs.SettingsCode.GDControlsObjects1);
+gdjs.copyArray(gdjs.SettingsCode.GDCursorObjects1_1final, gdjs.SettingsCode.GDCursorObjects1);
+}
+}
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(42977620);
-}
+isConditionTrue_0 = gdjs.evtTools.camera.layerIsVisible(runtimeScene, "");
 }
 if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.ClimbsCode.GDPlayerObjects1);
-{for(var i = 0, len = gdjs.ClimbsCode.GDPlayerObjects1.length ;i < len;++i) {
-    gdjs.ClimbsCode.GDPlayerObjects1[i].getBehavior("TopDownMovement").simulateUpKey();
+{gdjs.evtTools.camera.hideLayer(runtimeScene, "");
 }
+{gdjs.evtTools.camera.showLayer(runtimeScene, "Gameplay");
 }
-{gdjs.evtTools.sound.stopMusicOnChannel(runtimeScene, 0);
-}
-{for(var i = 0, len = gdjs.ClimbsCode.GDPlayerObjects1.length ;i < len;++i) {
-    gdjs.ClimbsCode.GDPlayerObjects1[i].activateBehavior("SmoothCamera", false);
-}
-}
-{for(var i = 0, len = gdjs.ClimbsCode.GDPlayerObjects1.length ;i < len;++i) {
-    gdjs.ClimbsCode.GDPlayerObjects1[i].getBehavior("TopDownMovement").setMaxSpeed(0);
-}
-}
-
-{ //Subevents
-gdjs.ClimbsCode.eventsList6(runtimeScene);} //End of subevents
 }
 
 }
@@ -991,40 +554,57 @@ gdjs.ClimbsCode.eventsList6(runtimeScene);} //End of subevents
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("Health"), gdjs.ClimbsCode.GDHealthObjects1);
-gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.ClimbsCode.GDPlayerObjects1);
+gdjs.copyArray(runtimeScene.getObjects("NewSprite2"), gdjs.SettingsCode.GDNewSprite2Objects1);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.ClimbsCode.GDHealthObjects1.length;i<l;++i) {
-    if ( gdjs.ClimbsCode.GDHealthObjects1[i].IsEmpty(null) ) {
+for (var i = 0, k = 0, l = gdjs.SettingsCode.GDNewSprite2Objects1.length;i<l;++i) {
+    if ( gdjs.SettingsCode.GDNewSprite2Objects1[i].getBehavior("ButtonFSM").IsClicked(null) ) {
         isConditionTrue_0 = true;
-        gdjs.ClimbsCode.GDHealthObjects1[k] = gdjs.ClimbsCode.GDHealthObjects1[i];
+        gdjs.SettingsCode.GDNewSprite2Objects1[k] = gdjs.SettingsCode.GDNewSprite2Objects1[i];
         ++k;
     }
 }
-gdjs.ClimbsCode.GDHealthObjects1.length = k;
+gdjs.SettingsCode.GDNewSprite2Objects1.length = k;
 if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Gamejolt", false);
+}
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("AllAudio"), gdjs.SettingsCode.GDAllAudioObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Cursor"), gdjs.SettingsCode.GDCursorObjects1);
+
+let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.ClimbsCode.GDPlayerObjects1.length;i<l;++i) {
-    if ( !(gdjs.ClimbsCode.GDPlayerObjects1[i].getBehavior("Tween").isPlaying("fall")) ) {
+for (var i = 0, k = 0, l = gdjs.SettingsCode.GDCursorObjects1.length;i<l;++i) {
+    if ( gdjs.SettingsCode.GDCursorObjects1[i].getX() >= (( gdjs.SettingsCode.GDAllAudioObjects1.length === 0 ) ? 0 :gdjs.SettingsCode.GDAllAudioObjects1[0].getCenterXInScene()) ) {
         isConditionTrue_0 = true;
-        gdjs.ClimbsCode.GDPlayerObjects1[k] = gdjs.ClimbsCode.GDPlayerObjects1[i];
+        gdjs.SettingsCode.GDCursorObjects1[k] = gdjs.SettingsCode.GDCursorObjects1[i];
         ++k;
     }
 }
-gdjs.ClimbsCode.GDPlayerObjects1.length = k;
+gdjs.SettingsCode.GDCursorObjects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDAllAudioObjects1Objects, gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDCursorObjects1Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtsExt__Gamepads__IsButtonJustPressed.func(runtimeScene, 1, "A", null);
+}
 }
 if (isConditionTrue_0) {
-/* Reuse gdjs.ClimbsCode.GDPlayerObjects1 */
-{for(var i = 0, len = gdjs.ClimbsCode.GDPlayerObjects1.length ;i < len;++i) {
-    gdjs.ClimbsCode.GDPlayerObjects1[i].activateBehavior("SmoothCamera", false);
+/* Reuse gdjs.SettingsCode.GDAllAudioObjects1 */
+{for(var i = 0, len = gdjs.SettingsCode.GDAllAudioObjects1.length ;i < len;++i) {
+    gdjs.SettingsCode.GDAllAudioObjects1[i].SetLabelShown(true, null);
 }
 }
-{gdjs.evtTools.camera.centerCamera(runtimeScene, (gdjs.ClimbsCode.GDPlayerObjects1.length !== 0 ? gdjs.ClimbsCode.GDPlayerObjects1[0] : null), false, "", 0);
-}
-{for(var i = 0, len = gdjs.ClimbsCode.GDPlayerObjects1.length ;i < len;++i) {
-    gdjs.ClimbsCode.GDPlayerObjects1[i].getBehavior("TopDownMovement").setMaxSpeed(0);
+{for(var i = 0, len = gdjs.SettingsCode.GDAllAudioObjects1.length ;i < len;++i) {
+    gdjs.SettingsCode.GDAllAudioObjects1[i].SetValue(gdjs.SettingsCode.GDAllAudioObjects1[i].Value(null) + (10), null);
 }
 }
 }
@@ -1034,22 +614,35 @@ if (isConditionTrue_0) {
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("Health"), gdjs.ClimbsCode.GDHealthObjects1);
+gdjs.copyArray(runtimeScene.getObjects("AllAudio"), gdjs.SettingsCode.GDAllAudioObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Cursor"), gdjs.SettingsCode.GDCursorObjects1);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.ClimbsCode.GDHealthObjects1.length;i<l;++i) {
-    if ( !(gdjs.ClimbsCode.GDHealthObjects1[i].IsEmpty(null)) ) {
+for (var i = 0, k = 0, l = gdjs.SettingsCode.GDCursorObjects1.length;i<l;++i) {
+    if ( gdjs.SettingsCode.GDCursorObjects1[i].getX() < (( gdjs.SettingsCode.GDAllAudioObjects1.length === 0 ) ? 0 :gdjs.SettingsCode.GDAllAudioObjects1[0].getCenterXInScene()) ) {
         isConditionTrue_0 = true;
-        gdjs.ClimbsCode.GDHealthObjects1[k] = gdjs.ClimbsCode.GDHealthObjects1[i];
+        gdjs.SettingsCode.GDCursorObjects1[k] = gdjs.SettingsCode.GDCursorObjects1[i];
         ++k;
     }
 }
-gdjs.ClimbsCode.GDHealthObjects1.length = k;
+gdjs.SettingsCode.GDCursorObjects1.length = k;
 if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.ClimbsCode.GDPlayerObjects1);
-{for(var i = 0, len = gdjs.ClimbsCode.GDPlayerObjects1.length ;i < len;++i) {
-    gdjs.ClimbsCode.GDPlayerObjects1[i].activateBehavior("SmoothCamera", true);
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDAllAudioObjects1Objects, gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDCursorObjects1Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtsExt__Gamepads__IsButtonJustPressed.func(runtimeScene, 1, "A", null);
+}
+}
+if (isConditionTrue_0) {
+/* Reuse gdjs.SettingsCode.GDAllAudioObjects1 */
+{for(var i = 0, len = gdjs.SettingsCode.GDAllAudioObjects1.length ;i < len;++i) {
+    gdjs.SettingsCode.GDAllAudioObjects1[i].SetLabelShown(true, null);
+}
+}
+{for(var i = 0, len = gdjs.SettingsCode.GDAllAudioObjects1.length ;i < len;++i) {
+    gdjs.SettingsCode.GDAllAudioObjects1[i].SetValue(gdjs.SettingsCode.GDAllAudioObjects1[i].Value(null) - (10), null);
 }
 }
 }
@@ -1059,64 +652,37 @@ gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.ClimbsCode.GDPlayerObject
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("Health"), gdjs.ClimbsCode.GDHealthObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Cursor"), gdjs.SettingsCode.GDCursorObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Music"), gdjs.SettingsCode.GDMusicObjects1);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.ClimbsCode.GDHealthObjects1.length;i<l;++i) {
-    if ( gdjs.ClimbsCode.GDHealthObjects1[i].IsEmpty(null) ) {
+for (var i = 0, k = 0, l = gdjs.SettingsCode.GDCursorObjects1.length;i<l;++i) {
+    if ( gdjs.SettingsCode.GDCursorObjects1[i].getX() < (( gdjs.SettingsCode.GDMusicObjects1.length === 0 ) ? 0 :gdjs.SettingsCode.GDMusicObjects1[0].getCenterXInScene()) ) {
         isConditionTrue_0 = true;
-        gdjs.ClimbsCode.GDHealthObjects1[k] = gdjs.ClimbsCode.GDHealthObjects1[i];
+        gdjs.SettingsCode.GDCursorObjects1[k] = gdjs.SettingsCode.GDCursorObjects1[i];
         ++k;
     }
 }
-gdjs.ClimbsCode.GDHealthObjects1.length = k;
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.ClimbsCode.GDPlayerObjects1);
-{for(var i = 0, len = gdjs.ClimbsCode.GDPlayerObjects1.length ;i < len;++i) {
-    gdjs.ClimbsCode.GDPlayerObjects1[i].activateBehavior("SmoothCamera", false);
-}
-}
-{for(var i = 0, len = gdjs.ClimbsCode.GDPlayerObjects1.length ;i < len;++i) {
-    gdjs.ClimbsCode.GDPlayerObjects1[i].getBehavior("Animation").setAnimationName("tgjump");
-}
-}
-}
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.ClimbsCode.GDPlayerObjects1);
-gdjs.copyArray(runtimeScene.getObjects("Win"), gdjs.ClimbsCode.GDWinObjects1);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDPlayerObjects1Objects, gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDWinObjects1Objects, false, runtimeScene, false);
+gdjs.SettingsCode.GDCursorObjects1.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(42983828);
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDMusicObjects1Objects, gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDCursorObjects1Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtsExt__Gamepads__IsButtonJustPressed.func(runtimeScene, 1, "A", null);
 }
 }
 if (isConditionTrue_0) {
-/* Reuse gdjs.ClimbsCode.GDPlayerObjects1 */
-gdjs.copyArray(runtimeScene.getObjects("fade"), gdjs.ClimbsCode.GDfadeObjects1);
-{gdjs.evtTools.sound.stopMusicOnChannel(runtimeScene, 0);
-}
-{gdjs.evtTools.sound.playMusicOnChannel(runtimeScene, "Winclimb.mp3", 0, false, 100, 1);
-}
-{for(var i = 0, len = gdjs.ClimbsCode.GDPlayerObjects1.length ;i < len;++i) {
-    gdjs.ClimbsCode.GDPlayerObjects1[i].getBehavior("Tween").addObjectPositionYTween2("w", (gdjs.ClimbsCode.GDPlayerObjects1[i].getPointY("")) - 1000, "linear", 2, false);
+/* Reuse gdjs.SettingsCode.GDMusicObjects1 */
+{for(var i = 0, len = gdjs.SettingsCode.GDMusicObjects1.length ;i < len;++i) {
+    gdjs.SettingsCode.GDMusicObjects1[i].SetLabelShown(true, null);
 }
 }
-{for(var i = 0, len = gdjs.ClimbsCode.GDfadeObjects1.length ;i < len;++i) {
-    gdjs.ClimbsCode.GDfadeObjects1[i].getBehavior("FlashTransitionPainter").PaintEffect("0;0;0", 1.5, "Circular", "Forward", 0, null);
+{for(var i = 0, len = gdjs.SettingsCode.GDMusicObjects1.length ;i < len;++i) {
+    gdjs.SettingsCode.GDMusicObjects1[i].SetValue(gdjs.SettingsCode.GDMusicObjects1[i].Value(null) - (10), null);
 }
 }
-
-{ //Subevents
-gdjs.ClimbsCode.eventsList7(runtimeScene);} //End of subevents
 }
 
 }
@@ -1124,98 +690,73 @@ gdjs.ClimbsCode.eventsList7(runtimeScene);} //End of subevents
 
 {
 
+gdjs.copyArray(runtimeScene.getObjects("Cursor"), gdjs.SettingsCode.GDCursorObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Music"), gdjs.SettingsCode.GDMusicObjects1);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.systemInfo.hasTouchScreen(runtimeScene);
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("Hit"), gdjs.ClimbsCode.GDHitObjects1);
-gdjs.copyArray(runtimeScene.getObjects("ShadedDarkJoystick"), gdjs.ClimbsCode.GDShadedDarkJoystickObjects1);
-{for(var i = 0, len = gdjs.ClimbsCode.GDHitObjects1.length ;i < len;++i) {
-    gdjs.ClimbsCode.GDHitObjects1[i].hide(false);
-}
-}
-{for(var i = 0, len = gdjs.ClimbsCode.GDShadedDarkJoystickObjects1.length ;i < len;++i) {
-    gdjs.ClimbsCode.GDShadedDarkJoystickObjects1[i].hide(false);
-}
-}
-}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = !(gdjs.evtTools.systemInfo.hasTouchScreen(runtimeScene));
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("Hit"), gdjs.ClimbsCode.GDHitObjects1);
-gdjs.copyArray(runtimeScene.getObjects("ShadedDarkJoystick"), gdjs.ClimbsCode.GDShadedDarkJoystickObjects1);
-{for(var i = 0, len = gdjs.ClimbsCode.GDShadedDarkJoystickObjects1.length ;i < len;++i) {
-    gdjs.ClimbsCode.GDShadedDarkJoystickObjects1[i].hide();
-}
-}
-{for(var i = 0, len = gdjs.ClimbsCode.GDHitObjects1.length ;i < len;++i) {
-    gdjs.ClimbsCode.GDHitObjects1[i].hide();
-}
-}
-}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-{
-gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.ClimbsCode.GDPlayerObjects1);
-gdjs.copyArray(runtimeScene.getObjects("Zipshot2"), gdjs.ClimbsCode.GDZipshot2Objects1);
-gdjs.copyArray(runtimeScene.getObjects("spawnpl"), gdjs.ClimbsCode.GDspawnplObjects1);
-{for(var i = 0, len = gdjs.ClimbsCode.GDZipshot2Objects1.length ;i < len;++i) {
-    gdjs.ClimbsCode.GDZipshot2Objects1[i].rotateTowardObject((gdjs.ClimbsCode.GDPlayerObjects1.length !== 0 ? gdjs.ClimbsCode.GDPlayerObjects1[0] : null), 0, runtimeScene);
-}
-}
-{for(var i = 0, len = gdjs.ClimbsCode.GDspawnplObjects1.length ;i < len;++i) {
-    gdjs.ClimbsCode.GDspawnplObjects1[i].hide();
-}
-}
-}
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.ClimbsCode.GDPlayerObjects1);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.ClimbsCode.GDPlayerObjects1.length;i<l;++i) {
-    if ( gdjs.ClimbsCode.GDPlayerObjects1[i].getBehavior("Animation").hasAnimationEnded() ) {
+for (var i = 0, k = 0, l = gdjs.SettingsCode.GDCursorObjects1.length;i<l;++i) {
+    if ( gdjs.SettingsCode.GDCursorObjects1[i].getX() >= (( gdjs.SettingsCode.GDMusicObjects1.length === 0 ) ? 0 :gdjs.SettingsCode.GDMusicObjects1[0].getCenterXInScene()) ) {
         isConditionTrue_0 = true;
-        gdjs.ClimbsCode.GDPlayerObjects1[k] = gdjs.ClimbsCode.GDPlayerObjects1[i];
+        gdjs.SettingsCode.GDCursorObjects1[k] = gdjs.SettingsCode.GDCursorObjects1[i];
         ++k;
     }
 }
-gdjs.ClimbsCode.GDPlayerObjects1.length = k;
+gdjs.SettingsCode.GDCursorObjects1.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.ClimbsCode.GDPlayerObjects1.length;i<l;++i) {
-    if ( gdjs.ClimbsCode.GDPlayerObjects1[i].getBehavior("Animation").getAnimationName() == "tgjump" ) {
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDMusicObjects1Objects, gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDCursorObjects1Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtsExt__Gamepads__IsButtonJustPressed.func(runtimeScene, 1, "A", null);
+}
+}
+if (isConditionTrue_0) {
+/* Reuse gdjs.SettingsCode.GDMusicObjects1 */
+{for(var i = 0, len = gdjs.SettingsCode.GDMusicObjects1.length ;i < len;++i) {
+    gdjs.SettingsCode.GDMusicObjects1[i].SetLabelShown(true, null);
+}
+}
+{for(var i = 0, len = gdjs.SettingsCode.GDMusicObjects1.length ;i < len;++i) {
+    gdjs.SettingsCode.GDMusicObjects1[i].SetValue(gdjs.SettingsCode.GDMusicObjects1[i].Value(null) + (10), null);
+}
+}
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("Cursor"), gdjs.SettingsCode.GDCursorObjects1);
+gdjs.copyArray(runtimeScene.getObjects("SFX"), gdjs.SettingsCode.GDSFXObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.SettingsCode.GDCursorObjects1.length;i<l;++i) {
+    if ( gdjs.SettingsCode.GDCursorObjects1[i].getX() < (( gdjs.SettingsCode.GDSFXObjects1.length === 0 ) ? 0 :gdjs.SettingsCode.GDSFXObjects1[0].getCenterXInScene()) ) {
         isConditionTrue_0 = true;
-        gdjs.ClimbsCode.GDPlayerObjects1[k] = gdjs.ClimbsCode.GDPlayerObjects1[i];
+        gdjs.SettingsCode.GDCursorObjects1[k] = gdjs.SettingsCode.GDCursorObjects1[i];
         ++k;
     }
 }
-gdjs.ClimbsCode.GDPlayerObjects1.length = k;
+gdjs.SettingsCode.GDCursorObjects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDSFXObjects1Objects, gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDCursorObjects1Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtsExt__Gamepads__IsButtonJustPressed.func(runtimeScene, 1, "A", null);
+}
 }
 if (isConditionTrue_0) {
-/* Reuse gdjs.ClimbsCode.GDPlayerObjects1 */
-{for(var i = 0, len = gdjs.ClimbsCode.GDPlayerObjects1.length ;i < len;++i) {
-    gdjs.ClimbsCode.GDPlayerObjects1[i].getBehavior("Animation").setAnimationName("default");
+/* Reuse gdjs.SettingsCode.GDSFXObjects1 */
+{for(var i = 0, len = gdjs.SettingsCode.GDSFXObjects1.length ;i < len;++i) {
+    gdjs.SettingsCode.GDSFXObjects1[i].SetLabelShown(true, null);
+}
+}
+{for(var i = 0, len = gdjs.SettingsCode.GDSFXObjects1.length ;i < len;++i) {
+    gdjs.SettingsCode.GDSFXObjects1[i].SetValue(gdjs.SettingsCode.GDSFXObjects1[i].Value(null) - (10), null);
 }
 }
 }
@@ -1225,33 +766,35 @@ if (isConditionTrue_0) {
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("spawnpl"), gdjs.ClimbsCode.GDspawnplObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Cursor"), gdjs.SettingsCode.GDCursorObjects1);
+gdjs.copyArray(runtimeScene.getObjects("SFX"), gdjs.SettingsCode.GDSFXObjects1);
 
-for (gdjs.ClimbsCode.forEachIndex2 = 0;gdjs.ClimbsCode.forEachIndex2 < gdjs.ClimbsCode.GDspawnplObjects1.length;++gdjs.ClimbsCode.forEachIndex2) {
-gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.ClimbsCode.GDPlayerObjects2);
-gdjs.ClimbsCode.GDspawnplObjects2.length = 0;
-
-
-gdjs.ClimbsCode.forEachTemporary2 = gdjs.ClimbsCode.GDspawnplObjects1[gdjs.ClimbsCode.forEachIndex2];
-gdjs.ClimbsCode.GDspawnplObjects2.push(gdjs.ClimbsCode.forEachTemporary2);
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.ClimbsCode.GDspawnplObjects2.length;i<l;++i) {
-    if ( gdjs.ClimbsCode.GDspawnplObjects2[i].getVariableNumber(gdjs.ClimbsCode.GDspawnplObjects2[i].getVariables().getFromIndex(0)) == runtimeScene.getGame().getVariables().getFromIndex(15).getAsNumber() ) {
+for (var i = 0, k = 0, l = gdjs.SettingsCode.GDCursorObjects1.length;i<l;++i) {
+    if ( gdjs.SettingsCode.GDCursorObjects1[i].getX() >= (( gdjs.SettingsCode.GDSFXObjects1.length === 0 ) ? 0 :gdjs.SettingsCode.GDSFXObjects1[0].getCenterXInScene()) ) {
         isConditionTrue_0 = true;
-        gdjs.ClimbsCode.GDspawnplObjects2[k] = gdjs.ClimbsCode.GDspawnplObjects2[i];
+        gdjs.SettingsCode.GDCursorObjects1[k] = gdjs.SettingsCode.GDCursorObjects1[i];
         ++k;
     }
 }
-gdjs.ClimbsCode.GDspawnplObjects2.length = k;
+gdjs.SettingsCode.GDCursorObjects1.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDSFXObjects1Objects, gdjs.SettingsCode.mapOfGDgdjs_9546SettingsCode_9546GDCursorObjects1Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtsExt__Gamepads__IsButtonJustPressed.func(runtimeScene, 1, "A", null);
+}
 }
 if (isConditionTrue_0) {
-{for(var i = 0, len = gdjs.ClimbsCode.GDPlayerObjects2.length ;i < len;++i) {
-    gdjs.ClimbsCode.GDPlayerObjects2[i].setPosition((( gdjs.ClimbsCode.GDspawnplObjects2.length === 0 ) ? 0 :gdjs.ClimbsCode.GDspawnplObjects2[0].getPointX("")),(( gdjs.ClimbsCode.GDspawnplObjects2.length === 0 ) ? 0 :gdjs.ClimbsCode.GDspawnplObjects2[0].getPointY("")));
+/* Reuse gdjs.SettingsCode.GDSFXObjects1 */
+{for(var i = 0, len = gdjs.SettingsCode.GDSFXObjects1.length ;i < len;++i) {
+    gdjs.SettingsCode.GDSFXObjects1[i].SetLabelShown(true, null);
 }
+}
+{for(var i = 0, len = gdjs.SettingsCode.GDSFXObjects1.length ;i < len;++i) {
+    gdjs.SettingsCode.GDSFXObjects1[i].SetValue(gdjs.SettingsCode.GDSFXObjects1[i].Value(null) + (10), null);
 }
 }
 }
@@ -1264,15 +807,8 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 {
-gdjs.copyArray(runtimeScene.getObjects("Health"), gdjs.ClimbsCode.GDHealthObjects1);
-gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.ClimbsCode.GDPlayerObjects1);
-{for(var i = 0, len = gdjs.ClimbsCode.GDPlayerObjects1.length ;i < len;++i) {
-    gdjs.ClimbsCode.GDPlayerObjects1[i].setZOrder(999);
-}
-}
-{for(var i = 0, len = gdjs.ClimbsCode.GDHealthObjects1.length ;i < len;++i) {
-    gdjs.ClimbsCode.GDHealthObjects1[i].setZOrder(999);
-}
+gdjs.copyArray(runtimeScene.getObjects("AllAudio"), gdjs.SettingsCode.GDAllAudioObjects1);
+{gdjs.evtTools.sound.setGlobalVolume(runtimeScene, (( gdjs.SettingsCode.GDAllAudioObjects1.length === 0 ) ? 0 :gdjs.SettingsCode.GDAllAudioObjects1[0].Value(null)));
 }
 }
 
@@ -1281,41 +817,26 @@ gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.ClimbsCode.GDPlayerObject
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("BreakableWall"), gdjs.ClimbsCode.GDBreakableWallObjects1);
 
-for (gdjs.ClimbsCode.forEachIndex2 = 0;gdjs.ClimbsCode.forEachIndex2 < gdjs.ClimbsCode.GDBreakableWallObjects1.length;++gdjs.ClimbsCode.forEachIndex2) {
-gdjs.copyArray(runtimeScene.getObjects("Lever"), gdjs.ClimbsCode.GDLeverObjects2);
-gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.ClimbsCode.GDPlayerObjects2);
-gdjs.ClimbsCode.GDBreakableWallObjects2.length = 0;
-
-
-gdjs.ClimbsCode.forEachTemporary2 = gdjs.ClimbsCode.GDBreakableWallObjects1[gdjs.ClimbsCode.forEachIndex2];
-gdjs.ClimbsCode.GDBreakableWallObjects2.push(gdjs.ClimbsCode.forEachTemporary2);
 let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDLeverObjects2Objects, gdjs.ClimbsCode.mapOfGDgdjs_9546ClimbsCode_9546GDPlayerObjects2Objects, false, runtimeScene, false);
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.ClimbsCode.GDBreakableWallObjects2.length;i<l;++i) {
-    if ( gdjs.ClimbsCode.GDBreakableWallObjects2[i].getVariableNumber(gdjs.ClimbsCode.GDBreakableWallObjects2[i].getVariables().getFromIndex(0)) == ((gdjs.ClimbsCode.GDLeverObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.ClimbsCode.GDLeverObjects2[0].getVariables()).getFromIndex(0).getAsNumber() ) {
-        isConditionTrue_0 = true;
-        gdjs.ClimbsCode.GDBreakableWallObjects2[k] = gdjs.ClimbsCode.GDBreakableWallObjects2[i];
-        ++k;
-    }
+{
+gdjs.copyArray(runtimeScene.getObjects("Music"), gdjs.SettingsCode.GDMusicObjects1);
+{gdjs.evtTools.sound.setMusicOnChannelVolume(runtimeScene, 0, (( gdjs.SettingsCode.GDMusicObjects1.length === 0 ) ? 0 :gdjs.SettingsCode.GDMusicObjects1[0].Value(null)));
 }
-gdjs.ClimbsCode.GDBreakableWallObjects2.length = k;
-}
-if (isConditionTrue_0) {
-{for(var i = 0, len = gdjs.ClimbsCode.GDBreakableWallObjects2.length ;i < len;++i) {
-    gdjs.ClimbsCode.GDBreakableWallObjects2[i].deleteFromScene(runtimeScene);
+{runtimeScene.getGame().getVariables().getFromIndex(3).setNumber((( gdjs.SettingsCode.GDMusicObjects1.length === 0 ) ? 0 :gdjs.SettingsCode.GDMusicObjects1[0].Value(null)));
 }
 }
-{for(var i = 0, len = gdjs.ClimbsCode.GDLeverObjects2.length ;i < len;++i) {
-    gdjs.ClimbsCode.GDLeverObjects2[i].getBehavior("Flippable").flipY(true);
+
 }
-}
-{gdjs.evtTools.sound.playSound(runtimeScene, "Blip_select 1.wav", false, runtimeScene.getGame().getVariables().getFromIndex(4).getAsNumber(), gdjs.randomFloatInRange(1, 1.5));
-}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+gdjs.copyArray(runtimeScene.getObjects("SFX"), gdjs.SettingsCode.GDSFXObjects1);
+{runtimeScene.getGame().getVariables().getFromIndex(4).setNumber((( gdjs.SettingsCode.GDSFXObjects1.length === 0 ) ? 0 :gdjs.SettingsCode.GDSFXObjects1[0].Value(null)));
 }
 }
 
@@ -1324,207 +845,127 @@ if (isConditionTrue_0) {
 
 };
 
-gdjs.ClimbsCode.func = function(runtimeScene) {
+gdjs.SettingsCode.func = function(runtimeScene) {
 runtimeScene.getOnceTriggers().startNewFrame();
 
-gdjs.ClimbsCode.GDClimbWallFenceObjects1.length = 0;
-gdjs.ClimbsCode.GDClimbWallFenceObjects2.length = 0;
-gdjs.ClimbsCode.GDClimbWallFenceObjects3.length = 0;
-gdjs.ClimbsCode.GDClimbWallFenceObjects4.length = 0;
-gdjs.ClimbsCode.GDPlayerObjects1.length = 0;
-gdjs.ClimbsCode.GDPlayerObjects2.length = 0;
-gdjs.ClimbsCode.GDPlayerObjects3.length = 0;
-gdjs.ClimbsCode.GDPlayerObjects4.length = 0;
-gdjs.ClimbsCode.GDHealthObjects1.length = 0;
-gdjs.ClimbsCode.GDHealthObjects2.length = 0;
-gdjs.ClimbsCode.GDHealthObjects3.length = 0;
-gdjs.ClimbsCode.GDHealthObjects4.length = 0;
-gdjs.ClimbsCode.GDZipshotObjects1.length = 0;
-gdjs.ClimbsCode.GDZipshotObjects2.length = 0;
-gdjs.ClimbsCode.GDZipshotObjects3.length = 0;
-gdjs.ClimbsCode.GDZipshotObjects4.length = 0;
-gdjs.ClimbsCode.GDBallAttackObjects1.length = 0;
-gdjs.ClimbsCode.GDBallAttackObjects2.length = 0;
-gdjs.ClimbsCode.GDBallAttackObjects3.length = 0;
-gdjs.ClimbsCode.GDBallAttackObjects4.length = 0;
-gdjs.ClimbsCode.GDNewSpriteObjects1.length = 0;
-gdjs.ClimbsCode.GDNewSpriteObjects2.length = 0;
-gdjs.ClimbsCode.GDNewSpriteObjects3.length = 0;
-gdjs.ClimbsCode.GDNewSpriteObjects4.length = 0;
-gdjs.ClimbsCode.GDNewTextObjects1.length = 0;
-gdjs.ClimbsCode.GDNewTextObjects2.length = 0;
-gdjs.ClimbsCode.GDNewTextObjects3.length = 0;
-gdjs.ClimbsCode.GDNewTextObjects4.length = 0;
-gdjs.ClimbsCode.GDshockwaveObjects1.length = 0;
-gdjs.ClimbsCode.GDshockwaveObjects2.length = 0;
-gdjs.ClimbsCode.GDshockwaveObjects3.length = 0;
-gdjs.ClimbsCode.GDshockwaveObjects4.length = 0;
-gdjs.ClimbsCode.GDNewPanelSpriteObjects1.length = 0;
-gdjs.ClimbsCode.GDNewPanelSpriteObjects2.length = 0;
-gdjs.ClimbsCode.GDNewPanelSpriteObjects3.length = 0;
-gdjs.ClimbsCode.GDNewPanelSpriteObjects4.length = 0;
-gdjs.ClimbsCode.GDSpikeObjects1.length = 0;
-gdjs.ClimbsCode.GDSpikeObjects2.length = 0;
-gdjs.ClimbsCode.GDSpikeObjects3.length = 0;
-gdjs.ClimbsCode.GDSpikeObjects4.length = 0;
-gdjs.ClimbsCode.GDWinObjects1.length = 0;
-gdjs.ClimbsCode.GDWinObjects2.length = 0;
-gdjs.ClimbsCode.GDWinObjects3.length = 0;
-gdjs.ClimbsCode.GDWinObjects4.length = 0;
-gdjs.ClimbsCode.GDfadeObjects1.length = 0;
-gdjs.ClimbsCode.GDfadeObjects2.length = 0;
-gdjs.ClimbsCode.GDfadeObjects3.length = 0;
-gdjs.ClimbsCode.GDfadeObjects4.length = 0;
-gdjs.ClimbsCode.GDShadedDarkJoystickObjects1.length = 0;
-gdjs.ClimbsCode.GDShadedDarkJoystickObjects2.length = 0;
-gdjs.ClimbsCode.GDShadedDarkJoystickObjects3.length = 0;
-gdjs.ClimbsCode.GDShadedDarkJoystickObjects4.length = 0;
-gdjs.ClimbsCode.GDHitObjects1.length = 0;
-gdjs.ClimbsCode.GDHitObjects2.length = 0;
-gdjs.ClimbsCode.GDHitObjects3.length = 0;
-gdjs.ClimbsCode.GDHitObjects4.length = 0;
-gdjs.ClimbsCode.GDWallObjects1.length = 0;
-gdjs.ClimbsCode.GDWallObjects2.length = 0;
-gdjs.ClimbsCode.GDWallObjects3.length = 0;
-gdjs.ClimbsCode.GDWallObjects4.length = 0;
-gdjs.ClimbsCode.GDZipshot2Objects1.length = 0;
-gdjs.ClimbsCode.GDZipshot2Objects2.length = 0;
-gdjs.ClimbsCode.GDZipshot2Objects3.length = 0;
-gdjs.ClimbsCode.GDZipshot2Objects4.length = 0;
-gdjs.ClimbsCode.GDClimbWallTowerObjects1.length = 0;
-gdjs.ClimbsCode.GDClimbWallTowerObjects2.length = 0;
-gdjs.ClimbsCode.GDClimbWallTowerObjects3.length = 0;
-gdjs.ClimbsCode.GDClimbWallTowerObjects4.length = 0;
-gdjs.ClimbsCode.GDspawnplObjects1.length = 0;
-gdjs.ClimbsCode.GDspawnplObjects2.length = 0;
-gdjs.ClimbsCode.GDspawnplObjects3.length = 0;
-gdjs.ClimbsCode.GDspawnplObjects4.length = 0;
-gdjs.ClimbsCode.GDLeverObjects1.length = 0;
-gdjs.ClimbsCode.GDLeverObjects2.length = 0;
-gdjs.ClimbsCode.GDLeverObjects3.length = 0;
-gdjs.ClimbsCode.GDLeverObjects4.length = 0;
-gdjs.ClimbsCode.GDBreakableWallObjects1.length = 0;
-gdjs.ClimbsCode.GDBreakableWallObjects2.length = 0;
-gdjs.ClimbsCode.GDBreakableWallObjects3.length = 0;
-gdjs.ClimbsCode.GDBreakableWallObjects4.length = 0;
-gdjs.ClimbsCode.GDCustomLobbiesObjects1.length = 0;
-gdjs.ClimbsCode.GDCustomLobbiesObjects2.length = 0;
-gdjs.ClimbsCode.GDCustomLobbiesObjects3.length = 0;
-gdjs.ClimbsCode.GDCustomLobbiesObjects4.length = 0;
-gdjs.ClimbsCode.GDOnlineCheckObjects1.length = 0;
-gdjs.ClimbsCode.GDOnlineCheckObjects2.length = 0;
-gdjs.ClimbsCode.GDOnlineCheckObjects3.length = 0;
-gdjs.ClimbsCode.GDOnlineCheckObjects4.length = 0;
-gdjs.ClimbsCode.GDCursorObjects1.length = 0;
-gdjs.ClimbsCode.GDCursorObjects2.length = 0;
-gdjs.ClimbsCode.GDCursorObjects3.length = 0;
-gdjs.ClimbsCode.GDCursorObjects4.length = 0;
-gdjs.ClimbsCode.GDBGObjects1.length = 0;
-gdjs.ClimbsCode.GDBGObjects2.length = 0;
-gdjs.ClimbsCode.GDBGObjects3.length = 0;
-gdjs.ClimbsCode.GDBGObjects4.length = 0;
+gdjs.SettingsCode.GDBackObjects1.length = 0;
+gdjs.SettingsCode.GDBackObjects2.length = 0;
+gdjs.SettingsCode.GDBGObjects1.length = 0;
+gdjs.SettingsCode.GDBGObjects2.length = 0;
+gdjs.SettingsCode.GDSoundObjects1.length = 0;
+gdjs.SettingsCode.GDSoundObjects2.length = 0;
+gdjs.SettingsCode.GDBackSelectObjects1.length = 0;
+gdjs.SettingsCode.GDBackSelectObjects2.length = 0;
+gdjs.SettingsCode.GDAllAudioObjects1.length = 0;
+gdjs.SettingsCode.GDAllAudioObjects2.length = 0;
+gdjs.SettingsCode.GDMasterTextObjects1.length = 0;
+gdjs.SettingsCode.GDMasterTextObjects2.length = 0;
+gdjs.SettingsCode.GDVisualObjects1.length = 0;
+gdjs.SettingsCode.GDVisualObjects2.length = 0;
+gdjs.SettingsCode.GDControlsObjects1.length = 0;
+gdjs.SettingsCode.GDControlsObjects2.length = 0;
+gdjs.SettingsCode.GDCreditsObjects1.length = 0;
+gdjs.SettingsCode.GDCreditsObjects2.length = 0;
+gdjs.SettingsCode.GDCreditsTextObjects1.length = 0;
+gdjs.SettingsCode.GDCreditsTextObjects2.length = 0;
+gdjs.SettingsCode.GDNewSprite2Objects1.length = 0;
+gdjs.SettingsCode.GDNewSprite2Objects2.length = 0;
+gdjs.SettingsCode.GDNewSpriteObjects1.length = 0;
+gdjs.SettingsCode.GDNewSpriteObjects2.length = 0;
+gdjs.SettingsCode.GDNewTextObjects1.length = 0;
+gdjs.SettingsCode.GDNewTextObjects2.length = 0;
+gdjs.SettingsCode.GDNewSprite3Objects1.length = 0;
+gdjs.SettingsCode.GDNewSprite3Objects2.length = 0;
+gdjs.SettingsCode.GDNewText2Objects1.length = 0;
+gdjs.SettingsCode.GDNewText2Objects2.length = 0;
+gdjs.SettingsCode.GDnoticeObjects1.length = 0;
+gdjs.SettingsCode.GDnoticeObjects2.length = 0;
+gdjs.SettingsCode.GDNewToggleSwitchObjects1.length = 0;
+gdjs.SettingsCode.GDNewToggleSwitchObjects2.length = 0;
+gdjs.SettingsCode.GDSquareWhiteToggleObjects1.length = 0;
+gdjs.SettingsCode.GDSquareWhiteToggleObjects2.length = 0;
+gdjs.SettingsCode.GDNewText3Objects1.length = 0;
+gdjs.SettingsCode.GDNewText3Objects2.length = 0;
+gdjs.SettingsCode.GDSFXObjects1.length = 0;
+gdjs.SettingsCode.GDSFXObjects2.length = 0;
+gdjs.SettingsCode.GDSFXTextObjects1.length = 0;
+gdjs.SettingsCode.GDSFXTextObjects2.length = 0;
+gdjs.SettingsCode.GDMusicObjects1.length = 0;
+gdjs.SettingsCode.GDMusicObjects2.length = 0;
+gdjs.SettingsCode.GDMusicTextObjects1.length = 0;
+gdjs.SettingsCode.GDMusicTextObjects2.length = 0;
+gdjs.SettingsCode.GDFeedbackObjects1.length = 0;
+gdjs.SettingsCode.GDFeedbackObjects2.length = 0;
+gdjs.SettingsCode.GDCustomLobbiesObjects1.length = 0;
+gdjs.SettingsCode.GDCustomLobbiesObjects2.length = 0;
+gdjs.SettingsCode.GDOnlineCheckObjects1.length = 0;
+gdjs.SettingsCode.GDOnlineCheckObjects2.length = 0;
+gdjs.SettingsCode.GDCursorObjects1.length = 0;
+gdjs.SettingsCode.GDCursorObjects2.length = 0;
+gdjs.SettingsCode.GDBGObjects1.length = 0;
+gdjs.SettingsCode.GDBGObjects2.length = 0;
 
-gdjs.ClimbsCode.eventsList10(runtimeScene);
-gdjs.ClimbsCode.GDClimbWallFenceObjects1.length = 0;
-gdjs.ClimbsCode.GDClimbWallFenceObjects2.length = 0;
-gdjs.ClimbsCode.GDClimbWallFenceObjects3.length = 0;
-gdjs.ClimbsCode.GDClimbWallFenceObjects4.length = 0;
-gdjs.ClimbsCode.GDPlayerObjects1.length = 0;
-gdjs.ClimbsCode.GDPlayerObjects2.length = 0;
-gdjs.ClimbsCode.GDPlayerObjects3.length = 0;
-gdjs.ClimbsCode.GDPlayerObjects4.length = 0;
-gdjs.ClimbsCode.GDHealthObjects1.length = 0;
-gdjs.ClimbsCode.GDHealthObjects2.length = 0;
-gdjs.ClimbsCode.GDHealthObjects3.length = 0;
-gdjs.ClimbsCode.GDHealthObjects4.length = 0;
-gdjs.ClimbsCode.GDZipshotObjects1.length = 0;
-gdjs.ClimbsCode.GDZipshotObjects2.length = 0;
-gdjs.ClimbsCode.GDZipshotObjects3.length = 0;
-gdjs.ClimbsCode.GDZipshotObjects4.length = 0;
-gdjs.ClimbsCode.GDBallAttackObjects1.length = 0;
-gdjs.ClimbsCode.GDBallAttackObjects2.length = 0;
-gdjs.ClimbsCode.GDBallAttackObjects3.length = 0;
-gdjs.ClimbsCode.GDBallAttackObjects4.length = 0;
-gdjs.ClimbsCode.GDNewSpriteObjects1.length = 0;
-gdjs.ClimbsCode.GDNewSpriteObjects2.length = 0;
-gdjs.ClimbsCode.GDNewSpriteObjects3.length = 0;
-gdjs.ClimbsCode.GDNewSpriteObjects4.length = 0;
-gdjs.ClimbsCode.GDNewTextObjects1.length = 0;
-gdjs.ClimbsCode.GDNewTextObjects2.length = 0;
-gdjs.ClimbsCode.GDNewTextObjects3.length = 0;
-gdjs.ClimbsCode.GDNewTextObjects4.length = 0;
-gdjs.ClimbsCode.GDshockwaveObjects1.length = 0;
-gdjs.ClimbsCode.GDshockwaveObjects2.length = 0;
-gdjs.ClimbsCode.GDshockwaveObjects3.length = 0;
-gdjs.ClimbsCode.GDshockwaveObjects4.length = 0;
-gdjs.ClimbsCode.GDNewPanelSpriteObjects1.length = 0;
-gdjs.ClimbsCode.GDNewPanelSpriteObjects2.length = 0;
-gdjs.ClimbsCode.GDNewPanelSpriteObjects3.length = 0;
-gdjs.ClimbsCode.GDNewPanelSpriteObjects4.length = 0;
-gdjs.ClimbsCode.GDSpikeObjects1.length = 0;
-gdjs.ClimbsCode.GDSpikeObjects2.length = 0;
-gdjs.ClimbsCode.GDSpikeObjects3.length = 0;
-gdjs.ClimbsCode.GDSpikeObjects4.length = 0;
-gdjs.ClimbsCode.GDWinObjects1.length = 0;
-gdjs.ClimbsCode.GDWinObjects2.length = 0;
-gdjs.ClimbsCode.GDWinObjects3.length = 0;
-gdjs.ClimbsCode.GDWinObjects4.length = 0;
-gdjs.ClimbsCode.GDfadeObjects1.length = 0;
-gdjs.ClimbsCode.GDfadeObjects2.length = 0;
-gdjs.ClimbsCode.GDfadeObjects3.length = 0;
-gdjs.ClimbsCode.GDfadeObjects4.length = 0;
-gdjs.ClimbsCode.GDShadedDarkJoystickObjects1.length = 0;
-gdjs.ClimbsCode.GDShadedDarkJoystickObjects2.length = 0;
-gdjs.ClimbsCode.GDShadedDarkJoystickObjects3.length = 0;
-gdjs.ClimbsCode.GDShadedDarkJoystickObjects4.length = 0;
-gdjs.ClimbsCode.GDHitObjects1.length = 0;
-gdjs.ClimbsCode.GDHitObjects2.length = 0;
-gdjs.ClimbsCode.GDHitObjects3.length = 0;
-gdjs.ClimbsCode.GDHitObjects4.length = 0;
-gdjs.ClimbsCode.GDWallObjects1.length = 0;
-gdjs.ClimbsCode.GDWallObjects2.length = 0;
-gdjs.ClimbsCode.GDWallObjects3.length = 0;
-gdjs.ClimbsCode.GDWallObjects4.length = 0;
-gdjs.ClimbsCode.GDZipshot2Objects1.length = 0;
-gdjs.ClimbsCode.GDZipshot2Objects2.length = 0;
-gdjs.ClimbsCode.GDZipshot2Objects3.length = 0;
-gdjs.ClimbsCode.GDZipshot2Objects4.length = 0;
-gdjs.ClimbsCode.GDClimbWallTowerObjects1.length = 0;
-gdjs.ClimbsCode.GDClimbWallTowerObjects2.length = 0;
-gdjs.ClimbsCode.GDClimbWallTowerObjects3.length = 0;
-gdjs.ClimbsCode.GDClimbWallTowerObjects4.length = 0;
-gdjs.ClimbsCode.GDspawnplObjects1.length = 0;
-gdjs.ClimbsCode.GDspawnplObjects2.length = 0;
-gdjs.ClimbsCode.GDspawnplObjects3.length = 0;
-gdjs.ClimbsCode.GDspawnplObjects4.length = 0;
-gdjs.ClimbsCode.GDLeverObjects1.length = 0;
-gdjs.ClimbsCode.GDLeverObjects2.length = 0;
-gdjs.ClimbsCode.GDLeverObjects3.length = 0;
-gdjs.ClimbsCode.GDLeverObjects4.length = 0;
-gdjs.ClimbsCode.GDBreakableWallObjects1.length = 0;
-gdjs.ClimbsCode.GDBreakableWallObjects2.length = 0;
-gdjs.ClimbsCode.GDBreakableWallObjects3.length = 0;
-gdjs.ClimbsCode.GDBreakableWallObjects4.length = 0;
-gdjs.ClimbsCode.GDCustomLobbiesObjects1.length = 0;
-gdjs.ClimbsCode.GDCustomLobbiesObjects2.length = 0;
-gdjs.ClimbsCode.GDCustomLobbiesObjects3.length = 0;
-gdjs.ClimbsCode.GDCustomLobbiesObjects4.length = 0;
-gdjs.ClimbsCode.GDOnlineCheckObjects1.length = 0;
-gdjs.ClimbsCode.GDOnlineCheckObjects2.length = 0;
-gdjs.ClimbsCode.GDOnlineCheckObjects3.length = 0;
-gdjs.ClimbsCode.GDOnlineCheckObjects4.length = 0;
-gdjs.ClimbsCode.GDCursorObjects1.length = 0;
-gdjs.ClimbsCode.GDCursorObjects2.length = 0;
-gdjs.ClimbsCode.GDCursorObjects3.length = 0;
-gdjs.ClimbsCode.GDCursorObjects4.length = 0;
-gdjs.ClimbsCode.GDBGObjects1.length = 0;
-gdjs.ClimbsCode.GDBGObjects2.length = 0;
-gdjs.ClimbsCode.GDBGObjects3.length = 0;
-gdjs.ClimbsCode.GDBGObjects4.length = 0;
+gdjs.SettingsCode.eventsList0(runtimeScene);
+gdjs.SettingsCode.GDBackObjects1.length = 0;
+gdjs.SettingsCode.GDBackObjects2.length = 0;
+gdjs.SettingsCode.GDBGObjects1.length = 0;
+gdjs.SettingsCode.GDBGObjects2.length = 0;
+gdjs.SettingsCode.GDSoundObjects1.length = 0;
+gdjs.SettingsCode.GDSoundObjects2.length = 0;
+gdjs.SettingsCode.GDBackSelectObjects1.length = 0;
+gdjs.SettingsCode.GDBackSelectObjects2.length = 0;
+gdjs.SettingsCode.GDAllAudioObjects1.length = 0;
+gdjs.SettingsCode.GDAllAudioObjects2.length = 0;
+gdjs.SettingsCode.GDMasterTextObjects1.length = 0;
+gdjs.SettingsCode.GDMasterTextObjects2.length = 0;
+gdjs.SettingsCode.GDVisualObjects1.length = 0;
+gdjs.SettingsCode.GDVisualObjects2.length = 0;
+gdjs.SettingsCode.GDControlsObjects1.length = 0;
+gdjs.SettingsCode.GDControlsObjects2.length = 0;
+gdjs.SettingsCode.GDCreditsObjects1.length = 0;
+gdjs.SettingsCode.GDCreditsObjects2.length = 0;
+gdjs.SettingsCode.GDCreditsTextObjects1.length = 0;
+gdjs.SettingsCode.GDCreditsTextObjects2.length = 0;
+gdjs.SettingsCode.GDNewSprite2Objects1.length = 0;
+gdjs.SettingsCode.GDNewSprite2Objects2.length = 0;
+gdjs.SettingsCode.GDNewSpriteObjects1.length = 0;
+gdjs.SettingsCode.GDNewSpriteObjects2.length = 0;
+gdjs.SettingsCode.GDNewTextObjects1.length = 0;
+gdjs.SettingsCode.GDNewTextObjects2.length = 0;
+gdjs.SettingsCode.GDNewSprite3Objects1.length = 0;
+gdjs.SettingsCode.GDNewSprite3Objects2.length = 0;
+gdjs.SettingsCode.GDNewText2Objects1.length = 0;
+gdjs.SettingsCode.GDNewText2Objects2.length = 0;
+gdjs.SettingsCode.GDnoticeObjects1.length = 0;
+gdjs.SettingsCode.GDnoticeObjects2.length = 0;
+gdjs.SettingsCode.GDNewToggleSwitchObjects1.length = 0;
+gdjs.SettingsCode.GDNewToggleSwitchObjects2.length = 0;
+gdjs.SettingsCode.GDSquareWhiteToggleObjects1.length = 0;
+gdjs.SettingsCode.GDSquareWhiteToggleObjects2.length = 0;
+gdjs.SettingsCode.GDNewText3Objects1.length = 0;
+gdjs.SettingsCode.GDNewText3Objects2.length = 0;
+gdjs.SettingsCode.GDSFXObjects1.length = 0;
+gdjs.SettingsCode.GDSFXObjects2.length = 0;
+gdjs.SettingsCode.GDSFXTextObjects1.length = 0;
+gdjs.SettingsCode.GDSFXTextObjects2.length = 0;
+gdjs.SettingsCode.GDMusicObjects1.length = 0;
+gdjs.SettingsCode.GDMusicObjects2.length = 0;
+gdjs.SettingsCode.GDMusicTextObjects1.length = 0;
+gdjs.SettingsCode.GDMusicTextObjects2.length = 0;
+gdjs.SettingsCode.GDFeedbackObjects1.length = 0;
+gdjs.SettingsCode.GDFeedbackObjects2.length = 0;
+gdjs.SettingsCode.GDCustomLobbiesObjects1.length = 0;
+gdjs.SettingsCode.GDCustomLobbiesObjects2.length = 0;
+gdjs.SettingsCode.GDOnlineCheckObjects1.length = 0;
+gdjs.SettingsCode.GDOnlineCheckObjects2.length = 0;
+gdjs.SettingsCode.GDCursorObjects1.length = 0;
+gdjs.SettingsCode.GDCursorObjects2.length = 0;
+gdjs.SettingsCode.GDBGObjects1.length = 0;
+gdjs.SettingsCode.GDBGObjects2.length = 0;
 
 
 return;
 
 }
 
-gdjs['ClimbsCode'] = gdjs.ClimbsCode;
+gdjs['SettingsCode'] = gdjs.SettingsCode;

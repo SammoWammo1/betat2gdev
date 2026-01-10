@@ -9,7 +9,7 @@ gdjs.evtsExt__MultiplayerCustomLobbies__IsPreview = {};
 gdjs.evtsExt__MultiplayerCustomLobbies__IsPreview.idToCallbackMap = new Map();
 
 
-gdjs.evtsExt__MultiplayerCustomLobbies__IsPreview.userFunc0x8b0a68 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__MultiplayerCustomLobbies__IsPreview.userFunc0xe0e5b8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 eventsFunctionContext.returnValue = runtimeScene.getGame().isPreview();
 };
@@ -18,7 +18,7 @@ gdjs.evtsExt__MultiplayerCustomLobbies__IsPreview.eventsList0 = function(runtime
 {
 
 
-gdjs.evtsExt__MultiplayerCustomLobbies__IsPreview.userFunc0x8b0a68(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__MultiplayerCustomLobbies__IsPreview.userFunc0xe0e5b8(runtimeScene, eventsFunctionContext);
 
 }
 

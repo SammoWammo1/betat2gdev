@@ -9,7 +9,7 @@ gdjs.evtsExt__GetPropertiesData__ReturnOrientation = {};
 gdjs.evtsExt__GetPropertiesData__ReturnOrientation.idToCallbackMap = new Map();
 
 
-gdjs.evtsExt__GetPropertiesData__ReturnOrientation.userFunc0x1536078 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__GetPropertiesData__ReturnOrientation.userFunc0x2f16288 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 eventsFunctionContext.returnValue = runtimeScene.getGame().getGameData().properties.orientation;
 };
@@ -18,7 +18,7 @@ gdjs.evtsExt__GetPropertiesData__ReturnOrientation.eventsList0 = function(runtim
 {
 
 
-gdjs.evtsExt__GetPropertiesData__ReturnOrientation.userFunc0x1536078(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__GetPropertiesData__ReturnOrientation.userFunc0x2f16288(runtimeScene, eventsFunctionContext);
 
 }
 

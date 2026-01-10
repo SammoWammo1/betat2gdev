@@ -47,6 +47,8 @@ gdjs.TitleCode.GDSettingsObjects1= [];
 gdjs.TitleCode.GDSettingsObjects2= [];
 gdjs.TitleCode.GDNewSprite3Objects1= [];
 gdjs.TitleCode.GDNewSprite3Objects2= [];
+gdjs.TitleCode.GDBossinfoObjects1= [];
+gdjs.TitleCode.GDBossinfoObjects2= [];
 gdjs.TitleCode.GDCustomLobbiesObjects1= [];
 gdjs.TitleCode.GDCustomLobbiesObjects2= [];
 gdjs.TitleCode.GDOnlineCheckObjects1= [];
@@ -57,7 +59,23 @@ gdjs.TitleCode.GDBGObjects1= [];
 gdjs.TitleCode.GDBGObjects2= [];
 
 
-gdjs.TitleCode.mapOfGDgdjs_9546TitleCode_9546GDCursorObjects1Objects = Hashtable.newFrom({"Cursor": gdjs.TitleCode.GDCursorObjects1});
+gdjs.TitleCode.eventsList0 = function(runtimeScene) {
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtsExt__GamejoltAPI__Authenticated.func(runtimeScene, null);
+if (isConditionTrue_0) {
+{gdjs.evtTools.firebaseTools.auth.anonymSignIn(runtimeScene.getScene().getVariables().getFromIndex(0));
+}
+}
+
+}
+
+
+};gdjs.TitleCode.mapOfGDgdjs_9546TitleCode_9546GDCursorObjects1Objects = Hashtable.newFrom({"Cursor": gdjs.TitleCode.GDCursorObjects1});
 gdjs.TitleCode.mapOfGDgdjs_9546TitleCode_9546GDMultiplayerObjects1Objects = Hashtable.newFrom({"Multiplayer": gdjs.TitleCode.GDMultiplayerObjects1});
 gdjs.TitleCode.mapOfGDgdjs_9546TitleCode_9546GDCursorObjects1Objects = Hashtable.newFrom({"Cursor": gdjs.TitleCode.GDCursorObjects1});
 gdjs.TitleCode.mapOfGDgdjs_9546TitleCode_9546GDCampaignStartObjects1Objects = Hashtable.newFrom({"CampaignStart": gdjs.TitleCode.GDCampaignStartObjects1});
@@ -70,7 +88,7 @@ gdjs.TitleCode.mapOfGDgdjs_9546TitleCode_9546GDBackObjects1Objects = Hashtable.n
 gdjs.TitleCode.mapOfGDgdjs_9546TitleCode_9546GDCursorObjects1Objects = Hashtable.newFrom({"Cursor": gdjs.TitleCode.GDCursorObjects1});
 gdjs.TitleCode.mapOfGDgdjs_9546TitleCode_9546GDExitObjects1Objects = Hashtable.newFrom({"Exit": gdjs.TitleCode.GDExitObjects1});
 gdjs.TitleCode.mapOfGDgdjs_9546TitleCode_9546GDCursorObjects1Objects = Hashtable.newFrom({"Cursor": gdjs.TitleCode.GDCursorObjects1});
-gdjs.TitleCode.eventsList0 = function(runtimeScene) {
+gdjs.TitleCode.eventsList1 = function(runtimeScene) {
 
 {
 
@@ -105,6 +123,9 @@ gdjs.copyArray(runtimeScene.getObjects("ver"), gdjs.TitleCode.GDverObjects1);
 }
 {gdjs.evtTools.network.enableMetrics(runtimeScene, true);
 }
+
+{ //Subevents
+gdjs.TitleCode.eventsList0(runtimeScene);} //End of subevents
 }
 
 }
@@ -740,7 +761,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = !(gdjs.evtsExt__Gamepads__C_Controller_X_is_connected.func(runtimeScene, 1, null));
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(40198636);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(36739532);
 }
 }
 if (isConditionTrue_0) {
@@ -762,7 +783,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtsExt__Gamepads__C_Controller_X_is_connected.func(runtimeScene, 1, null);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(40199108);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(36740460);
 }
 }
 if (isConditionTrue_0) {
@@ -783,7 +804,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.wasKeyJustPressed(runtimeScene, "F4");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(40198908);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(36741340);
 }
 }
 if (isConditionTrue_0) {
@@ -970,6 +991,8 @@ gdjs.TitleCode.GDSettingsObjects1.length = 0;
 gdjs.TitleCode.GDSettingsObjects2.length = 0;
 gdjs.TitleCode.GDNewSprite3Objects1.length = 0;
 gdjs.TitleCode.GDNewSprite3Objects2.length = 0;
+gdjs.TitleCode.GDBossinfoObjects1.length = 0;
+gdjs.TitleCode.GDBossinfoObjects2.length = 0;
 gdjs.TitleCode.GDCustomLobbiesObjects1.length = 0;
 gdjs.TitleCode.GDCustomLobbiesObjects2.length = 0;
 gdjs.TitleCode.GDOnlineCheckObjects1.length = 0;
@@ -979,7 +1002,7 @@ gdjs.TitleCode.GDCursorObjects2.length = 0;
 gdjs.TitleCode.GDBGObjects1.length = 0;
 gdjs.TitleCode.GDBGObjects2.length = 0;
 
-gdjs.TitleCode.eventsList0(runtimeScene);
+gdjs.TitleCode.eventsList1(runtimeScene);
 gdjs.TitleCode.GDMultiplayerObjects1.length = 0;
 gdjs.TitleCode.GDMultiplayerObjects2.length = 0;
 gdjs.TitleCode.GDNewTextObjects1.length = 0;
@@ -1026,6 +1049,8 @@ gdjs.TitleCode.GDSettingsObjects1.length = 0;
 gdjs.TitleCode.GDSettingsObjects2.length = 0;
 gdjs.TitleCode.GDNewSprite3Objects1.length = 0;
 gdjs.TitleCode.GDNewSprite3Objects2.length = 0;
+gdjs.TitleCode.GDBossinfoObjects1.length = 0;
+gdjs.TitleCode.GDBossinfoObjects2.length = 0;
 gdjs.TitleCode.GDCustomLobbiesObjects1.length = 0;
 gdjs.TitleCode.GDCustomLobbiesObjects2.length = 0;
 gdjs.TitleCode.GDOnlineCheckObjects1.length = 0;
