@@ -82,7 +82,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), 
 
 };gdjs.TitleCode.asyncCallback18188908 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.TitleCode.localVariables);
-{gdjs.evtTools.sound.playMusicOnChannel(runtimeScene, "Spelunky OST - Title Screen.mp3", 0, true, runtimeScene.getGame().getVariables().getFromIndex(3).getAsNumber(), 1);
+{gdjs.evtTools.sound.playMusicOnChannel(runtimeScene, "Title.mp3", 0, true, runtimeScene.getGame().getVariables().getFromIndex(3).getAsNumber(), 1);
 }
 
 { //Subevents
